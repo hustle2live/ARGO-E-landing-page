@@ -1,0 +1,135 @@
+body {
+   font-family: Arial, sans-serif;
+   line-height: 1.6;
+   font-size: 16px;
+   margin: 0;
+   padding: 0;
+}
+
+/* ------------ header-content -------- */
+
+header {
+   display: block;
+   background-color: #333;
+   color: #fff;
+   padding: 1rem;
+   text-align: center;
+   padding: 0;
+}
+
+h1 {
+   font-size: 2.5rem;
+}
+
+.header__navbar {
+   width: auto;
+   height: 72px;
+   background-color: #fff;
+   display: flex;
+   justify-content: space-between;
+   padding: 0 184px;
+}
+
+.header__content {
+   padding: 0 184px;
+   min-height: 84vh;
+   height: auto;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: baseline;
+   text-align: left;
+   justify-content: center;
+}
+
+.header__navbar_company-logo {
+   height: 52%;
+   margin: auto 0;
+   cursor: pointer;
+}
+
+.header__navbar_company-logo img {
+   height: 100%;
+   width: auto;
+}
+
+.header__navbar_social {
+   height: 36%;
+   margin: auto 0;
+}
+
+.header__navbar_social a {
+   cursor: pointer;
+   text-decoration: none;
+   margin-right: 0.4rem;
+}
+
+.header__navbar_social img {
+   display: inline-block;
+   height: 100%;
+   width: auto;
+   /* border-radius: 50%; */
+   /* box-shadow: 0 0 7px 1px #00000031; */
+}
+
+.header-picture {
+}
+.header-title {
+   max-width: 40%;
+}
+.header-description {
+   max-width: 34%;
+}
+.header-button {
+   margin: 22px 0;
+   padding: 16px 20px;
+}
+
+/* --/ header-content */
+
+/* ------------ body-content -------- */
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 2rem;
+   /* background-color: #0056b3; */
+}
+
+.feature {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 1rem;
+}
+
+.feature img {
+   width: 50px;
+   height: 50px;
+   margin-right: 1rem;
+}
+
+.cta {
+   text-align: center;
+   margin-top: 2rem;
+}
+
+.cta button {
+   padding: 1rem 2rem;
+   background-color: #007bff;
+   color: #fff;
+   font-size: 1.2rem;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.cta button:hover {
+   background-color: #0056b3;
+}
+
+footer {
+   background-color: #f4f4f4;
+   text-align: center;
+   padding: 1rem;
+}
