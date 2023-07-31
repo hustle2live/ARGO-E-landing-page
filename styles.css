@@ -31,7 +31,6 @@ h1 {
 }
 
 .header__content {
-   padding: 0 184px;
    min-height: 84vh;
    height: auto;
    width: 100%;
@@ -40,6 +39,8 @@ h1 {
    align-items: baseline;
    text-align: left;
    justify-content: center;
+   position: relative;
+   overflow: hidden;
 }
 
 .header__navbar_company-logo {
@@ -58,6 +59,7 @@ h1 {
    margin: auto 0;
 }
 
+.header__navbar a,
 .header__navbar_social a {
    cursor: pointer;
    text-decoration: none;
@@ -72,8 +74,26 @@ h1 {
    /* box-shadow: 0 0 7px 1px #00000031; */
 }
 
-.header-picture {
+.header-title,
+.header-description,
+.header-button {
+   z-index: 1;
+   margin: 0 184px;
 }
+
+.header__background-picture {
+   position: absolute;
+   width: 100%;
+   min-height: 100%;
+   top: -70%;
+   z-index: 0;
+}
+
+.header__background-picture img {
+   width: 100%;
+   height: auto;
+}
+
 .header-title {
    max-width: 40%;
 }
