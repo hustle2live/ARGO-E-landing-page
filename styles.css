@@ -83,14 +83,20 @@ h1 {
 
 .header__background-picture {
    position: absolute;
-   width: 100%;
+   width: 50%;
+   height: auto;
    min-height: 100%;
-   top: -70%;
+   /* top: -70%; */
    z-index: 0;
+   right: 0;
+   bottom: 0;
+   /* box-shadow: 0 0 30px 20px #00000031; */
+
 }
 
 .header__background-picture img {
-   width: 100%;
+margin-top: 80px;
+   width: 86%;
    height: auto;
 }
 
