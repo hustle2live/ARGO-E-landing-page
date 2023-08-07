@@ -281,7 +281,6 @@ h1 {
 
 .about section {
    width: 45%;
-   margin-bottom: 80px;
    justify-content: center;
 }
 
@@ -293,7 +292,7 @@ h1 {
    width: 100%;
    flex-direction: row;
    justify-content: space-between;
-   /* margin-top: 40px; */
+   margin-top: 80px;
 }
 
 .about section:last-of-type li {
@@ -329,22 +328,6 @@ h1 {
    height: auto;
 }
 
-.about__introductionб {
-}
-.about__story {
-}
-.about__concepts {
-}
-
-.about__introduction {
-}
-.about-us__main-picture {
-}
-.about__story {
-}
-.about__concepts {
-}
-
 /* --/ about */
 
 /* ------------ body __ service-description -------- */
@@ -361,7 +344,6 @@ h1 {
    font-size: 1.2rem;
    min-height: 800px;
    background-color: rgb(93, 93, 93);
-   /* background-color: #a1a1a1; */
    padding: 60px 0;
 }
 
@@ -374,7 +356,7 @@ h1 {
    width: 100%;
    height: auto;
    min-height: 341px;
-   opacity: 0.489;
+   opacity: 0.4;
 }
 
 .service-description .container {
