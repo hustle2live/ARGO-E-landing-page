@@ -32,9 +32,9 @@ body {
 
 header {
    display: block;
-   background-color: #c1c1c1;
-   /* background-color: #fff; */
-   color: #fff;
+   /* background-color: #c1c1c1; */
+   background-color: #ffffff;
+   color: #ffffff;
    padding: 1rem;
    text-align: center;
    padding: 0;
@@ -252,6 +252,93 @@ h1 {
 }
 
 /* --/ services-content */
+
+/* ------------ body __ about -------- */
+
+.about {
+   padding: 80px 0 120px;
+}
+
+.about article,
+.about section {
+   display: flex;
+}
+.about article {
+   justify-content: space-between;
+   /* gap: 40px; */
+}
+
+.about article {
+   flex-wrap: wrap;
+}
+
+.about section {
+   width: 45%;
+   margin-bottom: 80px;
+   justify-content: center;
+}
+
+.about section {
+   flex-direction: column;
+}
+
+.about section:last-of-type {
+   width: 100%;
+   flex-direction: row;
+   justify-content: space-between;
+   /* margin-top: 40px; */
+}
+
+.about section:last-of-type li {
+   list-style-type: none;
+   width: 30%;
+}
+
+.about .icon {
+   margin: 0 auto;
+   width: 70px;
+   /* background-color: #c1c1c1; */
+   text-align: center;
+   display: block;
+}
+
+.about .icon img {
+   width: 100%;
+   height: auto;
+   /* height: 48px; */
+}
+
+.about__picture {
+   display: block;
+   /* margin-top: -10%; */
+   /* margin-bottom: 90px; */
+   align-self: flex-end;
+   width: 74%;
+   height: auto;
+}
+
+.about__picture img {
+   width: 100%;
+   height: auto;
+}
+
+.about__introductionб {
+}
+.about__story {
+}
+.about__concepts {
+}
+
+.about__introduction {
+}
+.about-us__main-picture {
+}
+.about__story {
+}
+.about__concepts {
+}
+
+/* --/ about */
 
 .feature {
    justify-content: space-between;
