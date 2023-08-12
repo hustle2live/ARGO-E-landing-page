@@ -175,6 +175,7 @@ h1 {
 
 .services__section-title {
    margin: 60px auto 20px;
+   text-transform: uppercase;
 }
 
 .services__section-subtitle {
@@ -227,7 +228,9 @@ h1 {
    line-height: 28px;
    text-transform: uppercase;
    min-height: 40px;
-   margin: 32px -10px 0;
+
+   margin: 32px auto 0;
+   /* white-space: nowrap; */
    letter-spacing: -2px;
 }
 
