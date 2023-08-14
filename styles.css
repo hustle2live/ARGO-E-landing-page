@@ -263,7 +263,13 @@ h1 {
 
 .about {
    padding: 80px 0 120px;
+   background-color: #ffffff;
 }
+
+.about__introduction {
+   /* padding: 10px 30px; */
+}
+
 .about h2 {
    text-align: center;
    text-transform: uppercase;
@@ -278,6 +284,7 @@ h1 {
 }
 .about article {
    justify-content: space-between;
+
    /* gap: 40px; */
 }
 
@@ -436,17 +443,16 @@ h1 {
 .our-clients {
    padding: 80px 0;
    text-align: center;
+   /* background-color: #f2f2f2; */
 }
 
 .our-clients__objects {
    display: block;
    box-sizing: border-box;
    min-height: 680px;
-   /* width: 100%; */
    width: 1000px;
    overflow: hidden;
    position: relative;
-   background: lightblue;
    margin: auto;
    border-radius: 30px;
 }
@@ -456,12 +462,17 @@ ol.our-clients__gallery {
    min-height: 600px;
    width: auto;
    position: absolute;
-   margin: auto;
-   right: 0;
-   right: -1000px;
-   right: -2000px;
-   right: -3000px;
-   right: -4000px;
+   margin: 60px auto;
+   /* right: 0; */
+   /* right: -1000px; */
+   /* right: -2000px; */
+   /* right: -3000px; */
+   /* right: -4000px; */
+   left: 0;
+   /* left: -1000px; */
+   /* left: -2000px; */
+   /* left: -3000px; */
+   /* left: -4000px; */
 }
 
 .our-clients__gallery li.card {
@@ -481,7 +492,6 @@ ol.our-clients__gallery {
    height: 100%;
    justify-content: center;
    margin: auto;
-   /* align-items: center; */
 }
 
 .our-clients__picture {
@@ -494,6 +504,25 @@ ol.our-clients__gallery {
    height: 100%;
    object-fit: contain;
    object-position: bottom;
+}
+
+.prev-btn {
+}
+.next-btn {
+}
+
+.prev-btn,
+.next-btn {
+   margin: 0 20px;
+   padding: 10px 20px;
+   cursor: pointer;
+   z-index: 1;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+   background-color: #143472;
+   color: #fff;
 }
 
 /* --/ our-clients-description */
