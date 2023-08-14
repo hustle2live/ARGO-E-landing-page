@@ -55,9 +55,11 @@ h1 {
 }
 
 .header__content-section {
-   display: block;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    width: 100%;
-   height: 690px;
+   min-height: 800px;
    background-color: #333;
    position: relative;
    overflow: hidden;
@@ -450,6 +452,23 @@ h1 {
    position: relative;
 }
 
+.our-clients .container > p,
+.our-clients .container > h2 {
+   margin: 20px auto;
+}
+
+.our-clients .container > h2 {
+   font-size: 3rem;
+   line-height: 1.1;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+.our-clients .container > p {
+   font-size: 2rem;
+   width: 100%;
+}
+
 .our-clients__article {
    display: block;
    box-sizing: border-box;
@@ -522,7 +541,6 @@ ol.our-clients__gallery {
    bottom: 0;
    padding: 20px 0;
 
-   /* background: #333333aa; */
    /* margin: 0; */
 }
 
@@ -551,31 +569,42 @@ ol.our-clients__gallery {
 
 .prev-btn,
 .next-btn {
-   margin: 0 20px;
-   width: 50px;
-   height: 50px;
+   width: 40px;
+   height: 40px;
    border-radius: 50%;
    cursor: pointer;
-   z-index: 1;
    position: absolute;
    bottom: 310px;
-   box-sizing: border-box;
    border: none;
-   background-color: #1a1a1a;
-   color: #ffffff;
+   background-color: #4d4d4d;
+}
+
+.prev-btn svg,
+.next-btn svg {
+   fill: #fff;
+   width: 70%;
+   height: 70%;
+   padding: 6px 0;
+}
+
+.prev-btn svg {
+   padding-right: 3px;
+}
+.next-btn svg {
+   padding-left: 3px;
 }
 
 .prev-btn {
-   left: -10px;
+   left: 20px;
 }
 
 .next-btn {
-   right: -10px;
+   right: 20px;
 }
 
 .prev-btn:hover,
 .next-btn:hover {
-   background-color: #143472;
+   background-color: #1a1a1a;
    color: #fff;
 }
 
