@@ -446,15 +446,18 @@ h1 {
    /* background-color: #f2f2f2; */
 }
 
-.our-clients__objects {
+.our-clients .container {
+   position: relative;
+}
+
+.our-clients__article {
    display: block;
    box-sizing: border-box;
-   min-height: 680px;
+   height: 620px;
    width: 1000px;
    overflow: hidden;
-   position: relative;
    margin: auto;
-   border-radius: 30px;
+   position: relative;
 }
 
 ol.our-clients__gallery {
@@ -462,7 +465,7 @@ ol.our-clients__gallery {
    min-height: 600px;
    width: auto;
    position: absolute;
-   margin: 60px auto;
+   margin: auto;
    left: 0;
    transition: 1s;
    padding: 0;
@@ -471,14 +474,14 @@ ol.our-clients__gallery {
 .our-clients__gallery li.card {
    display: inline-block;
    box-sizing: border-box;
-   width: 980px;
+   width: 1000px;
    height: 594px;
    padding: 20px;
-   margin: 10px 10px;
+   margin: 10px 0;
    position: relative;
-
+   /* border: 0.1px solid transparent; */
    overflow: hidden;
-   border: 10px solid gray;
+   /* border: 10px solid gray; */
 }
 
 .our-clients__gallery .card__content {
@@ -506,33 +509,68 @@ ol.our-clients__gallery {
 
 .card__description {
    display: flex;
+   flex-direction: column-reverse;
    width: 100%;
-   height: 24%;
+   height: auto;
+   min-height: 100px;
    color: #fff;
    align-items: center;
-   background: #333333aa;
-   margin: 0;
+   justify-content: center;
+   background: #1a1a1a;
    position: absolute;
    left: 0;
    bottom: 0;
+   padding: 20px 0;
+
+   /* background: #333333aa; */
+   /* margin: 0; */
 }
 
+.card__description h5,
 .card__description p {
    width: 80%;
    margin: 0 auto;
 }
 
-.prev-btn {
+.card__description h5 {
+   font-family: 'Open Sans', sans-serif;
+   font-weight: normal;
+   font-size: 1rem;
+   line-height: 1.6;
+   margin-top: 6px;
 }
-.next-btn {
+
+.card__description p {
+   font-family: Roboto, sans-serif;
+   font-size: 1.5rem;
+   line-height: 1.2;
+   font-weight: 300;
+   text-transform: uppercase;
+   letter-spacing: 2px;
 }
 
 .prev-btn,
 .next-btn {
    margin: 0 20px;
-   padding: 10px 20px;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
    cursor: pointer;
    z-index: 1;
+   position: absolute;
+   bottom: 310px;
+   box-sizing: border-box;
+   border: none;
+   background-color: #1a1a1a;
+   color: #ffffff;
+}
+
+.prev-btn {
+   left: -10px;
+}
+
+.next-btn {
+   right: -10px;
 }
 
 .prev-btn:hover,
