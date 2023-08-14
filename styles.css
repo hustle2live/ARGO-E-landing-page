@@ -463,16 +463,9 @@ ol.our-clients__gallery {
    width: auto;
    position: absolute;
    margin: 60px auto;
-   /* right: 0; */
-   /* right: -1000px; */
-   /* right: -2000px; */
-   /* right: -3000px; */
-   /* right: -4000px; */
    left: 0;
-   /* left: -1000px; */
-   /* left: -2000px; */
-   /* left: -3000px; */
-   /* left: -4000px; */
+   transition: 1s;
+   padding: 0;
 }
 
 .our-clients__gallery li.card {
@@ -481,8 +474,11 @@ ol.our-clients__gallery {
    width: 980px;
    height: 594px;
    padding: 20px;
-   margin: 40px 10px;
-   /* border: 10px solid gray; */
+   margin: 10px 10px;
+   position: relative;
+
+   overflow: hidden;
+   border: 10px solid gray;
 }
 
 .our-clients__gallery .card__content {
@@ -491,19 +487,39 @@ ol.our-clients__gallery {
    width: 66%;
    height: 100%;
    justify-content: center;
-   margin: auto;
 }
 
-.our-clients__picture {
-   width: 100%;
-   max-height: 80%;
-}
-
-.our-clients__picture img {
-   width: 100%;
+.card__picture {
+   min-width: 100%;
    height: 100%;
-   object-fit: contain;
-   object-position: bottom;
+   position: absolute;
+   left: 0;
+}
+
+.card__picture img {
+   width: 100%;
+   min-height: 100%;
+   height: auto;
+   /* object-fit: contain; */
+   /* object-position: bottom; */
+}
+
+.card__description {
+   display: flex;
+   width: 100%;
+   height: 24%;
+   color: #fff;
+   align-items: center;
+   background: #333333aa;
+   margin: 0;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+}
+
+.card__description p {
+   width: 80%;
+   margin: 0 auto;
 }
 
 .prev-btn {

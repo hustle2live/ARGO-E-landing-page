@@ -6,7 +6,10 @@ const sliderPositionEnd = gallerySlidesNodeList.length - 1;
 
 let sliderCount = sliderPositionStart;
 
-const setPositionGallery = () => (gallerySlidesNodeElement.style.left = '-' + sliderCount + '000px');
+const setPositionGallery = () => {
+   gallerySlidesNodeElement.style.left = '-' + sliderCount + '000px';
+   gallerySlidesNodeElement.style.transform = `translateX(-)${sliderCount}000px`;
+};
 
 const changeSliderCounter = (num) =>
    (sliderCount = num > sliderPositionEnd ? sliderPositionStart : num < sliderPositionStart ? sliderPositionEnd : num);
