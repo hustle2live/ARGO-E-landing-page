@@ -383,21 +383,16 @@ h1 {
 
 .service-description__heading {
    width: 100%;
-   font-size: 1.5rem;
-   /* text-transform: uppercase; */
-   margin-bottom: 40px;
-}
-
-.service-description__heading h3 {
    font-size: 2rem;
    text-transform: uppercase;
-   margin-bottom: 20px;
+   margin-bottom: 80px;
 }
 
 .service-description .container ul {
    width: 60%;
    margin: auto;
    text-align: left;
+   margin-top: 0;
 }
 
 .service-description .container ul li {
