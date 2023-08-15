@@ -651,12 +651,18 @@ ol.our-clients__gallery {
    border-color: greenyellow;
 }
 
-.features__card img {
-   min-width: 150px;
-   max-width: 150px;
-   min-height: 150px;
-   max-height: 150px;
+.features__image {
+   min-width: 200px;
+   height: 150px;
+   width: 200px;
    margin-right: 20px;
+   overflow: hidden;
+}
+.features__image img {
+   width: 100%;
+   height: 100%;
+   /* object-position: center; */
+   object-fit: cover;
 }
 
 /* --/ features and fails section */
