@@ -26,7 +26,7 @@ body {
 .header__content,
 .services__card-section,
 .services__card,
-.feature {
+.features__card {
    display: flex;
 }
 
@@ -493,9 +493,7 @@ ol.our-clients__gallery {
    padding: 20px;
    margin: 10px 0;
    position: relative;
-   /* border: 0.1px solid transparent; */
    overflow: hidden;
-   /* border: 10px solid gray; */
 }
 
 .our-clients__gallery .card__content {
@@ -605,17 +603,63 @@ ol.our-clients__gallery {
 
 /* --/ our-clients-description */
 
-.feature {
+/* ------------ body __ features and fails section -------- */
+
+.features {
+   text-align: center;
+   padding: 40px 0;
+}
+
+.features h3 {
+   margin: 40px auto 80px;
+   font-size: 2.6rem;
+}
+
+.features .container {
+   display: grid;
+   grid-template-columns: 50% 50%;
+   gap: 60px;
+}
+
+.features__card {
+   width: 100%;
    justify-content: space-between;
    align-items: center;
    margin-bottom: 1rem;
 }
 
-.feature img {
-   width: 50px;
-   height: 50px;
-   margin-right: 1rem;
+.features__card p {
+   width: 80%;
+   font-size: 1.2rem;
+   text-align: left;
+   padding: 0 20px;
 }
+
+.features__card .marker {
+   display: block;
+   box-sizing: border-box;
+   content: '';
+   height: 150px;
+   border-left: 10px solid;
+}
+
+.features__card.bad .marker {
+   border-color: orangered;
+}
+
+.features__card.good .marker {
+   border-color: greenyellow;
+}
+
+.features__card img {
+   min-width: 150px;
+   max-width: 150px;
+   min-height: 150px;
+   max-height: 150px;
+   margin-right: 20px;
+}
+
+/* --/ features and fails section */
 
 .cta {
    text-align: center;
