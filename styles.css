@@ -61,20 +61,18 @@ h1 {
    width: 100%;
    min-height: 800px;
    background-color: #333;
-   position: relative;
    overflow: hidden;
 }
 
 .header__content {
-   /* width: var(--theme-sheet-width-xl); */
    box-sizing: border-box;
-   height: auto;
    min-height: 460px;
    flex-direction: column;
    align-items: baseline;
    margin: 80px auto;
-   /* border: 3px solid orange; */
    text-align: left;
+   position: relative;
+   /* border: 3px solid orange; */
 }
 
 .header__navbar_company-logo {
@@ -113,19 +111,23 @@ h1 {
 }
 
 .header__background-image {
-   position: absolute;
-   width: 46%;
-   height: auto;
+   width: 60%;
+   height: 100%;
    min-height: 100%;
    z-index: 0;
-   right: 14%;
-   top: -80px;
+   position: absolute;
+   right: 0;
+   bottom: 10%;
+   /* right: 14%; */
+   /* left: 0; */
+   /* top: -80px; */
 }
 
 .header__background-image img {
    margin-top: 80px;
-   width: 86%;
-   height: auto;
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
 }
 
 .header__title {
@@ -181,6 +183,7 @@ h1 {
 }
 
 .services__section-subtitle {
+   font-size: 1.2rem;
    margin: 32px auto 0;
 }
 
@@ -204,7 +207,7 @@ h1 {
    color: #111111;
    background-color: #ffffff;
    font-size: 1rem;
-   line-height: 1.6;
+   line-height: 1.5rem;
    overflow: hidden;
    text-align: center;
 }
@@ -242,7 +245,8 @@ h1 {
 
 .services__description {
    font-family: 'Open Sans', sans-serif;
-   font-size: 16px;
+   font-size: 1rem;
+   line-height: 1.5rem;
    font-style: italic;
    margin-top: 20px;
 }
@@ -268,8 +272,20 @@ h1 {
    background-color: #ffffff;
 }
 
-.about__introduction {
-   /* padding: 10px 30px; */
+.about__introduction p {
+   /* font-family: 'Open Sans', sans-serif; */
+   /* font-size: 1.2rem; */
+   width: 80%;
+   font-weight: 300;
+   margin-bottom: -10px;
+   /* font-style: italic; */
+}
+
+.about__story {
+}
+
+.about__story p:first-of-type {
+   font-weight: 600;
 }
 
 .about h2 {
