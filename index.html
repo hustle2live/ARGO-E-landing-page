@@ -3,8 +3,9 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Проектування Інженерних Систем - ТОВ "АРГО-ІНЖИНІРИНГ"</title>
+      <title>Проектування систем вентиляції, кондиціонування, опалення</title>
       <link rel="stylesheet" href="./styles.css" />
+      <!-- <link rel="stylesheet" href="./styles-copy.css" /> -->
       <link
          rel="stylesheet"
          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
@@ -32,11 +33,11 @@
             </div>
          </section>
          <section class="header__content-section">
+            <div class="header__background-image">
+               <img src="./assets/pictures/ventilation/1.jpeg" alt="ventilation project" />
+            </div>
             <div class="header__content container">
-               <div class="header__background-image">
-                  <img src="./assets/images/png/project_A1.png" alt="ventilation project" />
-               </div>
-               <h1 class="header__title">Проектування Інженерних Систем</h1>
+               <h1 class="header__title">Проектування систем вентиляції, кондиціювання, опалення</h1>
                <p class="header__description">
                   Консультації та аналіз Ваших потреб - ми вивчимо всі вимоги та деталі Вашого проекту, щоб забезпечити
                   найбільш оптимальний план дій.
@@ -57,48 +58,47 @@
             <section class="services__card-section">
                <li class="services__card">
                   <div class="services__image">
-                     <img
-                        src="./assets/pictures/heating/heating-collector-small.jpg"
-                        alt="гребінка, колектор систем тепла підлога"
-                     />
+                     <img src="./assets/pictures/ventilation/11.jpeg" alt="вентиляційна система, повітропроводи" />
                   </div>
-                  <h2 class="services__title">Опалення</h2>
-
-                  <p class="services__description">
-                     Проект системи опалення підприємсьва, офісу, ресторану, приватного будинку та ін. На базі теплового
-                     насосу поаітря-вода, загових або електро-котлів, грунтових систем.
-                  </p>
+                  <div class="services__text-content">
+                     <h2 class="services__title">Вентиляція</h2>
+                     <p class="services__description">
+                        Проектування припливних та витяжних систем вентиляції з рекуперацією тепла. Системи
+                        димовидалення, осушення, зволоження, аспірація.
+                     </p>
+                  </div>
                </li>
 
                <li class="services__card">
                   <div class="services__image">
                      <img
-                        src="./assets/pictures/ventilation/ventilation-small.jpg"
-                        alt="вентиляційна система, повітропроводи"
-                     />
-                  </div>
-                  <h2 class="services__title">Вентиляція</h2>
-                  <p class="services__description">
-                     Проектування припливних та витяжних систем вентиляції з рекуперацією тепла. Системи димовидалення,
-                     осушення, зволоження, аспірація.
-                  </p>
-               </li>
-
-               <li class="services__card">
-                  <div class="services__image">
-                     <img
-                        src="./assets/pictures/air-conditioning/air-conditioning-small.jpg"
+                        src="./assets/pictures/air-conditioning/2.jpeg"
                         alt="промислове кондиціонування повітря, касетний кондиціонер"
                      />
                   </div>
-                  <h2 class="services__title">Кондиціювання</h2>
-                  <p class="services__description">
-                     Побутові та промислові системи кондиціонування. VRF- та VRV -мульти зональне кондиціювання.
-                     Чилер-фанкойл. Спліт та мульти-спліт системи.
-                  </p>
+                  <div class="services__text-content">
+                     <h2 class="services__title">Кондиціювання</h2>
+                     <p class="services__description">
+                        Побутові та промислові системи кондиціонування. VRF- та VRV -мульти зональне кондиціювання.
+                        Чилер-фанкойл. Спліт та мульти-спліт системи.
+                     </p>
+                  </div>
                </li>
 
                <li class="services__card">
+                  <div class="services__image">
+                     <img src="./assets/pictures/heating/2.jpeg" alt="гребінка, колектор систем тепла підлога" />
+                  </div>
+                  <div class="services__text-content">
+                     <h2 class="services__title">Опалення</h2>
+                     <p class="services__description">
+                        Проект системи опалення підприємсьва, офісу, ресторану, приватного будинку та ін. На базі
+                        теплового насосу поаітря-вода, загових або електро-котлів, грунтових систем.
+                     </p>
+                  </div>
+               </li>
+
+               <li class="services__card hidden">
                   <div class="services__image">
                      <img
                         src="./assets/pictures/heat_supply/heat-supply-small.jpg"
@@ -112,7 +112,7 @@
                   </p>
                </li>
 
-               <li class="services__card">
+               <li class="services__card hidden">
                   <div class="services__image">
                      <img
                         src="./assets/pictures/electricity/electricity-project-small.jpg"
@@ -123,7 +123,7 @@
                   <p class="services__description">Проект автоматизованих систем управління та безпеки.</p>
                </li>
 
-               <li class="services__card">
+               <li class="services__card hidden">
                   <div class="services__image">
                      <img
                         src="./assets/pictures/water_supply/water-supply-small.jpg"
@@ -134,7 +134,7 @@
                   <p class="services__description">Проектування системи водопостачання та водовідведення.</p>
                </li>
 
-               <li class="services__card">
+               <li class="services__card hidden">
                   <div class="services__image">
                      <img
                         src="./assets/pictures/cool_supply/cooling-commercial-small.jpg"
@@ -147,7 +147,7 @@
                   </p>
                </li>
 
-               <li class="services__card">
+               <li class="services__card hidden">
                   <div class="services__image">
                      <img
                         src="./assets/pictures/drainage/drainage-small.jpg"
@@ -170,7 +170,7 @@
 
       <!-- 4 ABOUT US-->
       <div class="about">
-         <h2>Проєктно-Інжинірингова компанія <span hidden> ТОВ «АРГО-ІНЖИНІРИНГ» </span></h2>
+         <h2>про нас <span hidden> ТОВ «АРГО-ІНЖИНІРИНГ» </span></h2>
          <article class="container">
             <section class="about__introduction">
                <h3 hidden>Замовити проект вениляції, опалення, кондиціювання в Києві та Україні.</h3>
@@ -183,6 +183,9 @@
 
                <div class="about__picture">
                   <img src="./assets/pictures/vector-architect.jpg" alt="Проектувальник та проектна документація" />
+                  <!-- <img src="./assets/pictures/man-with-blueprint.jpg" alt="Проектувальник та проектна документація" /> -->
+                  <!-- <img src="./assets/pictures/cool_supply/5.jpeg" alt="Проектувальник та проектна документація" /> -->
+                  <!-- <img src="./assets/logo/logo-transparent.png" alt="Проектувальник та проектна документація" /> -->
                </div>
             </section>
 

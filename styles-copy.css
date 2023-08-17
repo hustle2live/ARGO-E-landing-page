@@ -65,7 +65,7 @@ h1 {
    justify-content: center;
    align-items: center;
    width: 100%;
-   min-height: 560px;
+   min-height: 640px;
    /* min-height: 80vh; */
    max-height: 100vh;
    background-color: #333;
@@ -265,7 +265,8 @@ h1 {
    background: #d84570; */
    /* background: #fff; */
    background: #143472;
-   /* background: #d7e5f3; */
+   background: #d7e5f3;
+   background: #d84570;
 }
 
 .services__content {
@@ -275,6 +276,7 @@ h1 {
 
 .services__section-title,
 .services__section-subtitle {
+   color: #000;
    color: #fff;
 }
 
@@ -289,24 +291,65 @@ h1 {
 }
 
 .services__card-section {
-   margin: 57px 0;
    justify-content: center;
    flex-wrap: wrap;
-   gap: 20px;
-   width: 100%;
+   /* gap: 20px; */
+   gap: 0;
+   width: 80%;
+   margin: 50px auto;
+}
+
+.services__text-content {
+   flex-basis: 50%;
+   flex-grow: 1;
+}
+
+.services__card:nth-child(1) {
+   text-align: start;
+   background: yellow;
+   color: #000000;
+}
+
+.services__card:nth-child(2) {
+   text-align: end;
+   flex-direction: row-reverse;
+   background: darkblue;
+   color: #ffffff;
+}
+
+.services__card:nth-child(2) .services__image {
+   flex-basis: 40%;
+}
+
+.services__card:nth-child(3) .services__image {
+   flex-basis: 42%;
+}
+
+.services__card:nth-child(3) {
+   text-align: start;
+   background: orangered;
+   /* background: #ffffff; */
+   color: #ffffff;
+   /* color: orange; */
+   /* font-weight: bold; */
 }
 
 .services__card {
-   flex-direction: column;
+   /* flex-direction: column; */
    align-items: center;
    list-style-type: none;
    cursor: default;
-   width: 270px;
-   height: auto;
+   /* width: 270px; */
+   /* width: auto; */
+   width: 100%;
+   /* height: auto; */
+   height: 310px;
+
    flex-grow: 0;
    text-align: justify;
-   padding: 30px;
+   /* padding: 30px; */
    margin: 0;
+   padding: 0;
    box-sizing: border-box;
    color: #111111;
    background-color: #ffffff;
@@ -318,32 +361,47 @@ h1 {
 
 .services__image {
    display: block;
-   width: 100%;
-   height: 180px;
+   /* width: 100%; */
+   /* width: 50%; */
+   flex-basis: 50%;
+   height: 100%;
    overflow: hidden;
+   margin: 0;
+   padding: 0;
 }
 
 .services__image img {
-   min-width: 100%;
+   /* min-width: 100%; */
+   width: 100%;
    height: 100%;
+   object-fit: fill;
+   object-position: center;
 }
 
 .services__title {
    font-family: 'Roboto', sans-serif;
    font-weight: 300;
-   font-size: 24px;
-   line-height: 27px;
+   /* font-size: 24px; */
+   font-size: 1.8rem;
+   /* line-height: 27px; */
+   line-height: 2rem;
    text-transform: uppercase;
+   /* margin: 32px auto 20px; */
    margin: 32px auto 20px;
-   letter-spacing: -2px;
+   /* letter-spacing: -2px; */
+}
+
+.services__title,
+.services__description {
+   padding: 20px 40px;
 }
 
 .services__description {
    font-family: 'Open Sans', sans-serif;
-   font-size: 0.86rem;
-   text-align: center;
-   line-height: 1.4rem;
-   font-style: italic;
+   font-size: 1.4rem;
+   /* text-align: center; */
+   line-height: 1.8rem;
+   /* font-style: italic; */
    margin-top: 0;
 }
 
@@ -368,13 +426,21 @@ h1 {
    background-color: #ffffff;
 }
 
+.about__introduction {
+   position: relative;
+   display: flex;
+   justify-content: flex-start !important;
+   /* padding: 20px; */
+}
+
 .about__introduction p {
    /* font-family: 'Open Sans', sans-serif; */
-   /* font-size: 1.2rem; */
+   font-size: 1.2rem;
    width: 80%;
    font-weight: 300;
-   margin-bottom: -10px;
-   /* font-style: italic; */
+   /* margin-bottom: -10px; */
+
+   z-index: 1; /* font-style: italic; */
 }
 
 .about__story {
@@ -444,15 +510,23 @@ h1 {
 .about__picture {
    display: block;
    /* margin-top: -10%; */
-   /* margin-bottom: 90px; */
-   align-self: flex-end;
+   margin-bottom: -50px;
+   /* align-self: flex-end; */
    width: 74%;
    height: auto;
+   max-height: 300px;
+   text-align: end;
+   overflow: hidden;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   /* right: 0; */
+   bottom: 0;
 }
 
 .about__picture img {
-   width: 100%;
-   height: auto;
+   /* width: 100%; */
+   height: 100%;
 }
 
 /* --/ about */
