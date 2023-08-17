@@ -114,7 +114,12 @@ h1 {
    margin: 80px auto;
    text-align: left;
    position: relative;
-   /* border: 3px solid orange; */
+
+   background-image: url('./assets/images/png/project_A1.png');
+   background-position: right;
+   background-size: 54%;
+   background-repeat: no-repeat;
+   background-position-y: 50px;
 }
 
 .header__navbar_company-logo {
@@ -170,11 +175,11 @@ h1 {
 
 /* ---------header add stripes */
 
-/* .header__content-section {
+.header__content-section {
    position: relative;
    overflow: hidden;
 }
-
+/* 
 .header__content::after,
 .header__content-section::before,
 .header__content::before {
@@ -184,7 +189,7 @@ h1 {
    position: absolute;
    left: 46%;
    top: 0%;
-   height: 100%;
+   height: 90%;
    width: 50%;
    border: 1.4rem solid #5748d7;
    transform: skew(167deg, 0);
@@ -193,9 +198,9 @@ h1 {
 }
 
 .header__content-section::before {
-   height: 68%;
+   height: 80%;
    border-color: #d84570;
-   top: 16%;
+   top: 8%;
    left: 0;
    right: 48%;
    border-left: none;
@@ -239,7 +244,7 @@ h1 {
       border-bottom: none;
    }
    50% {
-      height: 68%;
+      height: 80%;
       border-right: 1.4rem solid #d84570;
       border-bottom: none;
    }
@@ -301,7 +306,8 @@ h1 {
    align-items: center;
    list-style-type: none;
    cursor: default;
-   width: 270px;
+   /* width: 270px; */
+   width: 400px;
    height: auto;
    flex-grow: 0;
    text-align: justify;
