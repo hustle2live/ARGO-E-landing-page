@@ -865,11 +865,55 @@ ol.our-clients__gallery {
 /* --/ features and fails section */
 
 .cta {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
    text-align: center;
    margin-top: 2rem;
+   min-height: 100vh;
+}
+
+.cta h3 {
+   font-size: 1.6rem;
+   line-height: 2rem;
+   margin: 40px auto 0;
+   text-transform: uppercase;
+}
+
+.cta p {
+   margin: 20px auto;
+   font-size: 1.2rem;
+   font-weight: 600;
+   color: #333;
+}
+
+.cta p,
+.cta h3 {
+   max-width: 60%;
+}
+
+.cta h3 span {
+   font-size: 1.2rem;
+   font-weight: normal;
+   text-transform: none;
+}
+
+.cta-picture {
+   height: 200px;
+   width: 100%;
+   margin: 20px 0;
+   display: flex;
+   overflow: hidden;
+}
+
+.cta-picture img {
+   object-fit: cover;
+   width: 20%;
+   height: 100%;
 }
 
 .cta button {
+   margin: 40px auto;
    padding: 1rem 2rem;
    background-color: #007bff;
    color: #fff;
