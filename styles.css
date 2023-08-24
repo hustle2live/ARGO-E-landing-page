@@ -30,6 +30,8 @@ body {
 .header__content,
 .services__card-section,
 .services__card,
+.extra-services__card-section,
+.extra-services__card,
 .features__card {
    display: flex;
 }
@@ -65,7 +67,7 @@ h1 {
    justify-content: center;
    align-items: center;
    width: 100%;
-   min-height: 560px;
+   min-height: 680px;
    /* min-height: 80vh; */
    max-height: 100vh;
    background-color: #333;
@@ -393,11 +395,38 @@ h1 {
 
 /* ------------ body __ about -------- */
 
+.about::before {
+   background-image: url('./assets/pictures/ventilation/12.jpeg');
+   background-position: center;
+   background-size: cover;
+   display: block;
+   content: '';
+   opacity: 0.18;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   top: 0;
+}
+
 .about {
+   position: relative;
    padding: 20px 0 120px;
-   /* background-color: #ffffff; */
    background-color: #f2f2f2;
+   /* background: transparent; */
    border-top: 1px solid rgb(233, 224, 224);
+   /* background-image: url('./assets/pictures/stock/ua/AdobeStock_1.jpeg'); */
+   /* background: rgb(179, 94, 244);
+   background: -moz-linear-gradient(52deg, rgba(179, 94, 244, 1) 21%, rgba(255, 255, 255, 1) 21%);
+   background: -webkit-linear-gradient(52deg, rgba(179, 94, 244, 1) 21%, rgba(255, 255, 255, 1) 21%);
+   background: linear-gradient(52deg, rgba(179, 94, 244, 1) 21%, rgba(255, 255, 255, 1) 21%);
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b35ef4",endColorstr="#ffffff",GradientType=1); */
+}
+
+/* .about__introduction, */
+.about__concepts li,
+.about__story {
+   padding: 20px 10px;
 }
 
 .about__introduction p {
@@ -409,13 +438,14 @@ h1 {
    /* font-style: italic; */
 }
 
-.about__story {
-   /* background: #350475;
+.about__introduction {
+   /* background: #350475; */
    background-image: url('./assets/logo/logo-transparent.png');
    background-repeat: no-repeat;
    background-position: center;
-   background-size: contain; */
+   background-size: contain;
    color: #000;
+   overflow: hidden;
 }
 
 .about__story p:first-of-type {
@@ -495,9 +525,9 @@ h1 {
    display: block;
    /* margin-top: -10%; */
    /* margin-bottom: 90px; */
-   align-self: flex-end;
-   width: 74%;
-   height: auto;
+   align-self: center;
+   width: auto;
+   height: 160px;
 }
 
 .about__picture img {
@@ -505,9 +535,8 @@ h1 {
    height: auto;
 }
 
-.about__concepts li p {
-   /* margin: 0; */
-   /* padding-bottom: 0; */
+.about__concepts li {
+   /* border: 1px solid #000; */
 }
 
 /* --/ about */
@@ -607,6 +636,7 @@ h1 {
 .our-clients {
    padding: 80px 0;
    text-align: center;
+   position: relative;
    /* background-color: #f2f2f2; */
 }
 
@@ -869,8 +899,9 @@ ol.our-clients__gallery {
    flex-direction: column;
    align-items: center;
    text-align: center;
-   margin-top: 2rem;
-   min-height: 100vh;
+   min-height: 600px;
+   padding: 120px 0;
+   justify-content: center;
 }
 
 .cta h3 {
@@ -929,7 +960,6 @@ ol.our-clients__gallery {
 }
 
 footer {
-   margin-top: 40px;
    display: grid;
    grid-template-columns: 0.6fr 1fr 1fr 1fr;
    text-align: center;
@@ -940,7 +970,6 @@ footer {
    align-items: center;
    text-align: justify;
    font-size: 0.8rem;
-
    border-top: 1px solid #562e7511;
    background-color: #f2f2f2;
 }
@@ -960,3 +989,149 @@ footer .logo img {
    height: 100%;
    object-fit: cover;
 }
+
+/* ------------ body __ extra-services-content -------- */
+
+.extra-services {
+   /* background: #143472; */
+   /* background: #5748d7; */
+   background: #d84570;
+   padding-bottom: 60px;
+}
+
+.extra-services__content {
+   text-align: center;
+   margin: 0 auto;
+}
+
+.extra-services__section-title,
+.extra-services__section-subtitle {
+   color: #000;
+   color: #fff;
+}
+
+.extra-services__section-title {
+   font-size: 2rem;
+   margin: 60px auto 20px;
+   text-transform: uppercase;
+}
+
+.extra-services__section-subtitle {
+   font-size: 1.2rem;
+   margin: 32px auto 0;
+}
+
+.extra-services__card-section {
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 0;
+   width: 100%;
+   margin: 50px auto;
+}
+
+.extra-services__text-content {
+   flex-basis: 50%;
+   flex-grow: 1;
+}
+
+.extra-services__card:nth-child(1) {
+   flex-direction: row-reverse;
+   text-align: start;
+   background: yellow;
+   color: #000000;
+}
+
+.extra-services__card:nth-child(2) {
+   text-align: left;
+   background: darkblue;
+   color: #ffffff;
+}
+
+.extra-services__card:nth-child(2) .extra-services__image,
+.extra-services__card:nth-child(3) .extra-services__image {
+   flex-basis: 50%;
+}
+
+.extra-services__card:nth-child(3) {
+   text-align: start;
+   background: orangered;
+   color: #ffffff;
+}
+
+.extra-services__card {
+   align-items: center;
+   list-style-type: none;
+   cursor: default;
+   width: 100%;
+   height: 310px;
+   text-align: justify;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   color: #111111;
+   background-color: #ffffff;
+   font-size: 1rem;
+   line-height: 1.5rem;
+   overflow: hidden;
+   text-align: center;
+}
+
+.extra-services__image {
+   display: block;
+   /* width: 100%; */
+   /* width: 50%; */
+   flex-basis: 50%;
+   height: 100%;
+   overflow: hidden;
+   margin: 0;
+   padding: 0;
+}
+
+.extra-services__image img {
+   /* min-width: 100%; */
+   width: 100%;
+   height: 100%;
+   object-fit: fill;
+   object-position: center;
+}
+
+.extra-services__title {
+   font-family: 'Roboto', sans-serif;
+   font-weight: 300;
+   /* font-size: 24px; */
+   font-size: 1.8rem;
+   /* line-height: 27px; */
+   line-height: 2rem;
+   text-transform: uppercase;
+   /* margin: 32px auto 20px; */
+   margin: 32px auto 20px;
+   /* letter-spacing: -2px; */
+}
+
+.extra-services__title,
+.extra-services__description {
+   padding: 0 40px;
+}
+
+.extra-services__description {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 1.4rem;
+   /* text-align: center; */
+   line-height: 1.8rem;
+   /* font-style: italic; */
+   margin-top: 0;
+}
+
+.extra-services__footer {
+   margin: 39px auto 60px;
+}
+
+.extra-services__footer,
+.extra-services__footer a {
+   color: #ffffff;
+   font-size: 1rem;
+   line-height: 1.6;
+   font-weight: 400;
+}
+
+/* --/ extra-services-content */
