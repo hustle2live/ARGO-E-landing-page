@@ -141,8 +141,20 @@ h1 {
 }
 
 .header__title {
+   font-size: 2.6rem;
+   line-height: 2;
    max-width: 70%;
+   font-weight: 600;
    margin-top: 60px;
+   margin-bottom: 0;
+   word-wrap: normal;
+   white-space: normal;
+}
+
+.header__subtitle {
+   font-size: 1.6rem;
+   line-height: 1.6;
+   font-weight: 400;
 }
 
 .header__description {
@@ -283,7 +295,7 @@ h1 {
 }
 
 .services__section-title {
-   font-family: Montserrat, sans-serif !important;
+   font-family: Montserrat, sans-serif;
    font-size: 3.75rem;
    text-transform: none;
    font-weight: 700;
@@ -294,7 +306,7 @@ h1 {
 }
 
 .services__section-subtitle {
-   font-size: 1.27778rem;
+   font-size: 1.278rem;
    margin: 16px auto 0;
    font-weight: 400;
 }
@@ -417,53 +429,93 @@ h1 {
    position: relative;
    padding: 20px 0 120px;
    background-color: #f2f2f2;
-   /* background: transparent; */
    border-top: 1px solid rgb(233, 224, 224);
-   /* background-image: url('./assets/pictures/stock/ua/AdobeStock_1.jpeg'); */
-   /* background: rgb(179, 94, 244);
-   background: -moz-linear-gradient(52deg, rgba(179, 94, 244, 1) 21%, rgba(255, 255, 255, 1) 21%);
-   background: -webkit-linear-gradient(52deg, rgba(179, 94, 244, 1) 21%, rgba(255, 255, 255, 1) 21%);
-   background: linear-gradient(52deg, rgba(179, 94, 244, 1) 21%, rgba(255, 255, 255, 1) 21%);
-   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b35ef4",endColorstr="#ffffff",GradientType=1); */
 }
 
-/* .about__introduction, */
+.about__concepts {
+   flex-wrap: wrap;
+}
+
+.about__concepts .about__concepts-title {
+   font-size: 2.46rem;
+   line-height: 1.1;
+   font-family: Montserrat, sans-serif !important;
+   text-align: center;
+   width: 100%;
+}
+
+.about__concepts li {
+   width: 30%;
+}
+
+.about__story h4 {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 1.4rem;
+}
+
+.about p,
+.about li p {
+   font-size: 1rem;
+}
+
+.about__concepts p,
+.about__concepts li p {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 1rem;
+}
+
+.about .about__section-title {
+   font-family: Montserrat, sans-serif !important;
+   font-size: 3.75rem;
+   text-transform: none;
+   font-weight: 700;
+   text-align: center;
+}
+
 .about__concepts li,
 .about__story {
    padding: 20px 10px;
 }
 
 .about__introduction p {
-   /* font-family: 'Open Sans', sans-serif; */
-   /* font-size: 1.2rem; */
    width: 80%;
    font-weight: 300;
    margin-bottom: -10px;
-   /* font-style: italic; */
 }
 
 .about__introduction {
-   /* background: #350475; */
    background-image: url('./assets/logo/logo-transparent.png');
    background-repeat: no-repeat;
    background-position: center;
    background-size: contain;
    color: #000;
    overflow: hidden;
+   margin: 30px 0;
 }
 
-.about__story p:first-of-type {
-   font-weight: 600;
-   margin: 5px 0;
+.about__story > p:first-of-type {
+   font-size: 1.4rem;
+   margin: 0;
+   white-space: nowrap;
+   letter-spacing: -1.4px;
+}
+
+.about__story h4 {
+   line-height: 1.2;
+   width: 80%;
+   text-align: justify;
+   font-style: bold;
+   text-decoration: underline;
 }
 
 .about__story ul {
+   font-style: italic;
+   line-height: 1;
    padding: 0;
 }
 
 .about__story ul li {
    list-style-type: '-';
-   /* font-style: italic; */
    padding-left: 10px;
    margin-left: 10px;
 }
@@ -480,22 +532,22 @@ h1 {
 .about section {
    display: flex;
 }
-.about article {
-   justify-content: space-between;
-
-   /* gap: 40px; */
-}
 
 .about article {
    flex-wrap: wrap;
-}
-
-.about section {
-   width: 45%;
+   flex-direction: row-reverse;
    justify-content: center;
 }
 
+.about section.about__story {
+   width: 48%;
+}
+.about section.about__introduction {
+   width: 34%;
+}
+
 .about section {
+   justify-content: space-between;
    flex-direction: column;
 }
 
@@ -514,7 +566,6 @@ h1 {
 .about .icon {
    margin: 0 auto;
    width: 70px;
-   /* background-color: #c1c1c1; */
    text-align: center;
    display: block;
 }
@@ -522,13 +573,10 @@ h1 {
 .about .icon img {
    width: 100%;
    height: auto;
-   /* height: 48px; */
 }
 
 .about__picture {
    display: block;
-   /* margin-top: -10%; */
-   /* margin-bottom: 90px; */
    align-self: center;
    width: auto;
    height: 160px;
@@ -537,10 +585,6 @@ h1 {
 .about__picture img {
    width: 100%;
    height: auto;
-}
-
-.about__concepts li {
-   /* border: 1px solid #000; */
 }
 
 /* --/ about */
@@ -1010,7 +1054,6 @@ footer .logo img {
 
 .extra-services__section-title,
 .extra-services__section-subtitle {
-   color: #000;
    color: #fff;
 }
 
@@ -1021,7 +1064,7 @@ footer .logo img {
 }
 
 .extra-services__section-subtitle {
-   font-size: 1.2rem;
+   font-size: 1.278rem;
    margin: 32px auto 0;
 }
 
