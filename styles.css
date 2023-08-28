@@ -448,11 +448,6 @@ h1 {
    width: 30%;
 }
 
-.about__story h4 {
-   font-family: 'Open Sans', sans-serif;
-   font-size: 1.4rem;
-}
-
 .about p,
 .about li p {
    font-size: 1rem;
@@ -501,6 +496,7 @@ h1 {
 }
 
 .about__story h4 {
+   font-family: 'Open Sans', sans-serif;
    line-height: 1.2;
    width: 80%;
    text-align: justify;
@@ -508,11 +504,37 @@ h1 {
    text-decoration: underline;
 }
 
-.about__story ul {
-   font-style: italic;
-   line-height: 1;
+.about__story > p,
+.about__story > p:first-of-type,
+.about__story h4,
+.about__story ul,
+.about__story li p {
+   font-family: 'Open Sans', sans-serif !important;
+   font-family: Arial, sans-serif !important;
+   font-size: 1rem !important;
+   text-align: left !important;
+   font-style: normel !important;
+   text-decoration: none !important;
+
+   margin: 0;
    padding: 0;
+   line-height: 1.6 !important;
+
+   font-weight: 400 !important;
+   letter-spacing: normal !important;
+   color: #000000 !important;
 }
+
+.about__story ul > p:first-of-type,
+.about__story > p:first-of-type {
+   font-weight: 600 !important;
+}
+
+.about__story > p:first-of-type,
+.about__story ul {
+   margin: 16px 0;
+}
+
 
 .about__story ul li {
    list-style-type: '-';
@@ -540,7 +562,7 @@ h1 {
 }
 
 .about section.about__story {
-   width: 48%;
+   width: 44%;
 }
 .about section.about__introduction {
    width: 34%;
