@@ -8,6 +8,13 @@
    --theme-sheet-width-md: 720px;
    --theme-sheet-width-sm: 540px;
    --theme-sheet-width-xs: 340px;
+   --primary-color: #c64bde;
+   --secondary-color: rgba(179, 94, 244, 1);
+   --dark-primary-color: #764bde;
+   --dark-secondary-color: #5955fa;
+   --bright-bg-color: #f2f2f2;
+   --middle-bg-color: #e5e5e5;
+   --dark-bg-color: #1a1a1a;
 }
 
 body {
@@ -165,12 +172,20 @@ h1 {
 
 .header__button {
    padding: 20px 40px;
+   cursor: pointer;
+
+   background-color: #c64bde;
+   background-color: var(--dark-primary-color);
    background-color: rgba(179, 94, 244, 1);
+
    color: #fff;
+   border: none;
 }
 
 .header__button:hover {
-   background-color: rgb(77, 77, 77);
+   background-color: #c64bde;
+   background-color: #5736a3;
+
    transition-duration: 2s;
 }
 
@@ -281,7 +296,11 @@ h1 {
    position: absolute;
    width: 100%;
    height: 320px;
+
+   background-color: var(--dark-primary-color);
+   background-color: #c64bde;
    background-color: rgba(179, 94, 244, 1);
+
    z-index: -1;
 }
 
@@ -306,9 +325,6 @@ h1 {
    text-transform: none;
    font-weight: 700;
    margin: 60px auto 0;
-   /* color: #fff; */
-   /* margin: 60px auto 20px; */
-   /* text-transform: uppercase; */
 }
 
 .services__section-subtitle {
@@ -397,9 +413,16 @@ h1 {
    text-transform: uppercase;
    letter-spacing: 2px;
    margin: 20px auto 30px;
-   padding: 6px 0;
+   padding: 6px 8px;
    background: transparent;
    cursor: pointer;
+   border-color: rgba(179, 94, 244, 1);
+   border-left: 0px solid rgba(179, 94, 244, 1);
+}
+
+.services-btn:hover {
+   transition-duration: 0.5s;
+   border-left: 8px solid rgba(179, 94, 244, 1);
 }
 
 .services__footer {
@@ -417,24 +440,10 @@ h1 {
 
 /* ------------ body __ about -------- */
 
-.about::before {
-   background-image: url('./assets/pictures/ventilation/12.jpeg');
-   background-position: center;
-   background-size: cover;
-   display: block;
-   content: '';
-   opacity: 0.18;
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   z-index: -1;
-   top: 0;
-}
-
 .about {
-   position: relative;
    padding: 20px 0 120px;
-   background-color: #f2f2f2;
+   /* background-color: #f2f2f2; */
+   background-color: var(--middle-bg-color);
    border-top: 1px solid rgb(233, 224, 224);
 }
 
@@ -668,6 +677,14 @@ h1 {
    opacity: 0.4;
 }
 
+.service-description .image {
+   rotate: -5deg;
+   margin-top: 20px;
+   margin-bottom: -10px;
+
+   /* border-color: rgb(216, 69, 112); */
+}
+
 .service-description .container {
    display: flex;
    flex-wrap: wrap;
@@ -687,6 +704,11 @@ h1 {
    margin: auto;
    text-align: left;
    margin-top: 0;
+
+   background-color: rgb(77, 77, 77);
+   box-shadow: 40px 0 rgb(198, 75, 222);
+   margin-right: -55px;
+   box-sizing: border-box;
 }
 
 .service-description .container ul li {
@@ -902,12 +924,12 @@ ol.our-clients__gallery {
 
 .features {
    text-align: center;
-   padding: 40px 0 60px;
+   padding: 80px 0;
    background: #e5e5e5;
 }
 
 .features h3 {
-   margin: 20px auto;
+   margin: 20px auto 40px;
    font-size: 3rem;
    line-height: 1.1;
    font-weight: 700;
@@ -945,16 +967,12 @@ ol.our-clients__gallery {
    flex-direction: column;
    justify-content: space-evenly;
    align-items: center;
-
    min-height: 380px;
-
    font-size: 1rem;
    line-height: 1.6;
    text-align: center;
-
    color: #111111;
    background-color: #ffffff;
-
    padding: 30px;
    margin-bottom: 0;
 }
@@ -995,16 +1013,19 @@ ol.our-clients__gallery {
 
 .features__card.good p .material-symbols-outlined {
    /* color: rgb(153, 226, 44); */
-   color: #764bde;
+   /* color: #764bde; */
+   color: var(--dark-secondary-color);
 }
 
 .features__card.bad .features__image {
-   border-color: orangered;
+   /* border-color: orangered; */
+   border-color: rgb(216, 69, 112);
 }
 
 .features__card.good .features__image {
    /* border-color: greenyellow; */
-   border-color: #764bde;
+   /* border-color: #764bde; */
+   border-color: var(--dark-primary-color);
 }
 
 .features__image {
@@ -1043,7 +1064,7 @@ ol.our-clients__gallery {
 }
 
 .cta h3 {
-   font-size: 1.6rem;
+   font-size: 1.8rem;
    line-height: 2rem;
    margin: 40px auto 0;
    text-transform: uppercase;
@@ -1051,7 +1072,7 @@ ol.our-clients__gallery {
 
 .cta p {
    margin: 20px auto;
-   font-size: 1.2rem;
+   font-size: 1.5rem;
    font-weight: 600;
    color: #333;
 }
@@ -1084,7 +1105,9 @@ ol.our-clients__gallery {
 .cta button {
    margin: 40px auto;
    padding: 1rem 2rem;
-   background-color: #007bff;
+   /* background-color: #007bff; */
+   background-color: var(--dark-primary-color);
+
    color: #fff;
    font-size: 1.2rem;
    border: none;
@@ -1094,7 +1117,8 @@ ol.our-clients__gallery {
 }
 
 .cta button:hover {
-   background-color: #0056b3;
+   /* background-color: #0056b3; */
+   background-color: #5736a3;
 }
 
 footer {
