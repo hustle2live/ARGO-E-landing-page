@@ -74,7 +74,7 @@ h1 {
    justify-content: center;
    align-items: center;
    width: 100%;
-   min-height: 680px;
+   min-height: 880px;
    max-height: 100vh;
    background-color: #333;
    overflow: hidden;
@@ -626,7 +626,6 @@ h1 {
 }
 
 .about .icon img {
-   /* filter: drop-shadow(16px 16px 20px rgb(28, 28, 28)); */
    object-fit: cover;
    object-position: center;
    width: 100%;
@@ -661,7 +660,7 @@ h1 {
    font-size: 1.2rem;
    min-height: 800px;
    background-color: rgb(93, 93, 93);
-   padding: 60px 0;
+   padding: 60px 0 100px;
 }
 
 .service-description__backgroung {
@@ -678,10 +677,7 @@ h1 {
 
 .service-description .image {
    rotate: -5deg;
-   margin-top: 20px;
-   margin-bottom: -10px;
-
-   /* border-color: rgb(216, 69, 112); */
+   margin: 14px auto -10px -42px;
 }
 
 .service-description .container {
@@ -706,7 +702,7 @@ h1 {
 
    background-color: rgb(77, 77, 77);
    box-shadow: 40px 0 rgb(198, 75, 222);
-   margin-right: -55px;
+   margin-right: -50px;
    box-sizing: border-box;
 }
 
@@ -756,7 +752,7 @@ h1 {
    padding: 80px 0;
    text-align: center;
    position: relative;
-   /* background-color: #f2f2f2; */
+   min-height: 800px;
 }
 
 .our-clients .container {
@@ -1154,10 +1150,10 @@ footer .logo img {
 /* ------------ body __ extra-services-content -------- */
 
 .extra-services {
-   /* background: #143472; */
-   /* background: #5748d7; */
-   background: #d84570;
    padding-bottom: 60px;
+   background: #ffffff;
+   /* background-color: #f2f2f2; */
+
 }
 
 .extra-services__content {
@@ -1167,11 +1163,12 @@ footer .logo img {
 
 .extra-services__section-title,
 .extra-services__section-subtitle {
-   color: #fff;
+   color: #000;
 }
 
 .extra-services__section-title {
    font-size: 2rem;
+   font-weight: 600;
    margin: 60px auto 20px;
    text-transform: uppercase;
 }
