@@ -82,7 +82,7 @@ h1 {
 }
 
 .header__background-image {
-   opacity: 0.38;
+   opacity: 0.78;
    position: absolute;
    overflow: hidden;
    width: 100%;
@@ -101,15 +101,18 @@ h1 {
    min-height: 460px;
    flex-direction: column;
    align-items: baseline;
-   margin: 80px auto;
+   margin: 80px 0 auto;
    text-align: left;
    position: relative;
 
+   background-color: #00000038;
+   padding: 20px;
+
    background-image: url('./assets/images/png/project_A1.png');
    background-position: right;
-   background-size: 54%;
+   background-size: 62%;
    background-repeat: no-repeat;
-   background-position-y: 50px;
+   background-position-y: 64%;
 }
 
 .header__navbar_company-logo {
@@ -149,19 +152,20 @@ h1 {
 
 .header__title {
    font-size: 2.6rem;
-   line-height: 2;
+   line-height: 2.8rem;
    max-width: 70%;
    font-weight: 600;
    margin-top: 60px;
-   margin-bottom: 0;
+   margin-bottom: 30px;
    word-wrap: normal;
    white-space: normal;
 }
 
 .header__subtitle {
    font-size: 1.6rem;
-   line-height: 1.6;
+   line-height: 1.2;
    font-weight: 400;
+   width: 40%;
 }
 
 .header__description {
@@ -170,24 +174,11 @@ h1 {
    margin-bottom: 44px;
 }
 
-.header__button {
-   padding: 20px 40px;
-   cursor: pointer;
-
-   background-color: #c64bde;
-   background-color: var(--dark-primary-color);
-   background-color: rgba(179, 94, 244, 1);
-
-   color: #fff;
-   border: none;
+.header .cta-button {
+   margin-left: 0;
 }
 
-.header__button:hover {
-   background-color: #c64bde;
-   background-color: #5736a3;
 
-   transition-duration: 2s;
-}
 
 /* --/ header-content */
 
@@ -1215,12 +1206,10 @@ ol.our-clients__gallery {
    height: 100%;
 }
 
-.cta button {
+.cta-button {
    margin: 40px auto;
    padding: 1rem 2rem;
-   /* background-color: #007bff; */
    background-color: var(--dark-primary-color);
-
    color: #fff;
    font-size: 1.2rem;
    border: none;
@@ -1229,8 +1218,7 @@ ol.our-clients__gallery {
    transition: background-color 0.3s ease;
 }
 
-.cta button:hover {
-   /* background-color: #0056b3; */
+.cta-button:hover {
    background-color: #5736a3;
 }
 
