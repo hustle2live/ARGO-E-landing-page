@@ -960,7 +960,7 @@ ol.our-clients__gallery {
    bottom: 120px;
    z-index: -1;
    overflow: hidden;
-   background-color: #c0c0c0ea;
+   /* background-color: #c0c0c0ea; */
 }
 
 .features__background-image img {
@@ -1164,6 +1164,7 @@ ol.our-clients__gallery {
    min-height: 600px;
    padding: 120px 0;
    justify-content: center;
+   margin-bottom: 100px;
 }
 
 .cta .cta__title {
@@ -1181,11 +1182,10 @@ ol.our-clients__gallery {
    line-height: 2.6rem;
    font-weight: 400;
    letter-spacing: normal;
-   /* text-decoration: underline 1.6px solid #5e5e5e; */
 }
 
 .cta__description {
-   margin: 20px auto;
+   margin: 0 auto;
    font-size: 1.5rem;
    font-weight: 600;
    color: #333;
@@ -1195,7 +1195,7 @@ ol.our-clients__gallery {
 .cta-picture {
    height: 200px;
    width: 100%;
-   margin: 20px 0;
+   margin: 20px 0 40px;
    display: flex;
    overflow: hidden;
 }
@@ -1259,7 +1259,20 @@ footer .logo img {
 .extra-services {
    padding-bottom: 60px;
    background: #ffffff;
-   /* background-color: #f2f2f2; */
+}
+
+.extra-services__introduction {
+   font-size: 2rem;
+   line-height: 1.2;
+   font-weight: 400;
+   width: 80%;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.extra-services__introduction:last-of-type {
+   margin-top: 80px;
+   width: 100%;
 }
 
 .extra-services__content {
