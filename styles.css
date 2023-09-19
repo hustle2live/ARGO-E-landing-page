@@ -1207,6 +1207,7 @@ ol.our-clients__gallery {
 }
 
 .cta-button {
+   display: block;
    margin: 40px auto;
    padding: 1rem 2rem;
    background-color: var(--dark-primary-color);
