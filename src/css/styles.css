@@ -107,7 +107,7 @@ h1 {
    background-color: #00000038;
    padding: 20px;
 
-   background-image: url('./assets/images/png/project_A1.png');
+   background-image: url('../images/img/png/project_A1.png');
    background-position: right;
    background-size: 62%;
    background-repeat: no-repeat;
@@ -496,7 +496,7 @@ h1 {
 }
 
 .about__introduction {
-   background-image: url('./assets/logo/logo-transparent.png');
+   background-image: url('../images/logo/logo-transparent.png');
    background-repeat: no-repeat;
    background-position: center;
    background-size: contain;

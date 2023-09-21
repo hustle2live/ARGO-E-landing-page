@@ -26,7 +26,7 @@ function css() {
 // Optimize images
 
 function img() {
-   return src('./src/images/*').pipe(imagemin()).pipe(dest('./build/images'));
+   return src('./src/images/**').pipe(imagemin()).pipe(dest('./build/images'));
 }
 
 // html
@@ -39,7 +39,7 @@ function html() {
 
 function watchFiles() {
    watch('./src/css/*', css);
-   watch('./src/*html', html);
+   watch('./src/*.html', html);
    watch('./src/images/*', img);
 }
 
@@ -55,4 +55,4 @@ function browserSync() {
 }
 
 exports.watch = parallel(watchFiles, browserSync);
-exports.defauls = series(clear, parallel(html, css, img));
+exports.default = series(clear, parallel(html, css, img));
