@@ -5,16 +5,12 @@ const cssnano = require('gulp-cssnano');
 const changed = require('gulp-changed');
 const browsersync = require('browser-sync').create();
 const imagemin = require('gulp-imagemin');
-const clean = require('gulp-clean');
 const htmlmin = require('gulp-htmlmin');
 const minify = require('gulp-minify');
-// const del = require('del');
+const clean = require('gulp-clean');
 
 // clean build
 
-// function clear() {
-//    return del('./bulid');
-// }
 function clear() {
    return src('./bulid/*', {
       read: false
