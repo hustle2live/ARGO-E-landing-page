@@ -1,3 +1,4 @@
+
 const gallerySlidesNodeElement = document.querySelector('.our-clients__gallery');
 const gallerySlidesNodeList = document.querySelectorAll('.card');
 
