@@ -7,9 +7,14 @@ const browsersync = require('browser-sync').create();
 const imagemin = require('gulp-imagemin');
 const clean = require('gulp-clean');
 const htmlmin = require('gulp-htmlmin');
+const minify = require('gulp-minify');
+// const del = require('del');
 
 // clean build
 
+// function clear() {
+//    return del('./bulid');
+// }
 function clear() {
    return src('./bulid/*', {
       read: false
@@ -39,11 +44,28 @@ function html() {
       .pipe(browsersync.stream());
 }
 
+// javascript
+
+function compressJS() {
+   return src('./src/*.js')
+      .pipe(
+         minify({
+            ext: {
+               src: '-debug.js',
+               min: '.js'
+            },
+            enoSourcext: true
+         })
+      )
+      .pipe(dest('./build'));
+}
+
 // watch files
 
 function watchFiles() {
-   watch('./src/css/*', css);
    watch('./src/*.html', html);
+   watch('./src/css/*', css);
+   watch('./src/*.js', compressJS);
    watch('./src/images/*', img);
 }
 
@@ -59,5 +81,6 @@ function browserSync() {
 }
 
 exports.watch = parallel(watchFiles, browserSync);
-exports.default = series(clear, parallel(html, css, img));
-
+exports.default = series(clear, parallel(html, css, img, compressJS));
+exports.compressJS = compressJS;
+exports.clear = clear;
