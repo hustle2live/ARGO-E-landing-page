@@ -7,7 +7,6 @@ const browsersync = require('browser-sync').create();
 const imagemin = require('gulp-imagemin');
 const clean = require('gulp-clean');
 const htmlmin = require('gulp-htmlmin');
-const ghPages = require('gulp-gh-pages');
 
 // clean build
 
