@@ -6,6 +6,7 @@ const changed = require('gulp-changed');
 const browsersync = require('browser-sync').create();
 const imagemin = require('gulp-imagemin');
 const clean = require('gulp-clean');
+const htmlmin = require('gulp-htmlmin');
 
 // clean build
 
@@ -32,7 +33,10 @@ function img() {
 // html
 
 function html() {
-   return src('./src/*.html').pipe(dest('./build')).pipe(browsersync.stream());
+   return src('./src/*.html')
+      .pipe(htmlmin({ collapseWhitespace: true, removeComments: true }))
+      .pipe(dest('./build'))
+      .pipe(browsersync.stream());
 }
 
 // watch files
