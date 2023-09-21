@@ -59,11 +59,6 @@ function browserSync() {
    });
 }
 
-function deploy() {
-   return src('./build/*').pipe(ghPages());
-}
-
 exports.watch = parallel(watchFiles, browserSync);
 exports.default = series(clear, parallel(html, css, img));
-exports.deploy = deploy;
 
