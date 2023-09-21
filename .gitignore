@@ -14,6 +14,9 @@
 # temporary
 /temporary
 
+# development foulder
+/src
+
 
 # misc
 .DS_Store
