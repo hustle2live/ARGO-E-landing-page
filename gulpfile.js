@@ -8,11 +8,10 @@ const imagemin = require('gulp-imagemin');
 const htmlmin = require('gulp-htmlmin');
 const minify = require('gulp-minify');
 const clean = require('gulp-clean');
-
-// clean build
+const autoprefixer = require('gulp-autoprefixer');
 
 function clear() {
-   return src('./bulid/*', {
+   return src('build/*', {
       read: false
    }).pipe(clean());
 }
@@ -21,14 +20,23 @@ function clear() {
 
 function css() {
    const source = './src/css/styles.css';
-
-   return src(source).pipe(changed(source)).pipe(cssnano()).pipe(dest('./build/css/')).pipe(browsersync.stream());
+   return src(source)
+      .pipe(changed(source))
+      .pipe(
+         autoprefixer({
+            browsers: ['last 1 version']
+         })
+      )
+      .pipe(cssnano())
+      .pipe(dest('./build/css/'))
+      .pipe(browsersync.stream());
 }
 
 // Optimize images
 
 function img() {
-   return src('./src/images/**').pipe(imagemin()).pipe(dest('./build/images'));
+   // return src('./src/images/**').pipe(imagemin()).pipe(dest('./build/images'));
+   return src('./src/images/**').pipe(dest('./build/images'));
 }
 
 // html
@@ -46,11 +54,10 @@ function compressJS() {
    return src('./src/*.js')
       .pipe(
          minify({
+            noSource: true,
             ext: {
-               src: '-debug.js',
                min: '.js'
-            },
-            enoSourcext: true
+            }
          })
       )
       .pipe(dest('./build'));
@@ -79,4 +86,3 @@ function browserSync() {
 exports.watch = parallel(watchFiles, browserSync);
 exports.default = series(clear, parallel(html, css, img, compressJS));
 exports.compressJS = compressJS;
-exports.clear = clear;
