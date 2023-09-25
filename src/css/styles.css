@@ -36,7 +36,7 @@ body {
 
 .header__navbar,
 .header__content,
-.services__card-section,
+.services__card-section ul,
 .services__card,
 .extra-services__card-section,
 .extra-services__card,
@@ -321,7 +321,7 @@ h1 {
    font-weight: 400;
 }
 
-.services__card-section {
+.services__card-section ul {
    margin: 57px 0 300px;
    justify-content: center;
    flex-wrap: wrap;
@@ -567,7 +567,9 @@ h1 {
 }
 
 .about article,
-.about section {
+.about__introduction,
+.about__story,
+.about__concepts {
    display: flex;
 }
 
@@ -577,14 +579,17 @@ h1 {
    justify-content: center;
 }
 
-.about section.about__story {
+.about .about__story {
    width: 44%;
 }
-.about section.about__introduction {
+
+.about__introduction {
    width: 34%;
 }
 
-.about section {
+.about__introduction,
+.about__story,
+.about__concepts {
    justify-content: space-between;
    flex-direction: column;
 }
@@ -1237,7 +1242,7 @@ footer {
    background-color: #f2f2f2;
 }
 
-footer section {
+.footer-section {
    margin: 0 3rem;
 }
 
