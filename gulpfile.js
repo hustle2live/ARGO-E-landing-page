@@ -10,6 +10,8 @@ const minify = require('gulp-minify');
 const clean = require('gulp-clean');
 const autoprefixer = require('gulp-autoprefixer');
 
+// Clear build folder
+
 function clear() {
    return src('build/*', {
       read: false
@@ -17,7 +19,6 @@ function clear() {
 }
 
 // CSS
-// .pipe(autoprefixer({ cascade: false, grid: 'autoplace', browsers: ['last 1 firefox version'] }))
 
 function css() {
    const source = './src/css/styles.css';
@@ -40,7 +41,6 @@ function css() {
 
 function img() {
    return src('./src/images/**').pipe(imagemin()).pipe(dest('./build/images'));
-   // return src('./src/images/**').pipe(dest('./build/images'));
 }
 
 // html
@@ -52,9 +52,9 @@ function html() {
       .pipe(browsersync.stream());
 }
 
-// javascript
+// compress javascript
 
-function compressJS() {
+function javascript() {
    return src('./src/*.js')
       .pipe(
          minify({
@@ -72,7 +72,7 @@ function compressJS() {
 function watchFiles() {
    watch('./src/*.html', html);
    watch('./src/css/*', css);
-   watch('./src/*.js', compressJS);
+   watch('./src/*.js', javascript);
    watch('./src/images/*', img);
 }
 
@@ -88,6 +88,6 @@ function browserSync() {
 }
 
 exports.watch = parallel(watchFiles, browserSync);
-exports.default = series(clear, parallel(html, css, img, compressJS));
-exports.compressJS = compressJS;
+exports.default = series(clear, parallel(html, css, img, javascript));
+exports.javascript = javascript;
 exports.css = css;
