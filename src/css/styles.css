@@ -48,8 +48,6 @@ body {
 
 header {
    display: block;
-   background-color: #ffffff;
-   color: #000000;
    color: #ffffff;
    padding: 1rem;
    text-align: center;
@@ -512,25 +510,14 @@ h1 {
    letter-spacing: -1.4px;
 }
 
-.about__story h4 {
-   font-family: 'Open Sans', sans-serif;
-   line-height: 1.2;
-   width: 80%;
-   text-align: justify;
-   font-style: bold;
-   text-decoration: underline;
-}
-
 .about__story > p,
-.about__story > p:first-of-type,
-.about__story h4,
 .about__story ul,
+.about__story h4,
 .about__story li p {
    font-family: 'Open Sans', sans-serif !important;
    font-family: Arial, sans-serif !important;
    font-size: 1rem !important;
    text-align: left !important;
-   font-style: normel !important;
    text-decoration: none !important;
 
    margin: 0;
@@ -540,6 +527,11 @@ h1 {
    font-weight: 400 !important;
    letter-spacing: normal !important;
    color: #000000 !important;
+}
+
+.about__story h4 {
+   width: 80%;
+   text-indent: 20px;
 }
 
 .about__story p {
@@ -674,11 +666,6 @@ h1 {
    opacity: 0.4;
 }
 
-.service-description .image {
-   rotate: -5deg;
-   margin: 14px auto -10px -42px;
-}
-
 .service-description .container {
    display: flex;
    flex-wrap: wrap;
@@ -738,14 +725,16 @@ h1 {
    font-size: 1.4rem;
 }
 
-.service-description .container .image {
+.service-description__image {
    border: 20px solid #ffffff;
    box-sizing: border-box;
    width: 35%;
    overflow: hidden;
+   transform: rotate(-5deg);
+   margin: 14px auto -10px -42px;
 }
 
-.service-description .container .image img {
+.service-description__image img {
    height: 100%;
    width: auto;
 }
@@ -785,7 +774,7 @@ h1 {
    font-weight: 400 !important;
    width: 40% !important;
    margin: 60px auto !important;
-   white-space: wrap !important;
+   /* white-space: wrap !important; */
 }
 
 .our-clients > p {
