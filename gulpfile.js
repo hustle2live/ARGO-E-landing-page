@@ -17,12 +17,13 @@ function clear() {
 }
 
 // CSS
+// .pipe(autoprefixer({ cascade: false, grid: 'autoplace', browsers: ['last 1 firefox version'] }))
 
 function css() {
    const source = './src/css/styles.css';
    return src(source)
       .pipe(changed(source))
-      .pipe(autoprefixer({ cascade: false, grid: 'autoplace', browsers: ['last 1 firefox version'] }))
+      .pipe(autoprefixer())
       .pipe(cssnano())
       .pipe(dest('./build/css/'))
       .pipe(browsersync.stream());
