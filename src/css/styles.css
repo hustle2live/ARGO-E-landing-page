@@ -38,7 +38,7 @@ body {
 .header__content,
 .services__card-section ul,
 .services__card,
-.extra-services__card-section,
+.extra-services__card-section ul,
 .extra-services__card,
 .features__card {
    display: flex;
@@ -446,18 +446,18 @@ h1 {
    width: 100%;
 }
 
-.about__concepts li {
+.about__concepts-item {
    width: 30%;
 }
 
-.about__concepts li > div {
+.about__concepts-item > div {
    display: flex;
 }
 
-/* .about__concepts li > div > p {
+/* .about__concepts-item > div > p {
 } */
 
-.about__concepts li > div > p:first-child {
+.about__concepts-item > div > p:first-child {
    min-width: 25%;
    font-size: 2.3rem;
    margin: 5px;
@@ -471,7 +471,7 @@ h1 {
 }
 
 .about__concepts p,
-.about__concepts li p {
+.about__concepts-item p {
    font-family: 'Open Sans', sans-serif;
    font-size: 1rem;
 }
@@ -484,7 +484,7 @@ h1 {
    text-align: center;
 }
 
-.about__concepts li,
+.about__concepts-item,
 .about__story {
    padding: 20px 10px;
 }
@@ -542,12 +542,11 @@ h1 {
    color: #000000 !important;
 }
 
-.about__story ul > p:first-of-type,
-.about__story > p:first-of-type {
+.about__story p {
    font-weight: 600 !important;
 }
 
-.about__story > p:first-of-type,
+.about__story > p,
 .about__story ul {
    margin: 16px 0;
 }
@@ -602,7 +601,7 @@ h1 {
    margin-top: 80px;
 }
 
-.about .about__concepts li {
+.about .about__concepts-item {
    list-style-type: none;
    padding: 30px;
    margin: 0;
@@ -688,23 +687,17 @@ h1 {
 }
 
 .service-description__heading {
-   /* font-size: 2rem; */
-   /* text-transform: uppercase; */
-
    width: 100%;
    margin-bottom: 80px;
    white-space: nowrap;
-
    font-family: Montserrat, sans-serif !important;
    font-size: 3.75rem !important;
    text-transform: none;
    font-weight: 700;
    text-align: center;
-
-   /* letter-spacing: 0px; */
 }
 
-.service-description .container ul {
+.service-description__service-types {
    width: 55%;
    margin: auto;
    text-align: left;
@@ -714,14 +707,18 @@ h1 {
    box-sizing: border-box;
 }
 
-.service-description .container ul li {
-   width: 86%;
+.service-description__service-types h4,
+.service-description__service-types ul li {
    margin: 20px 25px;
+}
+
+.service-description__service-types ul li {
+   width: 86%;
    list-style-type: none;
    position: relative;
 }
 
-.service-description .container ul li::before {
+.service-description__service-types ul li::before {
    display: block;
    content: '';
    position: absolute;
@@ -734,7 +731,8 @@ h1 {
    border: 2px solid #ffffff;
 }
 
-.service-description .container h4 {
+.service-description__service-types h4 {
+   /* margin: 20px 25px; */
    font-weight: normal;
    text-transform: uppercase;
    font-size: 1.4rem;
@@ -1301,7 +1299,7 @@ footer .logo img {
    margin: 32px auto 0;
 }
 
-.extra-services__card-section {
+.extra-services__card-section ul {
    justify-content: center;
    flex-wrap: wrap;
    gap: 0;
