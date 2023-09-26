@@ -58,6 +58,18 @@ body {
    display: flex;
 }
 
+header,
+.extra-services__image,
+.services::after,
+.services__image,
+.about .icon,
+.service-description__service-types ul li::before,
+.our-clients__article,
+.features__background-image,
+.cta-button {
+   display: block;
+}
+
 .header__content,
 .cta,
 .features__card,
@@ -69,14 +81,46 @@ body {
    flex-direction: column;
 }
 
+.section-subtitle,
+.features__subtitle,
+.features__description p,
+.features h3,
+.extra-services__introduction,
+.extra-services__section-title {
+   font-size: 2rem;
+}
+
+.header__subtitle,
+.about h2,
+.features p {
+   font-size: 1.6rem;
+}
+
 .services__title,
 .extra-services__description,
 .features__card p .material-symbols-outlined,
 .our-clients > p,
 .service-description__service-types h4,
 .about__story > p:first-of-type,
-.services__title {
+.services__title,
+.cta__description,
+.card__description p {
    font-size: 1.4rem;
+}
+
+.services__card,
+.services__description,
+.about p,
+.about li p,
+.about__concepts p,
+.about__concepts-item p,
+.card__description h5,
+.features__card,
+.features__text p,
+.extra-services__card,
+.extra-services__footer,
+.extra-services__footer a {
+   font-size: 1rem;
 }
 
 .services__section-title,
@@ -91,11 +135,52 @@ body {
    font-family: 'Montserrat', sans-serif;
 }
 
+.about__story > p,
+.about__story ul,
+.about__story h4,
+.about__story li p,
+.extra-services__description,
+.about__concepts p,
+.about__concepts-item p,
+.card__description h5 {
+   font-family: 'Open Sans', sans-serif;
+}
+
+header,
+.service-description,
+.card__description,
+.prev-btn:hover,
+.next-btn:hover,
+.features__subtitle,
+.cta-button,
+.extra-services__card:nth-child(3),
+.extra-services__card:nth-child(2),
+.extra-services__footer,
+.extra-services__footer a {
+   color: #ffffff;
+}
+
+.services__section-title,
+.services__section-subtitle a,
+.services__section-subtitle,
+.about__introduction,
+.about__story > p,
+.about__story ul,
+.about__story h4,
+.about__story li p,
+.about h2,
+.features__subtitle,
+.features h3,
+.extra-services__section-title,
+.extra-services__section-subtitle,
+.extra-services__card:nth-child(1),
+footer {
+   color: #000;
+}
+
 /* ------------ header-content -------- */
 
 header {
-   display: block;
-   color: #ffffff;
    padding: 1rem;
    text-align: center;
    padding: 0;
@@ -202,7 +287,6 @@ h1 {
 }
 
 .header__subtitle {
-   font-size: 1.6rem;
    line-height: 1.2;
    font-weight: 400;
    width: 40%;
@@ -232,7 +316,6 @@ h1 {
 }
 
 .services::after {
-   display: block;
    content: '';
    top: 38%;
    left: 0;
@@ -250,12 +333,6 @@ h1 {
 .services__content {
    text-align: center;
    margin: 0 auto;
-}
-
-.services__section-title,
-.services__section-subtitle a,
-.services__section-subtitle {
-   color: #000;
 }
 
 .services__section-subtitle a:hover {
@@ -297,7 +374,6 @@ h1 {
    box-sizing: border-box;
    color: #111111;
    background-color: #ffffff;
-   font-size: 1rem;
    line-height: 1.5rem;
    overflow: hidden;
    text-align: center;
@@ -318,7 +394,6 @@ h1 {
 }
 
 .services__image {
-   display: block;
    width: 100%;
    height: 180px;
    overflow: hidden;
@@ -340,7 +415,6 @@ h1 {
 
 .services__description {
    font-family: 'Source Sans Pro', sans-serif;
-   font-size: 1rem;
    text-align: center;
    line-height: 1.6rem;
    margin-top: 0;
@@ -389,7 +463,7 @@ h1 {
 }
 
 .about__concepts .about__concepts-title {
-   font-size: 2.46rem;
+   font-size: 2.5rem;
    line-height: 1.1;
    text-align: center;
    width: 100%;
@@ -408,17 +482,6 @@ h1 {
    margin: 5px;
    letter-spacing: -1px;
    font-weight: 400;
-}
-
-.about p,
-.about li p {
-   font-size: 1rem;
-}
-
-.about__concepts p,
-.about__concepts-item p {
-   font-family: 'Open Sans', sans-serif;
-   font-size: 1rem;
 }
 
 .about .about__section-title {
@@ -444,7 +507,6 @@ h1 {
    background-repeat: no-repeat;
    background-position: center;
    background-size: contain;
-   color: #000;
    overflow: hidden;
    margin: 30px 0;
 }
@@ -459,8 +521,6 @@ h1 {
 .about__story ul,
 .about__story h4,
 .about__story li p {
-   font-family: 'Open Sans', sans-serif !important;
-   font-family: Arial, sans-serif !important;
    font-size: 1rem !important;
    text-align: left !important;
    text-decoration: none !important;
@@ -469,7 +529,6 @@ h1 {
    line-height: 1.6 !important;
    font-weight: 400 !important;
    letter-spacing: normal !important;
-   color: #000000 !important;
 }
 
 .about__story h4 {
@@ -495,8 +554,6 @@ h1 {
 .about h2 {
    text-align: center;
    text-transform: uppercase;
-   font-size: 1.6rem;
-   color: #0000009e;
    margin: 60px auto;
 }
 
@@ -536,7 +593,6 @@ h1 {
 }
 
 .about .icon {
-   display: block;
    width: 100%;
    height: 280px;
    text-align: center;
@@ -566,7 +622,6 @@ h1 {
    height: auto;
    position: relative;
    overflow: hidden;
-   color: #ffffff;
    font-size: 1.2rem;
    min-height: 800px;
    background-color: rgb(93, 93, 93);
@@ -623,7 +678,6 @@ h1 {
 }
 
 .service-description__service-types ul li::before {
-   display: block;
    content: '';
    position: absolute;
    left: -22px;
@@ -682,7 +736,6 @@ h1 {
 }
 
 .section-subtitle {
-   font-size: 2rem !important;
    line-height: 1 !important;
    font-weight: 400 !important;
    width: 40% !important;
@@ -696,7 +749,6 @@ h1 {
 }
 
 .our-clients__article {
-   display: block;
    box-sizing: border-box;
    height: 620px;
    width: 1000px;
@@ -751,7 +803,6 @@ ol.our-clients__gallery {
    width: 100%;
    height: auto;
    min-height: 100px;
-   color: #fff;
    align-items: center;
    justify-content: center;
    background: #1a1a1a;
@@ -768,16 +819,13 @@ ol.our-clients__gallery {
 }
 
 .card__description h5 {
-   font-family: 'Open Sans', sans-serif;
    font-weight: normal;
-   font-size: 1rem;
    line-height: 1.6;
    margin-top: 6px;
 }
 
 .card__description p {
    font-family: Roboto, sans-serif;
-   font-size: 1.5rem;
    line-height: 1.2;
    font-weight: 300;
    text-transform: uppercase;
@@ -822,7 +870,6 @@ ol.our-clients__gallery {
 .prev-btn:hover,
 .next-btn:hover {
    background-color: #1a1a1a;
-   color: #fff;
 }
 
 /* --/ our-clients-description */
@@ -841,7 +888,6 @@ ol.our-clients__gallery {
 
 .features__background-image {
    position: absolute;
-   display: block;
    content: '';
    width: 100%;
    height: 106%;
@@ -862,19 +908,15 @@ ol.our-clients__gallery {
 }
 
 .features p {
-   font-size: 1.6rem;
    line-height: 1;
    font-weight: 400;
 }
 
 .features__subtitle {
-   font-size: 2rem;
-   color: #000000;
    margin: 10px 0;
    text-align: center;
    width: 100%;
    background-color: rgb(216, 69, 112);
-   color: #fff;
    margin: 0;
    height: 50px;
    margin: 0 auto;
@@ -899,28 +941,25 @@ ol.our-clients__gallery {
 
 .features__description p {
    text-align: center;
-   font-size: 2rem;
    line-height: 2rem;
    margin: 60px 0;
 }
 
 .features h3 {
    width: 100%;
-   font-size: 2rem;
-   color: #000000;
    text-align: center;
 }
 
 .features .features__subtitle .material-symbols-outlined {
-   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
    font-size: 4.4rem;
    vertical-align: top;
+   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
 }
 
 .features .material-symbols-outlined {
-   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
    font-size: 2.6rem;
    vertical-align: middle;
+   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
 }
 
 .features .container {
@@ -934,7 +973,6 @@ ol.our-clients__gallery {
 .features__card {
    justify-content: start;
    align-items: center;
-   font-size: 1rem;
    line-height: 1.6;
    text-align: center;
    color: #111111;
@@ -971,7 +1009,6 @@ ol.our-clients__gallery {
 
 .features__text p {
    font-family: 'Source Sans Pro', sans-serif;
-   font-size: 1rem;
    line-height: 1.6;
    padding: 0;
    margin: 0;
@@ -1064,7 +1101,6 @@ ol.our-clients__gallery {
 
 .cta__description {
    margin: 0 auto;
-   font-size: 1.5rem;
    font-weight: 600;
    color: #333;
    max-width: 60%;
@@ -1084,11 +1120,9 @@ ol.our-clients__gallery {
 }
 
 .cta-button {
-   display: block;
    margin: 40px auto;
    padding: 1rem 2rem;
    background-color: var(--dark-primary-color);
-   color: #fff;
    font-size: 1.2rem;
    border: none;
    border-radius: 5px;
@@ -1105,8 +1139,6 @@ footer {
    grid-template-columns: 0.6fr 1fr 1fr 1fr;
    text-align: center;
    padding: 2rem 0;
-   color: #fff;
-   color: #000000;
    justify-content: center;
    align-items: center;
    text-align: justify;
@@ -1139,7 +1171,6 @@ footer .logo img {
 }
 
 .extra-services__introduction {
-   font-size: 2rem;
    line-height: 1.2;
    font-weight: 400;
    width: 80%;
@@ -1157,13 +1188,7 @@ footer .logo img {
    margin: 0 auto;
 }
 
-.extra-services__section-title,
-.extra-services__section-subtitle {
-   color: #000;
-}
-
 .extra-services__section-title {
-   font-size: 2rem;
    font-weight: 600;
    margin: 60px auto 20px;
    text-transform: uppercase;
@@ -1191,13 +1216,11 @@ footer .logo img {
    flex-direction: row-reverse;
    text-align: start;
    background: yellow;
-   color: #000000;
 }
 
 .extra-services__card:nth-child(2) {
    text-align: left;
    background: darkblue;
-   color: #ffffff;
 }
 
 .extra-services__card:nth-child(2) .extra-services__image,
@@ -1208,7 +1231,6 @@ footer .logo img {
 .extra-services__card:nth-child(3) {
    text-align: start;
    background: orangered;
-   color: #ffffff;
 }
 
 .extra-services__card {
@@ -1223,14 +1245,12 @@ footer .logo img {
    box-sizing: border-box;
    color: #111111;
    background-color: #ffffff;
-   font-size: 1rem;
    line-height: 1.5rem;
    overflow: hidden;
    text-align: center;
 }
 
 .extra-services__image {
-   display: block;
    flex-basis: 50%;
    height: 100%;
    overflow: hidden;
@@ -1260,7 +1280,6 @@ footer .logo img {
 }
 
 .extra-services__description {
-   font-family: 'Open Sans', sans-serif;
    line-height: 1.8rem;
    margin-top: 0;
 }
@@ -1271,8 +1290,6 @@ footer .logo img {
 
 .extra-services__footer,
 .extra-services__footer a {
-   color: #ffffff;
-   font-size: 1rem;
    line-height: 1.6;
    font-weight: 400;
 }
