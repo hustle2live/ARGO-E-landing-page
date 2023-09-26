@@ -40,8 +40,55 @@ body {
 .services__card,
 .extra-services__card-section ul,
 .extra-services__card,
-.features__card {
+.header__content-section,
+.features__card,
+.cta-picture,
+.cta,
+.features__subtitle,
+.card__description,
+.our-clients__gallery .card__content,
+.service-description .container,
+.about article,
+.about__introduction,
+.about__story,
+.about__concepts,
+.service-description,
+.about__concepts-item > div,
+.fb-posts {
    display: flex;
+}
+
+.header__content,
+.cta,
+.features__card,
+.our-clients__gallery .card__content,
+.about__introduction,
+.about__story,
+.about__concepts,
+.services__card {
+   flex-direction: column;
+}
+
+.services__title,
+.extra-services__description,
+.features__card p .material-symbols-outlined,
+.our-clients > p,
+.service-description__service-types h4,
+.about__story > p:first-of-type,
+.services__title {
+   font-size: 1.4rem;
+}
+
+.services__section-title,
+.services__title,
+.about__concepts .about__concepts-title,
+.about .about__section-title,
+.service-description__heading,
+.section-title,
+.features__description p,
+.features__card-title,
+.cta .cta__title {
+   font-family: 'Montserrat', sans-serif;
 }
 
 /* ------------ header-content -------- */
@@ -67,7 +114,6 @@ h1 {
 }
 
 .header__content-section {
-   display: flex;
    justify-content: center;
    align-items: center;
    width: 100%;
@@ -96,15 +142,12 @@ h1 {
 .header__content {
    box-sizing: border-box;
    min-height: 460px;
-   flex-direction: column;
    align-items: baseline;
    margin: 80px 0 auto;
    text-align: left;
    position: relative;
-
    background-color: #00000038;
    padding: 20px;
-
    background-image: url('../images/img/png/project_A1.png');
    background-position: right;
    background-size: 62%;
@@ -177,97 +220,11 @@ h1 {
 
 /* --/ header-content */
 
-/* ---------header add stripes */
-
-.header__content-section {
-   position: relative;
-   overflow: hidden;
-}
-/* 
-.header__content::after,
-.header__content-section::before,
-.header__content::before {
-   display: block;
-   box-sizing: border-box;
-   content: '';
-   position: absolute;
-   left: 46%;
-   top: 0%;
-   height: 90%;
-   width: 50%;
-   border: 1.4rem solid #5748d7;
-   transform: skew(167deg, 0);
-   z-index: 3;
-   transition: border-width 0.6s linear;
-}
-
-.header__content-section::before {
-   height: 80%;
-   border-color: #d84570;
-   top: 8%;
-   left: 0;
-   right: 48%;
-   border-left: none;
-   transform: none;
-   z-index: 1;
-   animation-name: red-line;
-   animation-duration: 6s;
-   animation-delay: 2s;
-}
-
-.header__content::after,
-.header__content::before {
-   width: 250%;
-   border-right: none;
-}
-.header__content::before {
-   border-bottom: none;
-   z-index: 1;
-}
-
-.header__content::after {
-   z-index: 0;
-}
-
-.header__content-section::after {
-   border-right: none;
-   width: 120%;
-} */
-
-@keyframes red-line--disabled {
-   0% {
-      width: 0;
-      border-right: none;
-      height: 0;
-      border-bottom: none;
-   }
-   25% {
-      width: 50%;
-      height: 0;
-      border-right: none;
-      border-bottom: none;
-   }
-   50% {
-      height: 80%;
-      border-right: 1.4rem solid #d84570;
-      border-bottom: none;
-   }
-
-   75% {
-      border-bottom: none;
-      border-bottom: 1.4rem solid #d84570;
-   }
-}
-
-/* --/header add-stripes  */
-
 /* ------------ body-content -------- */
 
 /* ------------ body __ services-content -------- */
 
 .services {
-   /* background: linear-gradient(41deg, rgba(255, 255, 255, 1) 48%, rgba(179, 94, 244, 1) 48%); */
-   /* background: #e5e5e5; */
    position: relative;
    background: rgb(255, 255, 255);
    min-height: 870px;
@@ -306,7 +263,6 @@ h1 {
 }
 
 .services__section-title {
-   font-family: Montserrat, sans-serif;
    font-size: 3.75rem;
    text-transform: none;
    font-weight: 700;
@@ -328,7 +284,6 @@ h1 {
 }
 
 .services__card {
-   flex-direction: column;
    align-items: center;
    list-style-type: none;
    cursor: default;
@@ -376,9 +331,7 @@ h1 {
 }
 
 .services__title {
-   font-family: Montserrat, sans-serif;
    font-weight: 400;
-   font-size: 1.4rem;
    line-height: 1.8;
    margin: 20px 0 0;
    text-transform: uppercase;
@@ -427,7 +380,6 @@ h1 {
 
 .about {
    padding: 20px 0 120px;
-   /* background-color: #f2f2f2; */
    background-color: var(--bright-bg-color);
    border-top: 1px solid rgb(233, 224, 224);
 }
@@ -439,17 +391,12 @@ h1 {
 .about__concepts .about__concepts-title {
    font-size: 2.46rem;
    line-height: 1.1;
-   font-family: Montserrat, sans-serif !important;
    text-align: center;
    width: 100%;
 }
 
 .about__concepts-item {
    width: 30%;
-}
-
-.about__concepts-item > div {
-   display: flex;
 }
 
 /* .about__concepts-item > div > p {
@@ -475,7 +422,6 @@ h1 {
 }
 
 .about .about__section-title {
-   font-family: Montserrat, sans-serif !important;
    font-size: 3.75rem;
    text-transform: none;
    font-weight: 700;
@@ -504,7 +450,6 @@ h1 {
 }
 
 .about__story > p:first-of-type {
-   font-size: 1.4rem;
    margin: 0;
    white-space: nowrap;
    letter-spacing: -1.4px;
@@ -519,11 +464,9 @@ h1 {
    font-size: 1rem !important;
    text-align: left !important;
    text-decoration: none !important;
-
    margin: 0;
    padding: 0;
    line-height: 1.6 !important;
-
    font-weight: 400 !important;
    letter-spacing: normal !important;
    color: #000000 !important;
@@ -557,13 +500,6 @@ h1 {
    margin: 60px auto;
 }
 
-.about article,
-.about__introduction,
-.about__story,
-.about__concepts {
-   display: flex;
-}
-
 .about article {
    flex-wrap: wrap;
    flex-direction: row-reverse;
@@ -582,7 +518,6 @@ h1 {
 .about__story,
 .about__concepts {
    justify-content: space-between;
-   flex-direction: column;
 }
 
 .about .about__concepts {
@@ -622,25 +557,9 @@ h1 {
    filter: brightness(1) contrast(1);
 }
 
-/* 
-.about__picture {
-   display: block;
-   align-self: center;
-   width: auto;
-   height: 160px;
-}
-
-.about__picture img {
-   width: 100%;
-   height: auto;
-} */
-
-/* --/ about */
-
 /* ------------ body __ service-description -------- */
 
 .service-description {
-   display: flex;
    justify-content: center;
    align-items: center;
    width: 100%;
@@ -667,7 +586,6 @@ h1 {
 }
 
 .service-description .container {
-   display: flex;
    flex-wrap: wrap;
    text-align: center;
    z-index: 1;
@@ -677,7 +595,6 @@ h1 {
    width: 100%;
    margin-bottom: 80px;
    white-space: nowrap;
-   font-family: Montserrat, sans-serif !important;
    font-size: 3.75rem !important;
    text-transform: none;
    font-weight: 700;
@@ -719,10 +636,8 @@ h1 {
 }
 
 .service-description__service-types h4 {
-   /* margin: 20px 25px; */
    font-weight: normal;
    text-transform: uppercase;
-   font-size: 1.4rem;
 }
 
 .service-description__image {
@@ -760,12 +675,10 @@ h1 {
 }
 
 .section-title {
-   font-family: Montserrat, sans-serif !important;
    font-size: 3.75rem !important;
    text-transform: none !important;
    font-weight: 700 !important;
    text-align: center !important;
-   /* text-transform: uppercase !important; */
 }
 
 .section-subtitle {
@@ -774,11 +687,9 @@ h1 {
    font-weight: 400 !important;
    width: 40% !important;
    margin: 60px auto !important;
-   /* white-space: wrap !important; */
 }
 
 .our-clients > p {
-   font-size: 1.4rem;
    line-height: 1.4;
    width: 40%;
    margin: 40px auto 0;
@@ -817,8 +728,6 @@ ol.our-clients__gallery {
 }
 
 .our-clients__gallery .card__content {
-   display: flex;
-   flex-direction: column;
    width: 66%;
    height: 100%;
    justify-content: center;
@@ -835,12 +744,9 @@ ol.our-clients__gallery {
    width: 100%;
    min-height: 100%;
    height: auto;
-   /* object-fit: contain; */
-   /* object-position: bottom; */
 }
 
 .card__description {
-   display: flex;
    flex-direction: column-reverse;
    width: 100%;
    height: auto;
@@ -853,8 +759,6 @@ ol.our-clients__gallery {
    left: 0;
    bottom: 0;
    padding: 20px 0;
-
-   /* margin: 0; */
 }
 
 .card__description h5,
@@ -925,17 +829,12 @@ ol.our-clients__gallery {
 
 /* ------------ body __ features and fails section -------- */
 
-.white {
-   /* color: #ffffff; */
-}
-
 .features {
    text-align: center;
    padding: 80px 0;
    position: relative;
    background-color: #e5e5e5;
    background-color: var(--middle-bg-color);
-
    z-index: 0;
    overflow: hidden;
 }
@@ -951,7 +850,6 @@ ol.our-clients__gallery {
    bottom: 120px;
    z-index: -1;
    overflow: hidden;
-   /* background-color: #c0c0c0ea; */
 }
 
 .features__background-image img {
@@ -980,7 +878,6 @@ ol.our-clients__gallery {
    margin: 0;
    height: 50px;
    margin: 0 auto;
-   display: flex;
    justify-content: center;
    align-items: center;
 }
@@ -1001,7 +898,6 @@ ol.our-clients__gallery {
 }
 
 .features__description p {
-   font-family: Montserrat, sans-serif;
    text-align: center;
    font-size: 2rem;
    line-height: 2rem;
@@ -1036,7 +932,6 @@ ol.our-clients__gallery {
 }
 
 .features__card {
-   flex-direction: column;
    justify-content: start;
    align-items: center;
    font-size: 1rem;
@@ -1049,7 +944,6 @@ ol.our-clients__gallery {
 }
 
 .features__card p .material-symbols-outlined {
-   font-size: 1.4rem;
    font-weight: 600;
    padding-right: 5px;
 }
@@ -1063,7 +957,6 @@ ol.our-clients__gallery {
 }
 
 .features__card-title {
-   font-family: 'Montserrat', sans-serif;
    font-size: 1.25rem;
    line-height: 1.2;
    font-weight: 700;
@@ -1105,14 +998,11 @@ ol.our-clients__gallery {
 .features__image {
    border-top: 5px solid #000000a4 !important;
    border-left: 5px solid #00000095 !important;
-
    border-right: 6px solid;
    border-bottom: 6px solid;
    box-sizing: border-box;
-
    width: 120px;
    height: 120px;
-
    margin: 0 auto;
    overflow: hidden;
    border-radius: 50%;
@@ -1148,8 +1038,6 @@ ol.our-clients__gallery {
 /* --/ features and fails section */
 
 .cta {
-   display: flex;
-   flex-direction: column;
    align-items: center;
    text-align: center;
    min-height: 600px;
@@ -1159,7 +1047,6 @@ ol.our-clients__gallery {
 }
 
 .cta .cta__title {
-   font-family: Montserrat, sans-serif;
    font-size: 3.75rem;
    text-transform: none;
    font-weight: 700;
@@ -1187,7 +1074,6 @@ ol.our-clients__gallery {
    height: 200px;
    width: 100%;
    margin: 20px 0 40px;
-   display: flex;
    overflow: hidden;
 }
 
@@ -1345,8 +1231,6 @@ footer .logo img {
 
 .extra-services__image {
    display: block;
-   /* width: 100%; */
-   /* width: 50%; */
    flex-basis: 50%;
    height: 100%;
    overflow: hidden;
@@ -1355,7 +1239,6 @@ footer .logo img {
 }
 
 .extra-services__image img {
-   /* min-width: 100%; */
    width: 100%;
    height: 100%;
    object-fit: fill;
@@ -1365,14 +1248,10 @@ footer .logo img {
 .extra-services__title {
    font-family: 'Roboto', sans-serif;
    font-weight: 300;
-   /* font-size: 24px; */
    font-size: 1.8rem;
-   /* line-height: 27px; */
    line-height: 2rem;
    text-transform: uppercase;
-   /* margin: 32px auto 20px; */
    margin: 32px auto 20px;
-   /* letter-spacing: -2px; */
 }
 
 .extra-services__title,
@@ -1382,10 +1261,7 @@ footer .logo img {
 
 .extra-services__description {
    font-family: 'Open Sans', sans-serif;
-   font-size: 1.4rem;
-   /* text-align: center; */
    line-height: 1.8rem;
-   /* font-style: italic; */
    margin-top: 0;
 }
 
@@ -1402,3 +1278,39 @@ footer .logo img {
 }
 
 /* --/ extra-services-content */
+
+/*  fb-wrapper */
+
+/*
+.fb-wrapper {
+   background: var(--bright-bg-color);
+   padding: 20px 0;
+   margin-bottom: 40px;
+}
+
+.fb-posts {
+   overflow: hidden;
+   overflow-x: scroll;
+   gap: 20px;
+   width: var(--theme-sheet-width-xl);
+   margin: 20px auto;
+   background: #fff;
+   justify-content: space-between;
+   padding: 20px;
+}
+
+.fb-article {
+   min-width: 210px;
+   width: 210px;
+   height: 360px;
+   min-height: 360px;
+   max-height: 560px;
+   transition: all 0.65s ease-out;
+}
+
+.fb-article:hover {
+   min-width: 500px;
+   cursor: pointer !important;
+} */
+
+/* --/ fb-wrapper */
