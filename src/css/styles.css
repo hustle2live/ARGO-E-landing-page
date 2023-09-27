@@ -50,7 +50,7 @@ body {
 .service-description .container,
 .about article,
 .about__introduction,
-.about__story,
+.about-company,
 .about__concepts,
 .service-description,
 .about__concepts-item > div,
@@ -75,7 +75,7 @@ header,
 .features__card,
 .our-clients__gallery .card__content,
 .about__introduction,
-.about__story,
+.about-company,
 .about__concepts,
 .services__card {
    flex-direction: column;
@@ -91,7 +91,6 @@ header,
 }
 
 .header__subtitle,
-.about h2,
 .features p {
    font-size: 1.6rem;
 }
@@ -101,7 +100,7 @@ header,
 .features__card p .material-symbols-outlined,
 .our-clients > p,
 .service-description__service-types h4,
-.about__story > p:first-of-type,
+.about-company .title,
 .services__title,
 .cta__description,
 .card__description p {
@@ -111,7 +110,7 @@ header,
 .services__card,
 .services__description,
 .about p,
-.about li p,
+.about-company .description,
 .about__concepts p,
 .about__concepts-item p,
 .card__description h5,
@@ -135,10 +134,8 @@ header,
    font-family: 'Montserrat', sans-serif;
 }
 
-.about__story > p,
-.about__story ul,
-.about__story h4,
-.about__story li p,
+.about-company .description,
+.about-company p,
 .extra-services__description,
 .about__concepts p,
 .about__concepts-item p,
@@ -164,11 +161,8 @@ header,
 .services__section-subtitle a,
 .services__section-subtitle,
 .about__introduction,
-.about__story > p,
-.about__story ul,
-.about__story h4,
-.about__story li p,
-.about h2,
+.about-company .description,
+.about-company p,
 .features__subtitle,
 .features h3,
 .extra-services__section-title,
@@ -492,7 +486,7 @@ h1 {
 }
 
 .about__concepts-item,
-.about__story {
+.about-company {
    padding: 20px 10px;
 }
 
@@ -511,50 +505,48 @@ h1 {
    margin: 30px 0;
 }
 
-.about__story > p:first-of-type {
-   margin: 0;
+.about .title span {
    white-space: nowrap;
-   letter-spacing: -1.4px;
 }
-
-.about__story > p,
-.about__story ul,
-.about__story h4,
-.about__story li p {
-   font-size: 1rem !important;
-   text-align: left !important;
-   text-decoration: none !important;
+/* .about-company > p:first-of-type */
+.about .title {
    margin: 0;
+   letter-spacing: -0.6px;
+}
+
+.about-company ul {
    padding: 0;
-   line-height: 1.6 !important;
-   font-weight: 400 !important;
-   letter-spacing: normal !important;
 }
 
-.about__story h4 {
+.about .description,
+.about .text {
+   margin: 0;
+   font-size: 1rem;
+   text-align: left;
+   text-decoration: none;
+   line-height: 1.6;
+   letter-spacing: normal;
+}
+
+.about .description {
+   font-weight: 400;
    width: 80%;
-   text-indent: 20px;
+   /* text-indent: 20px; */
 }
 
-.about__story p {
-   font-weight: 600 !important;
+.about-company .title,
+.about-company .label {
+   font-weight: 600;
 }
 
-.about__story > p,
-.about__story ul {
-   margin: 16px 0;
+.about-company .label {
+   margin: 16px 0 0;
 }
 
-.about__story ul li {
+.about-company ul li {
    list-style-type: '-';
    padding-left: 10px;
    margin-left: 10px;
-}
-
-.about h2 {
-   text-align: center;
-   text-transform: uppercase;
-   margin: 60px auto;
 }
 
 .about article {
@@ -563,7 +555,7 @@ h1 {
    justify-content: center;
 }
 
-.about .about__story {
+.about .about-company {
    width: 44%;
 }
 
@@ -572,7 +564,7 @@ h1 {
 }
 
 .about__introduction,
-.about__story,
+.about-company,
 .about__concepts {
    justify-content: space-between;
 }
