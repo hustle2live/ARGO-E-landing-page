@@ -328,7 +328,7 @@ h1 {
 .header__subtitle {
    line-height: 1.2;
    font-weight: 400;
-   width: 40%;
+   max-width: 40%;
 }
 
 .header__description {
@@ -392,6 +392,7 @@ h1 {
    flex-wrap: wrap;
    gap: 20px;
    width: 100%;
+   padding-left: 0;
 }
 
 .services__card {
@@ -723,6 +724,7 @@ h1 {
 .service-description__image img {
    height: 100%;
    width: auto;
+   min-width: 100%;
 }
 
 /* --/ service-description */
@@ -941,7 +943,6 @@ ol.our-clients__gallery {
 }
 
 .features .container {
-   width: var(--theme-sheet-width-md);
    width: 876px;
    display: grid;
    grid-template-columns: 50% 50%;
@@ -1157,6 +1158,7 @@ footer .logo img {
    justify-content: center;
    gap: 0;
    margin: 50px auto;
+   padding-left: 0;
 }
 
 .extra-services__text-content {
@@ -1211,7 +1213,7 @@ footer .logo img {
 }
 
 .extra-services__image img {
-   object-fit: fill;
+   object-fit: cover;
    object-position: center;
 }
 
@@ -1244,3 +1246,69 @@ footer .logo img {
 }
 
 /* --/ extra-services-content */
+
+/* adaptive style up to 1024px && down from 1200px  */
+
+@media screen and (max-width: 1200px) {
+   .container {
+      width: 100%;
+   }
+
+   .features__description,
+   .extra-services__content.container {
+      width: var(--theme-sheet-width-lg);
+   }
+
+   .header__navbar.container {
+      width: auto;
+      margin: 0 60px;
+   }
+
+   .services__card {
+      width: 320px;
+   }
+
+   .about .about__concepts {
+      justify-content: center;
+   }
+
+   .about .about__concepts-item {
+      padding: 22px;
+   }
+
+   .service-description__image,
+   .service-description__service-types {
+      width: 74%;
+      margin: 0 auto 40px;
+   }
+
+   .service-description__heading {
+      white-space: initial;
+   }
+
+   .extra-services__card {
+      height: auto;
+   }
+
+   .features .container {
+      width: 800px;
+   }
+
+   .our-clients__article,
+   .our-clients__gallery li.card {
+      width: 800px;
+      margin: auto;
+   }
+
+   .header__content {
+      padding: 60px;
+      background-size: 58%;
+      background-position-y: 53%;
+   }
+
+   .header__subtitle,
+   .header__description {
+      max-width: 45%;
+      margin: 10px 0;
+   }
+}
