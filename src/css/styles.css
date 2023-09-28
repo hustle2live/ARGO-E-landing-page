@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Roboto:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap'); */
 
 :root {
    --theme-sheet-width-xl: 1140px;
@@ -200,6 +200,32 @@ footer .logo img,
    height: 100%;
 }
 
+.services::after,
+.service-description__backgroung,
+.header__background-image,
+.service-description__service-types ul li::before,
+ol.our-clients__gallery,
+.card__picture,
+.card__description,
+.prev-btn,
+.next-btn,
+.features__background-image {
+   position: absolute;
+}
+
+.header__content-section,
+.header__content,
+.services,
+.service-description,
+.service-description__service-types ul li,
+.our-clients,
+.our-clients .container,
+.our-clients__article,
+.our-clients__gallery li.card,
+.features {
+   position: relative;
+}
+
 /* ------------ header-content -------- */
 
 header {
@@ -228,12 +254,10 @@ h1 {
    max-height: 100vh;
    background-color: #333;
    overflow: hidden;
-   position: relative;
 }
 
 .header__background-image {
    opacity: 0.78;
-   position: absolute;
    overflow: hidden;
 }
 
@@ -248,7 +272,6 @@ h1 {
    align-items: baseline;
    margin: 80px 0 auto;
    text-align: left;
-   position: relative;
    background-color: #00000038;
    padding: 20px;
    background-image: url('../images/img/png/project_A1.png');
@@ -326,7 +349,6 @@ h1 {
 /* ------------ body __ services-content -------- */
 
 .services {
-   position: relative;
    background: rgb(255, 255, 255);
    min-height: 870px;
    z-index: 0;
@@ -336,7 +358,6 @@ h1 {
    content: '';
    top: 38%;
    left: 0;
-   position: absolute;
    width: 100%;
    height: 320px;
 
@@ -624,7 +645,6 @@ h1 {
    align-items: center;
    width: 100%;
    height: auto;
-   position: relative;
    overflow: hidden;
    font-size: 1.2rem;
    min-height: 800px;
@@ -633,7 +653,6 @@ h1 {
 }
 
 .service-description__backgroung {
-   position: absolute;
    bottom: 0;
 }
 
@@ -676,12 +695,10 @@ h1 {
 .service-description__service-types ul li {
    width: 86%;
    list-style-type: none;
-   position: relative;
 }
 
 .service-description__service-types ul li::before {
    content: '';
-   position: absolute;
    left: -22px;
    top: 8px;
    width: 9px;
@@ -717,12 +734,7 @@ h1 {
 .our-clients {
    padding: 80px 0;
    text-align: center;
-   position: relative;
    min-height: 800px;
-}
-
-.our-clients .container {
-   position: relative;
 }
 
 .our-clients .container > p,
@@ -749,14 +761,12 @@ h1 {
    width: 1000px;
    overflow: hidden;
    margin: auto;
-   position: relative;
 }
 
 ol.our-clients__gallery {
    display: inline-flex;
    min-height: 600px;
    width: auto;
-   position: absolute;
    margin: auto;
    left: 0;
    transition: 1s;
@@ -770,7 +780,6 @@ ol.our-clients__gallery {
    height: 594px;
    padding: 20px;
    margin: 10px 0;
-   position: relative;
    overflow: hidden;
 }
 
@@ -781,7 +790,6 @@ ol.our-clients__gallery {
 }
 
 .card__picture {
-   position: absolute;
    left: 0;
 }
 
@@ -796,7 +804,6 @@ ol.our-clients__gallery {
    align-items: center;
    justify-content: center;
    background: #1a1a1a;
-   position: absolute;
    left: 0;
    bottom: 0;
    padding: 20px 0;
@@ -827,7 +834,6 @@ ol.our-clients__gallery {
    height: 40px;
    border-radius: 50%;
    cursor: pointer;
-   position: absolute;
    bottom: 310px;
    border: none;
    background-color: #4d4d4d;
@@ -868,7 +874,6 @@ ol.our-clients__gallery {
 .features {
    text-align: center;
    padding: 80px 0;
-   position: relative;
    background-color: #e5e5e5;
    background-color: var(--middle-bg-color);
    z-index: 0;
@@ -876,7 +881,6 @@ ol.our-clients__gallery {
 }
 
 .features__background-image {
-   position: absolute;
    content: '';
    width: 100%;
    height: auto;
@@ -897,7 +901,6 @@ ol.our-clients__gallery {
 
 .features p {
    line-height: 1;
-   font-weight: 400;
 }
 
 .features__subtitle {
@@ -985,7 +988,7 @@ ol.our-clients__gallery {
 
 .features__card-title {
    line-height: 1.2;
-   font-weight: 700;
+   font-weight: 400;
    margin: 20px auto;
 }
 
