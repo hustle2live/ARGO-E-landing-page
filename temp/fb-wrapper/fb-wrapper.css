@@ -1,0 +1,36 @@
+
+/*  fb-wrapper */
+
+
+.fb-wrapper {
+   background: var(--bright-bg-color);
+   padding: 20px 0;
+   margin-bottom: 40px;
+}
+
+.fb-posts {
+   overflow: hidden;
+   overflow-x: scroll;
+   gap: 20px;
+   width: var(--theme-sheet-width-xl);
+   margin: 20px auto;
+   background: #fff;
+   justify-content: space-between;
+   padding: 20px;
+}
+
+.fb-article {
+   min-width: 210px;
+   width: 210px;
+   height: 360px;
+   min-height: 360px;
+   max-height: 560px;
+   transition: all 0.65s ease-out;
+}
+
+.fb-article:hover {
+   min-width: 500px;
+   cursor: pointer;
+}
+
+/* --/ fb-wrapper */

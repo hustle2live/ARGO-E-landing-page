@@ -2,7 +2,7 @@
 
 node_modules
 # src
-temporary
+temp/images
 
 # dependencies
 /.pnp
