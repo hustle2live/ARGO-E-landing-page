@@ -658,13 +658,9 @@ h1 {
 
 .service-description .section-title {
    width: 100%;
-   margin-bottom: 80px;
-   white-space: nowrap;
-   font-size: 3.75rem;
-   text-transform: none;
-   font-weight: 700;
-   text-align: center;
    color: #fff;
+   white-space: nowrap;
+   margin: 0 auto 80px;
 }
 
 .service-description__service-types {
@@ -1270,6 +1266,8 @@ footer .logo img {
    }
 
    .service-description .section-title {
+      width: 80%;
+      margin-bottom: 50px;
       white-space: initial;
    }
 
