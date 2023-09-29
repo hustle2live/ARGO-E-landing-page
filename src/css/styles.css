@@ -120,11 +120,9 @@ header,
    font-size: 1rem;
 }
 
-.services__section-title,
 .services__title,
 .about__concepts .about__concepts-title,
 .about .about__section-title,
-.service-description__heading,
 .section-title,
 .features__card-title,
 .cta .cta__title {
@@ -168,7 +166,7 @@ header,
    color: #ffffff;
 }
 
-.services__section-title,
+.section-title,
 .services__section-subtitle a,
 .services__section-subtitle,
 .about__introduction,
@@ -371,13 +369,6 @@ h1 {
 
 .services__section-subtitle a:hover {
    color: #452a70;
-}
-
-.services__section-title {
-   font-size: 3.75rem;
-   text-transform: none;
-   font-weight: 700;
-   margin: 60px auto 0;
 }
 
 .services__section-subtitle {
@@ -666,7 +657,7 @@ h1 {
    z-index: 1;
 }
 
-.service-description__heading {
+.service-description .section-title {
    width: 100%;
    margin-bottom: 80px;
    white-space: nowrap;
@@ -674,6 +665,7 @@ h1 {
    text-transform: none;
    font-weight: 700;
    text-align: center;
+   color: #fff;
 }
 
 .service-description__service-types {
@@ -1282,7 +1274,7 @@ footer .logo img {
       margin: 0 auto 40px;
    }
 
-   .service-description__heading {
+   .service-description .section-title {
       white-space: initial;
    }
 
@@ -1310,5 +1302,14 @@ footer .logo img {
    .header__description {
       max-width: 45%;
       margin: 10px 0;
+   }
+
+   .service-description__service-types {
+      text-align: center;
+   }
+
+   .service-description__service-types ul li p {
+      padding-left: 20px;
+      text-align: justify;
    }
 }
