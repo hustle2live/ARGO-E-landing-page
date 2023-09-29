@@ -82,13 +82,13 @@ header,
 
 .features h3,
 .features__description p,
-.extra-services__introduction,
 .extra-services__section-title {
    font-size: 2rem;
 }
 
 .section-subtitle,
 .features__card-title,
+.extra-services__introduction,
 .header__subtitle {
    font-size: 1.6rem;
 }
@@ -124,8 +124,7 @@ header,
 .about__concepts .about__concepts-title,
 .about .about__section-title,
 .section-title,
-.features__card-title,
-.cta .cta__title {
+.features__card-title {
    font-family: 'Montserrat', sans-serif;
 }
 
@@ -743,7 +742,7 @@ h1 {
 
 .our-clients > p {
    line-height: 1.4;
-   width: 40%;
+   max-width: 40%;
    margin: 40px auto 0;
 }
 
@@ -1030,11 +1029,7 @@ ol.our-clients__gallery {
    margin-bottom: 100px;
 }
 
-.cta .cta__title {
-   font-size: 3.75rem;
-   text-transform: none;
-   font-weight: 700;
-   text-align: center;
+.cta .section-title {
    letter-spacing: -3px;
    margin: 60px auto 1.8rem;
 }
@@ -1118,7 +1113,7 @@ footer .logo img {
 .extra-services__introduction {
    line-height: 1.2;
    font-weight: 400;
-   width: 80%;
+   max-width: 80%;
    margin: 0 auto;
    text-align: center;
 }
@@ -1311,5 +1306,23 @@ footer .logo img {
    .service-description__service-types ul li p {
       padding-left: 20px;
       text-align: justify;
+   }
+
+   .our-clients > p,
+   .cta__description {
+      max-width: 80%;
+   }
+
+   .cta-picture {
+      height: 320px;
+      margin-top: 0;
+   }
+
+   .section-title {
+      font-size: 3rem;
+   }
+
+   .cta__subtitle {
+      font-size: 1.9rem;
    }
 }
