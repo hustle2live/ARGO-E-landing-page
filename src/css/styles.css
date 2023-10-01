@@ -593,7 +593,7 @@ h1 {
    justify-content: space-between;
 }
 
-.about .about__concepts {
+.about__concepts {
    gap: 0;
    width: 100%;
    flex-direction: row;
@@ -601,7 +601,7 @@ h1 {
    margin-top: 80px;
 }
 
-.about .about__concepts-item {
+.about__concepts-item {
    list-style-type: none;
    padding: 30px;
    margin: 0;
@@ -1251,11 +1251,11 @@ footer .logo img {
       width: 320px;
    }
 
-   .about .about__concepts {
+   .about__concepts {
       justify-content: center;
    }
 
-   .about .about__concepts-item {
+   .about__concepts-item {
       padding: 22px;
    }
 
@@ -1275,14 +1275,10 @@ footer .logo img {
       height: auto;
    }
 
-   .features .container {
-      width: 800px;
-   }
-
+   .features .container,
    .our-clients__article,
    .our-clients__gallery li.card {
       width: 800px;
-      margin: auto;
    }
 
    .header__content {
@@ -1331,5 +1327,53 @@ footer .logo img {
 
    .footer-section {
       font-size: 1rem;
+   }
+}
+
+@media screen and (max-width: 1023px) {
+   .features__description,
+   .extra-services__content.container {
+      width: var(--theme-sheet-width-md);
+   }
+
+   .our-clients__article,
+   .our-clients__gallery li.card,
+   .features .container {
+      width: 600px;
+   }
+
+   .services__card:nth-child(3) {
+      margin-top: 0;
+      margin-right: 26%;
+      margin-bottom: -240px;
+   }
+
+   .about {
+      padding: 20px 60px 120px;
+   }
+
+   .about .container {
+      justify-content: space-between;
+      padding: 0;
+      gap: 20px;
+   }
+
+   .about__introduction,
+   .about-company {
+      width: 40%;
+      padding: 0;
+   }
+
+   .about__concepts {
+      padding: 0;
+      gap: 40px;
+      justify-content: space-around;
+   }
+
+   .about__concepts-item {
+      padding: 0;
+      width: auto;
+      min-width: 40%;
+      max-width: 45%;
    }
 }
