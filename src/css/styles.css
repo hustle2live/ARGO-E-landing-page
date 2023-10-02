@@ -4,7 +4,7 @@
    --theme-sheet-width-xl: 1140px;
    --theme-sheet-width-lg: 940px;
    --theme-sheet-width-md: 720px;
-   --theme-sheet-width-sm: 540px;
+   --theme-sheet-width-sm: 560px;
    --theme-sheet-width-xs: 340px;
    --primary-color: #c64bde;
    --secondary-color: rgba(179, 94, 244, 1);
@@ -48,7 +48,6 @@ body {
 .our-clients__gallery .card__content,
 .service-description .container,
 .about article,
-.about__introduction,
 .about-company,
 .about__concepts,
 .service-description,
@@ -61,6 +60,7 @@ header,
 .extra-services__image,
 .services::after,
 .services__image,
+.about__introduction,
 .about .icon,
 .service-description__service-types ul li::before,
 .our-clients__article,
@@ -73,7 +73,6 @@ header,
 .cta,
 .features__card,
 .our-clients__gallery .card__content,
-.about__introduction,
 .about-company,
 .about__concepts,
 .services__card {
@@ -168,7 +167,6 @@ header,
 .section-title,
 .services__section-subtitle a,
 .services__section-subtitle,
-.about__introduction,
 .about-company .description,
 .about-company p,
 .features__subtitle,
@@ -579,7 +577,7 @@ h1 {
    justify-content: center;
 }
 
-.about .about-company {
+.about-company {
    width: 44%;
 }
 
@@ -587,7 +585,6 @@ h1 {
    width: 34%;
 }
 
-.about__introduction,
 .about-company,
 .about__concepts {
    justify-content: space-between;
@@ -1171,20 +1168,20 @@ footer .logo img {
 }
 
 .extra-services__card {
-   align-items: center;
-   list-style-type: none;
-   cursor: default;
+   box-sizing: border-box;
    width: 100%;
    height: 310px;
+   line-height: 1.5rem;
+   align-items: center;
+   list-style-type: none;
+   text-align: center;
    text-align: justify;
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
    color: #111111;
    background-color: #ffffff;
-   line-height: 1.5rem;
+   cursor: default;
    overflow: hidden;
-   text-align: center;
+   padding: 0;
+   margin: 0;
 }
 
 .extra-services__image {
@@ -1376,4 +1373,278 @@ footer .logo img {
       min-width: 40%;
       max-width: 45%;
    }
+   .extra-services__image:nth-of-type(3) {
+      display: none;
+   }
+
+   .extra-services__card:last-of-type {
+      flex-direction: row-reverse;
+   }
+
+   /* .our-clients__article, */
+   .card__description {
+      height: auto;
+   }
+
+   ol.our-clients__gallery {
+      min-height: auto;
+   }
+}
+
+@media screen and (max-width: 767px) {
+   .features .section-title,
+   .features__description {
+      width: var(--theme-sheet-width-sm);
+   }
+
+   .features .section-title {
+      margin: auto;
+   }
+
+   .header__content {
+      padding: 30px;
+   }
+
+   .header__navbar.container {
+      margin: 0 30px;
+   }
+
+   .about {
+      padding: 20px 30px 120px;
+   }
+
+   .services__card {
+      width: 290px;
+   }
+
+   .about .icon {
+      height: 220px;
+   }
+
+   .about__concepts {
+      padding: 0;
+      gap: 20px;
+   }
+
+   .service-description__service-types {
+      width: 100%;
+      box-sizing: border-box;
+      margin: 0 70px 0 30px;
+   }
+
+   .service-description__image {
+      width: 100%;
+      margin: 0 60px 40px;
+      height: 340px;
+   }
+
+   .service-description__service-types ul li {
+      margin-left: 10px;
+      width: 90%;
+   }
+
+   .our-clients__article,
+   .our-clients__gallery li.card,
+   .features .container {
+      width: 560px;
+   }
+
+   .extra-services__text-content,
+   .extra-services__image {
+      width: 50%;
+   }
+
+   .extra-services__card-section {
+      width: 100%;
+      box-sizing: border-box;
+   }
+
+   .extra-services__content.container {
+      width: 100%;
+   }
+
+   .extra-services__title,
+   .extra-services__description {
+      padding: 0 25px;
+   }
+
+   footer {
+      padding: 25px;
+      gap: 18px;
+   }
+
+   .header__content-section {
+      min-height: auto;
+      max-height: fit-content;
+      padding: 0;
+   }
+
+   .header__content.container {
+      margin: 0;
+   }
+
+   .our-clients__gallery li.card {
+      height: 520px;
+   }
+}
+
+@media screen and (max-width: 619px) {
+   .our-clients__article,
+   .our-clients__gallery li.card,
+   .features__description {
+      width: var(--theme-sheet-width-xs);
+   }
+
+   .our-clients__article {
+      height: 540px;
+   }
+
+   .features .section-title,
+   .features .container {
+      width: auto;
+      margin: auto 30px;
+      box-sizing: border-box;
+   }
+
+   .services__card {
+      width: 380px;
+   }
+
+   .services__image {
+      height: 240px;
+   }
+
+   .services__card,
+   .services__card:nth-child(2),
+   .services__card:nth-child(3) {
+      margin: 20px auto;
+   }
+
+   .services__section-subtitle,
+   .services__card-section ul {
+      margin: 60px auto;
+   }
+
+   .header__title,
+   .header__subtitle,
+   .header__description {
+      max-width: 78%;
+   }
+
+   .header__content.container {
+      background-image: none;
+   }
+   .header .cta-button {
+      margin: 20px 0;
+   }
+
+   .about .container {
+      justify-content: start;
+   }
+
+   .about-company {
+      width: 60%;
+   }
+
+   .about__introduction {
+      width: 35%;
+      margin: 0 auto;
+   }
+
+   footer {
+      grid-template: 1fr 1fr / 1fr 1fr;
+   }
+
+   footer .logo {
+      order: 1;
+   }
+}
+
+@media screen and (max-width: 519px) {
+   .section-title {
+      font-size: 2.5rem;
+   }
+
+   .cta .section-title {
+      font-size: 2.1rem;
+      line-height: 1.4;
+   }
+
+   .cta__subtitle {
+      font-size: 1.2rem;
+   }
+
+   .about__concepts-item {
+      min-width: none;
+      max-width: none;
+      width: 100%;
+   }
+
+   .extra-services__card-section ul {
+      width: 98%;
+      margin: 20px auto;
+   }
+
+   .extra-services__card {
+      flex-wrap: wrap;
+   }
+
+   .extra-services__image,
+   .extra-services__text-content,
+   .extra-services__card:nth-child(2) .extra-services__image,
+   .extra-services__card:nth-child(3) .extra-services__image {
+      flex-basis: auto;
+      width: 100%;
+   }
+
+   .extra-services__image {
+      height: auto;
+   }
+
+   .features .container {
+      margin: 0;
+   }
+
+   .features__card {
+      padding: 5px;
+   }
+
+   .features__card-title {
+      font-size: 1.1rem;
+   }
+
+   .services__card {
+      width: 320px;
+   }
+
+   .about-company {
+      width: 100%;
+   }
+
+   .about .container {
+      position: relative;
+   }
+
+   .about__introduction {
+      position: absolute;
+      width: 24%;
+      height: 140px;
+      top: 0;
+      right: 0;
+   }
+
+   .about-company .title,
+   .about-company .description {
+      width: 73%;
+      font-size: 1rem;
+   }
+
+   /* .header__title,
+   .header__subtitle,
+   .header__description {
+      max-width: 98%;
+   } */
+}
+
+@media screen and (max-width: 359px) {
 }
