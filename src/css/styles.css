@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Roboto:wght@300;400&family=Montserrat:wght@300;400;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Roboto:wght@300;400&family=Montserrat:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&display=swap');
 
 :root {
@@ -1491,6 +1490,11 @@ footer .logo img {
 }
 
 @media screen and (max-width: 619px) {
+   .features__card-title {
+      font-size: 1.2rem;
+      font-weight: 500;
+   }
+
    .features__description {
       width: var(--theme-sheet-width-xs);
    }
