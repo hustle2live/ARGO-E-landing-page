@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Roboto:wght@300;400&family=Montserrat:wght@300;400;600;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&display=swap');
+
 :root {
    --theme-sheet-width-xl: 1140px;
    --theme-sheet-width-lg: 940px;
@@ -138,12 +140,10 @@ header,
    font-family: 'Open Sans', sans-serif;
 }
 
-/* font-family: Arial, sans-serif; */
-
 .section-subtitle,
 .features__text p,
 .services__description {
-   font-family: 'Source Sans Pro', sans-serif;
+   font-family: 'AR One Sans', sans-serif;
 }
 
 .card__description p,
@@ -426,7 +426,6 @@ h1 {
 .services__title {
    font-weight: 400;
    line-height: 1.8;
-   margin: 20px 0 0;
    text-transform: uppercase;
    margin: 32px auto 20px;
 }
@@ -446,12 +445,11 @@ h1 {
    padding: 6px 8px;
    background: transparent;
    cursor: pointer;
-   border-left: 0px solid rgba(179, 94, 244, 1);
 }
 
 .services-btn:hover {
-   transition-duration: 0.4s;
-   border-width: 1px 8px;
+   border-color: rgba(179, 94, 244, 1);
+   transition-duration: 0.1s;
 }
 
 .services__footer {
@@ -1027,6 +1025,10 @@ ol.our-clients__gallery {
    margin: 60px auto 1.8rem;
 }
 
+.cta span.hyphen {
+   display: none;
+}
+
 .cta__subtitle {
    font-size: 2.4rem;
    line-height: 2.6rem;
@@ -1489,10 +1491,13 @@ footer .logo img {
 }
 
 @media screen and (max-width: 619px) {
-   .our-clients__article,
-   .our-clients__gallery li.card,
    .features__description {
       width: var(--theme-sheet-width-xs);
+   }
+
+   .our-clients__article,
+   .our-clients__gallery li.card {
+      width: 500px;
    }
 
    .our-clients__article {
@@ -1561,6 +1566,12 @@ footer .logo img {
 }
 
 @media screen and (max-width: 519px) {
+   .our-clients__article,
+   .our-clients__gallery li.card {
+      width: 400px;
+   }
+
+   .cta .section-title,
    .section-title,
    .header__title,
    .about .about__section-title {
@@ -1568,8 +1579,7 @@ footer .logo img {
       line-height: 1.2;
    }
 
-   .about__concepts .about__concepts-title,
-   .cta .section-title {
+   .about__concepts .about__concepts-title {
       font-size: 2.1rem;
       line-height: 1.4;
    }
@@ -1581,11 +1591,13 @@ footer .logo img {
    .features .section-subtitle,
    .features__description p,
    .service-description__service-types h4,
+   .services__section-subtitle,
    .cta__subtitle {
       font-size: 1.2rem;
       line-height: 1.4;
    }
 
+   .services__section-subtitle a,
    .extra-services__description,
    .features__card-title {
       font-size: 1.1rem;
@@ -1598,7 +1610,7 @@ footer .logo img {
    }
 
    .features__text p {
-      font-size: 0.8rem;
+      font-size: 1rem;
       text-align: start;
       max-width: 88%;
       line-height: 1.5;
@@ -1606,8 +1618,8 @@ footer .logo img {
       margin: auto;
    }
 
-   .extra-services__description,
    .cta,
+   .extra-services__description,
    .features__text {
       margin-bottom: 30px;
    }
@@ -1710,7 +1722,7 @@ footer .logo img {
    }
 
    .services__section-subtitle {
-      max-width: 280px;
+      max-width: 250px;
    }
 
    .cta {
@@ -1747,8 +1759,8 @@ footer .logo img {
       padding-top: 34px;
    }
 
-   .features__description p,
    .cta__subtitle,
+   .features__description p,
    .features .section-subtitle {
       max-width: 84%;
    }
@@ -1775,6 +1787,17 @@ footer .logo img {
       padding: 1rem 2rem;
       font-size: 1rem;
    }
+
+   .cta span.hyphen {
+      display: contents;
+   }
+}
+
+@media screen and (max-width: 424px) {
+   .our-clients__article,
+   .our-clients__gallery li.card {
+      width: 330px;
+   }
 }
 
 @media screen and (max-width: 340px) {
@@ -1784,6 +1807,12 @@ footer .logo img {
       width: var(--theme-sheet-width-xxs);
    }
 
+   .header__title,
+   .header__subtitle,
+   .header__description {
+      max-width: 100%;
+   }
+
    .service-description .section-title,
    .features .section-title,
    .section-title {
@@ -1791,5 +1820,39 @@ footer .logo img {
       margin-right: auto;
       max-width: 90%;
       width: auto;
+   }
+
+   .cta .section-title,
+   .section-title,
+   .header__title,
+   .about .about__section-title {
+      font-size: 2rem;
+      line-height: 1.2;
+   }
+
+   .about__concepts .about__concepts-title {
+      font-size: 1.6rem;
+      line-height: 1.4;
+   }
+
+   .services__card {
+      width: 300px;
+      padding: 18px;
+      min-height: auto;
+   }
+
+   .services__image {
+      height: 200px;
+   }
+   .services__title {
+      margin: 16px auto 10px;
+   }
+   .services-btn {
+      margin: 0 auto 14px;
+   }
+
+   .services__card,
+   .services__card-section ul {
+      margin-top: 0;
    }
 }
