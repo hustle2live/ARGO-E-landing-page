@@ -132,6 +132,7 @@ header,
    font-family: 'Montserrat', sans-serif;
 }
 
+.footer-section .label,
 .features__description p,
 .about-company .description,
 .about-company p,
@@ -142,6 +143,7 @@ header,
    font-family: 'Open Sans', sans-serif;
 }
 
+.footer-section .text,
 .section-subtitle,
 .features__text p,
 .services__description {
@@ -149,7 +151,8 @@ header,
 }
 
 .card__description p,
-.extra-services__title {
+.extra-services__title,
+.footer-section.logo .text {
    font-family: 'Roboto', sans-serif;
 }
 
@@ -1112,20 +1115,18 @@ footer {
    font-size: 1.2rem;
    margin: 0 auto auto 0;
    text-align: left;
-   /* border: 1px solid pink; */
 }
 
 .footer-section.logo {
-   height: auto;
-   /* font-size: 1rem;
-   line-height: 1.25; */
    text-align: left;
 }
 
-.footer-section.logo p.label {
-   /* text-align: left; */
-   /* color: transparent; */
-   visibility: hidden;
+.footer-section.logo .label {
+   /* visibility: hidden; */
+}
+
+.footer-section .label {
+   height: 3.2rem;
 }
 
 .footer-section.logo img {
