@@ -20,7 +20,7 @@
 
 body {
    background-color: var(--dark-primary-color);
-   background-color: var(--dark-primary-color);
+   background-color: #c1c1c1;
    font-family: 'Arial', sans-serif;
    line-height: 1.6;
    font-size: 16px;
@@ -1095,19 +1095,15 @@ footer {
 footer {
    display: grid;
    box-sizing: border-box;
-   /* gap: 70px; */
    grid-template-columns: 1.6fr 2fr 2fr 2fr;
    grid-template-rows: 1fr;
-   /* grid-template-columns: 19% 27% 27% 27%; */
-   /* grid-template-rows: 1fr 100px; */
-   /* grid-template-areas: 'col1 col2 col3 col4'; */
    gap: 30px;
+   padding: 2.5rem;
    justify-content: center;
    align-items: center;
    text-align: center;
    background-color: rgb(77, 77, 77);
    border-top: 1px solid #562e7511;
-   padding: 2.5rem;
    color: #fff;
 }
 
