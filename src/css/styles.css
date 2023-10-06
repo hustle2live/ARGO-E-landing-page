@@ -186,7 +186,6 @@ footer {
 .card__picture img,
 .service-description__backgroung img,
 .features__image img,
-footer .logo img,
 .extra-services__image img,
 .about .icon img {
    width: 100%;
@@ -528,7 +527,7 @@ h1 {
    margin: 30px 0;
 }
 
-.about .title span {
+.nowrap {
    white-space: nowrap;
 }
 .about .title {
@@ -1071,29 +1070,91 @@ ol.our-clients__gallery {
 
 footer {
    display: grid;
-   grid-template-columns: 0.6fr 1fr 1fr 1fr;
    gap: 70px;
+   grid-template-columns: 1.5fr 2fr 2fr 2fr;
+   grid-template-rows: 1fr;
+   /* grid-template-rows: 1fr 100px; */
+   grid-template-areas:
+      'col1 col2 col3 col4'
+      'foot foot foot foot';
+
    justify-content: center;
    align-items: center;
    text-align: center;
    background-color: #f2f2f2;
+   background-color: rgb(77, 77, 77);
    border-top: 1px solid #562e7511;
-   padding: 2rem;
+   padding: 2.5rem;
+   color: #fff;
 }
 
 .footer-section {
-   font-size: 1.4rem;
-   text-align: start;
+   font-size: 1.2rem;
+   margin: 0 auto auto 0;
+   text-align: left;
+   /* border: 1px solid pink; */
 }
 
-footer .logo {
-   height: 100px;
-   margin: auto;
-   overflow: hidden;
+.footer-section.logo {
+   height: 110px;
+   /* font-size: 1rem;
+   line-height: 1.25; */
+   text-align: left;
 }
 
-footer .logo img {
-   object-fit: cover;
+.footer-section.logo p.label {
+   /* text-align: left; */
+   /* color: transparent; */
+   visibility: hidden;
+}
+
+.footer-section.logo img {
+   height: 100%;
+   object-fit: contain;
+   margin: 1rem 0 auto;
+
+}
+
+.footer-section ul {
+   list-style-type: none;
+   padding-left: 0;
+   cursor: default;
+}
+
+.footer-section .text {
+   font-size: 0.94rem;
+   color: var(--middle-bg-color);
+   margin: 6px 0;
+}
+
+.footer-section .text:hover {
+   color: #fff;
+}
+
+.footer-section:nth-child(1) {
+   grid-area: col1;
+}
+.footer-section:nth-child(2) {
+   grid-area: col2;
+}
+.footer-section:nth-child(3) {
+   grid-area: col3;
+}
+.footer-section:nth-child(4) {
+   grid-area: col4;
+}
+
+.footer-section:nth-child(5) {
+   display: none;
+
+   grid-area: foot;
+   color: #c1c1c1;
+   color: #fff;
+   color: var(--primary-color);
+   width: 100%;
+   text-align: center;
+   padding: 2rem 0 0;
+   /* background-color: var(--dark-bg-color); */
 }
 
 /* ------------ body __ extra-services-content -------- */
