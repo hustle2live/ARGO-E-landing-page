@@ -19,8 +19,6 @@
 }
 
 body {
-   background-color: var(--dark-primary-color);
-   background-color: #c1c1c1;
    font-family: 'Arial', sans-serif;
    line-height: 1.6;
    font-size: 16px;
@@ -179,7 +177,7 @@ header,
 .extra-services__section-title,
 .extra-services__section-subtitle,
 .extra-services__card:nth-child(1),
-footer {
+footer .container {
    color: #000;
 }
 
@@ -1090,23 +1088,22 @@ ol.our-clients__gallery {
 .features,
 .cta,
 .extra-services,
-footer {
-   max-width: var(--theme-sheet-width-xxl) !important;
+footer .container {
    margin: 0 auto;
 }
 
 footer {
+   background-color: rgb(77, 77, 77);
+   border-top: 1px solid #562e7511;
+}
+
+footer .container {
    display: grid;
    box-sizing: border-box;
    grid-template-columns: 1.6fr 2fr 2fr 2fr;
    grid-template-rows: 1fr;
    gap: 30px;
-   padding: 2.5rem;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   background-color: rgb(77, 77, 77);
-   border-top: 1px solid #562e7511;
+   padding: 2.5rem 0;
    color: #fff;
 }
 
@@ -1121,12 +1118,9 @@ footer {
    text-align: left;
 }
 
-.footer-section.logo .label {
-   /* visibility: hidden; */
-}
 
 .footer-section .label {
-   height: 3.2rem;
+   height: 2rem;
 }
 
 .footer-section.logo img {
@@ -1152,31 +1146,7 @@ footer {
    color: #fff;
 }
 
-/* .footer-section:nth-child(1) {
-   grid-area: col1;
-}
-.footer-section:nth-child(2) {
-   grid-area: col2;
-}
-.footer-section:nth-child(3) {
-   grid-area: col3;
-}
-.footer-section:nth-child(4) {
-   grid-area: col4;
-} */
 
-.footer-section:nth-child(5) {
-   display: none;
-
-   /* grid-area: foot; */
-   color: #c1c1c1;
-   color: #fff;
-   color: var(--primary-color);
-   width: 100%;
-   text-align: center;
-   padding: 2rem 0 0;
-   /* background-color: var(--dark-bg-color); */
-}
 
 /* ------------ body __ extra-services-content -------- */
 
@@ -1397,7 +1367,7 @@ footer {
       font-size: 1.9rem;
    }
 
-   footer {
+   footer .container {
       padding: 2rem;
       gap: 30px;
    }
@@ -1555,8 +1525,8 @@ footer {
       padding: 0 25px;
    }
 
-   footer {
-      padding: 25px;
+   footer .container {
+      padding: 30px;
       gap: 18px;
    }
 
@@ -1646,13 +1616,8 @@ footer {
       margin: 0 auto;
    }
 
-   footer {
+   footer .container {
       grid-template: auto auto auto auto / 1fr;
-      /* grid-template-areas:
-         'col2'
-         'col3'
-         'col4'
-         'col1'; */
    }
 
    footer .logo {
