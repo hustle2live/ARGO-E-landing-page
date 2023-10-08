@@ -1118,7 +1118,6 @@ footer .container {
    text-align: left;
 }
 
-
 .footer-section .label {
    height: 2rem;
 }
@@ -1145,8 +1144,6 @@ footer .container {
 .footer-section .text:hover {
    color: #fff;
 }
-
-
 
 /* ------------ body __ extra-services-content -------- */
 
@@ -1722,7 +1719,7 @@ footer .container {
    }
 
    .about__concepts-item {
-      min-width: none;
+      min-width: auto;
       max-width: none;
       width: 100%;
    }
