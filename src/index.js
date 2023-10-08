@@ -1,26 +1,46 @@
-// comment
-const gallerySlidesNodeElement = document.querySelector('.our-clients__gallery');
-const gallerySlidesNodeList = document.querySelectorAll('.card');
-// comment
-// asdas
-// sad
-// sa
-// sad
-const sliderPositionStart = 0;
-const sliderPositionEnd = gallerySlidesNodeList.length - 1;
+const galleryElement = document.querySelector('.our-clients__gallery');
+const slidersNodeList = document.querySelectorAll('.card');
 
-let sliderCount = sliderPositionStart;
+const galleryFullWidth = () => galleryElement.offsetWidth;
+const sliderWidth = () => slidersNodeList[0].offsetWidth;
 
-const setPositionGallery = () => {
-   gallerySlidesNodeElement.style.left = '-' + sliderCount + '000px';
-   gallerySlidesNodeElement.style.transform = `translateX(-)${sliderCount}000px`;
+
+// console.log(galleryFullWidth());
+// console.log(sliderWidth());
+
+const sliderPosEnd = () => galleryFullWidth() - sliderWidth();
+const sliderPosStart = 0;
+let sliderPosition = 0;
+
+const checkingIsSliderPoscorrectly = () => sliderPosition % sliderWidth();
+
+
+const calcSliderPos = (next = false) => {
+   const tempPosition = next ? sliderPosition + sliderWidth() : sliderPosition - sliderWidth();
+
+   sliderPosition =
+      tempPosition > sliderPosEnd()
+         ? sliderPosStart
+         : tempPosition < sliderPosStart
+         ? sliderPosEnd()
+         : tempPosition || sliderPosStart;
+
+   return sliderPosition;
 };
 
-const changeSliderCounter = (num) =>
-   (sliderCount = num > sliderPositionEnd ? sliderPositionStart : num < sliderPositionStart ? sliderPositionEnd : num);
+const setPosGallery = () => {
+   // console.log('sliderWidth():' + sliderWidth());
+   // console.log('sliderPosition:' + sliderPosition);
+   // console.log(sliderPosition % sliderWidth());
 
-const prevSlide = () => setPositionGallery(changeSliderCounter(--sliderCount));
-const nextSlide = () => setPositionGallery(changeSliderCounter(++sliderCount));
+   galleryElement.style.left = '-' + sliderPosition + 'px';
+   galleryElement.style.transform = `translateX(-)${sliderPosition}px`;
+};
+
+const prevSlide = () => setPosGallery(calcSliderPos());
+const nextSlide = () => setPosGallery(calcSliderPos(true));
 
 document.querySelector('.prev-btn').addEventListener('click', prevSlide);
 document.querySelector('.next-btn').addEventListener('click', nextSlide);
+
+// console.log(checkingIsSliderPoscorrectly());
