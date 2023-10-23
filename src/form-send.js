@@ -1,5 +1,3 @@
-const galleryElement = document.querySelector('.our-clients__gallery');
-const slidersNodeList = document.querySelectorAll('.card');
 const wrapperFeedback = document.querySelector('.feedback-wrapper');
 const buttonFeedbackClose = document.querySelector('.feedback-wrapper .btn-close');
 const formFeedback = document.querySelector('.feedback-wrapper form');
@@ -26,7 +24,6 @@ const tg_user = '843486240'; // id пользователя, для отправ
 const bot_token = '6717439509:AAHaPvuHO3WORt6_3p3CMIJgoCp5fECbX8s'; // токен бота
 const chat_id = '';
 const textMessage = 'Первая строка сообщения со ссылкой \n Вторая строка с жирным текстом';
-// const params = '';
 
 // параметры, которые отправятся в api телеграм
 const params = {
@@ -44,37 +41,3 @@ const paramsQuery = (id, text) => {
 console.log(JSON.stringify(params));
 
 // <--/ POST API TO TELEGRAM BOT -->
-
-const galleryFullWidth = () => galleryElement.offsetWidth;
-const sliderWidth = () => slidersNodeList[0].offsetWidth;
-
-const sliderPosStart = 0;
-const sliderPosEnd = () => galleryFullWidth() - sliderWidth();
-
-let sliderPosition = 0;
-
-const checkingIsSliderPoscorrectly = () => sliderPosition % sliderWidth();
-
-const calcSliderPos = (next = false) => {
-   const tempPosition = next ? sliderPosition + sliderWidth() : sliderPosition - sliderWidth();
-
-   sliderPosition =
-      tempPosition > sliderPosEnd()
-         ? sliderPosStart
-         : tempPosition < sliderPosStart
-         ? sliderPosEnd()
-         : tempPosition || sliderPosStart;
-
-   return sliderPosition;
-};
-
-const setPosGallery = () => {
-   galleryElement.style.left = '-' + sliderPosition + 'px';
-   galleryElement.style.transform = `translateX(-)${sliderPosition}px`;
-};
-
-const prevSlide = () => setPosGallery(calcSliderPos());
-const nextSlide = () => setPosGallery(calcSliderPos(true));
-
-document.querySelector('.prev-btn').addEventListener('click', prevSlide);
-document.querySelector('.next-btn').addEventListener('click', nextSlide);

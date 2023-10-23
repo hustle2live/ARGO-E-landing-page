@@ -58,27 +58,34 @@
                />
             </svg>
          </button>
-         <div class="label">Передзвонити мені</div>
+         <div class="label">Передзвоніть мені</div>
          <form>
             <div class="user-box">
-               <input type="text" name="" required="true" />
-               <label>Ім'я</label>
+               <input type="text" name="form-name" required />
+               <label for="form-name">Ім'я *</label>
             </div>
             <div class="user-box">
-               <input type="text" name="" required="true" />
-               <label>Телефон</label>
+               <input type="text" name="form-phone" required />
+               <label for="form-phone">Телефон *</label>
             </div>
             <div class="user-box">
-               <textarea rows="6" cols="20" maxlength="140" required="false" ></textarea>
-               <label>Повідомлення</label>
+               <textarea
+                  type="text"
+                  name="form-message"
+                  rows="6"
+                  cols="20"
+                  maxlength="140"
+                  placeholder="Повідомлення (необов'язково)"
+               ></textarea>
+               <!-- <label for="form-message">Повідомлення</label> -->
             </div>
-            <a href="#">
+            <button class="btn-submit" type="submit">
                <span></span>
                <span></span>
                <span></span>
                <span></span>
                відправити
-            </a>
+            </button>
          </form>
       </div>
 
@@ -927,6 +934,7 @@
          </div>
       </footer>
 
-      <script src="index.js"></script>
+      <script src="gallery-slider.js"></script>
+      <script src="form-send.js"></script>
    </body>
 </html>
