@@ -72,16 +72,16 @@ const onFormSubmit = (e) => {
 };
 
 const onSuccess = () => {
-   feedbackWrapper.lastElementChild.innerHTML = `<p class='green'>Дякуємо! Повідомлення відправлено.</p>`;
+   feedbackWrapper.lastElementChild.innerHTML = `<span class='green'>Дякуємо! Повідомлення отримано.</span>`;
 };
 
 const onError = () => {
-   feedbackWrapper.lastElementChild.innerHTML = `<p class='red'>*Помилка відправки повідомлення...</p>`;
+   feedbackWrapper.lastElementChild.innerHTML = `<span class='red'>*Помилка відправки повідомлення...</span>`;
 };
 
 const hadleSubmit = (formData) => {
    return new Promise(function (resolve, reject) {
-      postFeedback('bot_token', formData)
+      postFeedback(bot_token, formData)
          .then((res) => res)
          .then((data) => onSuccess())
          .catch((error) => {
@@ -91,9 +91,4 @@ const hadleSubmit = (formData) => {
    });
 };
 
-// feedbackForm.onsubmit = (e) => onFormSubmit(e);
-
 feedbackForm.onsubmit = (e) => hadleSubmit(onFormSubmit(e));
-
-// onError();
-// onSuccess();

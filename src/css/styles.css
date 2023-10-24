@@ -38,11 +38,7 @@ body {
    display: none !important;
 }
 
-/* feedback-wrapper  */
-
-/* .feedback-wrapper.hidden {
-   display: none;
-} */
+/* ------- feedback-wrapper ------ */
 
 .feedback-wrapper {
    display: block;
@@ -59,6 +55,12 @@ body {
    border-radius: 10px;
    transition-duration: 1s;
    z-index: 1;
+}
+
+.feedback-wrapper .message {
+   min-height: 16px;
+   height: 16px;
+   margin: 10px 0 -12px;
 }
 
 .feedback-wrapper:hover {
@@ -111,7 +113,7 @@ body {
    background: transparent;
 }
 
-.feedback-wrapper .user-box textarea::placeholder,
+.feedback-wrapper .user-box textarea:placeholder-shown ~ label,
 .feedback-wrapper .user-box label {
    position: absolute;
    top: 0;
@@ -123,6 +125,8 @@ body {
    transition: 0.5s;
 }
 
+.feedback-wrapper .user-box textarea:focus ~ label,
+.feedback-wrapper .user-box textarea ~ label,
 .feedback-wrapper .user-box input:focus ~ label,
 .feedback-wrapper .user-box input:valid ~ label {
    top: -20px;
