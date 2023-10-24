@@ -40,7 +40,7 @@ const textMessageFormatter = ({ name, tel, msg = '-' }) => {
 
 // POST API TO TELEGRAM BOT
 
-const postFeedback = async function (TOKEN, DATA, METHOD_NAME = `sendMessage`) {
+const postFeedback = async (TOKEN, DATA, METHOD_NAME = `sendMessage`) => {
    const response = await fetch(`https://api.telegram.org/bot${TOKEN}/${METHOD_NAME}`, {
       method: 'POST',
       body: DATA
@@ -71,13 +71,29 @@ const onFormSubmit = (e) => {
    return formData;
 };
 
-const hadleSubmit = async () => {
-   try {
-      const sumbitFunction = await postFeedback(onFormSubmit(e));
-      
-   } catch (error) {
-      console.log(error.message);
-   }
+const onSuccess = () => {
+   feedbackWrapper.lastElementChild.innerHTML = `<p class='green'>Дякуємо! Повідомлення відправлено.</p>`;
 };
 
-feedbackForm.onsubmit = (e) => onFormSubmit(e);
+const onError = () => {
+   feedbackWrapper.lastElementChild.innerHTML = `<p class='red'>*Помилка відправки повідомлення...</p>`;
+};
+
+const hadleSubmit = (formData) => {
+   return new Promise(function (resolve, reject) {
+      postFeedback('bot_token', formData)
+         .then((res) => res)
+         .then((data) => onSuccess())
+         .catch((error) => {
+            onError();
+            reject(error.message);
+         });
+   });
+};
+
+// feedbackForm.onsubmit = (e) => onFormSubmit(e);
+
+feedbackForm.onsubmit = (e) => hadleSubmit(onFormSubmit(e));
+
+// onError();
+// onSuccess();

@@ -18,6 +18,14 @@
    --dark-bg-color: #1a1a1a;
 }
 
+.red {
+   color: red;
+}
+
+.green {
+   color: green;
+}
+
 body {
    font-family: 'Arial', sans-serif;
    line-height: 1.6;
