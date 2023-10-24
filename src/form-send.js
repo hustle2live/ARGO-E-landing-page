@@ -92,3 +92,7 @@ const hadleSubmit = (formData) => {
 };
 
 feedbackForm.onsubmit = (e) => hadleSubmit(onFormSubmit(e));
+
+// добавить очистку FORM ELEMENTS после отправки
+// добавить макс длину и формат номера телефона
+// добавить ReGex валидацию инпутов
