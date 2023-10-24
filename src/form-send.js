@@ -40,7 +40,7 @@ const textMessageFormatter = ({ name, tel, msg = '-' }) => {
 
 // POST API TO TELEGRAM BOT
 
-const postFeedback = async (TOKEN, DATA, METHOD_NAME = `sendMessage`) => {
+const postFeedback = async function (TOKEN, DATA, METHOD_NAME = `sendMessage`) {
    const response = await fetch(`https://api.telegram.org/bot${TOKEN}/${METHOD_NAME}`, {
       method: 'POST',
       body: DATA
@@ -66,7 +66,18 @@ const onFormSubmit = (e) => {
    formData.append('text', textMessage);
    formData.append('parse_mode', 'HTML');
 
-   postFeedback(bot_token, formData);
+   // postFeedback(bot_token, formData);
+
+   return formData;
+};
+
+const hadleSubmit = async () => {
+   try {
+      const sumbitFunction = await postFeedback(onFormSubmit(e));
+      
+   } catch (error) {
+      console.log(error.message);
+   }
 };
 
 feedbackForm.onsubmit = (e) => onFormSubmit(e);
