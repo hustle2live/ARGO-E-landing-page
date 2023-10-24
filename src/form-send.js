@@ -66,8 +66,6 @@ const onFormSubmit = (e) => {
    formData.append('text', textMessage);
    formData.append('parse_mode', 'HTML');
 
-   // postFeedback(bot_token, formData);
-
    return formData;
 };
 
@@ -94,5 +92,12 @@ const hadleSubmit = (formData) => {
 feedbackForm.onsubmit = (e) => hadleSubmit(onFormSubmit(e));
 
 // добавить очистку FORM ELEMENTS после отправки
+// закрытие формы после успешной отправки через 3 сек
+// disable отправки формы ?? нужен ли - не валидная форма итак не отправиться...
+
 // добавить макс длину и формат номера телефона
 // добавить ReGex валидацию инпутов
+
+// поменять слайдеры
+// уменьшить изобраения
+// прописать ALT текст
