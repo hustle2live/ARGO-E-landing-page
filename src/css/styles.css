@@ -23,7 +23,7 @@
 }
 
 .green {
-   color: green;
+   color: #00ac00;
 }
 
 body {
@@ -57,10 +57,17 @@ body {
    z-index: 1;
 }
 
+.feedback-wrapper.fadeout:hover,
+.feedback-wrapper.fadeout {
+   opacity: 0;
+   transition-duration: 1s;
+   visibility: hidden;
+}
+
 .feedback-wrapper .message {
-   min-height: 16px;
-   height: 16px;
-   margin: 10px 0 -12px;
+   min-height: 20px;
+   height: 20px;
+   margin: 16px 0 -16px;
 }
 
 .feedback-wrapper:hover {
@@ -145,10 +152,23 @@ body {
    text-transform: uppercase;
    overflow: hidden;
    transition: 0.5s;
-   margin-top: 40px;
+   margin-top: 30px;
    letter-spacing: 4px;
    border: none;
    background: transparent;
+}
+
+.feedback-wrapper form .btn-submit:disabled {
+   background: #b4b4b4;
+   background: gray;
+   color: #000;
+   cursor: default;
+   box-shadow: none;
+   border-radius: 5px;
+}
+
+.feedback-wrapper form .btn-submit:disabled span {
+   animation: none;
 }
 
 .feedback-wrapper .btn-submit:hover {
@@ -157,6 +177,11 @@ body {
    border-radius: 5px;
    box-shadow: 0 0 5px var(--primary-color), 0 0 25px var(--primary-color), 0 0 50px var(--primary-color),
       0 0 100px var(--primary-color);
+}
+
+.feedback-wrapper .btn-submit:active {
+   box-shadow: 0 0 25px var(--primary-color);
+   color: #d1d1d1;
 }
 
 .feedback-wrapper .btn-submit span {
