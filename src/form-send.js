@@ -94,7 +94,7 @@ const onError = () => {
 
 const hadleSubmit = (formData) => {
    return new Promise(function (resolve, reject) {
-      postFeedback('bot_token', formData)
+      postFeedback(bot_token, formData)
          .then((data) => {
             onSuccess();
          })
