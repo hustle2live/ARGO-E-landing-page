@@ -15,6 +15,7 @@ const feedbackWrapper = document.querySelector('.feedback-wrapper');
 const feedbackForm = document.querySelector('.feedback-wrapper form');
 const buttonFeedbackClose = document.querySelector('.feedback-wrapper .btn-close');
 const ctaButtonsAll = document.querySelectorAll('.cta-button');
+const submitButton = document.querySelector('.btn-submit');
 
 const getCurrentTime = () => new Date().toString();
 
@@ -69,8 +70,22 @@ const onFormSubmit = (e) => {
    return formData;
 };
 
+const hideFormAfterFourSec = () => {
+   window.setTimeout(() => {
+      feedbackWrapper.classList.add('fadeout');
+   }, 4000);
+
+   window.setTimeout(() => {
+      showHideFeedbackWrapper();
+      feedbackWrapper.classList.remove('fadeout');
+   }, 5000);
+};
+
 const onSuccess = () => {
-   feedbackWrapper.lastElementChild.innerHTML = `<span class='green'>Дякуємо! Повідомлення отримано.</span>`;
+   feedbackWrapper.lastElementChild.innerHTML = `<span class='green'>Дякуємо! Ваше повідомлення отримано.</span>`;
+   feedbackForm.reset();
+   submitButton.disabled = true;
+   hideFormAfterFourSec();
 };
 
 const onError = () => {
@@ -79,11 +94,13 @@ const onError = () => {
 
 const hadleSubmit = (formData) => {
    return new Promise(function (resolve, reject) {
-      postFeedback(bot_token, formData)
-         .then((res) => res)
-         .then((data) => onSuccess())
+      postFeedback('bot_token', formData)
+         .then((data) => {
+            onSuccess();
+         })
          .catch((error) => {
             onError();
+            submitButton.disabled = true;
             reject(error.message);
          });
    });
