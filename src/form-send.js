@@ -11,21 +11,27 @@
 //    parse_mode: 'HTML'
 // }; // режим отображения сообщения HTML (не все HTML теги работают)
 
+const regExpName = /[a-z а-яёЁЇїІіЄєҐґ ,.'-]/i;
+const regExpPhone = /[\d-\+]/;
+const regExpTextArea = /[a-z а-яёЁЇїІіЄєҐґ 0-9 ,.'\-)(\+]/i;
+
 const feedbackWrapper = document.querySelector('.feedback-wrapper');
 const feedbackForm = document.querySelector('.feedback-wrapper form');
 const buttonFeedbackClose = document.querySelector('.feedback-wrapper .btn-close');
 const ctaButtonsAll = document.querySelectorAll('.cta-button');
 const submitButton = document.querySelector('.btn-submit');
 
+const inputName = document.querySelector('.feedback-wrapper form input[name="name"]');
+const inputNumber = document.querySelector('.feedback-wrapper form input[name="phone"]');
+const inputText = document.querySelector('.feedback-wrapper form textarea');
+
+const inputNameHandler = (e, regex) => (!regex.test(e.key) ? e.preventDefault() : e.key);
+
 const getCurrentTime = () => new Date().toString();
 
 const dateTimeMessageFormatt = (date) => `${date.substring(8, 10)} ${date.substring(4, 7)} ${date.substring(11, 24)}`;
 
 const showHideFeedbackWrapper = () => feedbackWrapper.classList.toggle('hidden');
-
-ctaButtonsAll.forEach((btn) => btn.addEventListener('click', showHideFeedbackWrapper));
-
-buttonFeedbackClose.addEventListener('click', showHideFeedbackWrapper);
 
 const bot_token = `6717439509:AAHaPvuHO3WORt6_3p3CMIJgoCp5fECbX8s`; // токен бота
 const chat_id = `843486240`; // id користувача
@@ -107,6 +113,13 @@ const hadleSubmit = (formData) => {
 };
 
 feedbackForm.onsubmit = (e) => hadleSubmit(onFormSubmit(e));
+
+buttonFeedbackClose.addEventListener('click', showHideFeedbackWrapper);
+ctaButtonsAll.forEach((btn) => btn.addEventListener('click', showHideFeedbackWrapper));
+
+inputName.addEventListener('keypress', (e) => inputNameHandler(e, regExpName));
+inputNumber.addEventListener('keypress', (e) => inputNameHandler(e, regExpPhone));
+inputText.addEventListener('keypress', (e) => inputNameHandler(e, regExpTextArea));
 
 // добавить очистку FORM ELEMENTS после отправки
 // закрытие формы после успешной отправки через 3 сек

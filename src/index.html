@@ -61,15 +61,15 @@
          <div class="label">Передзвоніть мені</div>
          <form>
             <div class="user-box">
-               <input type="text" name="name" required />
+               <input type="text" name="name" minlength="3" maxlength="32" required />
                <label for="name">Ім'я *</label>
             </div>
             <div class="user-box">
-               <input type="text" name="phone" required />
+               <input type="tel" name="phone" minlength="9" maxlength="16" required />
                <label for="phone">Телефон *</label>
             </div>
             <div class="user-box">
-               <textarea type="text" name="message" rows="6" cols="20" maxlength="140" placeholder=""></textarea>
+               <textarea name="message" rows="6" cols="20" maxlength="140" placeholder=""></textarea>
                <label for="message">Повідомлення (необов'язково)</label>
             </div>
             <button class="btn-submit" type="submit">
