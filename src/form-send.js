@@ -121,12 +121,12 @@ inputName.addEventListener('keypress', (e) => inputNameHandler(e, regExpName));
 inputNumber.addEventListener('keypress', (e) => inputNameHandler(e, regExpPhone));
 inputText.addEventListener('keypress', (e) => inputNameHandler(e, regExpTextArea));
 
-// добавить очистку FORM ELEMENTS после отправки
-// закрытие формы после успешной отправки через 3 сек
-// disable отправки формы ?? нужен ли - не валидная форма итак не отправиться...
+// добавить очистку FORM ELEMENTS после отправки        - done!
+// закрытие формы после успешной отправки через 3 сек       - done!
+// disable отправки формы       - done!
 
-// добавить макс длину и формат номера телефона
-// добавить ReGex валидацию инпутов
+// добавить макс длину и формат номера телефона      - done!
+// добавить ReGex валидацию инпутов      - done!
 
 // поменять слайдеры
 // уменьшить изобраения
