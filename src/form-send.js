@@ -34,7 +34,7 @@ const dateTimeMessageFormatt = (date) => `${date.substring(8, 10)} ${date.substr
 const showHideFeedbackWrapper = () => feedbackWrapper.classList.toggle('hidden');
 
 const bot_token = `6717439509:AAHaPvuHO3WORt6_3p3CMIJgoCp5fECbX8s`; // токен бота
-const chat_id = `843486240`; // id користувача
+const chat_id = `471789797`; // id користувача
 
 const textMessageFormatter = ({ name, tel, msg = '-' }) => {
    const time = dateTimeMessageFormatt(getCurrentTime());
