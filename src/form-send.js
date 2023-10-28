@@ -128,6 +128,16 @@ inputText.addEventListener('keypress', (e) => inputNameHandler(e, regExpTextArea
 // добавить макс длину и формат номера телефона      - done!
 // добавить ReGex валидацию инпутов      - done!
 
-// поменять слайдеры
-// уменьшить изобраения
-// прописать ALT текст
+// поменять слайдеры      - done!
+// Павлу проверить слайдеры т текст      - done!
+
+// уменьшить изобраения в розмірі
+// прописать ALT тексти
+
+// додати lazy loading
+// <img src="image.jpg" alt="..." loading="lazy" />
+
+// прописати оптимізовані зображення для gallery slides
+
+// srcset="1.jpg 640w, 1.jpg 920w, !.jpg 1280w, 1.jpg 1600w"
+// https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
