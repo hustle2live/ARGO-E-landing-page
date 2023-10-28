@@ -131,13 +131,14 @@ inputText.addEventListener('keypress', (e) => inputNameHandler(e, regExpTextArea
 // поменять слайдеры      - done!
 // Павлу проверить слайдеры т текст      - done!
 
-// уменьшить изобраения в розмірі
-// прописать ALT тексти
+// уменьшить изобраения в розмірі    - done!
+// прописать ALT тексти    - done!
 
-// додати lazy loading
+// додати lazy loading    - done!
 // <img src="image.jpg" alt="..." loading="lazy" />
 
 // прописати оптимізовані зображення для gallery slides
-
 // srcset="1.jpg 640w, 1.jpg 920w, !.jpg 1280w, 1.jpg 1600w"
 // https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
+
+// optimized css feedback form     - done!
