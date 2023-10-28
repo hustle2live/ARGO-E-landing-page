@@ -49,7 +49,7 @@ body {
    padding: 40px;
    transform: translate(-50%, -50%);
    background: var(--dark-bg-color);
-   opacity: 0.8;
+   opacity: 0.95;
    box-sizing: border-box;
    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
    border-radius: 10px;
@@ -2095,9 +2095,32 @@ footer .container {
    .our-clients__gallery li.card {
       width: 330px;
    }
+
+   .feedback-wrapper {
+      width: 360px;
+      padding: 20px;
+   }
+}
+
+@media screen and (max-width: 380px) {
+   .feedback-wrapper {
+      width: 340px;
+   }
+
+   .feedback-wrapper .label {
+      margin: 15px 0;
+   }
+
+   .feedback-wrapper form .btn-submit {
+      margin-top: 15px;
+   }
 }
 
 @media screen and (max-width: 340px) {
+   .feedback-wrapper {
+      width: 310px;
+   }
+
    .our-clients__article,
    .our-clients__gallery li.card,
    .features__description {
