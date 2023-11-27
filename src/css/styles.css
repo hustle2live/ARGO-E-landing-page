@@ -109,14 +109,46 @@
    }
 }
 
+@keyframes customAnimationScale {
+   from {
+      transform-origin: center center;
+      transform: translate3d(var(--animation-zoom_in-scale), var(--animation-zoom_in-scale), 0)
+         scale3d(var(--animation-zoom_in-scale), var(--animation-zoom_in-scale), var(--animation-zoom_in-scale))
+         rotate3d(0, 0, 1, var(--animation-custom_in-rotate));
+      opacity: var(--animation-custom_in-opacity);
+   }
+   to {
+      transform-origin: center center;
+      transform: translate3d(var(--animation-custom_in-translate_x-end), var(--animation-custom_in-translate_y-end), 0),
+         scale3d(var(--animation-custom_in-scale), var(--animation-custom_in-scale), var(--animation-custom_in-scale))
+            rotate3d(0, 0, 1, var(--animation-custom_in-rotate));
+      opacity: var(--animation-custom_in-scale-end);
+   }
+}
+
 .customAnimationIn {
    animation-name: customAnimationIn;
+}
+
+.customAnimationScale {
+   animation-name: customAnimationScale;
 }
 
 .services__card.animated {
    opacity: 0;
    will-change: transform, opacity;
    animation-duration: 1500ms;
+}
+
+.icon.animated {
+   scale: 0;
+   will-change: transform, opacity;
+   animation-duration: 1500ms;
+}
+
+.icon.customAnimationScale {
+   scale: 1;
+   transition: scale 1s;
 }
 
 .services__card.customAnimationIn {
