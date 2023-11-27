@@ -125,11 +125,11 @@
 }
 
 .services__card.customAnimationIn:nth-of-type(2) {
-   animation-delay: 300ms;
+   animation-delay: 250ms;
 }
 
 .services__card.customAnimationIn:nth-of-type(3) {
-   animation-delay: 600ms;
+   animation-delay: 500ms;
 }
 
 /* animations css */
