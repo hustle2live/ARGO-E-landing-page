@@ -136,7 +136,6 @@
 @keyframes slideInLeft {
    from {
       transform: translate3d(var(--animation-slide_in_left-translate_x), 0, 0);
-      visibility: visible;
    }
    to {
       transform: translate3d(0, 0, 0);
@@ -145,6 +144,19 @@
 
 .slideInLeft {
    animation-name: slideInLeft;
+}
+
+@keyframes slideInRight {
+   from {
+      transform: translate3d(var(--animation-slide_in_right-translate_x), 0, 0);
+   }
+   to {
+      transform: translate3d(0, 0, 0);
+   }
+}
+
+.slideInRight {
+   animation-name: slideInRight;
 }
 
 @keyframes slideInLeftRotate {
@@ -162,20 +174,6 @@
 
 .slideInLeftRotate {
    animation-name: slideInLeftRotate;
-}
-
-@keyframes slideInRight {
-   from {
-      transform: translate3d(var(--animation-slide_in_right-translate_x), 0, 0);
-      visibility: visible;
-   }
-   to {
-      transform: translate3d(0, 0, 0);
-   }
-}
-
-.slideInRight {
-   animation-name: slideInRight;
 }
 
 .animated {
@@ -203,6 +201,7 @@
    animation-delay: 500ms;
 }
 
+.extra-services__card:nth-child(2) .extra-services__text-content.animated,
 .icon.animated {
    scale: 0;
 }
@@ -1638,17 +1637,46 @@ footer .container {
 .extra-services__text-content {
    flex-basis: 50%;
    flex-grow: 1;
+   height: 100%;
+   animation-duration: 2000ms;
+}
+
+.extra-services__card:nth-child(1) .extra-services__text-content {
+   background: yellow;
+}
+
+/* .extra-services__card:nth-child(1) .extra-services__text-content, */
+.extra-services__card:nth-child(2) .extra-services__image.animated {
+   animation-delay: 700ms;
+}
+.extra-services__card:nth-child(3) .extra-services__image.animated {
+   animation-delay: 400ms;
+   animation-duration: 2200ms;
+}
+
+.extra-services__card:nth-child(2) .extra-services__text-content {
+   background: darkblue;
+}
+
+.extra-services__card:nth-child(2) .extra-services__text-content.animated.customAnimationScale {
+   scale: 1;
+   transition: scale 2s;
+   animation-delay: 800ms;
+   transition-delay: 800ms;
+}
+
+.extra-services__card:nth-child(3) .extra-services__text-content {
+   animation-duration: 3000ms;
+   background: orangered;
 }
 
 .extra-services__card:nth-child(1) {
    flex-direction: row-reverse;
    text-align: start;
-   background: yellow;
 }
 
 .extra-services__card:nth-child(2) {
    text-align: left;
-   background: darkblue;
 }
 
 .extra-services__card:nth-child(2) .extra-services__image,
@@ -1658,7 +1686,6 @@ footer .container {
 
 .extra-services__card:nth-child(3) {
    text-align: start;
-   background: orangered;
 }
 
 .extra-services__card {
