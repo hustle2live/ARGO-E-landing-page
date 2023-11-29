@@ -166,7 +166,7 @@
 }
 
 .services__card.animated {
-   opacity: 0.15;
+   opacity: 0;
    transform: translate3d(0, 0, 0);
 }
 
