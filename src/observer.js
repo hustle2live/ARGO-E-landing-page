@@ -7,8 +7,8 @@ const animationSlideInLeftRotate = 'slideInLeftRotate';
 const animationSlideInRight = 'slideInRight';
 
 const servicesContainer = document.querySelector('.services__content.container');
-const elementsCard = document.querySelectorAll('.services__card.animated');
-const elementsIcon = document.querySelectorAll('.icon.animated');
+const serviceCardsAll = document.querySelectorAll('.services__card.animated');
+const iconsAboutAll = document.querySelectorAll('.icon.animated');
 
 const serviceDescriptionPicture = document.querySelector('.service-description__image.animated');
 const serviceDescriptionText = document.querySelector('.service-description__service-types.animated');
@@ -29,40 +29,40 @@ const onEntryCallback = (entries, animatedClassName) => {
    });
 };
 
-const servicesCallback = (entries) => {
+const serviceSectionEntryCallback = (entries) => {
    entries.forEach((entry) => {
       if (entry.isIntersecting) {
-         for (const card of elementsCard) {
+         for (const card of serviceCardsAll) {
             card.classList.add(animationIn);
          }
       } else {
-         for (const card of elementsCard) {
+         for (const card of serviceCardsAll) {
             card.classList.remove(animationIn);
          }
       }
    });
 };
 
-observer(servicesCallback, {
+observer(serviceSectionEntryCallback, {
    threshold: [0.25]
 }).observe(servicesContainer);
 
-for (const elem of elementsIcon) {
+for (const elem of iconsAboutAll) {
    observer((e) => onEntryCallback(e, animationScale)).observe(elem);
 }
 
-observer((e) => onEntryCallback(e, animationSlideInLeftRotate)).observe(serviceDescriptionPicture);
-observer((e) => onEntryCallback(e, animationSlideInRight)).observe(serviceDescriptionText);
+observer((e) => onEntryCallback(e, animationSlideInLeftRotate), {
+   threshold: [0.1]
+}).observe(serviceDescriptionPicture);
 
+observer((e) => onEntryCallback(e, animationSlideInRight), {
+   threshold: [0.1]
+}).observe(serviceDescriptionText);
 
-
-
-
-
-// const servicesObserver = new IntersectionObserver(servicesCallback, options);
+// const servicesObserver = new IntersectionObserver(serviceSectionEntryCallback, options);
 
 // console.log(elements);
-// console.log(elementsIcon);
+// console.log(iconsAboutAll);
 
 // function onScale(nodeList) {
 //    nodeList.forEach((domElem) => {
@@ -84,7 +84,7 @@ observer((e) => onEntryCallback(e, animationSlideInRight)).observe(serviceDescri
 
 // const scaleObserver = new IntersectionObserver((animationObject) => onEntryCallback(animationObject, animationScale), options);
 
-// for (const elem of elementsCard) {
+// for (const elem of serviceCardsAll) {
 //    observer(animationIn, {
 //       root: document.querySelector('.services__content.container'),
 //       threshold: [0.5]
