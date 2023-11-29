@@ -2,10 +2,16 @@
 
 const animationIn = 'customAnimationIn';
 const animationScale = 'customAnimationScale';
+// const animationSlideInLeft = 'slideInLeft';
+const animationSlideInLeftRotate = 'slideInLeftRotate';
+const animationSlideInRight = 'slideInRight';
 
 const servicesContainer = document.querySelector('.services__content.container');
 const elementsCard = document.querySelectorAll('.services__card.animated');
 const elementsIcon = document.querySelectorAll('.icon.animated');
+
+const serviceDescriptionPicture = document.querySelector('.service-description__image.animated');
+const serviceDescriptionText = document.querySelector('.service-description__service-types.animated');
 
 const defaultOptions = {
    threshold: [0.5]
@@ -44,6 +50,14 @@ observer(servicesCallback, {
 for (const elem of elementsIcon) {
    observer((e) => onEntryCallback(e, animationScale)).observe(elem);
 }
+
+observer((e) => onEntryCallback(e, animationSlideInLeftRotate)).observe(serviceDescriptionPicture);
+observer((e) => onEntryCallback(e, animationSlideInRight)).observe(serviceDescriptionText);
+
+
+
+
+
 
 // const servicesObserver = new IntersectionObserver(servicesCallback, options);
 
