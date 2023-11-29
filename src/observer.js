@@ -1,38 +1,79 @@
 // observer.js
-function onEntry(nodeList) {
-   nodeList.forEach((domElem) => {
-      if (domElem.isIntersecting) {
-         domElem.target.classList.add('customAnimationIn');
-      }
-   });
-}
 
-function onScale(nodeList) {
-   nodeList.forEach((domElem) => {
-      if (domElem.isIntersecting) {
-         domElem.target.classList.add('customAnimationScale');
-      }
-   });
-}
+const animationIn = 'customAnimationIn';
+const animationScale = 'customAnimationScale';
 
-const options = {
-   threshold: [0.5]
-};
-
-const moveObserver = new IntersectionObserver(onEntry, options);
-
-const scaleObserver = new IntersectionObserver(onScale, options);
-
+const servicesContainer = document.querySelector('.services__content.container');
 const elementsCard = document.querySelectorAll('.services__card.animated');
 const elementsIcon = document.querySelectorAll('.icon.animated');
 
-for (const elem of elementsCard) {
-   moveObserver.observe(elem);
-}
+const defaultOptions = {
+   threshold: [0.5]
+};
+
+const observer = (callBack, options = defaultOptions) => new IntersectionObserver(callBack, options);
+
+const onEntryCallback = (entries, animatedClassName) => {
+   entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+         entry.target.classList.add(animatedClassName);
+      } else {
+         entry.target.classList.remove(animatedClassName);
+      }
+   });
+};
+
+const servicesCallback = (entries) => {
+   entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+         for (const card of elementsCard) {
+            card.classList.add(animationIn);
+         }
+      } else {
+         for (const card of elementsCard) {
+            card.classList.remove(animationIn);
+         }
+      }
+   });
+};
+
+observer(servicesCallback, {
+   threshold: [0.25]
+}).observe(servicesContainer);
 
 for (const elem of elementsIcon) {
-   scaleObserver.observe(elem);
+   observer((e) => onEntryCallback(e, animationScale)).observe(elem);
 }
 
+// const servicesObserver = new IntersectionObserver(servicesCallback, options);
+
 // console.log(elements);
-console.log(elementsIcon);
+// console.log(elementsIcon);
+
+// function onScale(nodeList) {
+//    nodeList.forEach((domElem) => {
+//       if (domElem.isIntersecting) {
+//          domElem.target.classList.add('customAnimationScale');
+//       }
+//    });
+// }
+
+//  if (entry.intersectionRatio === 0) {
+//     console.log('Элемент удален полностью в области наблюдения');
+//     entry.target.classList.remove(animatedClassName);
+//  }
+
+// moveObserver.observe(elem);
+// scaleObserver.observe(elem);
+
+// const moveObserver = new IntersectionObserver((animationObject) => onEntryCallback(animationObject, animationIn), options);
+
+// const scaleObserver = new IntersectionObserver((animationObject) => onEntryCallback(animationObject, animationScale), options);
+
+// for (const elem of elementsCard) {
+//    observer(animationIn, {
+//       root: document.querySelector('.services__content.container'),
+//       threshold: [0.5]
+//    }).observe(elem);
+//    console.log('observe');
+// }

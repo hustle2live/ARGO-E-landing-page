@@ -97,9 +97,7 @@
 @keyframes customAnimationIn {
    from {
       transform-origin: center center;
-      transform: translate3d(var(--animation-custom_in-translate_x), var(--animation-slide_in_up-translate_y), 0)
-         scale3d(var(--animation-custom_in-scale), var(--animation-custom_in-scale), var(--animation-custom_in-scale))
-         rotate3d(0, 0, 1, var(--animation-custom_in-rotate));
+      transform: translate3d(var(--animation-custom_in-translate_x), var(--animation-slide_in_up-translate_y), 0);
       opacity: var(--animation-custom_in-opacity);
    }
    to {
@@ -107,6 +105,10 @@
       transform: translate3d(var(--animation-custom_in-translate_x-end), var(--animation-custom_in-translate_y-end), 0);
       opacity: var(--animation-custom_in-scale-end);
    }
+}
+
+.customAnimationIn {
+   animation-name: customAnimationIn;
 }
 
 @keyframes customAnimationScale {
@@ -126,29 +128,46 @@
    }
 }
 
-.customAnimationIn {
-   animation-name: customAnimationIn;
-}
-
 .customAnimationScale {
    animation-name: customAnimationScale;
 }
 
+@keyframes slideInLeft {
+   from {
+      transform: translate3d(var(--animation-slide_in_left-translate_x), 0, 0);
+      visibility: visible;
+   }
+   to {
+      transform: translate3d(0, 0, 0);
+   }
+}
+
+.slideInLeft {
+   animation-name: slideInLeft;
+}
+
+@keyframes slideInRight {
+   from {
+      transform: translate3d(var(--animation-slide_in_right-translate_x), 0, 0);
+      visibility: visible;
+   }
+   to {
+      transform: translate3d(0, 0, 0);
+   }
+}
+
+.slideInRight {
+   animation-name: slideInRight;
+}
+
+.animated {
+   will-change: transform, opacity;
+   animation-duration: 1500ms;
+}
+
 .services__card.animated {
-   opacity: 0;
-   will-change: transform, opacity;
-   animation-duration: 1500ms;
-}
-
-.icon.animated {
-   scale: 0;
-   will-change: transform, opacity;
-   animation-duration: 1500ms;
-}
-
-.icon.customAnimationScale {
-   scale: 1;
-   transition: scale 1s;
+   opacity: 0.15;
+   transform: translate3d(0, 0, 0);
 }
 
 .services__card.customAnimationIn {
@@ -162,6 +181,15 @@
 
 .services__card.customAnimationIn:nth-of-type(3) {
    animation-delay: 500ms;
+}
+
+.icon.animated {
+   scale: 0;
+}
+
+.icon.customAnimationScale {
+   scale: 1;
+   transition: scale 1s;
 }
 
 /* animations css */
