@@ -227,10 +227,43 @@ body {
    font-size: 16px;
    margin: 0;
    padding: 0;
+   position: relative;
 }
 
 .hidden {
    display: none !important;
+}
+
+/* top button styles */
+
+.top-btn {
+   display: none;
+   position: fixed;
+   bottom: 14px;
+   right: 24px;
+   border: none;
+   outline: none;
+   background-color: #3f3f3f;
+   color: white;
+   padding: 14px 10px 16px;
+   min-width: 60px;
+   width: auto;
+   text-align: center;
+   font-size: 2rem;
+   text-decoration: none;
+   cursor: pointer;
+   border-radius: 2px;
+   box-shadow: 0 0 0 0.1rem #3f3f3f;
+   transition-duration: 0.5s;
+   z-index: 99;
+   opacity: 0.8;
+   transform: scale(0.6);
+}
+
+.top-btn:hover {
+   opacity: 1;
+   background-color: #565656;
+   transform: scale(0.7);
 }
 
 /* ------- feedback-wrapper ------ */
