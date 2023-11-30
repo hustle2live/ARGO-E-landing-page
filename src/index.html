@@ -14,7 +14,7 @@
       <link rel="stylesheet" href="./css/styles.css" />
    </head>
 
-   <body class="u-body">
+   <body id="top" class="u-body">
       <header class="header">
          <div class="header__navbar container">
             <div class="header__navbar_company-logo">
@@ -37,13 +37,18 @@
          <div class="header__content-section">
             <div class="header__background-image">
                <img
+                  src="./images/pictures/stock/temp/AdobeStock_482437666-4500.jpg"
                   srcset="
-                     ./images/pictures/stock/temp/AdobeStock_482437666-800.jpg   640w,
-                     ./images/pictures/stock/temp/AdobeStock_482437666-1200.jpg 1024w,
-                     ./images/pictures/stock/temp/AdobeStock_482437666-2400.jpg 1920w
+                     ./images/pictures/stock/temp/AdobeStock_482437666-800.jpg   800w,
+                     ./images/pictures/stock/temp/AdobeStock_482437666-1200.jpg 1200w,
+                     ./images/pictures/stock/temp/AdobeStock_482437666-2400.jpg 2400w,
+                     ./images/pictures/stock/temp/AdobeStock_482437666-4500.jpg 4500w
                   "
-                  sizes="640px, 1024px, 1920px"
-                  src="./images/pictures/stock/temp/AdobeStock_482437666.jpg"
+                  sizes="
+                  (max-width: 559px) 320px,
+                  (max-width: 1023px) 800px,
+                  (max-width: 1920px) 1200px,
+                  (max-width: 2560px) 2400px"
                   alt="високі комерційні будівлі"
                   loading="eager"
                />
@@ -59,39 +64,6 @@
             </div>
          </div>
       </header>
-
-      <div class="feedback-wrapper hidden">
-         <button class="btn-close">
-            <svg class="icon close" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-               <path
-                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-               />
-            </svg>
-         </button>
-         <div class="label">Передзвоніть мені</div>
-         <form>
-            <div class="user-box">
-               <input type="text" name="name" minlength="3" maxlength="32" required />
-               <label for="name">Ім'я *</label>
-            </div>
-            <div class="user-box">
-               <input type="tel" name="phone" minlength="9" maxlength="16" required />
-               <label for="phone">Телефон *</label>
-            </div>
-            <div class="user-box">
-               <textarea name="message" rows="6" cols="20" maxlength="140" placeholder=""></textarea>
-               <label for="message">Повідомлення (необов'язково)</label>
-            </div>
-            <button class="btn-submit" type="submit">
-               <span></span>
-               <span></span>
-               <span></span>
-               <span></span>
-               відправити
-            </button>
-         </form>
-         <div class="message"><span> </span></div>
-      </div>
 
       <div class="services">
          <div class="services__content container">
@@ -455,13 +427,18 @@
       <div class="features">
          <div class="features__background-image">
             <img
-               src="./images/pictures/stock/temp/AdobeStock_225548074.jpg"
+               src="./images/pictures/stock/temp/AdobeStock_225548074-4500.jpg"
                srcset="
-                  ./images/pictures/stock/temp/AdobeStock_225548074-800.jpg   640w,
-                  ./images/pictures/stock/temp/AdobeStock_225548074-1200.jpg  920w,
-                  ./images/pictures/stock/temp/AdobeStock_225548074-2400.jpg 1680w
+                  ./images/pictures/stock/temp/AdobeStock_225548074-800.jpg   800w,
+                  ./images/pictures/stock/temp/AdobeStock_225548074-1200.jpg 1200w,
+                  ./images/pictures/stock/temp/AdobeStock_225548074-2400.jpg 2400w,
+                  ./images/pictures/stock/temp/AdobeStock_225548074-4500.jpg 4500w
                "
-               sizes="640px, 1024px, 1920px"
+               sizes="
+               (max-width: 559px) 320px,
+               (max-width: 1023px) 800px,
+               (max-width: 1920px) 1200px,
+               (max-width: 2560px) 2400px"
                alt="топочна кімната опалення"
                loading="lazy"
             />
@@ -811,14 +788,14 @@
             <div class="extra-services__card-section">
                <ul>
                   <li class="extra-services__card">
-                     <div class="extra-services__image">
+                     <div class="extra-services__image animated right">
                         <img
                            src="./images/pictures/ventilation/11.jpg"
                            alt="вентиляційна система, повітропроводи"
                            loading="lazy"
                         />
                      </div>
-                     <div class="extra-services__text-content">
+                     <div class="extra-services__text-content animated left">
                         <h2 class="extra-services__title">Вентиляція з рекуперацією тепла до 85.5%</h2>
                         <p class="extra-services__description">
                            Проектування припливних та витяжних систем вентиляції з рекуперацією тепла. Системи
@@ -828,21 +805,21 @@
                   </li>
 
                   <li class="extra-services__card">
-                     <div class="extra-services__image">
+                     <div class="extra-services__image animated left">
                         <img
                            src="./images/pictures/air-conditioning/2.jpg"
                            alt="промислове кондиціонування повітря, касетний кондиціонер"
                            loading="lazy"
                         />
                      </div>
-                     <div class="extra-services__text-content">
+                     <div class="extra-services__text-content animated center">
                         <h2 class="extra-services__title">Інверторне (А+/А++) Кондиціонування</h2>
                         <p class="extra-services__description">
                            Побутові та промислові системи кондиціонування. VRF- та VRV -мульти зональне кондиціювання.
                            Чилер-фанкойл. Спліт та мульти-спліт системи.
                         </p>
                      </div>
-                     <div class="extra-services__image">
+                     <div class="extra-services__image animated right">
                         <img
                            src="./images/pictures/air-conditioning/3.jpg"
                            alt="пусконалагодження кондиціонера, манометр"
@@ -852,14 +829,14 @@
                   </li>
 
                   <li class="extra-services__card">
-                     <div class="extra-services__image">
+                     <div class="extra-services__image animated left">
                         <img
                            src="./images/pictures/heating/2.jpg"
                            alt="гребінка, колектор системи водяної теплої підлоги"
                            loading="lazy"
                         />
                      </div>
-                     <div class="extra-services__text-content">
+                     <div class="extra-services__text-content animated right">
                         <h2 class="extra-services__title">Низько-температурні системи Опалення. Тепла підлога + ГВП</h2>
                         <p class="extra-services__description">
                            Проект системи опалення підприємсьва, офісу, ресторану, приватного будинку та ін. На базі
@@ -994,8 +971,46 @@
          </div>
       </footer>
 
+      <div class="feedback-wrapper hidden">
+         <button class="btn-close">
+            <svg class="icon close" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+               <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+               />
+            </svg>
+         </button>
+         <div class="label">Передзвоніть мені</div>
+         <form>
+            <div class="user-box">
+               <input id="name" type="text" name="name" minlength="3" maxlength="32" required />
+               <label for="name">Ім'я *</label>
+            </div>
+            <div class="user-box">
+               <input id="phone" type="tel" name="phone" minlength="9" maxlength="16" required />
+               <label for="phone">Телефон *</label>
+            </div>
+            <div class="user-box">
+               <textarea id="message" name="message" rows="6" cols="20" maxlength="140" placeholder=""></textarea>
+               <label for="message">Повідомлення (необов'язково)</label>
+            </div>
+            <button class="btn-submit" type="submit">
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               відправити
+            </button>
+         </form>
+         <div class="message"><span> </span></div>
+      </div>
+
+      <div>
+         <a href="#top" class="top-btn" title="вгору">↑</a>
+      </div>
+
       <script src="gallery-slider.js"></script>
       <script src="form-send.js"></script>
       <script src="observer.js"></script>
+      <script src="top-button.js"></script>
    </body>
 </html>

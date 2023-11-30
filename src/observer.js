@@ -2,10 +2,21 @@
 
 const animationIn = 'customAnimationIn';
 const animationScale = 'customAnimationScale';
+const animationSlideInLeft = 'slideInLeft';
+const animationSlideInLeftRotate = 'slideInLeftRotate';
+const animationSlideInRight = 'slideInRight';
 
 const servicesContainer = document.querySelector('.services__content.container');
-const elementsCard = document.querySelectorAll('.services__card.animated');
-const elementsIcon = document.querySelectorAll('.icon.animated');
+const serviceCardsAll = document.querySelectorAll('.services__card.animated');
+const iconsAboutAll = document.querySelectorAll('.icon.animated');
+
+const serviceDescriptionPicture = document.querySelector('.service-description__image.animated');
+const serviceDescriptionText = document.querySelector('.service-description__service-types.animated');
+
+const extraServicesContainer = document.querySelector('.extra-services__content.container');
+const animatedCardsRightAll = document.querySelectorAll('.animated.right');
+const animatedCardsLeftAll = document.querySelectorAll('.animated.left');
+const animatedCardsCenterAll = document.querySelectorAll('.animated.center');
 
 const defaultOptions = {
    threshold: [0.5]
@@ -23,32 +34,70 @@ const onEntryCallback = (entries, animatedClassName) => {
    });
 };
 
-const servicesCallback = (entries) => {
+const serviceSectionEntryCallback = (entries) => {
    entries.forEach((entry) => {
       if (entry.isIntersecting) {
-         for (const card of elementsCard) {
+         for (const card of serviceCardsAll) {
             card.classList.add(animationIn);
          }
       } else {
-         for (const card of elementsCard) {
+         for (const card of serviceCardsAll) {
             card.classList.remove(animationIn);
          }
       }
    });
 };
 
-observer(servicesCallback, {
+const extraServiceSectionEntryCallback = (entries) => {
+   entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+         for (const card of animatedCardsRightAll) {
+            card.classList.add(animationSlideInRight);
+         }
+         for (const card of animatedCardsLeftAll) {
+            card.classList.add(animationSlideInLeft);
+         }
+         for (const card of animatedCardsCenterAll) {
+            card.classList.add(animationScale);
+         }
+      } else {
+         for (const card of animatedCardsRightAll) {
+            card.classList.remove(animationSlideInRight);
+         }
+         for (const card of animatedCardsLeftAll) {
+            card.classList.remove(animationSlideInLeft);
+         }
+         for (const card of animatedCardsCenterAll) {
+            card.classList.remove(animationScale);
+         }
+      }
+   });
+};
+
+observer(serviceSectionEntryCallback, {
    threshold: [0.25]
 }).observe(servicesContainer);
 
-for (const elem of elementsIcon) {
+observer(extraServiceSectionEntryCallback, {
+   threshold: [0.25]
+}).observe(extraServicesContainer);
+
+for (const elem of iconsAboutAll) {
    observer((e) => onEntryCallback(e, animationScale)).observe(elem);
 }
 
-// const servicesObserver = new IntersectionObserver(servicesCallback, options);
+observer((e) => onEntryCallback(e, animationSlideInLeftRotate), {
+   threshold: [0.1]
+}).observe(serviceDescriptionPicture);
+
+observer((e) => onEntryCallback(e, animationSlideInRight), {
+   threshold: [0]
+}).observe(serviceDescriptionText);
+
+// const servicesObserver = new IntersectionObserver(serviceSectionEntryCallback, options);
 
 // console.log(elements);
-// console.log(elementsIcon);
+// console.log(iconsAboutAll);
 
 // function onScale(nodeList) {
 //    nodeList.forEach((domElem) => {
@@ -70,10 +119,12 @@ for (const elem of elementsIcon) {
 
 // const scaleObserver = new IntersectionObserver((animationObject) => onEntryCallback(animationObject, animationScale), options);
 
-// for (const elem of elementsCard) {
+// for (const elem of serviceCardsAll) {
 //    observer(animationIn, {
 //       root: document.querySelector('.services__content.container'),
 //       threshold: [0.5]
 //    }).observe(elem);
 //    console.log('observe');
 // }
+
+
