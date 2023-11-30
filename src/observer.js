@@ -91,7 +91,7 @@ observer((e) => onEntryCallback(e, animationSlideInLeftRotate), {
 }).observe(serviceDescriptionPicture);
 
 observer((e) => onEntryCallback(e, animationSlideInRight), {
-   threshold: [0.1]
+   threshold: [0]
 }).observe(serviceDescriptionText);
 
 // const servicesObserver = new IntersectionObserver(serviceSectionEntryCallback, options);
