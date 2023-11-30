@@ -1121,6 +1121,8 @@ h1 {
 .service-description__backgroung img {
    min-height: 341px;
    opacity: 0.4;
+   object-fit: cover;
+   object-position: left center;
 }
 
 .service-description .container {
