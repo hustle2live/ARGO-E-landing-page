@@ -1,0 +1,1 @@
+let topButton=document.querySelector(".top-btn");function scrollFunction(){document.body.scrollTop>20||document.documentElement.scrollTop>20?topButton.style.display="block":topButton.style.display="none"}window.onscroll=function(){scrollFunction()};
