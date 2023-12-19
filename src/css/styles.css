@@ -523,7 +523,9 @@ body {
 .about__concepts,
 .service-description,
 .about__concepts-item > div,
-.fb-posts {
+.fb-posts,
+.nav-menu,
+.nav-menu__list {
    display: flex;
 }
 
@@ -586,7 +588,8 @@ header,
 .features__text p,
 .extra-services__card,
 .extra-services__footer,
-.extra-services__footer a {
+.extra-services__footer a,
+.nav-menu__item a {
    font-size: 1rem;
 }
 
@@ -605,7 +608,8 @@ header,
 .extra-services__description,
 .about__concepts p,
 .about__concepts-item p,
-.card__description h5 {
+.card__description h5,
+.nav-menu__item a {
    font-family: 'Open Sans', sans-serif;
 }
 
@@ -814,6 +818,45 @@ h1 {
 
 .header .cta-button {
    margin-left: 0;
+}
+
+.nav-menu {
+   height: 100%;
+}
+
+.nav-menu__list {
+   padding-left: 0;
+   list-style-type: none;
+   align-items: center;
+}
+
+.nav-menu__item {
+   display: block;
+   padding: 0 10px;
+   margin: 0 5px;
+}
+
+.nav-menu__item a {
+}
+
+.header {
+   position: relative;
+}
+
+.header__navbar.container {
+   box-sizing: border-box;
+   background: #fff;
+   z-index: 1;
+}
+
+.nav-menu__item a {
+   transition-duration: 300ms;
+   color: #5e5e5e;
+   margin: 0 auto;
+}
+
+.nav-menu__item:hover a {
+   color: var(--secondary-color);
 }
 
 /* --/ header-content */
@@ -1795,8 +1838,7 @@ footer .container {
    }
 
    .header__navbar.container {
-      width: auto;
-      margin: 0 60px;
+      padding: 0 60px;
    }
 
    .services__card {
@@ -1951,6 +1993,11 @@ footer .container {
    .footer-section .text {
       font-size: 0.82rem;
    }
+
+   .nav-menu__item {
+      padding: 0 8px;
+      margin: 0 4px;
+   }
 }
 
 @media screen and (max-width: 767px) {
@@ -1968,7 +2015,7 @@ footer .container {
    }
 
    .header__navbar.container {
-      margin: 0 30px;
+      padding: 0 30px;
    }
 
    .about {
@@ -2047,6 +2094,11 @@ footer .container {
 
    .our-clients__gallery li.card {
       height: 520px;
+   }
+
+   .nav-menu__item {
+      padding: 0 3px;
+      margin: 0 2px;
    }
 }
 
@@ -2127,6 +2179,10 @@ footer .container {
 
    footer .logo {
       order: 1;
+   }
+
+   .nav-menu {
+      display: none;
    }
 }
 
