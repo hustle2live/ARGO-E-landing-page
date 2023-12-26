@@ -385,7 +385,7 @@
    .cta .section-title,
    .section-title,
    .header__title,
-   .about .about__section-title {
+   .about .section-title {
       font-size: 2.5rem;
       line-height: 1.2;
    }
@@ -659,7 +659,7 @@
    .cta .section-title,
    .section-title,
    .header__title,
-   .about .about__section-title {
+   .about .section-title {
       font-size: 2rem;
       line-height: 1.2;
    }

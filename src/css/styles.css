@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Roboto:wght@300;400&family=Montserrat:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800;900&display=swap');
 
 :root {
    --theme-sheet-width-xxl: 1920px;
@@ -552,17 +553,46 @@ header,
    flex-direction: column;
 }
 
-.features h3,
-.features__description p,
-.extra-services__section-title {
-   font-size: 2rem;
+.heading,
+.section-title,
+.about .section-title {
+   text-transform: uppercase !important;
+}
+
+.text-large {
+   font-size: 3.75rem; /* 60px font size  */
+}
+
+h1,
+.header__title {
+   font-size: 2.625rem; /* 42px font size  */
+}
+
+h2,
+h3,
+.section-title,
+.about .section-title {
+   font-size: 2.25rem; /* 36px font size  */
+}
+
+.features h3 {
+   font-size: 2rem; /* 32px font size  */
+}
+
+h4,
+h5 {
+   font-size: 1.875rem; /* 30px font size  */
 }
 
 .section-subtitle,
 .features__card-title,
 .extra-services__introduction,
 .header__subtitle {
-   font-size: 1.6rem;
+   font-size: 1.625rem; /* 26px font size  */
+}
+
+h6 {
+   font-size: 1.5rem; /* 24px font size  */
 }
 
 .features__subtitle,
@@ -573,8 +603,15 @@ header,
 .about-company .title,
 .services__title,
 .cta__description,
-.card__description p {
-   font-size: 1.4rem;
+.card__description p,
+.features__description p {
+   font-size: 1.375rem; /* 22px font size  */
+}
+
+.header__description,
+.services__section-subtitle,
+.section-subtitle {
+   font-size: 1.125rem; /* 18px font size  */
 }
 
 .services__card,
@@ -590,13 +627,18 @@ header,
 .extra-services__footer,
 .extra-services__footer a,
 .nav-menu__item a {
-   font-size: 1rem;
+   font-size: 1rem; /* 16px font size  */
+}
+
+.heading,
+.section-title,
+.about .section-title {
+   font-family: 'Raleway', sans-serif;
 }
 
 .services__title,
 .about__concepts .about__concepts-title,
-.about .about__section-title,
-.section-title,
+.about .ection-title,
 .features__card-title {
    font-family: 'Montserrat', sans-serif;
 }
@@ -646,8 +688,6 @@ header,
 .about-company .description,
 .about-company p,
 .features h3,
-.extra-services__section-title,
-.extra-services__section-subtitle,
 .extra-services__card:nth-child(1),
 footer .container {
    color: #000;
@@ -794,7 +834,6 @@ h1 {
 }
 
 .header__title {
-   font-size: 2.6rem;
    line-height: 2.8rem;
    max-width: 70%;
    font-weight: 600;
@@ -811,9 +850,24 @@ h1 {
 }
 
 .header__description {
-   max-width: 34%;
+   max-width: 40%;
    margin-top: 20px;
    margin-bottom: 44px;
+}
+
+.header__description ul {
+   list-style-type: none;
+   padding-left: 0;
+}
+
+.header__description ul li {
+   display: flex;
+   align-items: flex-start;
+}
+
+.header__description ul li p {
+   margin: 5px 10px 0;
+   line-height: 1.4rem;
 }
 
 .header .cta-button {
@@ -834,9 +888,6 @@ h1 {
    display: block;
    padding: 0 10px;
    margin: 0 5px;
-}
-
-.nav-menu__item a {
 }
 
 .header {
@@ -892,8 +943,7 @@ h1 {
 }
 
 .services__section-subtitle {
-   font-size: 1.278rem;
-   margin: 16px auto 0;
+   margin: 0 auto;
    font-weight: 400;
 }
 
@@ -1020,8 +1070,7 @@ h1 {
    font-weight: 400;
 }
 
-.about .about__section-title {
-   font-size: 3.75rem;
+.about .section-title {
    text-transform: none;
    font-weight: 700;
    text-align: center;
@@ -1152,9 +1201,9 @@ h1 {
    height: auto;
    overflow: hidden;
    font-size: 1.2rem;
-   min-height: 800px;
+   /* min-height: 800px; */
    background-color: rgb(93, 93, 93);
-   padding: 60px 0 100px;
+   padding: 0 0 80px;
 }
 
 .service-description__backgroung {
@@ -1178,7 +1227,6 @@ h1 {
    width: 100%;
    color: #fff;
    white-space: nowrap;
-   margin: 0 auto 80px;
 }
 
 .service-description__service-types {
@@ -1247,19 +1295,18 @@ h1 {
 /* ------------ body __ our-clients-description -------- */
 
 .our-clients {
-   padding: 80px 0;
+   padding: 0 0 60px;
    text-align: center;
    min-height: 800px;
 }
 
-.our-clients .container > p,
-.our-clients .container > h2 {
-   margin: 20px auto;
+.section-title,
+.about .section-title,
+.our-clients .section-title {
+   margin: 60px auto 20px;
 }
 
 .section-title {
-   font-size: 3.75rem;
-   text-transform: none;
    font-weight: 700;
    text-align: center;
 }
@@ -1388,7 +1435,7 @@ ol.our-clients__gallery {
 
 .features {
    text-align: center;
-   padding: 80px 0;
+   padding: 0 0 60px;
    background-color: #e5e5e5;
    background-color: var(--middle-bg-color);
    z-index: 0;
@@ -1429,10 +1476,12 @@ ol.our-clients__gallery {
    align-items: center;
 }
 
-.section-subtitle {
-   line-height: 1;
-   font-weight: 400;
-   margin: 60px auto 34px;
+.section-subtitle,
+.features .section-subtitle {
+   line-height: 1.5rem;
+   max-width: var(--theme-sheet-width-xl);
+   /* font-weight: 600; */
+   margin: 0 auto;
 }
 
 .features__subtitle:last-of-type {
@@ -1441,15 +1490,14 @@ ol.our-clients__gallery {
 
 .features__description {
    max-width: var(--theme-sheet-width-xl);
-   margin: 1.6rem auto;
+   margin: 40px auto 20px;
    text-align: start;
 }
 
 .features__description p {
-   font-weight: 300;
+   font-weight: 600;
    text-align: center;
    line-height: 2rem;
-   margin: 60px 0;
 }
 
 .features h3 {
@@ -1547,15 +1595,14 @@ ol.our-clients__gallery {
    align-items: center;
    text-align: center;
    min-height: 600px;
-   padding: 120px 0;
+   padding: 0 0 40px;
    justify-content: center;
    margin-bottom: 100px;
 }
 
-.cta .section-title {
+/* .cta .section-title {
    letter-spacing: -3px;
-   margin: 60px auto 1.8rem;
-}
+} */
 
 .cta span.hyphen {
    display: none;
@@ -1578,7 +1625,7 @@ ol.our-clients__gallery {
 .cta-picture {
    width: 100%;
    height: 200px;
-   margin: 20px 0 40px;
+   margin: 30px 0 40px;
    overflow: hidden;
 }
 
@@ -1692,17 +1739,6 @@ footer .container {
    margin: 0 auto;
 }
 
-.extra-services__section-title {
-   font-weight: 600;
-   margin: 60px auto 20px;
-   text-transform: uppercase;
-}
-
-.extra-services__section-subtitle {
-   font-size: 1.278rem;
-   margin: 32px auto 0;
-}
-
 .extra-services__card-section ul {
    width: 100%;
    flex-wrap: wrap;
@@ -1723,7 +1759,6 @@ footer .container {
    background: yellow;
 }
 
-/* .extra-services__card:nth-child(1) .extra-services__text-content, */
 .extra-services__card:nth-child(2) .extra-services__image.animated {
    animation-delay: 700ms;
 }
@@ -1737,7 +1772,6 @@ footer .container {
 }
 
 .extra-services__card:nth-child(2) .extra-services__text-content.animated.customAnimationScale {
-   /* scale: 1; */
    transition: scale 2s;
    animation-delay: 800ms;
    transition-delay: 800ms;
