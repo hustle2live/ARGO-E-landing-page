@@ -1483,6 +1483,7 @@ ol.our-clients__gallery {
    line-height: 1.5rem;
    max-width: var(--theme-sheet-width-xl);
    /* font-weight: 600; */
+   font-weight: 400;
    margin: 0 auto;
 }
 
