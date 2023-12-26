@@ -767,8 +767,8 @@ h1 {
    justify-content: center;
    align-items: center;
    width: 100%;
-   min-height: 880px;
-   max-height: 100vh;
+   /* min-height: 880px; */
+   /* max-height: 100vh; */
    background-color: #333;
    overflow: hidden;
 }
@@ -787,10 +787,11 @@ h1 {
    box-sizing: border-box;
    min-height: 460px;
    align-items: baseline;
-   margin: 80px 0 auto;
+   /* margin: 60px 0 auto; */
+   margin: 60px 0;
    text-align: left;
    background-color: #00000038;
-   padding: 20px;
+   padding: 0 20px;
    background-image: url('../images/img/png/project_A1.png');
    /* background-image: url('../../temp/images/pictures/build-architecture/meeting-2284501_1280.jpg'); */
    /* background-image: url('../../temp/images/pictures/build-architecture/startup-849804_1280.jpg'); */
@@ -839,7 +840,7 @@ h1 {
    line-height: 2.8rem;
    max-width: 70%;
    font-weight: 600;
-   margin-top: 60px;
+   margin-top: 40px;
    margin-bottom: 30px;
    word-wrap: normal;
    white-space: normal;
@@ -853,8 +854,7 @@ h1 {
 
 .header__description {
    max-width: 40%;
-   margin-top: 20px;
-   margin-bottom: 44px;
+   /* margin-bottom: 44px; */
 }
 
 .header__description ul {
