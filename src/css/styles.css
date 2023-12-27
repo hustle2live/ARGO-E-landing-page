@@ -787,18 +787,29 @@ h1 {
    box-sizing: border-box;
    min-height: 460px;
    align-items: baseline;
-   /* margin: 60px 0 auto; */
    margin: 60px 0;
    text-align: left;
-   background-color: #00000038;
+   background-color: #00000060;
    padding: 0 20px;
-   background-image: url('../images/img/png/project_A1.png');
-   /* background-image: url('../../temp/images/pictures/build-architecture/meeting-2284501_1280.jpg'); */
-   /* background-image: url('../../temp/images/pictures/build-architecture/startup-849804_1280.jpg'); */
-   background-position: right;
-   background-size: 62%;
-   background-repeat: no-repeat;
-   background-position-y: 64%;
+}
+
+.header-picture {
+   display: block;
+   box-sizing: border-box;
+   content: '';
+   position: absolute;
+   width: 56%;
+   height: 64%;
+   right: 40px;
+   bottom: 40px;
+}
+
+.header-picture img {
+   width: 100%;
+   height: 100%;
+   border-radius: 5px;
+   object-position: center;
+   object-fit: cover;
 }
 
 .header__navbar_company-logo {
@@ -868,7 +879,7 @@ h1 {
 }
 
 .header__description ul li p {
-   margin: 5px 10px 0;
+   margin: 0 0 5px 10px;
    line-height: 1.4rem;
 }
 
@@ -1489,6 +1500,16 @@ ol.our-clients__gallery {
 
 .features__subtitle:last-of-type {
    background: #764bde;
+}
+
+/* #Dribbble-Light-Preview, */
+.header__description svg {
+   width: 24px;
+   height: 24px;
+}
+
+.header__description svg g {
+   fill: #764bde;
 }
 
 .features__description {
