@@ -191,8 +191,8 @@
 .service-description__service-types.animated.slideInRight,
 .services__card.animated.customAnimationIn {
    opacity: 1;
-   /* transition: opacity 1s; */
    transition: 1s;
+   /* transition: opacity 1s; */
 }
 
 .services__card.customAnimationIn:nth-of-type(2) {
@@ -953,6 +953,10 @@ h1 {
    margin: 0 auto;
 }
 
+.services .section-subtitle {
+   text-align: start;
+}
+
 .services__section-subtitle a:hover {
    color: #452a70;
 }
@@ -992,9 +996,9 @@ h1 {
    box-shadow: 4px 5px 30px rgba(79, 29, 88, 0.15);
 }
 
-.services__card:hover {
+/* .services__card:hover {
    scale: 1.05;
-}
+} */
 
 .services__card:nth-child(2) {
    margin-top: 120px;
