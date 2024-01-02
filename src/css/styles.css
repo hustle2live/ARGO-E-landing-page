@@ -598,7 +598,6 @@ h6 {
 .services__title,
 .extra-services__description,
 .our-clients > p,
-.services__title,
 .cta__description,
 .card__description p,
 .features__description p {
@@ -653,7 +652,8 @@ h6 {
 .service-description,
 .cta-button,
 .about .description,
-.about .text {
+.about .text,
+.services__description {
    font-family: 'Montserrat', sans-serif;
 }
 
@@ -667,8 +667,7 @@ h6 {
 }
 
 .footer-section .text,
-.features__text p,
-.services__description {
+.features__text p {
    font-family: 'AR One Sans', sans-serif;
 }
 
@@ -996,11 +995,13 @@ h1 {
    list-style-type: none;
    cursor: default;
    width: 340px;
-   min-height: 578px;
+   /* min-height: 578px; */
+   min-height: 178px;
    height: auto;
    flex-grow: 0;
    text-align: justify;
    padding: 30px;
+   /* padding: 24px; */
    margin: 0;
    box-sizing: border-box;
    color: #111111;
@@ -1034,16 +1035,18 @@ h1 {
 }
 
 .services__title {
+   font-size: 1.25rem; /* 20px font size  */
    font-weight: 400;
-   line-height: 1.8;
+   line-height: 1.4;
    text-transform: uppercase;
-   margin: 32px auto 20px;
+   margin: 30px auto 14px;
 }
 
 .services__description {
    text-align: center;
    line-height: 1.6rem;
    margin-top: 0;
+   margin-bottom: 20px;
 }
 
 .services-btn {
@@ -1051,7 +1054,7 @@ h1 {
    border-width: 1px;
    text-transform: uppercase;
    letter-spacing: 2px;
-   margin: 20px auto 30px;
+   margin: auto auto 20px;
    padding: 6px 8px;
    background: transparent;
    cursor: pointer;
@@ -1427,6 +1430,7 @@ h1 {
    display: inline;
 }
 
+.our-clients .section-title,
 .section-title {
    font-weight: 700;
    text-align: center;
