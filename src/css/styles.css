@@ -521,7 +521,6 @@ body {
 .our-clients__gallery .card__content,
 .service-description .container,
 .about article,
-.about-company,
 .about__concepts,
 .service-description,
 .about__concepts-item > div,
@@ -548,7 +547,6 @@ header,
 .cta,
 .features__card,
 .our-clients__gallery .card__content,
-.about-company,
 .about__concepts,
 .services__card {
    flex-direction: column;
@@ -586,7 +584,6 @@ h5,
    font-size: 1.875rem; /* 30px font size  */
 }
 
-.section-subtitle,
 .features__card-title,
 .extra-services__introduction,
 .header__subtitle {
@@ -601,7 +598,6 @@ h6 {
 .services__title,
 .extra-services__description,
 .our-clients > p,
-.about-company .title,
 .services__title,
 .cta__description,
 .card__description p,
@@ -609,6 +605,7 @@ h6 {
    font-size: 1.375rem; /* 22px font size  */
 }
 
+.about-company .title,
 .header__description,
 .services__section-subtitle,
 .section-subtitle {
@@ -618,6 +615,7 @@ h6 {
 .services__card,
 .services__description,
 .about p,
+.about-company .label,
 .about-company .description,
 .about__concepts p,
 .about__concepts-item p,
@@ -632,6 +630,7 @@ h6 {
    font-size: 1rem; /* 16px font size  */
 }
 
+.about .title,
 .service-description h4,
 .heading,
 .section-title,
@@ -639,29 +638,35 @@ h6 {
    font-family: 'Raleway', sans-serif;
 }
 
+.about__concepts p,
+.about .label,
+.section-subtitle,
+.our-clients,
+.our-clients .section-subtitle,
+.our-clients h3,
+.our-clients,
+.about-company p,
 .services__title,
 .about__concepts .about__concepts-title,
 .about .ection-title,
 .features__card-title,
 .service-description,
-.cta-button {
+.cta-button,
+.about .description,
+.about .text {
    font-family: 'Montserrat', sans-serif;
 }
 
+.about__concepts-item p,
 .footer-section .label,
 .features__description p,
-.about-company .description,
-.about-company p,
 .extra-services__description,
-.about__concepts p,
-.about__concepts-item p,
 .card__description h5,
 .nav-menu__item a {
    font-family: 'Open Sans', sans-serif;
 }
 
 .footer-section .text,
-.section-subtitle,
 .features__text p,
 .services__description {
    font-family: 'AR One Sans', sans-serif;
@@ -671,6 +676,13 @@ h6 {
 .extra-services__title,
 .footer-section.logo .text {
    font-family: 'Roboto', sans-serif;
+}
+
+.our-clients,
+.our-clients h3,
+.our-clients p,
+.our-clients .section-subtitle {
+   line-height: 1.4;
 }
 
 header,
@@ -772,8 +784,6 @@ h1 {
    justify-content: center;
    align-items: center;
    width: 100%;
-   /* min-height: 880px; */
-   /* max-height: 100vh; */
    background-color: #333;
    overflow: hidden;
 }
@@ -870,7 +880,6 @@ h1 {
 
 .header__description {
    max-width: 40%;
-   /* margin-bottom: 44px; */
 }
 
 .header__description ul {
@@ -1069,9 +1078,10 @@ h1 {
 /* ------------ body __ about -------- */
 
 .about {
-   padding: 10px 0 60px;
+   padding: 0 0 60px;
    background: var(--middle-bg-color);
    border-top: 1px solid rgb(233, 224, 224);
+   line-height: normal;
 }
 
 .about__concepts {
@@ -1082,7 +1092,7 @@ h1 {
    line-height: 1.1;
    text-align: center;
    width: 100%;
-   margin-top: 70px;
+   margin-top: 40px;
    margin-bottom: 30px;
 }
 
@@ -1092,7 +1102,7 @@ h1 {
 .about__concepts-item > div > p:first-child {
    min-width: 25%;
    font-size: 2.3rem;
-   margin: 5px;
+   margin: 5px 8px 0 0;
    letter-spacing: -1px;
    font-weight: 400;
 }
@@ -1103,19 +1113,34 @@ h1 {
    text-align: center;
 }
 
-.about__concepts-item,
-.about-company {
+.about__concepts-item {
    padding: 10px 30px;
 }
 
+.about .container {
+   flex-wrap: wrap;
+   flex-direction: row-reverse;
+   justify-content: center;
+   gap: 30px;
+   margin-top: 30px;
+}
+
+.about-company,
 .about__introduction {
-   width: 34%;
-   height: 345px;
+   width: 46%;
+   box-sizing: border-box;
+}
+
+.about__introduction {
+   height: auto;
    overflow: hidden;
-   margin: 20px 0 0 0;
-   border: 8px solid #d4d4d4;
+   margin: 0;
    border-radius: none;
    position: relative;
+   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+   border-radius: 4px;
+   height: 520px;
+   /* border: 8px solid #d4d4d4; */
    /* padding: 0px 0px 20% 0px; */
 }
 
@@ -1132,13 +1157,10 @@ h1 {
 .nowrap {
    white-space: nowrap;
 }
-.about .title {
-   margin: 0;
-   letter-spacing: -0.6px;
-}
 
 .about-company ul {
    padding: 0;
+   margin: 0;
 }
 
 .about .description,
@@ -1147,23 +1169,37 @@ h1 {
    font-size: 1rem;
    text-align: left;
    text-decoration: none;
-   line-height: 1.6;
+   line-height: 1.4;
    letter-spacing: normal;
 }
 
-.about .description {
-   font-weight: 400;
-   width: 80%;
-   /* text-indent: 20px; */
+.about-company {
+   /* padding-top: 30px; */
+   padding-left: 30px;
+   padding-right: 8px;
+}
+
+.about-company p:first-of-type:not(.text) {
+   margin-top: 0;
+}
+
+.about-company p {
+   margin-top: 20px;
+}
+
+.about-company .title {
+   font-weight: 600;
 }
 
 .about-company .title,
 .about-company .label {
-   font-weight: 600;
+   margin: 0;
+   line-height: 1.4;
+   margin-bottom: 10px;
 }
 
 .about-company .label {
-   margin: 16px 0 0;
+   margin: 20px 0 5px;
 }
 
 .about-company ul li {
@@ -1172,30 +1208,26 @@ h1 {
    margin-left: 10px;
 }
 
-.about article {
-   flex-wrap: wrap;
-   flex-direction: row-reverse;
-   justify-content: center;
-}
+/* .about-company q {
+   font-weight: 600;
+} */
 
-.about-company {
-   width: 44%;
-}
-
-.about-company,
-.about__concepts {
-   justify-content: space-between;
+.about-company q,
+.about-company strong,
+.about-company b {
+   font-weight: 600;
 }
 
 .about__concepts {
+   margin-top: 30px;
    gap: 0;
    width: 100%;
    flex-direction: row;
-   /* justify-content: space-between; */
    justify-content: center;
 }
 
 .about__concepts-item {
+   line-height: 1.4;
    list-style-type: none;
    margin: 0;
    width: 22%;
@@ -1203,10 +1235,40 @@ h1 {
 
 .about .icon {
    width: 100%;
-   height: 240px;
+   height: 200px;
    text-align: center;
-   margin: 0 0 20px;
+   margin: 0 auto 4px;
    overflow: hidden;
+}
+
+/* svg icons change from images */
+
+.about .icon {
+   width: 160px;
+   height: 160px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* margin: auto; */
+}
+
+.icon svg {
+   width: 120px;
+   height: 120px;
+}
+.about__concepts-item:last-of-type svg {
+   width: 140px;
+   height: 140px;
+}
+
+.about__concepts-item:nth-of-type(2) svg {
+   width: 108px;
+   height: 108px;
+}
+
+.about .icon svg path {
+   fill: #434343;
 }
 
 .about .icon img {
@@ -1341,7 +1403,8 @@ h1 {
 
 .our-clients {
    padding: 0 0 60px;
-   text-align: center;
+   /* text-align: center; */
+   text-align: left;
    min-height: 800px;
 }
 
@@ -1351,8 +1414,18 @@ h1 {
    margin: 70px auto 20px;
 }
 
+.our-clients,
+.our-clients h3,
+.our-clients p,
 .our-clients .section-subtitle {
-   margin-bottom: 40px;
+   width: 100%;
+   line-height: 1.4;
+   margin: 0;
+   font-weight: 400;
+}
+
+.section-subtitle.inline {
+   display: inline;
 }
 
 .section-title {
@@ -1379,6 +1452,7 @@ ol.our-clients__gallery {
    min-height: 600px;
    width: auto;
    margin: auto;
+   margin-top: 40px;
    left: 0;
    transition: 1s;
    padding: 0;
@@ -1389,7 +1463,6 @@ ol.our-clients__gallery {
    box-sizing: border-box;
    width: 1000px;
    height: 594px;
-   /* padding: 20px; */
    padding: 0;
    margin: 0;
    overflow: hidden;
@@ -1511,6 +1584,8 @@ ol.our-clients__gallery {
    opacity: 0.64;
 }
 
+.our-clients h3,
+.our-clients p,
 .features p {
    line-height: 1;
 }
@@ -1528,9 +1603,8 @@ ol.our-clients__gallery {
 
 .section-subtitle,
 .features .section-subtitle {
-   line-height: 1.5rem;
+   line-height: 1.4;
    max-width: var(--theme-sheet-width-xl);
-   /* font-weight: 600; */
    font-weight: 400;
    margin: 0 auto;
 }
