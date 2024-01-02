@@ -1274,25 +1274,37 @@ h1 {
    opacity: 0;
 }
 
-.service-description__service-types h4,
-.service-description__service-types ul li {
+.service-description__service-types h4 {
    margin: 20px 25px;
+   padding-left: 50px;
+   padding-left: 14px;
+   padding-left: 0;
+}
+
+.service-description__service-types ul li svg {
+   width: 24px;
+   height: 24px;
+   display: block;
+}
+
+.service-description__service-types ul {
+   padding: 0 10px 0 30px;
 }
 
 .service-description__service-types ul li {
-   width: 86%;
+   display: flex;
+   width: 94%;
    list-style-type: none;
+   flex-direction: row;
+   margin: 10px 0;
+   padding: 0;
+   gap: 20px;
 }
 
-.service-description__service-types ul li::before {
-   content: '';
-   left: -22px;
-   top: 8px;
-   width: 9px;
-   height: 9px;
-   border-radius: 50%;
-   background: transparent;
-   border: 2px solid #ffffff;
+.service-description__service-types p,
+.service-description__service-types .icon {
+   display: block;
+   margin: 0 auto auto;
 }
 
 .service-description__service-types h4 {
