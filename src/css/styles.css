@@ -581,7 +581,8 @@ h3,
 }
 
 h4,
-h5 {
+h5,
+.about__concepts .about__concepts-title {
    font-size: 1.875rem; /* 30px font size  */
 }
 
@@ -600,7 +601,6 @@ h6 {
 .services__title,
 .extra-services__description,
 .our-clients > p,
-.service-description__service-types h4,
 .about-company .title,
 .services__title,
 .cta__description,
@@ -627,10 +627,12 @@ h6 {
 .extra-services__card,
 .extra-services__footer,
 .extra-services__footer a,
+.service-description__service-types h4,
 .nav-menu__item a {
    font-size: 1rem; /* 16px font size  */
 }
 
+.service-description h4,
 .heading,
 .section-title,
 .about .section-title {
@@ -641,6 +643,7 @@ h6 {
 .about__concepts .about__concepts-title,
 .about .ection-title,
 .features__card-title,
+.service-description,
 .cta-button {
    font-family: 'Montserrat', sans-serif;
 }
@@ -953,8 +956,12 @@ h1 {
    margin: 0 auto;
 }
 
-.services .section-subtitle {
+.section-subtitle {
    text-align: start;
+}
+
+.technologies .section-subtitle {
+   text-align: center;
 }
 
 .services__section-subtitle a:hover {
@@ -1062,8 +1069,7 @@ h1 {
 /* ------------ body __ about -------- */
 
 .about {
-   padding: 20px 0 120px;
-   /* background: var(--bright-bg-color); */
+   padding: 10px 0 60px;
    background: var(--middle-bg-color);
    border-top: 1px solid rgb(233, 224, 224);
 }
@@ -1073,14 +1079,11 @@ h1 {
 }
 
 .about__concepts .about__concepts-title {
-   font-size: 2.5rem;
    line-height: 1.1;
    text-align: center;
    width: 100%;
-}
-
-.about__concepts-item {
-   width: 30%;
+   margin-top: 70px;
+   margin-bottom: 30px;
 }
 
 /* .about__concepts-item > div > p {
@@ -1102,22 +1105,28 @@ h1 {
 
 .about__concepts-item,
 .about-company {
-   padding: 20px 10px;
-}
-
-.about__introduction p {
-   width: 80%;
-   font-weight: 300;
-   margin-bottom: -10px;
+   padding: 10px 30px;
 }
 
 .about__introduction {
-   background-image: url('../images/logo/logo-transparent.png');
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: contain;
+   width: 34%;
+   height: 345px;
    overflow: hidden;
-   margin: 30px 0;
+   margin: 20px 0 0 0;
+   border: 8px solid #d4d4d4;
+   border-radius: none;
+   position: relative;
+   /* padding: 0px 0px 20% 0px; */
+}
+
+.about__introduction img {
+   position: absolute;
+   width: 130%;
+   height: 130%;
+   bottom: -20%;
+   left: -20%;
+   object-fit: cover;
+   /* object-position: center bottom; */
 }
 
 .nowrap {
@@ -1173,10 +1182,6 @@ h1 {
    width: 44%;
 }
 
-.about__introduction {
-   width: 34%;
-}
-
 .about-company,
 .about__concepts {
    justify-content: space-between;
@@ -1186,20 +1191,19 @@ h1 {
    gap: 0;
    width: 100%;
    flex-direction: row;
-   justify-content: space-between;
-   margin-top: 80px;
+   /* justify-content: space-between; */
+   justify-content: center;
 }
 
 .about__concepts-item {
    list-style-type: none;
-   padding: 30px;
    margin: 0;
-   width: 28%;
+   width: 22%;
 }
 
 .about .icon {
    width: 100%;
-   height: 280px;
+   height: 240px;
    text-align: center;
    margin: 0 0 20px;
    overflow: hidden;
@@ -1224,8 +1228,6 @@ h1 {
    width: 100%;
    height: auto;
    overflow: hidden;
-   font-size: 1.2rem;
-   /* min-height: 800px; */
    background-color: rgb(93, 93, 93);
    padding: 0 0 80px;
 }
@@ -1235,19 +1237,21 @@ h1 {
 }
 
 .service-description__backgroung img {
-   min-height: 341px;
    opacity: 0.4;
    object-fit: cover;
    object-position: left center;
 }
 
 .service-description .container {
+   justify-content: center;
+   gap: 30px;
    flex-wrap: wrap;
    text-align: center;
    z-index: 1;
 }
 
 .service-description .section-title {
+   margin-bottom: 30px;
    width: 100%;
    color: #fff;
    white-space: nowrap;
@@ -1255,11 +1259,14 @@ h1 {
 
 .service-description__service-types {
    box-sizing: border-box;
-   width: 55%;
+   width: 50%;
    text-align: left;
    background-color: rgb(77, 77, 77);
-   box-shadow: 40px 0 rgb(198, 75, 222);
-   /* box-shadow: 40px 0 rgba(179, 94, 244, 1); */
+   border: 0;
+   border-right: 18px;
+   border-color: rgb(198, 75, 222);
+   border-style: solid;
+   /* border-style: solid dashed; */
 }
 
 .service-description__service-types.animated {
@@ -1294,12 +1301,14 @@ h1 {
 }
 
 .service-description__image {
-   border: 20px solid #ffffff;
+   height: 450px;
+   border: 10px solid #ffffff;
    box-sizing: border-box;
-   width: 35%;
+   width: 30%;
    overflow: hidden;
    transform: rotate(-5deg);
-   margin: 14px auto -10px -42px;
+   margin: 14px 40px -10px 20px;
+   border-style: outset;
 }
 
 .service-description__image img {
@@ -1327,7 +1336,11 @@ h1 {
 .section-title,
 .about .section-title,
 .our-clients .section-title {
-   margin: 60px auto 20px;
+   margin: 70px auto 20px;
+}
+
+.our-clients .section-subtitle {
+   margin-bottom: 40px;
 }
 
 .section-title {
@@ -1364,8 +1377,9 @@ ol.our-clients__gallery {
    box-sizing: border-box;
    width: 1000px;
    height: 594px;
-   padding: 20px;
-   margin: 10px 0;
+   /* padding: 20px; */
+   padding: 0;
+   margin: 0;
    overflow: hidden;
 }
 
