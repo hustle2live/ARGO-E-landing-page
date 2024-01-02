@@ -1207,14 +1207,13 @@ h1 {
    padding-left: 10px;
    margin-left: 10px;
 }
-
-/* .about-company q {
-   font-weight: 600;
+/* .about-company b {
+   font-weight: 500;
 } */
 
-.about-company q,
-.about-company strong,
-.about-company b {
+/* .about-company q, */
+.about-company b,
+.about-company strong {
    font-weight: 600;
 }
 
