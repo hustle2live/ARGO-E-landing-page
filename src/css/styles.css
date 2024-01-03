@@ -653,12 +653,13 @@ h6 {
 .service-description,
 .cta-button,
 .about .description,
+.about__concepts-item p,
 .about .text,
 .services__description {
    font-family: 'Montserrat', sans-serif;
 }
 
-.about__concepts-item p,
+.about__concepts-item > div > p:nth-of-type(1),
 .footer-section .label,
 .features__description p,
 .extra-services__description,
@@ -673,6 +674,7 @@ h6 {
    font-family: 'AR One Sans', sans-serif;
 }
 
+.about__concepts-item > div > p:nth-of-type(2),
 .card__description p,
 .extra-services__title,
 .footer-section.logo .text {
@@ -1084,15 +1086,23 @@ h1 {
 /* ------------ body __ about -------- */
 
 .about {
-   padding: 0 0 60px;
-   background: var(--middle-bg-color);
+   padding: 0;
    border-top: 1px solid rgb(233, 224, 224);
    line-height: normal;
+   background: rgb(198, 75, 222);
+   background: linear-gradient(
+      0deg,
+      rgba(198, 75, 222, 1) 0%,
+      rgba(198, 75, 222, 1) 18.6%,
+      rgba(229, 229, 229, 1) 18.6%,
+      rgba(229, 229, 229, 1) 100%
+   );
+   /* background: var(--middle-bg-color); */
 }
 
-.about__concepts {
+/* .about__concepts {
    flex-wrap: wrap;
-}
+} */
 
 .about__concepts .about__concepts-title {
    line-height: 1.1;
@@ -1102,25 +1112,39 @@ h1 {
    margin-bottom: 30px;
 }
 
-/* .about__concepts-item > div > p {
-} */
+.about__concepts-item > div {
+   flex-wrap: wrap;
+   /* rgba(229, 229, 229, 1) 100% */
+}
 
-.about__concepts-item > div > p:first-child {
-   min-width: 25%;
+.about__concepts-item > div > p {
+   width: 70%;
+   /* min-height: 3rem; */
+}
+
+.about__concepts-item > div > p:first-of-type {
+   width: 25%;
    font-size: 2.3rem;
-   margin: 5px 8px 0 0;
+   margin: 10px 8px 0 0;
    letter-spacing: -1px;
    font-weight: 400;
+   white-space: nowrap;
+}
+
+.about__concepts-item > div > p:last-of-type {
+   margin: 0 auto;
+   width: 100%;
+   /* color: #000000; */
+   color: #ffffff;
+   flex-wrap: wrap;
+   padding-left: 28%;
+   font-weight: 300;
 }
 
 .about .section-title {
    text-transform: none;
    font-weight: 700;
    text-align: center;
-}
-
-.about__concepts-item {
-   padding: 10px 30px;
 }
 
 .about .container {
@@ -1232,6 +1256,7 @@ h1 {
 }
 
 .about__concepts-item {
+   padding: 10px 30px;
    line-height: 1.4;
    list-style-type: none;
    margin: 0;
@@ -1295,12 +1320,20 @@ h1 {
    width: 100%;
    height: auto;
    overflow: hidden;
-   background-color: rgb(93, 93, 93);
    padding: 0 0 80px;
+   background: rgb(198, 75, 222);
+   background: linear-gradient(
+      180deg,
+      rgba(198, 75, 222, 1) 0%,
+      rgba(198, 75, 222, 1) 32%,
+      rgba(229, 229, 229, 1) 32%,
+      #f2f2f2 100%
+   );
 }
 
 .service-description__backgroung {
    bottom: 0;
+   display: none;
 }
 
 .service-description__backgroung img {
@@ -1318,10 +1351,11 @@ h1 {
 }
 
 .service-description .section-title {
-   margin-bottom: 30px;
+   margin-bottom: 0px;
    width: 100%;
-   color: #fff;
+   color: #ffffff;
    white-space: nowrap;
+   /* font-weight: 600; */
 }
 
 .service-description__service-types {
@@ -1333,7 +1367,7 @@ h1 {
    border-right: 18px;
    border-color: rgb(198, 75, 222);
    border-style: solid;
-   /* border-style: solid dashed; */
+   box-shadow: 2px 0px 10px 2px rgba(0, 0, 0, 0.08);
 }
 
 .service-description__service-types.animated {
@@ -1387,7 +1421,8 @@ h1 {
    overflow: hidden;
    transform: rotate(-5deg);
    margin: 14px 40px -10px 20px;
-   border-style: outset;
+   box-shadow: 2px 0px 10px 0px rgba(0, 0, 0, 0.04);
+   /* border-style: outset; */
 }
 
 .service-description__image img {
@@ -1411,7 +1446,6 @@ h1 {
    text-align: left;
    min-height: 800px;
    background: var(--bright-bg-color);
-   /* text-align: center; */
 }
 
 .section-title,
