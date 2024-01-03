@@ -1407,6 +1407,7 @@ h1 {
    padding: 0 0 60px;
    text-align: left;
    min-height: 800px;
+   background: var(--bright-bg-color);
    /* text-align: center; */
 }
 
@@ -1444,8 +1445,8 @@ h1 {
 
 .our-clients__article,
 .our-clients__gallery li.card {
-   width: 690px;
-   height: 520px;
+   width: 689px;
+   height: 475px;
    padding: 0;
 }
 
@@ -1454,6 +1455,7 @@ h1 {
    overflow: hidden;
    margin: auto;
    margin-top: 40px;
+   box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 ol.our-clients__gallery {
