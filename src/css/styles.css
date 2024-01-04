@@ -585,7 +585,6 @@ h5,
    font-size: 1.875rem; /* 30px font size  */
 }
 
-.extra-services__introduction,
 .header__subtitle {
    font-size: 1.625rem; /* 26px font size  */
 }
@@ -594,6 +593,7 @@ h6 {
    font-size: 1.5rem; /* 24px font size  */
 }
 
+.extra-services__introduction,
 .features__card-title,
 .services__title,
 .extra-services__description,
@@ -1833,19 +1833,20 @@ ol.our-clients__gallery {
 
 .cta {
    align-items: center;
-   text-align: center;
    /* min-height: 600px; */
    padding: 0 0 40px;
    justify-content: center;
-   margin-bottom: 100px;
-   /* background-image: url('../images/img/png/1.png'); */
-   /* background-color: rgba(0, 0, 0, 0.5); */
-   /* background-position: 0; */
+   /* background-image: url('../images/img/png/3.png'); */
+   /* background-position: 5% 0; */
+   /* background-size: cover; */
 }
 
-/* .cta .section-title {
-   letter-spacing: -3px;
-} */
+.cta .container {
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-around;
+   /* gap: 10%; */
+}
 
 .cta span.hyphen {
    display: none;
@@ -1859,15 +1860,50 @@ ol.our-clients__gallery {
 }
 
 .cta__gallery {
-   padding-top: 20px;
-   width: 100%;
+   display: block;
+   width: 60%;
+   height: 100%;
+   padding: 20px;
    position: relative;
+   margin: auto 0;
+
+   border: 1px solid rgba(213, 213, 213, 0.41);
+   box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.01);
+}
+
+.slider-pagination {
+   position: absolute;
+   width: fit-content;
+   height: fit-content;
+   bottom: -44px;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+}
+
+.slider-pagination ul {
+   padding: 0 10px;
+   margin: 0;
+   width: auto;
+}
+
+.circle {
+   display: inline-block;
+   margin: 0 1px;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background: lightgray;
+}
+
+.circle.active {
+   background: #333;
 }
 
 .cta__slider {
    display: block;
    width: 100%;
-   height: 700px;
+   height: 400px;
    overflow: hidden;
 }
 
@@ -1875,23 +1911,54 @@ ol.our-clients__gallery {
    width: 100%;
    height: 100%;
    object-fit: cover;
-   object-position: center;
+   object-position: center center;
+   -webkit-transition: -webkit-transform 2s ease-in-out;
+   transition: all 2s ease-in-out;
 }
 
-.cta .section-subtitle,
-.cta__description p {
-   margin: 0px;
-   text-align: left;
-}
-
-.cta .section-subtitle,
-.cta__description {
-   width: 1140px;
+.cta__slider img:hover {
+   object-position: left center;
+   -webkit-transform: scale(1.2);
+   transform: scale(1.2);
 }
 
 .cta__description {
+   display: block;
+   padding: 34px 20px;
+   width: 240px;
+   height: fit-content;
+   background-color: var(--primary-color);
    margin: 0;
+   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.cta .cta__description .section-title {
+   margin: 0;
+   line-height: 1.4;
+   text-transform: none !important;
+   text-align: left;
+   background: transparent;
+   font-weight: 700;
+   color: #fff;
+}
+
+.cta__description p {
+   line-height: 1.4;
+   font-weight: 400;
+   color: #fff;
+   margin: 5px 0;
+}
+
+.cta .section-subtitle {
+   margin: 0px;
+   width: 1140px;
+   text-align: center;
+}
+
+.cta .section-title,
+.cta .section-subtitle {
    color: #333;
+   background: rgba(255, 255, 255, 0.95);
 }
 
 .cta__submit-section p::before,
@@ -1902,7 +1969,6 @@ ol.our-clients__gallery {
    height: 100%;
    width: 100%;
    border-left: 2px solid lightgray;
-   /* background: red; */
    z-index: 999;
    padding: 20px;
    bottom: -20px;
@@ -1940,7 +2006,6 @@ ol.our-clients__gallery {
 
 .cta__submit-section .consult-btn {
    font-size: 0.75rem;
-   /* margin: 0; */
    margin: auto;
    margin-right: 0;
    padding: 10px 20px;
@@ -1965,6 +2030,10 @@ ol.our-clients__gallery {
    width: 20%;
    height: 100%;
    object-fit: cover;
+}
+
+.cta .cta-button {
+   font-size: 0.8rem;
 }
 
 .cta-button {
@@ -2052,14 +2121,20 @@ footer .container {
 .extra-services {
    padding-top: 60px;
    padding-bottom: 60px;
-   /* background: var(--middle-bg-color); */
    /* background: var(--dark-bg-color); */
+   background: var(--middle-bg-color);
+   /* background: rgba(18, 18, 18, 0.934); */
+   /* padding: 40px 0;
+   background-image: url('../images/pictures/engineers-discuss-blueprint-while-checking-information-tablet-computer.jpg');
+   width: 100%;
+   background-size: cover;
+   background-position: center;
+   background-blend-mode: hue; */
 }
 
 .extra-services__introduction {
-   color: #fff;
    color: #000;
-   line-height: 1.2;
+   line-height: 1.4;
    font-weight: 400;
    max-width: 80%;
    margin: 0 auto;
@@ -2151,6 +2226,8 @@ footer .container {
    overflow: hidden;
    padding: 0;
    margin: 0;
+
+   background: transparent;
 }
 
 .extra-services__image {
