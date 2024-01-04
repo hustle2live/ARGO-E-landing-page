@@ -1898,6 +1898,7 @@ ol.our-clients__gallery {
    height: 10px;
    border-radius: 50%;
    background: lightgray;
+   cursor: pointer;
 }
 
 .circle.active {
