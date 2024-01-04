@@ -1878,6 +1878,7 @@ ol.our-clients__gallery {
 .slider-pagination .slider-pagination__list {
    margin: 0;
    width: auto;
+   cursor: pointer;
 }
 
 .circle {
@@ -1889,6 +1890,12 @@ ol.our-clients__gallery {
    border-radius: 50%;
    background: lightgray;
    cursor: pointer;
+}
+
+.circle:hover {
+   background: #3333337a;
+   -webkit-transform: scale(1.2);
+   transform: scale(1.2);
 }
 
 .circle.active {
@@ -1924,17 +1931,20 @@ ol.our-clients__gallery {
    height: 100%;
    border-radius: 0;
    bottom: 0%;
-   /* padding: 25% 20px; */
    opacity: 0.14;
 
    background-color: transparent;
    transition: 0.3s;
+   transform: scale(0.8);
 }
 
 .cta-buttons .prev:hover,
 .cta-buttons .next:hover {
    opacity: 0.5;
+   -webkit-transform: scale(1);
+   transform: scale(1);
 }
+
 .cta-buttons .prev:active,
 .cta-buttons .next:active {
    opacity: 1;
