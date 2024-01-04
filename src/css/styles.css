@@ -1572,7 +1572,6 @@ ol.our-clients__gallery {
    height: 40px;
    border-radius: 50%;
    cursor: pointer;
-   /* bottom: 310px; */
    bottom: 28%;
    border: none;
    background-color: #4d4d4d;
@@ -1770,15 +1769,6 @@ ol.our-clients__gallery {
    fill: var(--dark-secondary-color);
 }
 
-.features__card:nth-child(2),
-.features__card:nth-child(3),
-.features__card:nth-child(6),
-.features__card:nth-child(7),
-.features__card:nth-child(10) {
-   /* background-color: var(--bright-bg-color); */
-   /* background-color: var(--middle-bg-color); */
-}
-
 .features__card-title {
    line-height: 1.2;
    font-weight: 400;
@@ -1925,6 +1915,42 @@ ol.our-clients__gallery {
    object-position: left center;
    -webkit-transform: scale(1.2);
    transform: scale(1.2);
+}
+
+.cta-buttons .prev,
+.cta-buttons .next {
+   width: 50px;
+   height: 200px;
+   height: 100%;
+   border-radius: 0;
+   bottom: 0%;
+   /* padding: 25% 20px; */
+   opacity: 0.14;
+
+   background-color: transparent;
+   transition: 0.3s;
+}
+
+.cta-buttons .prev:hover,
+.cta-buttons .next:hover {
+   opacity: 0.5;
+}
+.cta-buttons .prev:active,
+.cta-buttons .next:active {
+   opacity: 1;
+}
+
+.cta-buttons .prev svg,
+.cta-buttons .next svg {
+   fill: black;
+   width: 100%;
+}
+
+.cta-buttons .prev {
+   left: -7%;
+}
+.cta-buttons .next {
+   right: -7%;
 }
 
 .cta__description {
