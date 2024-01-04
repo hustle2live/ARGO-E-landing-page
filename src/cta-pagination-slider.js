@@ -9,20 +9,14 @@ const arrowSliderNext = document.querySelector('.cta-buttons .next');
 
 const hoverClass = `active`;
 
-// let imageNumber = 1;
-// const imageDefaultPath = `./images/img/png/${imageNumber}.png`;
-
 const imageCounterMin = 1;
 const imageCounterMax = 8;
 
 const clearAll = () => pagCircles.forEach((elem) => elem.classList.remove(hoverClass));
-
 const setElemClass = (elem) => elem.classList.add(hoverClass);
-
 const setImagePath = (num) => sliderImage.setAttribute('src', `./images/img/png/${num}.png`);
 
 // --- get active pag element and setup image src
-
 const autoSetImageNumber = () => {
    try {
       const isActivePagElement = document.querySelector('.circle.active');
@@ -54,10 +48,12 @@ const handlePagElementClass = (targetElement) => {
 
 // ----
 
+// Next count test integer function
 const nextCountNumber = (num) =>
    num < imageCounterMin ? imageCounterMax : num > imageCounterMax ? imageCounterMin : num;
+// -----
 
-//
+// click arrow function
 const handleNextElement = (integer = -1) => {
    try {
       const isActivePagElement = document.querySelector('.circle.active');
@@ -65,7 +61,6 @@ const handleNextElement = (integer = -1) => {
 
       if (isActivePagElement && imageCountValue) {
          const nextInteger = imageCountValue + integer;
-
          const nextActiveValue = nextCountNumber(nextInteger);
 
          clearAll();
@@ -76,13 +71,15 @@ const handleNextElement = (integer = -1) => {
       console.log(error);
    }
 };
-//
+// ------
+
+// ---- events -----
 
 arrowSliderPrev.addEventListener('click', () => handleNextElement());
 arrowSliderNext.addEventListener('click', () => handleNextElement(imageCounterMin));
 
-// ;
-
 paginationDiv.addEventListener('click', (e) => (handlePagElementClass(e.target) ? autoSetImageNumber() : null));
+
+// ------ initial function ------
 
 autoSetImageNumber();
