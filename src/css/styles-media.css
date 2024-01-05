@@ -11,8 +11,16 @@
    --dark-primary-color: #764bde;
    --dark-secondary-color: #5955fa;
    --bright-bg-color: #f2f2f2;
-   --middle-bg-color: #e5e5e5;
+   --middle-bg-color: #e8e8e8;
    --dark-bg-color: #1a1a1a;
+
+   --silver-background: rgb(242, 242, 242);
+   --silver-gradient-background: linear-gradient(
+      150deg,
+      rgba(242, 242, 242, 1) 0%,
+      rgba(242, 242, 242, 1) 50%,
+      rgba(250, 232, 225, 0.5411414565826331) 100%
+   );
 }
 
 /* adaptive style up to 1024px && down from 1200px  */

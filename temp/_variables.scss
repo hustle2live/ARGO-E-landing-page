@@ -1,0 +1,161 @@
+$color_1: red;
+$color_2: #00ac00;
+$color_3: white;
+$color_4: #fff;
+$color_5: var(--primary-color);
+$color_6: #000;
+$color_7: #d1d1d1;
+$color_8: #ffffff;
+$color_9: #5e5e5e;
+$color_10: var(--secondary-color);
+$color_11: #452a70;
+$color_12: #111111;
+$color_13: #000000;
+$color_14: var(--dark-bg-color);
+$color_15: var(--middle-bg-color);
+$font-family_1: 'Arial', sans-serif;
+$font-family_2: 'Raleway', sans-serif;
+$font-family_3: 'Montserrat', sans-serif;
+$font-family_4: 'Open Sans', sans-serif;
+$font-family_5: 'AR One Sans', sans-serif;
+$font-family_6: 'Roboto', sans-serif;
+$background-color_1: #3f3f3f;
+$background-color_2: #565656;
+$background-color_3: #333;
+$background-color_4: #00000060;
+$background-color_5: rgb(198, 75, 222);
+$background-color_6: rgb(77, 77, 77);
+$background-color_7: #4d4d4d;
+$background-color_8: #1a1a1a;
+$background-color_9: transparent;
+$background-color_10: var(--primary-color);
+$background-color_11: var(--dark-primary-color);
+$background-color_12: #ffffff;
+$background-color_13: #5736a3;
+$border-color_1: rgba(179, 94, 244, 1);
+$border-color_2: rgb(198, 75, 222);
+
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Roboto:wght@300;400&family=Montserrat:wght@300;400;500;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=AR+One+Sans&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800;900&display=swap";
+/* animations css */
+
+/* --/ feedback-wrapper  */
+/* ------------ header-content -------- */
+/* --/ header-content */
+/* ------------ body-content -------- */
+/* ------------ body __ services-content -------- */
+/* .services__card:hover {
+   scale: 1.05;
+} */
+/* --/ services-content */
+/* ------------ body __ about -------- */
+/* .about__concepts {
+   flex-wrap: wrap;
+} */
+/* .about-company b {
+   font-weight: 500;
+} */
+/* .about-company q, */
+/* svg icons change from images */
+/* ------------ body __ service-description -------- */
+/* --/ service-description */
+/* ------------ body __ our-clients-description -------- */
+/* --/ our-clients-description */
+/* ------------ body __ features and fails section -------- */
+/* #Dribbble-Light-Preview, */
+/* --/ features and fails section */
+/* .cta__submit-section p:last-of-type::after {
+   border-right: 2px solid lightgray;
+   right: 0;
+} */
+/* ------------ body __ extra-services-content -------- */
+/* --/ extra-services-content */
+/* adaptive style up to 1024px && down from 1200px  */
+&:root {
+	--theme-sheet-width-xxl: 1920px;
+	--theme-sheet-width-xl: 1140px;
+	--theme-sheet-width-lg: 940px;
+	--theme-sheet-width-md: 720px;
+	--theme-sheet-width-sm: 560px;
+	--theme-sheet-width-xs: 340px;
+	--theme-sheet-width-xxs: 300px;
+	--primary-color: #c64bde;
+	--secondary-color: rgba(179, 94, 244, 1);
+	--dark-primary-color: #764bde;
+	--dark-secondary-color: #5955fa;
+	--bright-bg-color: #f2f2f2;
+	--middle-bg-color: #e8e8e8;
+	--dark-bg-color: #1a1a1a;
+	--silver-background: rgb(242, 242, 242);
+	--silver-gradient-background: linear-gradient( 150deg, rgba(242, 242, 242, 1) 0%, rgba(242, 242, 242, 1) 50%, rgba(250, 232, 225, 0.5411414565826331) 100% );
+}
+.u-body {
+	--animation-fade_in-opacity: 0;
+	--animation-fade_in_up-opacity: 0;
+	--animation-fade_in_left-opacity: 0;
+	--animation-fade_in_right-opacity: 0;
+	--animation-fade_in_down-opacity: 0;
+	--animation-fade_in_up_big-opacity: 0;
+	--animation-fade_in_left_big-opacity: 0;
+	--animation-fade_in_right_big-opacity: 0;
+	--animation-fade_in_down_big-opacity: 0;
+	--animation-fade_out-opacity: 0;
+	--animation-fade_out_up-opacity: 0;
+	--animation-fade_out_left-opacity: 0;
+	--animation-fade_out_right-opacity: 0;
+	--animation-fade_out_down-opacity: 0;
+	--animation-fade_out_up_big-opacity: 0;
+	--animation-fade_out_left_big-opacity: 0;
+	--animation-fade_out_right_big-opacity: 0;
+	--animation-fade_out_down_big-opacity: 0;
+	--animation-rotate_in-rotate: -200deg;
+	--animation-rotate_in_down_left-rotate: -45deg;
+	--animation-rotate_in_down_right-rotate: 45deg;
+	--animation-rotate_in_up_left-rotate: 45deg;
+	--animation-rotate_in_up_right-rotate: -90deg;
+	--animation-rotate_out-rotate: 200deg;
+	--animation-rotate_out_down_left-rotate: 45deg;
+	--animation-rotate_out_down_right-rotate: -45deg;
+	--animation-rotate_out_up_left-rotate: -5deg;
+	--animation-rotate_out_up_right-rotate: 90deg;
+	--animation-roll_in-rotate: -120deg;
+	--animation-roll_in-translate_x: -100%;
+	--animation-roll_out-rotate: 120deg;
+	--animation-roll_out-translate_x: 100%;
+	--animation-zoom_in-scale: 0.3;
+	--animation-zoom_in_down-scale: 0.475;
+	--animation-zoom_in_down-translate_y: 60px;
+	--animation-zoom_in_up-scale: 0.475;
+	--animation-zoom_in_up-translate_y: -60px;
+	--animation-zoom_in_left-scale: 0.475;
+	--animation-zoom_in_left-translate_x: 10px;
+	--animation-zoom_in_right-scale: 0.475;
+	--animation-zoom_in_right-translate_x: -10px;
+	--animation-zoom_out-scale: 0.3;
+	--animation-zoom_out_down-scale: 0.475;
+	--animation-zoom_out_down-translate_y: -60px;
+	--animation-zoom_out_up-scale: 0.475;
+	--animation-zoom_out_up-translate_y: 60px;
+	--animation-zoom_out_left-scale: 0.475;
+	--animation-zoom_out_left-translate_x: 42px;
+	--animation-zoom_out_right-scale: 0.475;
+	--animation-zoom_out_right-translate_x: -42px;
+	--animation-slide_in_down-translate_y: -100%;
+	--animation-slide_in_up-translate_y: 100%;
+	--animation-slide_in_left-translate_x: -100%;
+	--animation-slide_in_right-translate_x: 100%;
+	--animation-slide_out_down-translate_y: 100%;
+	--animation-slide_out_up-translate_y: -100%;
+	--animation-slide_out_left-translate_x: -100%;
+	--animation-slide_out_right-translate_x: 100%;
+	--animation-custom_in-translate_x: 0px;
+	--animation-custom_in-translate_y: 0px;
+	--animation-custom_in-scale: 1;
+	--animation-custom_in-rotate: 0deg;
+	--animation-custom_in-opacity: 0;
+	--animation-custom_in-translate_x-end: 0;
+	--animation-custom_in-translate_y-end: 0;
+	--animation-custom_in-scale-end: 1;
+	--animation-custom_in-opacity-end: 1;
+}

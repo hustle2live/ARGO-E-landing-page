@@ -1,0 +1,742 @@
+@media screen and (max-width: 1200px) {
+   .container {
+      width: 100%;
+   }
+   .features__description {
+      width: var(--theme-sheet-width-lg);
+   }
+   .extra-services__content.container {
+      width: var(--theme-sheet-width-lg);
+   }
+   .header__navbar.container {
+      padding: 0 60px;
+   }
+   .services__card {
+      width: 320px;
+   }
+   .about__concepts {
+      justify-content: center;
+   }
+   .about__concepts-item {
+      padding: 22px;
+   }
+   .service-description__image {
+      width: 74%;
+      margin: 0 auto 40px;
+   }
+   .service-description__service-types {
+      width: 74%;
+      margin: 0 auto 40px;
+      text-align: center;
+      ul {
+         li {
+            p {
+               padding-left: 20px;
+               text-align: justify;
+            }
+         }
+      }
+   }
+   .service-description {
+      .section-title {
+         width: 80%;
+         margin-bottom: 50px;
+         white-space: initial;
+      }
+   }
+   .extra-services__card {
+      height: auto;
+   }
+   .features {
+      .container {
+         width: 800px;
+      }
+   }
+   .our-clients__article {
+      width: 800px;
+   }
+   .our-clients__gallery {
+      li.card {
+         width: 800px;
+      }
+   }
+   .header__content {
+      padding: 60px;
+      background-size: 58%;
+      background-position-y: 53%;
+   }
+   .header__subtitle {
+      max-width: 45%;
+      margin: 10px 0;
+   }
+   .header__description {
+      max-width: 45%;
+      margin: 10px 0;
+   }
+   .our-clients {
+      > p {
+         max-width: 80%;
+      }
+   }
+   .cta__description {
+      max-width: 80%;
+   }
+   .cta-picture {
+      height: 320px;
+      margin-top: 0;
+   }
+   .section-title {
+      font-size: 3rem;
+   }
+   .cta__subtitle {
+      font-size: 1.9rem;
+   }
+   footer {
+      .container {
+         padding: 2rem;
+         gap: 30px;
+      }
+   }
+   .footer-section {
+      font-size: 1rem;
+   }
+}
+@media screen and (max-width: 1023px) {
+   .features__description {
+      width: var(--theme-sheet-width-md);
+   }
+   .extra-services__content.container {
+      width: var(--theme-sheet-width-md);
+   }
+   .our-clients__article {
+      width: 600px;
+   }
+   .our-clients__gallery {
+      li.card {
+         width: 600px;
+      }
+   }
+   .features {
+      .container {
+         width: 600px;
+      }
+   }
+   .services__card {
+      &:nth-child(3) {
+         margin-top: 0;
+         margin-right: 26%;
+         margin-bottom: -240px;
+      }
+   }
+   .about {
+      padding: 20px 60px 120px;
+      .container {
+         justify-content: space-between;
+         padding: 0;
+         gap: 20px;
+      }
+   }
+   .about__introduction {
+      width: 40%;
+      padding: 0;
+   }
+   .about-company {
+      width: 40%;
+      padding: 0;
+   }
+   .about__concepts {
+      padding: 0;
+      gap: 40px;
+      justify-content: space-around;
+   }
+   .about__concepts-item {
+      padding: 0;
+      width: auto;
+      min-width: 40%;
+      max-width: 45%;
+   }
+   .extra-services__image {
+      &:nth-of-type(3) {
+         display: none;
+      }
+   }
+   .extra-services__card {
+      &:last-of-type {
+         flex-direction: row-reverse;
+      }
+   }
+   .card__description {
+      height: auto;
+   }
+   ol.our-clients__gallery {
+      min-height: auto;
+   }
+   .footer-section.logo {
+      .text {
+         font-size: 0.728rem;
+         letter-spacing: -0.5px;
+      }
+   }
+   .footer-section {
+      .text {
+         font-size: 0.82rem;
+      }
+   }
+   .nav-menu__item {
+      padding: 0 8px;
+      margin: 0 4px;
+   }
+}
+@media screen and (max-width: 767px) {
+   .features {
+      .section-title {
+         width: var(--theme-sheet-width-sm);
+         margin: auto;
+      }
+      .container {
+         width: 560px;
+      }
+   }
+   .features__description {
+      width: var(--theme-sheet-width-sm);
+   }
+   .header__content {
+      padding: 30px;
+   }
+   .header__navbar.container {
+      padding: 0 30px;
+   }
+   .about {
+      padding: 20px 30px 120px;
+      .icon {
+         height: 220px;
+      }
+   }
+   .services__card {
+      width: 290px;
+   }
+   .about__concepts {
+      padding: 0;
+      gap: 20px;
+   }
+   .service-description__service-types {
+      width: 100%;
+      box-sizing: border-box;
+      margin: 0 70px 0 30px;
+      ul {
+         li {
+            margin-left: 10px;
+            width: 90%;
+         }
+      }
+   }
+   .service-description__image {
+      width: 100%;
+      margin: 0 60px 40px;
+      height: 340px;
+   }
+   .our-clients__article {
+      width: 560px;
+   }
+   .our-clients__gallery {
+      li.card {
+         width: 560px;
+         height: 520px;
+      }
+   }
+   .extra-services__text-content {
+      width: 50%;
+   }
+   .extra-services__image {
+      width: 50%;
+   }
+   .extra-services__card-section {
+      width: 100%;
+      box-sizing: border-box;
+   }
+   .extra-services__content.container {
+      width: 100%;
+   }
+   .extra-services__title {
+      padding: 0 25px;
+   }
+   .extra-services__description {
+      padding: 0 25px;
+   }
+   footer {
+      .container {
+         padding: 30px;
+         gap: 18px;
+      }
+   }
+   .header__content-section {
+      min-height: auto;
+      max-height: fit-content;
+      padding: 0;
+   }
+   .header__content.container {
+      margin: 0;
+   }
+   .nav-menu__item {
+      padding: 0 3px;
+      margin: 0 2px;
+   }
+}
+@media screen and (max-width: 619px) {
+   .features__card-title {
+      font-size: 1.2rem;
+      font-weight: 500;
+   }
+   .features__description {
+      width: var(--theme-sheet-width-xs);
+   }
+   .our-clients__article {
+      width: 500px;
+      height: 540px;
+   }
+   .our-clients__gallery {
+      li.card {
+         width: 500px;
+      }
+   }
+   .features {
+      .section-title {
+         width: auto;
+         margin: auto 30px;
+         box-sizing: border-box;
+      }
+      .container {
+         width: auto;
+         margin: auto 30px;
+         box-sizing: border-box;
+      }
+   }
+   .services__card {
+      width: 380px;
+      margin: 20px auto;
+      &:nth-child(2) {
+         margin: 20px auto;
+      }
+      &:nth-child(3) {
+         margin: 20px auto;
+      }
+   }
+   .services__image {
+      height: 240px;
+   }
+   .services__section-subtitle {
+      margin: 60px auto;
+   }
+   .services__card-section {
+      ul {
+         margin: 60px auto;
+      }
+   }
+   .header__title {
+      max-width: 78%;
+   }
+   .header__subtitle {
+      max-width: 78%;
+   }
+   .header__description {
+      max-width: 78%;
+   }
+   .header__content.container {
+      background-image: none;
+   }
+   .header {
+      .cta-button {
+         margin: 20px 0;
+      }
+   }
+   .about {
+      .container {
+         justify-content: start;
+      }
+   }
+   .about-company {
+      width: 60%;
+   }
+   .about__introduction {
+      width: 35%;
+      margin: 0 auto;
+   }
+   footer {
+      .container {
+         grid-template: auto auto auto auto / 1fr;
+      }
+      .logo {
+         order: 1;
+      }
+   }
+   .nav-menu {
+      display: none;
+   }
+}
+@media screen and (max-width: 519px) {
+   .our-clients__article {
+      width: 400px;
+   }
+   .our-clients__gallery {
+      li.card {
+         width: 400px;
+      }
+   }
+   .cta {
+      .section-title {
+         font-size: 2.5rem;
+         line-height: 1.2;
+         margin: 60px auto 0;
+      }
+      margin-bottom: 30px;
+      padding: 0;
+      span.hyphen {
+         display: contents;
+      }
+   }
+   .section-title {
+      font-size: 2.5rem;
+      line-height: 1.2;
+   }
+   .header__title {
+      font-size: 2.5rem;
+      line-height: 1.2;
+   }
+   .about {
+      .section-title {
+         font-size: 2.5rem;
+         line-height: 1.2;
+      }
+      .container {
+         position: relative;
+      }
+   }
+   .about__concepts {
+      .about__concepts-title {
+         font-size: 2.1rem;
+         line-height: 1.4;
+      }
+   }
+   .extra-services__title {
+      font-size: 1.2rem;
+      line-height: 1.4;
+   }
+   .extra-services__introduction {
+      font-size: 1.2rem;
+      line-height: 1.4;
+      margin: 30px auto;
+      &:last-of-type {
+         margin: 60px auto 0;
+      }
+   }
+   .cta__description {
+      font-size: 1.2rem;
+      line-height: 1.4;
+      font-weight: 400;
+   }
+   .features__subtitle {
+      font-size: 1.2rem;
+      line-height: 1.4;
+   }
+   .features {
+      .section-subtitle {
+         font-size: 1.2rem;
+         line-height: 1.4;
+         margin: 30px auto;
+         max-width: 84%;
+      }
+      .container {
+         margin: 0;
+      }
+   }
+   .features__description {
+      p {
+         font-size: 1.2rem;
+         line-height: 1.4;
+         margin: 30px auto;
+         max-width: 84%;
+      }
+   }
+   .service-description__service-types {
+      h4 {
+         font-size: 1.2rem;
+         line-height: 1.4;
+      }
+      margin: 0 auto;
+      width: 98%;
+      padding-top: 34px;
+      ul {
+         li {
+            &::before {
+               left: -12px;
+            }
+            p {
+               padding-left: 20px;
+               text-align: start;
+               line-height: 1.2;
+            }
+         }
+         padding-left: 20px;
+      }
+   }
+   .services__section-subtitle {
+      font-size: 1.2rem;
+      line-height: 1.4;
+      margin: 30px auto;
+      max-width: 250px;
+      a {
+         font-size: 1.1rem;
+      }
+   }
+   .cta__subtitle {
+      font-size: 1.2rem;
+      line-height: 1.4;
+      margin: 10px auto 20px;
+      max-width: 84%;
+   }
+   .extra-services__description {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      line-height: 1.2;
+      font-weight: 300;
+   }
+   .features__card-title {
+      font-size: 1.1rem;
+   }
+   .icon {
+      margin: -4px 0;
+      padding-bottom: 2px;
+      font-size: 1rem;
+   }
+   .features__text {
+      p {
+         font-size: 1rem;
+         text-align: start;
+         max-width: 88%;
+         line-height: 1.5;
+         padding: 4px 0;
+         margin: auto;
+      }
+      margin-bottom: 30px;
+   }
+   .services__card-section {
+      ul {
+         margin: 30px auto;
+      }
+   }
+   .card__description {
+      h5 {
+         line-height: 1.2;
+         font-weight: 300;
+      }
+   }
+   .extra-services__card-section {
+      ul {
+         width: 98%;
+         margin: 20px auto;
+      }
+   }
+   .about__concepts-item {
+      min-width: auto;
+      max-width: none;
+      width: 100%;
+   }
+   .extra-services__card {
+      flex-wrap: wrap;
+      &:nth-child(2) {
+         .extra-services__image {
+            flex-basis: auto;
+            width: 100%;
+         }
+      }
+      &:nth-child(3) {
+         .extra-services__image {
+            flex-basis: auto;
+            width: 100%;
+         }
+      }
+   }
+   .extra-services__image {
+      flex-basis: auto;
+      width: 100%;
+      height: auto;
+   }
+   .extra-services__text-content {
+      flex-basis: auto;
+      width: 100%;
+   }
+   .features__card {
+      padding: 5px;
+   }
+   .services__card {
+      width: 320px;
+   }
+   .about-company {
+      width: 100%;
+      .title {
+         width: 73%;
+         font-size: 1rem;
+      }
+      .description {
+         width: 73%;
+         font-size: 1rem;
+      }
+   }
+   .about__introduction {
+      position: absolute;
+      width: 24%;
+      height: 140px;
+      top: 0;
+      right: 0;
+   }
+   .service-description {
+      .section-title {
+         text-transform: uppercase;
+         text-align: center;
+         line-height: 1.1;
+      }
+   }
+   .service-description__image {
+      border: 10px solid #ffffff;
+      margin: 0 auto -16px;
+      max-width: 80%;
+      height: 280px;
+   }
+   .cta-picture {
+      img {
+         width: 33%;
+         height: 120px;
+         &:nth-child(4) {
+            width: 49.5%;
+         }
+         &:nth-child(5) {
+            width: 49.5%;
+         }
+      }
+      height: auto;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0;
+   }
+   .cta-button {
+      padding: 1rem 2rem;
+      font-size: 1rem;
+   }
+}
+@media screen and (max-width: 424px) {
+   .our-clients__article {
+      width: 330px;
+   }
+   .our-clients__gallery {
+      li.card {
+         width: 330px;
+      }
+   }
+   .feedback-wrapper {
+      width: 360px;
+      padding: 20px;
+   }
+}
+@media screen and (max-width: 380px) {
+   .feedback-wrapper {
+      width: 340px;
+      .label {
+         margin: 15px 0;
+      }
+      form {
+         .btn-submit {
+            margin-top: 15px;
+         }
+      }
+   }
+}
+@media screen and (max-width: 340px) {
+   .feedback-wrapper {
+      width: 310px;
+   }
+   .our-clients__article {
+      width: var(--theme-sheet-width-xxs);
+   }
+   .our-clients__gallery {
+      li.card {
+         width: var(--theme-sheet-width-xxs);
+      }
+   }
+   .features__description {
+      width: var(--theme-sheet-width-xxs);
+   }
+   .header__title {
+      max-width: 100%;
+      font-size: 2rem;
+      line-height: 1.2;
+   }
+   .header__subtitle {
+      max-width: 100%;
+   }
+   .header__description {
+      max-width: 100%;
+   }
+   .service-description {
+      .section-title {
+         margin-left: auto;
+         margin-right: auto;
+         max-width: 90%;
+         width: auto;
+      }
+   }
+   .features {
+      .section-title {
+         margin-left: auto;
+         margin-right: auto;
+         max-width: 90%;
+         width: auto;
+      }
+   }
+   .section-title {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 90%;
+      width: auto;
+      font-size: 2rem;
+      line-height: 1.2;
+   }
+   .cta {
+      .section-title {
+         font-size: 2rem;
+         line-height: 1.2;
+      }
+   }
+   .about {
+      .section-title {
+         font-size: 2rem;
+         line-height: 1.2;
+      }
+   }
+   .about__concepts {
+      .about__concepts-title {
+         font-size: 1.6rem;
+         line-height: 1.4;
+      }
+   }
+   .services__card {
+      width: 300px;
+      padding: 18px;
+      min-height: auto;
+      margin-top: 0;
+   }
+   .services__image {
+      height: 200px;
+   }
+   .services__title {
+      margin: 16px auto 10px;
+   }
+   .services-btn {
+      margin: 0 auto 14px;
+   }
+   .services__card-section {
+      ul {
+         margin-top: 0;
+      }
+   }
+}
