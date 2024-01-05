@@ -26,29 +26,56 @@
 /* adaptive style up to 1024px && down from 1200px  */
 
 @media screen and (max-width: 1200px) {
+   .features .container,
    .container {
-      width: 100%;
+      max-width: 98%;
    }
 
+   .features .container,
+   .cta .container,
+   .header__navbar.container,
+   .features-label,
+   .about__concepts,
+   .about .container,
+   .our-clients .container,
+   .section-subtitle,
+   .features .section-subtitle,
    .features__description,
-   .extra-services__content.container {
-      width: var(--theme-sheet-width-lg);
+   .extra-services__content.container,
+   .about__concepts,
+   .section-title,
+   .section-subtitle {
+      max-width: var(--theme-sheet-width-lg);
    }
 
    .header__navbar.container {
-      padding: 0 60px;
+      padding: 0;
    }
 
    .services__card {
       width: 320px;
    }
 
+   .about .container {
+      gap: 20px;
+      justify-content: space-between;
+   }
+
+   .about-company {
+      padding-left: 0;
+   }
+
+   .about__introduction {
+      width: 50%;
+   }
+
    .about__concepts {
-      justify-content: center;
+      justify-content: space-around;
    }
 
    .about__concepts-item {
       padding: 22px;
+      width: 30%;
    }
 
    .service-description__image,
@@ -67,7 +94,14 @@
       height: auto;
    }
 
-   .features .container,
+   /* .features .container {
+      max-width: 94%;
+   } */
+
+   .features__text li {
+      padding-left: 0;
+   }
+
    .our-clients__article,
    .our-clients__gallery li.card {
       width: 800px;
@@ -85,13 +119,27 @@
       margin: 10px 0;
    }
 
+   /* .container, */
+   .service-description .container {
+      overflow: hidden;
+   }
+
    .service-description__service-types {
-      text-align: center;
+      text-align: left;
+      padding: 20px;
    }
 
    .service-description__service-types ul li p {
-      padding-left: 20px;
-      text-align: justify;
+      padding-left: 0px;
+      text-align: left;
+   }
+
+   .service-description__service-types h4 {
+      text-transform: none;
+   }
+
+   .section-title {
+      font-size: 3rem;
    }
 
    .our-clients > p,
@@ -101,15 +149,46 @@
 
    .cta-picture {
       height: 320px;
-      margin-top: 0;
-   }
-
-   .section-title {
-      font-size: 3rem;
+      margin: 20px 0;
    }
 
    .cta__subtitle {
       font-size: 1.9rem;
+   }
+
+   .cta .container {
+      justify-content: center;
+      gap: 20px;
+   }
+
+   .cta .container .text,
+   .cta__description {
+      width: 40%;
+      margin: 20px auto;
+   }
+
+   .cta__description {
+      border: none;
+   }
+
+   .cta .section-title {
+      margin-bottom: 0;
+   }
+
+   .cta .section-subtitle {
+      margin: 1rem 0;
+   }
+
+   .cta__gallery {
+      width: 80%;
+   }
+   .cta .cta__gallery .label {
+      width: max-content;
+      top: -34px;
+   }
+
+   .slider-pagination {
+      bottom: -60px;
    }
 
    footer .container {

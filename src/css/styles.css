@@ -1874,12 +1874,13 @@ ol.our-clients__gallery {
    height: fit-content;
    /* bottom: -44px; */
    bottom: -54px;
-   left: 46%;
+   left: 50%;
    transform: translate(-50%, -50%);
 }
 
-.slider-pagination .slider-pagination__list {
+.slider-pagination__list {
    margin: 0;
+   padding-left: 0;
    width: auto;
    cursor: pointer;
 }
