@@ -510,7 +510,7 @@
    .services__card {
       width: 380px;
    }
-   
+
    .services__card.animated {
       opacity: 1;
    }
@@ -546,10 +546,6 @@
       gap: 20px;
    }
 
-   .about-company {
-      width: 60%;
-   }
-
    .about__concepts {
       flex-wrap: wrap;
    }
@@ -564,7 +560,7 @@
    }
 
    .about__introduction {
-      height: 300px;
+      height: 360px;
    }
 
    .service-description .container,
@@ -621,6 +617,33 @@
    .cta__slider img:hover {
       object-position: center center;
    }
+
+   /*  */
+
+   .services__content {
+      margin-top: 65px;
+   }
+
+   .header .cta-button {
+      margin-top: 0;
+   }
+
+   .services .section-title {
+      margin-top: 20px;
+   }
+
+   .header-picture {
+      height: 340px;
+      bottom: -152px;
+   }
+
+   .header__content-section {
+      overflow: visible;
+   }
+
+   .header__content.container {
+      padding-bottom: 90px;
+   }
 }
 
 @media screen and (max-width: 519px) {
@@ -629,36 +652,44 @@
       width: 400px;
    }
 
-   .cta .section-title,
-   .section-title,
-   .header__title,
-   .about .section-title {
-      font-size: 2.5rem;
-      line-height: 1.2;
+   h1,
+   .header__title {
+      font-size: 2.25rem; /* 36px font size  */
    }
 
-   .about__concepts .about__concepts-title {
-      font-size: 2.1rem;
-      line-height: 1.4;
+   .section-title,
+   .cta .section-title,
+   .about .section-title {
+      font-size: 1.875rem; /* 30px font size  */
    }
 
    .extra-services__title,
    .extra-services__introduction,
    .cta__description,
    .features__subtitle,
-   .features .section-subtitle,
    .features__description p,
    .service-description__service-types h4,
-   .services__section-subtitle,
    .cta__subtitle {
-      font-size: 1.2rem;
-      line-height: 1.4;
+      font-size: 1.125rem; /* 18px font size  */
    }
 
+   .our-clients > p,
+   .section-subtitle,
+   .features .section-subtitle,
+   .services__section-subtitle,
    .services__section-subtitle a,
    .extra-services__description,
+   .header__description,
    .features__card-title {
-      font-size: 1.1rem;
+      font-size: 1rem; /* 16px font size  */
+   }
+
+   .header .cta-button {
+      font-size: 0.875rem; /* 14px font size  */
+   }
+
+   .header__title {
+      line-height: 1.1;
    }
 
    .icon {
@@ -698,7 +729,7 @@
       left: -12px;
    }
 
-   .service-description__service-types ul li p,
+   /* .service-description__service-types ul li p, */
    .service-description__service-types ul {
       padding-left: 20px;
    }
@@ -757,26 +788,59 @@
       width: 320px;
    }
 
+   .about {
+      padding-bottom: 80px;
+   }
+
    .about-company {
       width: 100%;
+      padding-bottom: 40px;
+   }
+
+   .about-company p:nth-of-type(2) {
+      padding-right: 35%;
+      position: relative;
+      overflow: hidden;
+   }
+
+   .about-company p:nth-of-type(2)::after {
+      display: block;
+      content: '';
+      background-image: url('../images/logo/logo-transparent.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      object-position: center;
+      width: 90px;
+      height: 140px;
+      position: absolute;
+      top: 0;
+      right: 4%;
    }
 
    .about .container {
       position: relative;
    }
 
-   .about__introduction {
-      position: absolute;
-      width: 24%;
-      height: 140px;
-      top: 0;
-      right: 0;
+   .about__concepts-item > div {
+      justify-content: flex-start;
    }
 
-   .about-company .title,
-   .about-company .description {
-      width: 73%;
-      font-size: 1rem;
+   .about__concepts-item > div > p:first-of-type {
+      margin-top: 5px;
+      margin-left: 0;
+      width: 60px;
+   }
+
+   .about__concepts-item > div > p:last-of-type {
+      padding-left: 70px;
+   }
+
+   .about__concepts-item {
+      padding: 0 20px 0 25px;
+   }
+   .about__concepts {
+      gap: 20px;
    }
 
    .services__section-subtitle {
@@ -814,7 +878,8 @@
    }
 
    .service-description__service-types {
-      padding-top: 34px;
+      padding: 10px 0;
+      /* padding-top: 24px; */
    }
 
    .cta__subtitle,
@@ -841,13 +906,32 @@
       gap: 0;
    }
 
-   .cta-button {
-      padding: 1rem 2rem;
-      font-size: 1rem;
+   .our-clients__article {
+      height: 520px;
    }
 
    .cta span.hyphen {
       display: contents;
+   }
+
+   .services__image {
+      height: 200px;
+   }
+
+   .header-picture {
+      height: 288px;
+      max-width: 86%;
+      bottom: -120px;
+      z-index: 1;
+   }
+
+   .header-picture img {
+      width: 100%;
+      height: auto;
+   }
+
+   .header__content.container {
+      padding-bottom: 120px;
    }
 }
 
@@ -860,6 +944,28 @@
    .feedback-wrapper {
       width: 360px;
       padding: 20px;
+   }
+
+   h1,
+   .header__title {
+      font-size: 1.875rem; /* 30px font size  */
+      margin: 20px 0 10px;
+   }
+   .header__description ul {
+      margin-bottom: 10px;
+   }
+
+   .header-picture {
+      height: 288px;
+      max-width: 96%;
+      right: 5%;
+   }
+
+   .header-picture img {
+      width: auto;
+      height: 90%;
+      object-position: center;
+      object-fit: cover;
    }
 }
 
@@ -875,11 +981,70 @@
    .feedback-wrapper form .btn-submit {
       margin-top: 15px;
    }
+   .about-company {
+      padding-right: 0;
+   }
+
+   .about-company p:nth-of-type(2) {
+      padding-right: 28%;
+   }
+
+   .about-company p:nth-of-type(2)::after {
+      width: 80px;
+      height: 96px;
+      top: 0;
+      right: 0;
+   }
+
+   .about__concepts-item {
+      padding: 0 16px;
+   }
+
+   .header-picture {
+      height: 240px;
+      max-width: 98%;
+      /* left: -10px; */
+      left: 0;
+      right: auto;
+      bottom: -100px;
+   }
+
+   .slider-pagination {
+      max-width: 98%;
+      left: 35%;
+      transform: translate(-20%, -20%);
+   }
+
+   .cta__slider img:hover,
+   .cta__slider img {
+      object-position: left center;
+   }
 }
 
 @media screen and (max-width: 340px) {
    .feedback-wrapper {
       width: 310px;
+   }
+
+   .header__navbar.container,
+   .header__content.container,
+   .cta .section-subtitle,
+   .features .container,
+   .cta .container,
+   .features-label,
+   .about__concepts,
+   .about .container,
+   .our-clients .container,
+   .section-subtitle,
+   .features .section-title,
+   .features .section-subtitle,
+   .features__description,
+   .extra-services__content.container,
+   .about__concepts,
+   .section-title,
+   .section-subtitle {
+      padding-left: 10px;
+      padding-right: 10px;
    }
 
    .our-clients__article,
@@ -888,10 +1053,18 @@
       width: var(--theme-sheet-width-xxs);
    }
 
-   .header__title,
+   /* .header__title,
    .header__subtitle,
    .header__description {
       max-width: 100%;
+   } */
+
+   /* .cta .cta__gallery .label, */
+   .services__section-subtitle,
+   .service-description .section-title,
+   .features .section-title,
+   .section-title {
+      max-width: 98%;
    }
 
    .service-description .section-title,
@@ -899,31 +1072,93 @@
    .section-title {
       margin-left: auto;
       margin-right: auto;
-      max-width: 90%;
       width: auto;
    }
 
-   .cta .section-title,
+   .service-description__service-types {
+      padding: 10px 0;
+   }
+
+   .service-description .container {
+      padding: 0 6px;
+   }
+
    .section-title,
-   .header__title,
+   .cta .section-title,
    .about .section-title {
-      font-size: 2rem;
+      font-size: 1.4rem;
       line-height: 1.2;
    }
 
-   .about__concepts .about__concepts-title {
-      font-size: 1.6rem;
+   /* .our-clients > p, */
+   .about__concepts-item > div > p:first-of-type {
+      font-size: 1.875rem;
+   }
+
+   /* .about__concepts .about__concepts-title {
+      font-size: 1.4rem;
+      line-height: 1.4;
+   } */
+
+   .features__subtitle,
+   .cta .cta__gallery .label {
+      font-size: 1rem;
+   }
+
+   .features__text .icon {
+      margin-top: 0;
+   }
+
+   .our-clients > p,
+   .features__text p,
+   .about__concepts-item p,
+   .header__description,
+   .section-subtitle,
+   .features .section-subtitle,
+   .services__section-subtitle,
+   .services__title,
+   .services__description,
+   .services__section-subtitle a,
+   .extra-services__description,
+   .features__card-title,
+   .header .cta-button {
+      font-size: 0.875rem; /* 14px font size  */
+      line-height: 1.25;
+   }
+
+   .about__concepts-item p {
+      margin: 8px 0;
+   }
+
+   .about__concepts-item .icon {
+      height: 80px;
+   }
+   .about__concepts-item .icon svg {
+      width: 80px;
+      height: 80px;
+   }
+
+   .container .section-title,
+   .features .section-title,
+   .section-title,
+   .service-description__service-types,
+   .services__title,
+   .services__description {
       line-height: 1.4;
    }
 
+   .services-btn {
+      font-size: 0.6rem;
+   }
+
    .services__card {
-      width: 300px;
+      max-width: 90%;
       padding: 18px;
       min-height: auto;
    }
 
    .services__image {
-      height: 200px;
+      height: 190px;
    }
    .services__title {
       margin: 16px auto 10px;
@@ -932,8 +1167,9 @@
       margin: 0 auto 14px;
    }
 
-   .services__card,
+   /* .services__card, */
    .services__card-section ul {
-      margin-top: 0;
+      margin-top: 40px;
+      /* padding: 10px; */
    }
 }
