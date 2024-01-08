@@ -2204,11 +2204,15 @@ footer .container {
    font-size: 0.94rem;
    color: var(--middle-bg-color);
    margin: 6px 0;
+   cursor: default;
+}
+.footer-section a {
+   cursor: pointer;
 }
 
-.footer-section .text:hover {
+/* .footer-section .text:hover {
    color: #fff;
-}
+} */
 
 /* ------------ body __ extra-services-content -------- */
 
