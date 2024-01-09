@@ -223,6 +223,12 @@
       max-width: var(--theme-sheet-width-md);
    }
 
+   .header__content {
+      max-width: 100%;
+      margin: 60px;
+      padding: 20px;
+   }
+
    .header__navbar.container {
       max-width: 98%;
       padding: 0 60px;
@@ -315,6 +321,8 @@
 @media screen and (max-width: 820px) {
    .header__content {
       padding: 0 40px;
+      max-width: 100%;
+      margin: 0;
    }
 
    .header__navbar.container {
@@ -436,7 +444,7 @@
       padding: 0;
    }
 
-   .header__content.container {
+   .header__content {
       margin: 0;
    }
 
@@ -481,10 +489,11 @@
    }
 
    .header-picture {
-      max-width: 80%;
+      max-width: 100%;
       width: auto;
       height: 340px;
       bottom: -100px;
+      right: 4%;
    }
 
    .header .cta-button {
@@ -739,7 +748,7 @@
    }
 
    .services__content {
-      margin-top: 65px;
+      margin-top: 270px;
    }
 
    .header .cta-button {
@@ -751,8 +760,10 @@
    }
 
    .header-picture {
-      height: 340px;
-      bottom: -152px;
+      height: auto;
+      width: auto;
+      bottom: -260px;
+      z-index: 1;
    }
 
    .header__content-section {
@@ -770,15 +781,12 @@
       width: 400px;
    }
 
-   /* h1,
-   .header__title {
-      font-size: 2.25rem; 
-   } */
-
+   /* .service-description .section-title, */
    .section-title,
    .cta .section-title,
    .about .section-title {
       font-size: 1.875rem; /* 30px font size  */
+      line-height: normal;
    }
 
    .cta__description,
@@ -1033,20 +1041,16 @@
       display: contents;
    }
 
+   .services__content {
+      margin-top: 140px;
+   }
+
    .services__image {
       height: 200px;
    }
 
    .header-picture {
-      height: 288px;
-      max-width: 86%;
-      bottom: -120px;
-      z-index: 1;
-   }
-
-   .header-picture img {
-      width: 100%;
-      height: auto;
+      bottom: -170px;
    }
 
    .header__content.container {
@@ -1075,16 +1079,7 @@
    }
 
    .header-picture {
-      height: 288px;
-      max-width: 96%;
-      right: 5%;
-   }
-
-   .header-picture img {
-      width: auto;
-      height: 90%;
-      object-position: center;
-      object-fit: cover;
+      bottom: -140px;
    }
 
    .extra-services__image {
@@ -1155,11 +1150,11 @@
    }
 
    .header-picture {
-      height: 240px;
-      max-width: 98%;
-      left: 0;
-      right: auto;
-      bottom: -100px;
+      bottom: -120px;
+   }
+
+   .services__content {
+      margin-top: 110px;
    }
 
    .slider-pagination {
@@ -1172,6 +1167,11 @@
    .cta__slider img {
       object-position: left center;
    }
+
+   .header .cta-button {
+      padding: 10px 20px;
+      margin-bottom: 10px;
+   }
 }
 
 @media screen and (max-width: 340px) {
@@ -1179,8 +1179,8 @@
       width: 310px;
    }
 
+   /* .header__content.container, */
    .header__navbar.container,
-   .header__content.container,
    .cta .section-subtitle,
    .features .container,
    .cta .container,
@@ -1200,17 +1200,16 @@
       padding-right: 10px;
    }
 
+   /* .header__navbar.container, */
+   .header__content.container {
+      padding-left: 16px;
+   }
+
    .our-clients__article,
    .our-clients__gallery li.card,
    .features__description {
       width: var(--theme-sheet-width-xxs);
    }
-
-   /* .header__title,
-   .header__subtitle,
-   .header__description {
-      max-width: 100%;
-   } */
 
    /* .cta .cta__gallery .label, */
    .services__section-subtitle,
@@ -1236,11 +1235,21 @@
       padding: 0 6px;
    }
 
+   .service-description .section-title,
    .section-title,
    .cta .section-title,
    .about .section-title {
       font-size: 1.4rem;
       line-height: 1.2;
+   }
+
+   .container .section-title,
+   .features .section-title,
+   .section-title,
+   .service-description__service-types,
+   .services__title,
+   .services__description {
+      line-height: 1.4;
    }
 
    .about__concepts-item > div > p:first-of-type {
@@ -1285,13 +1294,14 @@
       height: 80px;
    }
 
-   .container .section-title,
-   .features .section-title,
-   .section-title,
-   .service-description__service-types,
-   .services__title,
-   .services__description {
-      line-height: 1.4;
+   .about {
+      background: linear-gradient(
+         0deg,
+         rgba(198, 75, 222, 1) 0%,
+         rgba(198, 75, 222, 1) 40%,
+         rgba(229, 229, 229, 1) 40%,
+         rgba(229, 229, 229, 1) 100%
+      );
    }
 
    .services-btn {
@@ -1314,9 +1324,20 @@
       margin: 0 auto 14px;
    }
 
-   /* .services__card, */
    .services__card-section ul {
       margin-top: 40px;
-      /* padding: 10px; */
+   }
+
+   .header-picture {
+      bottom: -100px;
+   }
+
+   .services__content {
+      margin-top: 90px;
+   }
+
+   .header .cta-button {
+      padding: 8px 16px;
+      margin-bottom: 10px;
    }
 }
