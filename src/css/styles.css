@@ -540,6 +540,7 @@ body {
 
 header,
 .extra-services__image,
+.extra-services__text-content,
 .services::after,
 .services__image,
 .about__introduction,
@@ -593,18 +594,18 @@ h5,
    font-size: 1.875rem; /* 30px font size  */
 }
 
+/* .extra-services__title, */
 .header__subtitle {
    font-size: 1.625rem; /* 26px font size  */
 }
 
+.extra-services__title,
 h6 {
    font-size: 1.5rem; /* 24px font size  */
 }
 
-.extra-services__introduction,
 .features__card-title,
 .services__title,
-.extra-services__description,
 .our-clients > p,
 .card__description p,
 .features__description p {
@@ -619,6 +620,8 @@ h6 {
    font-size: 1.125rem; /* 18px font size  */
 }
 
+.extra-services__introduction,
+.extra-services__description,
 .features__subtitle,
 .services__card,
 .services__description,
@@ -663,6 +666,7 @@ h6 {
 .cta-button,
 .about .description,
 .about__concepts-item p,
+.extra-services__description,
 .about .text,
 .services__description {
    font-family: 'Montserrat', sans-serif;
@@ -671,7 +675,6 @@ h6 {
 .about__concepts-item > div > p:nth-of-type(1),
 .footer-section .label,
 .features__description p,
-.extra-services__description,
 .card__description h5,
 .nav-menu__item a {
    font-family: 'Open Sans', sans-serif;
@@ -690,6 +693,8 @@ h6 {
    font-family: 'Roboto', sans-serif;
 }
 
+.extra-services__introduction,
+.extra-services__title,
 .features__subtitle,
 .our-clients,
 .our-clients h3,
@@ -775,9 +780,9 @@ header,
 .header__navbar,
 .services__card,
 .features__card,
-.extra-services__card,
 .cta,
 .our-clients,
+.extra-services__card,
 .extra-services {
    background: #fff;
 }
@@ -2217,121 +2222,63 @@ footer .container {
 .extra-services {
    padding-top: 60px;
    padding-bottom: 60px;
-   /* background: var(--dark-bg-color); */
    background: var(--middle-bg-color);
-   /* background: rgba(18, 18, 18, 0.934); */
-   /* padding: 40px 0;
-   background-image: url('../images/pictures/engineers-discuss-blueprint-while-checking-information-tablet-computer.jpg');
-   width: 100%;
-   background-size: cover;
-   background-position: center;
-   background-blend-mode: hue; */
+   /* background: var(--dark-bg-color); */
 }
 
 .extra-services__introduction {
+   /* text-align: center; */
+   /* max-width: 40%; */
    color: #000;
-   line-height: 1.4;
    font-weight: 400;
-   max-width: 80%;
-   margin: 0 auto;
-   text-align: center;
-}
-
-.extra-services__introduction:last-of-type {
-   width: 100%;
-   margin-top: 80px;
-}
-
-.extra-services__content {
-   text-align: center;
-   margin: 0 auto;
+   margin: 80px auto 20px;
 }
 
 .extra-services__card-section ul {
-   width: 100%;
-   flex-wrap: wrap;
-   justify-content: center;
+   flex-direction: column;
    gap: 0;
-   margin: 50px auto;
-   padding-left: 0;
-}
-
-.extra-services__text-content {
-   flex-basis: 50%;
-   flex-grow: 1;
-   height: 100%;
-   animation-duration: 2000ms;
-}
-
-.extra-services__card:nth-child(1) .extra-services__text-content {
-   background: yellow;
-}
-
-.extra-services__card:nth-child(2) .extra-services__image.animated {
-   animation-delay: 700ms;
-}
-.extra-services__card:nth-child(3) .extra-services__image.animated {
-   animation-delay: 400ms;
-   animation-duration: 2200ms;
-}
-
-.extra-services__card:nth-child(2) .extra-services__text-content {
-   background: darkblue;
-}
-
-.extra-services__card:nth-child(2) .extra-services__text-content.animated.customAnimationScale {
-   transition: scale 2s;
-   animation-delay: 800ms;
-   transition-delay: 800ms;
-}
-
-.extra-services__card:nth-child(3) .extra-services__text-content {
-   animation-duration: 3000ms;
-   background: orangered;
-}
-
-.extra-services__card:nth-child(1) {
-   flex-direction: row-reverse;
-   text-align: start;
-}
-
-.extra-services__card:nth-child(2) {
-   text-align: left;
-}
-
-.extra-services__card:nth-child(2) .extra-services__image,
-.extra-services__card:nth-child(3) .extra-services__image {
-   flex-basis: 50%;
-}
-
-.extra-services__card:nth-child(3) {
-   text-align: start;
+   width: 840px;
+   padding: 0;
+   margin: 40px auto;
 }
 
 .extra-services__card {
-   box-sizing: border-box;
    width: 100%;
-   height: 310px;
-   line-height: 1.5rem;
-   align-items: center;
-   list-style-type: none;
-   text-align: center;
-   text-align: justify;
+   min-height: 180px;
+
    color: #111111;
-   cursor: default;
-   overflow: hidden;
+   text-align: left;
+
+   list-style-type: none;
    padding: 0;
    margin: 0;
-
    background: transparent;
+
+   overflow: hidden;
+   cursor: default;
+}
+
+.extra-services__text-content {
+   width: 58%;
+   animation-duration: 2000ms;
+   padding-bottom: 10px;
+   padding: 20px;
+   padding-left: 25px;
 }
 
 .extra-services__image {
-   flex-basis: 50%;
-   height: 100%;
+   width: 42%;
    overflow: hidden;
    margin: 0;
    padding: 0;
+}
+
+.extra-services__card:nth-child(2) .extra-services__image {
+   width: 30%;
+}
+
+.extra-services__card:nth-child(2) .extra-services__text-content {
+   width: 40%;
 }
 
 .extra-services__image img {
@@ -2339,22 +2286,58 @@ footer .container {
    object-position: center;
 }
 
+.extra-services__card:nth-child(1) .extra-services__text-content {
+   background: yellow;
+}
+.extra-services__card:nth-child(2) .extra-services__image.animated {
+   animation-delay: 700ms;
+}
+.extra-services__card:nth-child(3) .extra-services__image.animated {
+   animation-delay: 400ms;
+   animation-duration: 2200ms;
+}
+.extra-services__card:nth-child(2) .extra-services__text-content {
+   background: darkblue;
+}
+.extra-services__card:nth-child(2) .extra-services__text-content.animated.customAnimationScale {
+   transition: scale 2s;
+   animation-delay: 800ms;
+   transition-delay: 800ms;
+}
+.extra-services__card:nth-child(3) .extra-services__text-content {
+   animation-duration: 3000ms;
+   background: orangered;
+}
+.extra-services__card:nth-child(1) {
+   flex-direction: row-reverse;
+}
+
 .extra-services__title {
    font-weight: 300;
-   font-size: 1.8rem;
-   line-height: 2rem;
    text-transform: uppercase;
-   margin: 32px auto 20px;
+   margin: 10px auto 20px;
 }
 
 .extra-services__title,
 .extra-services__description {
-   padding: 0 40px;
+   padding: 0;
 }
 
 .extra-services__description {
-   line-height: 1.8rem;
+   line-height: 1.4rem;
    margin-top: 0;
+}
+
+.extra-services__description::before {
+   display: block;
+   width: 80px;
+   height: 1.6px;
+   background-color: #ffffff;
+   content: '';
+   margin: 16px 0;
+}
+.extra-services__card:first-of-type .extra-services__description::before {
+   background-color: #000;
 }
 
 .extra-services__footer {
