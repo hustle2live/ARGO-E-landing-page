@@ -244,6 +244,10 @@ body {
    display: none !important;
 }
 
+.menu-btn {
+   display: none;
+}
+
 /* top button styles */
 
 .top-btn {
@@ -794,6 +798,7 @@ h1 {
 .header__navbar {
    height: 4.5rem;
    justify-content: space-between;
+   align-items: center;
    margin: 0 auto;
    max-width: 100%;
 }
