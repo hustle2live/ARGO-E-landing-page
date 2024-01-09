@@ -673,7 +673,7 @@
       left: 0;
       top: 0;
       /* top: 20%; */
-      padding: 40px 20px;
+      padding: 60px 20px 40px;
 
       background: #fff;
 
@@ -693,7 +693,7 @@
 
    .nav-menu__list {
       flex-direction: column;
-      margin-top: 20px;
+      /* margin-top: 20px; */
       margin-bottom: 20px;
    }
 
@@ -1118,6 +1118,10 @@
       padding: 0;
       width: 34px;
       height: 34px;
+   }
+
+   .nav-menu__item a {
+      font-size: 1.125rem;
    }
 }
 
