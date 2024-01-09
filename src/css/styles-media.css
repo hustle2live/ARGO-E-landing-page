@@ -700,14 +700,11 @@
    .header__navbar_social {
       margin-left: auto;
       margin-right: 30px;
+      height: 36%;
    }
 
    .header__navbar_company-logo {
       height: 52%;
-   }
-
-   .header__navbar_social {
-      height: 36%;
    }
 
    .service-description {
@@ -1100,10 +1097,28 @@
       padding: 0;
    }
 
-   /* .extra-services__description,
-   .extra-services__title {
-      font-weight: 400;
-   } */
+   .header__description svg {
+      height: 18px;
+      width: 18px;
+   }
+
+   .header__navbar_social {
+      height: 25px;
+      margin: 0 auto;
+   }
+   .header__navbar_social a {
+      margin-right: 2px;
+   }
+
+   .header__navbar.container {
+      padding-right: 20px;
+   }
+
+   .menu-btn {
+      padding: 0;
+      width: 34px;
+      height: 34px;
+   }
 }
 
 @media screen and (max-width: 380px) {
