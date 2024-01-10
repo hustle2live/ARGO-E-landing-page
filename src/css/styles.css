@@ -850,32 +850,47 @@ h1 {
    object-fit: cover;
 }
 
-.header__navbar_company-logo {
-   height: 52%;
-   margin: auto 0;
+/* .header__navbar_company-logo {
+   width: auto;
+} */
+
+.header__navbar_company-logo a {
    cursor: pointer;
+   line-height: 70px;
+   display: block;
 }
 
 .header__navbar_company-logo img {
-   height: 100%;
+   display: block;
+   height: 30px;
    width: auto;
 }
 
 .header__navbar_social {
-   height: 36%;
-   margin: auto 0;
+   display: flex;
+   padding-left: 0;
+   box-sizing: inherit;
+}
+
+.header__navbar_social li {
+   list-style-type: none;
+   margin-right: 8px;
 }
 
 .header__navbar a,
 .header__navbar_social a {
-   cursor: pointer;
    text-decoration: none;
-   margin-right: 0.4rem;
+   cursor: pointer;
+}
+
+.header__navbar_social a {
+   display: block;
+   line-height: 70px;
 }
 
 .header__navbar_social img {
-   display: inline-block;
-   height: 100%;
+   display: block;
+   height: 25px;
    width: auto;
 }
 
@@ -924,22 +939,6 @@ h1 {
    margin-left: 0;
 }
 
-.nav-menu {
-   height: 100%;
-}
-
-.nav-menu__list {
-   padding-left: 0;
-   list-style-type: none;
-   align-items: center;
-}
-
-.nav-menu__item {
-   display: block;
-   padding: 0 10px;
-   margin: 0 5px;
-}
-
 .header {
    position: relative;
 }
@@ -950,10 +949,28 @@ h1 {
    z-index: 1;
 }
 
+.nav-menu {
+   height: 100%;
+}
+
+.nav-menu__list {
+   box-sizing: inherit;
+   padding-left: 0;
+   list-style-type: none;
+   align-items: center;
+}
+
+.nav-menu__item {
+   margin-right: 10px;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
 .nav-menu__item a {
+   display: block;
+   line-height: 70px;
    transition-duration: 300ms;
    color: #5e5e5e;
-   margin: 0 auto;
 }
 
 .nav-menu__item:hover a {
