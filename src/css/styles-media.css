@@ -63,8 +63,13 @@
       padding-left: 0;
    }
 
+   .about-company,
    .about__introduction {
-      width: 50%;
+      width: 46%;
+   }
+   .about__introduction {
+      margin: auto;
+      margin-top: 0;
    }
 
    .about__concepts {
@@ -307,7 +312,7 @@
 
 @media screen and (max-width: 820px) {
    .header__content {
-      padding: 0 40px;
+      padding: 0 30px;
       max-width: 100%;
       margin: 0;
    }
@@ -338,11 +343,31 @@
    .section-title,
    .section-subtitle {
       max-width: 98%;
-      padding-left: 20px;
-      padding-right: 20px;
-      box-sizing: border-box;
    }
 
+   /* .features .section-subtitle p, */
+   .features .section-subtitle,
+   .cta .section-subtitle,
+   .features .container,
+   .cta .container,
+   .features-label,
+   .about__concepts,
+   .about .container,
+   .our-clients .container,
+   .features .section-title,
+   .features__description,
+   .extra-services__content.container,
+   .about__concepts,
+   .services .section-subtitle,
+   .section-title {
+      padding-left: 20px;
+      padding-right: 20px;
+   }
+
+   .extra-services .section-title,
+   .extra-services .section-subtitle,
+   .our-clients .section-subtitle,
+   .cta .section-subtitle,
    .cta__description .section-title,
    .cta__description .section-subtitle {
       padding: 0;
@@ -381,6 +406,7 @@
       height: 220px;
    }
 
+   .about .container,
    .about__concepts {
       padding: 0;
       gap: 10px;
@@ -557,12 +583,12 @@
    }
 
    .about {
-      padding: 20px 0 60px;
+      padding: 20px 20px 60px;
       background: linear-gradient(
          0deg,
          rgba(198, 75, 222, 1) 0%,
-         rgba(198, 75, 222, 1) 46.8%,
-         rgba(229, 229, 229, 1) 46.8%,
+         rgba(198, 75, 222, 1) 44.8%,
+         rgba(229, 229, 229, 1) 44.8%,
          rgba(229, 229, 229, 1) 100%
       );
    }
@@ -676,7 +702,9 @@
       width: 100vw;
       top: 0;
       left: 0;
-      z-index: 2;
+      box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.05);
+      z-index: 20;
+      /* z-index: 2; */
    }
 
    .header__content-section {
@@ -788,10 +816,11 @@
       width: 400px;
    }
 
-   /* .service-description .section-title, */
    .section-title,
-   .cta .section-title,
-   .about .section-title {
+   .service-description .section-title,
+   .our-clients .section-title,
+   .about .section-title,
+   .cta .section-title {
       font-size: 1.875rem; /* 30px font size  */
       line-height: normal;
    }
@@ -850,6 +879,10 @@
    .services__section-subtitle,
    .services__card-section ul {
       margin: 30px auto;
+   }
+
+   .features .section-subtitle p {
+      margin: 20px 0;
    }
 
    .service-description__service-types {
@@ -1001,7 +1034,6 @@
    .service-description .section-title {
       text-transform: uppercase;
       text-align: center;
-      line-height: 1.1;
    }
 
    .service-description__image {
@@ -1078,6 +1110,15 @@
    .feedback-wrapper {
       width: 360px;
       padding: 20px;
+   }
+
+   .section-title,
+   .service-description .section-title,
+   .our-clients .section-title,
+   .about .section-title,
+   .cta .section-title {
+      font-size: 1.625rem; /* 26px font size  */
+      line-height: normal;
    }
 
    h1,
@@ -1202,7 +1243,6 @@
       width: 310px;
    }
 
-   /* .header__content.container, */
    .header__navbar.container,
    .cta .section-subtitle,
    .features .container,
@@ -1223,7 +1263,6 @@
       padding-right: 10px;
    }
 
-   /* .header__navbar.container, */
    .header__content.container {
       padding-left: 16px;
    }
@@ -1234,7 +1273,6 @@
       width: var(--theme-sheet-width-xxs);
    }
 
-   /* .cta .cta__gallery .label, */
    .services__section-subtitle,
    .service-description .section-title,
    .features .section-title,
@@ -1258,17 +1296,15 @@
       padding: 0 6px;
    }
 
-   .service-description .section-title,
    .section-title,
-   .cta .section-title,
-   .about .section-title {
-      font-size: 1.4rem;
+   .service-description .section-title,
+   .our-clients .section-title,
+   .about .section-title,
+   .cta .section-title {
+      font-size: 1.375rem; /* 22px font size  */
       line-height: 1.2;
    }
 
-   .container .section-title,
-   .features .section-title,
-   .section-title,
    .service-description__service-types,
    .services__title,
    .services__description {
@@ -1321,8 +1357,8 @@
       background: linear-gradient(
          0deg,
          rgba(198, 75, 222, 1) 0%,
-         rgba(198, 75, 222, 1) 40%,
-         rgba(229, 229, 229, 1) 40%,
+         rgba(198, 75, 222, 1) 42.5%,
+         rgba(229, 229, 229, 1) 42.5%,
          rgba(229, 229, 229, 1) 100%
       );
    }

@@ -513,9 +513,38 @@ body {
 /* --/ feedback-wrapper  */
 
 .container {
+   box-sizing: border-box;
    width: var(--theme-sheet-width-xl);
    padding: 1px 0;
    margin: 0 auto;
+}
+
+header,
+.extra-services__image,
+.extra-services__text-content,
+.services::after,
+.services__image,
+.about__introduction,
+.about .icon,
+.service-description__service-types ul li::before,
+.our-clients__article,
+.features__background-image,
+.cta-button {
+   display: block;
+}
+
+.container,
+.cta .section-subtitle,
+.features-label,
+.about__concepts,
+.about-company,
+.about__introduction,
+.features .section-title,
+.features .section-subtitle,
+.features__description,
+.section-title,
+.section-subtitle {
+   box-sizing: border-box;
 }
 
 .header__navbar,
@@ -540,20 +569,6 @@ body {
 .nav-menu,
 .nav-menu__list {
    display: flex;
-}
-
-header,
-.extra-services__image,
-.extra-services__text-content,
-.services::after,
-.services__image,
-.about__introduction,
-.about .icon,
-.service-description__service-types ul li::before,
-.our-clients__article,
-.features__background-image,
-.cta-button {
-   display: block;
 }
 
 .header__content,
@@ -696,6 +711,10 @@ h6 {
 .extra-services__title,
 .footer-section.logo .text {
    font-family: 'Roboto', sans-serif;
+}
+
+.our-clients .section-title {
+   line-height: 1.6;
 }
 
 .extra-services__introduction,
@@ -945,7 +964,6 @@ h1 {
 }
 
 .header__navbar.container {
-   box-sizing: border-box;
    background: #fff;
    z-index: 1;
 }
@@ -1185,14 +1203,13 @@ h1 {
    flex-wrap: wrap;
    flex-direction: row-reverse;
    justify-content: center;
-   gap: 30px;
+   gap: 40px;
    margin-top: 30px;
 }
 
 .about-company,
 .about__introduction {
-   width: 46%;
-   box-sizing: border-box;
+   width: 40%;
 }
 
 .about__introduction {
@@ -1233,11 +1250,11 @@ h1 {
    line-height: 1.4;
    letter-spacing: normal;
 }
-
+/* 
 .about-company {
    padding-left: 30px;
    padding-right: 8px;
-}
+} */
 
 .about-company p:first-of-type:not(.text) {
    margin-top: 0;
@@ -1669,8 +1686,7 @@ ol.our-clients__gallery {
 }
 
 .our-clients h3,
-.our-clients p,
-.features p {
+.our-clients p {
    line-height: 1;
 }
 
@@ -1722,6 +1738,7 @@ ol.our-clients__gallery {
 }
 
 .section-subtitle,
+.features .section-subtitle p,
 .features .section-subtitle {
    line-height: 1.4;
    max-width: var(--theme-sheet-width-xl);
@@ -2002,15 +2019,12 @@ ol.our-clients__gallery {
 .cta__description {
    position: relative;
    border: 0;
-   /* border-right: 20px solid #fff;
-   border-style: solid dashed dashed solid; */
    display: block;
    padding: 34px 20px;
    width: 280px;
    height: fit-content;
    background-color: var(--primary-color);
    margin: 0;
-   margin-left: -20px;
    margin-bottom: 10px;
    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
 }
@@ -2184,7 +2198,6 @@ footer {
 
 footer .container {
    display: grid;
-   box-sizing: border-box;
    grid-template-columns: 1.6fr 2fr 2fr 2fr;
    grid-template-rows: 1fr;
    gap: 30px;
