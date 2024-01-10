@@ -684,13 +684,14 @@ h6 {
    font-family: 'Open Sans', sans-serif;
 }
 
+.about__concepts-item > div > p:nth-of-type(2),
 .features__subtitle,
 .footer-section .text,
 .features__text p {
    font-family: 'AR One Sans', sans-serif;
 }
 
-.about__concepts-item > div > p:nth-of-type(2),
+/* .about__concepts-item > div > p:nth-of-type(2), */
 .card__description p,
 .extra-services__title,
 .footer-section.logo .text {
@@ -1133,12 +1134,7 @@ h1 {
       rgba(229, 229, 229, 1) 39%,
       rgba(229, 229, 229, 1) 100%
    );
-   /* background: var(--middle-bg-color); */
 }
-
-/* .about__concepts {
-   flex-wrap: wrap;
-} */
 
 .about__concepts .about__concepts-title {
    line-height: 1.1;
@@ -1150,12 +1146,10 @@ h1 {
 
 .about__concepts-item > div {
    flex-wrap: wrap;
-   /* rgba(229, 229, 229, 1) 100% */
 }
 
 .about__concepts-item > div > p {
    width: 70%;
-   /* min-height: 3rem; */
 }
 
 .about__concepts-item > div > p:first-of-type {
@@ -1167,10 +1161,14 @@ h1 {
    white-space: nowrap;
 }
 
+.about__concepts-item > div > p:nth-of-type(2) {
+   font-weight: 600;
+   text-transform: uppercase;
+}
+
 .about__concepts-item > div > p:last-of-type {
    margin: 0 auto;
    width: 100%;
-   /* color: #000000; */
    color: #ffffff;
    flex-wrap: wrap;
    padding-left: 28%;
@@ -1206,8 +1204,6 @@ h1 {
    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
    border-radius: 4px;
    height: 520px;
-   /* border: 8px solid #d4d4d4; */
-   /* padding: 0px 0px 20% 0px; */
 }
 
 .about__introduction img {
@@ -1217,7 +1213,6 @@ h1 {
    bottom: -20%;
    left: -20%;
    object-fit: cover;
-   /* object-position: center bottom; */
 }
 
 .nowrap {
@@ -1240,7 +1235,6 @@ h1 {
 }
 
 .about-company {
-   /* padding-top: 30px; */
    padding-left: 30px;
    padding-right: 8px;
 }
@@ -1273,11 +1267,7 @@ h1 {
    padding-left: 10px;
    margin-left: 10px;
 }
-/* .about-company b {
-   font-weight: 500;
-} */
 
-/* .about-company q, */
 .about-company b,
 .about-company strong {
    font-weight: 600;
@@ -1333,9 +1323,14 @@ h1 {
    height: 108px;
 }
 
+.about__concepts-item > div > p,
 .about .icon svg path {
-   /* fill: #434343; */
-   fill: #ffffff9f;
+   /* fill: #ffffff;
+   color: #ffffff;
+   fill: wheat;
+   color: wheat; */
+   fill: #434343;
+   color: #434343;
 }
 
 .about .icon img {

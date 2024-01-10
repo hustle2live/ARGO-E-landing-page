@@ -321,7 +321,11 @@
 
    .header__navbar.container {
       max-width: 98%;
-      padding: 0 40px;
+      padding: 0 10px 0 20px;
+   }
+
+   .header__navbar_social li {
+      margin-right: 4px;
    }
 }
 
@@ -360,7 +364,7 @@
    }
 
    .header__navbar.container {
-      padding: 0 10px;
+      padding: 0 0 0 10px;
    }
 
    h1,
@@ -718,6 +722,10 @@
    .header__navbar_social {
       margin-left: auto;
       margin-right: 30px;
+   }
+
+   .header__navbar_social li {
+      margin-right: 8px;
    }
 
    .service-description {
