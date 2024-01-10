@@ -133,10 +133,6 @@
    .service-description__service-types h4 {
       text-transform: none;
    }
-   /* 
-   .section-title {
-      font-size: 3rem;
-   } */
 
    .prev-btn {
       left: 7%;
@@ -145,8 +141,7 @@
       right: 7%;
    }
 
-   .our-clients > p,
-   .cta__description {
+   .our-clients > p {
       max-width: 80%;
    }
 
@@ -164,14 +159,13 @@
       gap: 20px;
    }
 
-   .cta .container .text,
-   .cta__description {
-      width: 40%;
-      margin: 20px auto;
+   .cta .container .text {
+      width: 45%;
    }
 
+   .cta .container .text,
    .cta__description {
-      border: none;
+      margin: 20px auto;
    }
 
    .cta .section-title {
@@ -339,7 +333,6 @@
    .about__concepts,
    .about .container,
    .our-clients .container,
-   .section-subtitle,
    .features .section-title,
    .features .section-subtitle,
    .features__description,
@@ -351,6 +344,15 @@
       padding-left: 20px;
       padding-right: 20px;
       box-sizing: border-box;
+   }
+
+   .cta__description .section-title,
+   .cta__description .section-subtitle {
+      padding: 0;
+   }
+
+   .cta .container .text {
+      width: 100%;
    }
 
    .header__content {
@@ -428,11 +430,6 @@
       width: 100%;
    }
 
-   /* .extra-services__title,
-   .extra-services__description {
-      padding: 0 25px;
-   } */
-
    footer .container {
       padding: 30px;
       gap: 28px;
@@ -504,6 +501,10 @@
 
    .header__navbar.container {
       padding: 0 20px 0 30px;
+   }
+
+   .extra-services {
+      overflow: hidden;
    }
 
    .extra-services__title,
@@ -596,8 +597,7 @@
    .about-company,
    .about__concepts,
    .cta__gallery,
-   .cta .container .text,
-   .cta__description {
+   .cta .container .text {
       width: 100%;
    }
 

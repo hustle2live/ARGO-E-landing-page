@@ -2007,17 +2007,17 @@ ol.our-clients__gallery {
 .cta__description {
    position: relative;
    border: 0;
-   border-right: 20px solid #fff;
-   border-style: solid dashed dashed solid;
+   /* border-right: 20px solid #fff;
+   border-style: solid dashed dashed solid; */
    display: block;
    padding: 34px 20px;
-   width: 254px;
+   width: 280px;
    height: fit-content;
    background-color: var(--primary-color);
    margin: 0;
    margin-left: -20px;
    margin-bottom: 10px;
-   /* box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1); */
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
 .cta .cta__description .section-title {
