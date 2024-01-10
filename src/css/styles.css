@@ -580,9 +580,10 @@ header,
    flex-direction: column;
 }
 
-.features__subtitle,
+.nav-menu__item a,
 .heading,
 .section-title,
+.features__subtitle,
 .about .section-title {
    text-transform: uppercase !important;
 }
@@ -655,9 +656,12 @@ h6 {
 .extra-services__card,
 .extra-services__footer,
 .extra-services__footer a,
-.service-description__service-types h4,
-.nav-menu__item a {
+.service-description__service-types h4 {
    font-size: 1rem; /* 16px font size  */
+}
+
+.nav-menu__item a {
+   font-size: 0.75rem; /* 12px font size  */
 }
 
 .about .title,
@@ -987,13 +991,14 @@ h1 {
 
 .nav-menu__item a {
    display: block;
+   letter-spacing: 1.2px;
    line-height: 70px;
-   transition-duration: 300ms;
    color: #5e5e5e;
+   transition-duration: 300ms;
 }
 
 .nav-menu__item:hover a {
-   color: var(--secondary-color);
+   color: #5736a3;
 }
 
 /* --/ header-content */

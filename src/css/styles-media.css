@@ -345,7 +345,6 @@
       max-width: 98%;
    }
 
-   /* .features .section-subtitle p, */
    .features .section-subtitle,
    .cta .section-subtitle,
    .features .container,
@@ -472,10 +471,6 @@
       height: 520px;
    }
 
-   .nav-menu__item a {
-      font-size: 0.875rem;
-   }
-
    .about__concepts-item > div > p:first-of-type {
       font-size: 2rem;
       margin-left: -10px;
@@ -510,6 +505,12 @@
 
    .header .cta-button {
       z-index: 1;
+   }
+}
+
+@media screen and (max-width: 700px) {
+   .nav-menu {
+      display: none;
    }
 }
 
@@ -712,7 +713,6 @@
    }
 
    .nav-menu {
-      /* position: fixed; */
       display: block;
       box-sizing: border-box;
       left: 0;
