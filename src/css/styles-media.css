@@ -1134,10 +1134,6 @@
 }
 
 @media screen and (max-width: 424px) {
-   /* * {
-      box-sizing: border-box;
-   } */
-
    .our-clients__article,
    .our-clients__gallery li.card {
       width: 330px;
@@ -1155,6 +1151,17 @@
    .cta .section-title {
       font-size: 1.625rem; /* 26px font size  */
       line-height: normal;
+   }
+
+   .cta__gallery {
+      padding: 0;
+   }
+
+   .cta-buttons .prev {
+      left: 0;
+   }
+   .cta-buttons .next {
+      right: 0;
    }
 
    h1,
