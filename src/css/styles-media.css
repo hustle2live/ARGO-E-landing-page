@@ -278,7 +278,8 @@
    }
 
    .card__description {
-      height: auto;
+      height: 130px;
+      padding-left: 40px;
    }
 
    ol.our-clients__gallery {
@@ -433,6 +434,11 @@
       width: 560px;
    }
 
+   .card__description {
+      height: 140px;
+      padding-left: 25px;
+   }
+
    .features .container {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
@@ -467,6 +473,7 @@
       margin: 0;
    }
 
+   .our-clients__article,
    .our-clients__gallery li.card {
       height: 520px;
    }
@@ -546,7 +553,8 @@
       width: 500px;
    }
 
-   .our-clients__article {
+   .our-clients__article,
+   .our-clients__gallery li.card {
       height: 540px;
    }
 
@@ -614,6 +622,10 @@
 
    .about__introduction {
       height: 360px;
+   }
+
+   .card__description .object-description {
+      font-size: 0.875rem;
    }
 
    .service-description .container,
@@ -898,14 +910,19 @@
       padding-left: 20px;
    }
 
+   .card__description .object-name,
+   .card__description .object-description,
    .extra-services__description,
-   .card__description h5,
    .service-description__service-types ul li p {
       line-height: 1.2;
    }
 
-   .card__description h5 {
+   .card__description .object-description {
       font-weight: 300;
+   }
+
+   .card__description {
+      height: 170px;
    }
 
    .service-description__service-types,
@@ -1071,7 +1088,8 @@
       gap: 0;
    }
 
-   .our-clients__article {
+   .our-clients__article,
+   .our-clients__gallery li.card {
       height: 520px;
    }
 
@@ -1216,6 +1234,15 @@
 
    .about__concepts-item {
       padding: 0 16px;
+   }
+
+   .card__description {
+      padding: 20px;
+   }
+
+   .card__description .object-name {
+      font-size: 1.2rem;
+      line-height: 1.1;
    }
 
    .header-picture {
