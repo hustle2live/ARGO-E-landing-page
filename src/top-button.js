@@ -26,7 +26,6 @@ const isMenuOpened = () => !navMenuOpen.classList.contains('closed');
 menuButton.addEventListener('click', menuOpenClose);
 
 navMenuList.addEventListener('click', (e) => {
-   // console.log(e.target);
    if (isMenuOpened()) {
       menuOpenClose();
    }

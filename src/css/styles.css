@@ -876,10 +876,6 @@ h1 {
    object-fit: cover;
 }
 
-/* .header__navbar_company-logo {
-   width: auto;
-} */
-
 .header__navbar_company-logo a {
    cursor: pointer;
    line-height: 70px;
@@ -1924,15 +1920,75 @@ sub {
    position: relative;
    margin-top: 60px;
    border: 1px solid rgba(213, 213, 213, 0.41);
-   /* box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.01); */
    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.1);
+   transition: transform 350ms ease-in-out;
+}
+
+.cta__gallery.show {
+   position: fixed;
+   height: 80vh;
+   width: 80vw;
+   max-width: 1100px;
+   max-height: 600px;
+   background: #fff;
+   z-index: 2;
+   bottom: 10%;
+   right: 10%;
+   border: 20px 20px 20px #fff;
+   box-shadow: 0 0 0px 730px #101223b8;
+   transform: translate(-20%, -10%);
+}
+
+.cta__gallery.show .section-title.label {
+   top: 50px;
+   z-index: 2;
+}
+
+.cta__gallery.show .cta__slider {
+   height: 100%;
+}
+
+.cta__gallery.show .close-btn {
+   display: block;
+   position: absolute;
+   right: 0;
+   top: 0;
+   font-size: 40px;
+   line-height: 40px;
+   background: #e5e5e5;
+   color: black;
+   min-width: 40px;
+   min-height: 40px;
+   text-align: center;
+   cursor: pointer;
+}
+
+.cta__gallery.show .prev,
+.cta__gallery.show .next {
+   background: #e5e5e5;
+   -webkit-transform: scale(1);
+   transform: scale(1);
+   opacity: 1;
+}
+
+.cta__gallery.show .close-btn:hover {
+   background: #c1c1c1;
+}
+
+.cta__gallery.show .cta__slider img:hover {
+   -webkit-transform: none;
+   transform: none;
+   cursor: default;
+}
+
+.cta__gallery .close-btn {
+   display: none;
 }
 
 .slider-pagination {
    position: absolute;
    width: fit-content;
    height: fit-content;
-   /* bottom: -44px; */
    bottom: -54px;
    left: 50%;
    transform: translate(-50%, -50%);
@@ -1986,6 +2042,7 @@ sub {
    object-position: left center;
    -webkit-transform: scale(1.2);
    transform: scale(1.2);
+   cursor: zoom-in;
 }
 
 .cta-buttons .prev,
@@ -2085,7 +2142,6 @@ sub {
 }
 
 .cta .container .text p {
-   /* width: 80%; */
    width: 100%;
    text-align: left;
 }

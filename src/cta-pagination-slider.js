@@ -7,6 +7,15 @@ const pagCircles = document.querySelectorAll('.slider-pagination .circle');
 const arrowSliderPrev = document.querySelector('.cta-buttons .prev');
 const arrowSliderNext = document.querySelector('.cta-buttons .next');
 
+const ctaGallery = document.querySelector('.cta__gallery');
+const showGalleryButtonClose = document.querySelector('.cta__gallery .close-btn');
+
+const galleryShow = () => ctaGallery.classList.add('show');
+const galleryClose = () => ctaGallery.classList.remove('show');
+
+sliderDiv.addEventListener('click', galleryShow);
+showGalleryButtonClose.addEventListener('click', galleryClose);
+
 const hoverClass = `active`;
 
 const imageCounterMin = 1;
