@@ -13,9 +13,6 @@ const showGalleryButtonClose = document.querySelector('.cta__gallery .close-btn'
 const galleryShow = () => ctaGallery.classList.add('show');
 const galleryClose = () => ctaGallery.classList.remove('show');
 
-sliderDiv.addEventListener('click', galleryShow);
-showGalleryButtonClose.addEventListener('click', galleryClose);
-
 const hoverClass = `active`;
 
 const imageCounterMin = 1;
@@ -90,5 +87,14 @@ arrowSliderNext.addEventListener('click', () => handleNextElement(imageCounterMi
 paginationDiv.addEventListener('click', (e) => (handlePagElementClass(e.target) ? autoSetImageNumber() : null));
 
 // ------ initial function ------
+
+
+// cta__gallery slider show full width events
+
+sliderDiv.addEventListener('click', galleryShow);
+showGalleryButtonClose.addEventListener('click', galleryClose);
+
+// ---
+
 
 autoSetImageNumber();

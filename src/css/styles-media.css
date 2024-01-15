@@ -807,6 +807,29 @@
       object-position: center center;
    }
 
+   .cta__gallery.show {
+      height: 80vw;
+      width: 100vw;
+      max-width: 420px;
+      max-height: 380px;
+   }
+
+   .cta__gallery.show .prev,
+   .cta__gallery.show .next {
+      opacity: 0.24;
+   }
+   .cta__gallery.show .prev {
+      left: 0;
+   }
+   .cta__gallery.show .next {
+      right: 0;
+   }
+
+   .cta__gallery.show .cta__slider img {
+      padding: 0;
+      object-position: center center;
+   }
+
    .services__content {
       margin-top: 270px;
    }
@@ -1076,12 +1099,6 @@
 
    .service-description__service-types {
       padding: 10px 0;
-   }
-
-   .cta__subtitle,
-   .features__description p,
-   .features .section-subtitle {
-      /* max-width: 84%; */
    }
 
    .cta-picture img {
