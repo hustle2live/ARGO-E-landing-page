@@ -1,27 +1,4 @@
-:root {
-   --theme-sheet-width-xxl: 1920px;
-   --theme-sheet-width-xl: 1140px;
-   --theme-sheet-width-lg: 940px;
-   --theme-sheet-width-md: 720px;
-   --theme-sheet-width-sm: 560px;
-   --theme-sheet-width-xs: 340px;
-   --theme-sheet-width-xxs: 300px;
-   --primary-color: #c64bde;
-   --secondary-color: rgba(179, 94, 244, 1);
-   --dark-primary-color: #764bde;
-   --dark-secondary-color: #5955fa;
-   --bright-bg-color: #f2f2f2;
-   --middle-bg-color: #e8e8e8;
-   --dark-bg-color: #1a1a1a;
-
-   --silver-background: rgb(242, 242, 242);
-   --silver-gradient-background: linear-gradient(
-      150deg,
-      rgba(242, 242, 242, 1) 0%,
-      rgba(242, 242, 242, 1) 50%,
-      rgba(250, 232, 225, 0.5411414565826331) 100%
-   );
-}
+@import './variables.css';
 
 @media screen and (max-width: 1200px) {
    .features .container,
