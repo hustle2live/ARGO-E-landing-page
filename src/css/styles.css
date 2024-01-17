@@ -1033,7 +1033,7 @@ h1 {
 }
 
 .services__section-subtitle a:hover {
-   color: #452a70;
+   color: var(--secondary);
 }
 
 .services__section-subtitle {
@@ -1772,19 +1772,18 @@ sub {
    width: 240px;
    width: 260px;
    height: 50px;
-   color: #000;
+   color: var(--on-surface);
+   background: var(--surface-container-high);
    align-items: center;
    margin: 0;
    z-index: 999;
    padding: 0 10px;
    padding-left: 20px;
-   background: #e5e5e5;
 }
 
 .features__subtitle::before {
    display: block;
    content: url('../images/icons/close.svg');
-   color: #fff;
    width: 20px;
    height: 20px;
    padding-bottom: 3px;
@@ -1795,7 +1794,7 @@ sub {
 }
 
 .features__subtitle:last-of-type {
-   background: #fff;
+   background: var(--background);
 }
 
 .section-subtitle,
@@ -1850,7 +1849,7 @@ sub {
    justify-content: start;
    align-items: center;
    text-align: center;
-   color: #111111;
+   color: var(--on-surface);
    padding: 30px;
    margin-bottom: 0;
 }
@@ -1909,7 +1908,7 @@ sub {
 }
 
 .features__card.bad {
-   background: var(--inverse-on-surface);
+   background: var(--surface-container-high);
 }
 
 .features__card.bad .features__image {
@@ -2197,13 +2196,16 @@ sub {
    text-align: left;
    background: transparent;
    font-weight: 700;
-   color: #fff;
+}
+
+.cta .cta__description .section-title,
+.cta__description p {
+   color: var(--on-secondary);
 }
 
 .cta__description p {
    line-height: 1.4;
    font-weight: 400;
-   color: #fff;
    margin: 5px 0;
 }
 
@@ -2227,8 +2229,9 @@ sub {
    text-align: left;
 }
 .cta .cta__gallery .label a {
-   color: #000000;
+   color: inherit;
    font-weight: 300;
+   cursor: pointer;
    font-family: 'Roboto', sans-serif;
 }
 .cta .cta__gallery .label a:hover {
@@ -2256,7 +2259,7 @@ sub {
    content: '';
    height: 100%;
    width: 100%;
-   border-left: 2px solid lightgray;
+   border-left: 1px solid var(--on-tertiary-container);
    z-index: 999;
    padding: 20px;
    bottom: -20px;
@@ -2270,7 +2273,7 @@ sub {
 .cta__submit-section p {
    position: relative;
    padding: 0 30px;
-   color: #fff;
+   color: var(--on-tertiary-container);
    text-align: left;
    vertical-align: middle;
    margin: auto;
@@ -2289,7 +2292,7 @@ sub {
    grid-template-columns: 22% 50% 26%;
    grid-template-rows: 100px;
    padding: 20px 40px;
-   background: var(--dark-primary-color);
+   background: var(--tertiary-container);
 }
 
 .cta__submit-section .consult-btn {
@@ -2298,13 +2301,13 @@ sub {
    margin-right: 0;
    padding: 10px 20px;
    font-weight: 600;
-   background-color: var(--dark-primary-color);
-   color: #ffffff;
-   border: 2px solid #fff;
+   background-color: var(--tertiary-container);
+   color: var(--on-tertiary-container);
+   border: 1px solid var(--on-tertiary-container);
 }
 .cta__submit-section .consult-btn:hover {
-   background-color: #ffffff;
-   color: var(--dark-bg-color);
+   background-color: var(--tertiary-fixed-dim);
+   color: var(--on-tertiary-fixed-variant);
 }
 
 .cta-picture {
@@ -2341,8 +2344,6 @@ sub {
 }
 
 .cta-button:hover {
-   /* background-color: #5736a3; */
-   /* background-color: var(--on-primary-fixed-variant); */
    background-color: var(--on-secondary-fixed-variant);
 }
 
