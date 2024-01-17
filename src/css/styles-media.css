@@ -273,9 +273,31 @@
       font-size: 0.82rem;
    }
 
-   /* .nav-menu__item {
-      padding: 0 4px;
-      margin: 0 1px;
+   .cta__submit-section {
+      display: none;
+   }
+   /* max-width: 100vw;
+      grid-template-columns: 1fr;
+      grid-template-rows: 2fr 1fr 2fr;
+      padding: 40px 20px;
+      text-align: center;
+   } */
+
+   /* .cta__submit-section p {
+      margin-bottom: 30px;
+   }
+
+   .cta__submit-section p,
+   .cta__submit-section .consult-btn {
+      margin: auto;
+   }
+
+   .cta__submit-section p::before,
+   .cta__submit-section p::after {
+      border-right: 1px solid var(--on-tertiary-container);
+      padding: 20px;
+      bottom: -20px;
+      left: 0;
    } */
 
    .header__navbar_social a {
