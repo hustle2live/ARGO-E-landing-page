@@ -28,9 +28,10 @@ const onEntryCallback = (entries, animatedClassName) => {
    entries.forEach((entry) => {
       if (entry.isIntersecting) {
          entry.target.classList.add(animatedClassName);
-      } else {
-         entry.target.classList.remove(animatedClassName);
       }
+      // else {
+      //    entry.target.classList.remove(animatedClassName);
+      // }
    });
 };
 
@@ -40,11 +41,12 @@ const serviceSectionEntryCallback = (entries) => {
          for (const card of serviceCardsAll) {
             card.classList.add(animationIn);
          }
-      } else {
-         for (const card of serviceCardsAll) {
-            card.classList.remove(animationIn);
-         }
       }
+      // else {
+      //    for (const card of serviceCardsAll) {
+      //       card.classList.remove(animationIn);
+      //    }
+      // }
    });
 };
 
@@ -60,17 +62,18 @@ const extraServiceSectionEntryCallback = (entries) => {
          for (const card of animatedCardsCenterAll) {
             card.classList.add(animationScale);
          }
-      } else {
-         for (const card of animatedCardsRightAll) {
-            card.classList.remove(animationSlideInRight);
-         }
-         for (const card of animatedCardsLeftAll) {
-            card.classList.remove(animationSlideInLeft);
-         }
-         for (const card of animatedCardsCenterAll) {
-            card.classList.remove(animationScale);
-         }
       }
+      // else {
+      //    for (const card of animatedCardsRightAll) {
+      //       card.classList.remove(animationSlideInRight);
+      //    }
+      //    for (const card of animatedCardsLeftAll) {
+      //       card.classList.remove(animationSlideInLeft);
+      //    }
+      //    for (const card of animatedCardsCenterAll) {
+      //       card.classList.remove(animationScale);
+      //    }
+      // }
    });
 };
 
@@ -126,5 +129,3 @@ observer((e) => onEntryCallback(e, animationSlideInRight), {
 //    }).observe(elem);
 //    console.log('observe');
 // }
-
-
