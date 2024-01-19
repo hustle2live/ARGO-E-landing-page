@@ -1361,11 +1361,6 @@ h1 {
    line-height: 1.4;
    letter-spacing: normal;
 }
-/* 
-.about-company {
-   padding-left: 30px;
-   padding-right: 8px;
-} */
 
 .about-company p:first-of-type:not(.text) {
    margin-top: 0;
@@ -1523,7 +1518,8 @@ strong,
    box-sizing: border-box;
    width: 50%;
    text-align: left;
-   background-color: var(--surface-variant);
+   background-color: var(--surface-container);
+
    color: var(--on-surface-variant);
 
    border: 0;
@@ -1547,7 +1543,6 @@ strong,
 }
 
 .service-description__service-types ul li svg path {
-   fill: var(--tertiary-fixed-dim);
    fill: var(--on-secondary-fixed-variant);
 }
 
