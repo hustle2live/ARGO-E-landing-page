@@ -794,13 +794,17 @@ header {
    padding: 0;
 }
 
-header,
-.header__navbar,
 .services__card,
 .features__card,
 .our-clients,
 .extra-services__card {
    background: var(--background);
+}
+
+header,
+.header__navbar {
+   background: var(--surface-bright);
+   /* background: var(--surface-container-lowest); */
 }
 
 h1 {
@@ -981,7 +985,8 @@ h1 {
 }
 
 .header__navbar.container {
-   background: var(--background);
+   /* background: var(--surface-bright); */
+   /* background: transparent; */
    color: var(--on-background);
    z-index: 1;
 }
@@ -1000,10 +1005,10 @@ h1 {
 .nav-menu__item {
    /* margin: 0 5px; */
    color: inherit;
-   /* border-bottom: 2px solid;
-   border-color: transparent; */
+   border-bottom: 1px solid transparent;
    font-weight: 500;
 
+   /* color: var(--outline); */
    color: var(--primary);
    font-size: 14px;
    font-style: normal;
@@ -1016,7 +1021,6 @@ h1 {
 
 .nav-menu__item a {
    display: block;
-   padding: 8px 16px;
    color: inherit;
    font-family: inherit;
    font-size: inherit;
@@ -1025,13 +1029,15 @@ h1 {
    line-height: inherit;
    background-color: transparent;
 
-   border-radius: 100px;
+   padding: 4px 2px;
+   margin: auto 10px;
+   /* padding: 8px 16px; */
+   /* border-radius: 100px; */
 }
 
 .nav-menu__item a:hover {
-   /* color: var(--primary); */
-   background: var(--dark-015);
-   /* box-shadow: var(--elevation-light-1); */
+   /* background: var(--dark-015); */
+   border-bottom: 1px solid var(--on-surface);
 }
 
 /* .nav-menu__item:active {
@@ -1095,23 +1101,27 @@ h1 {
 
 .services__card .services__title {
    font-weight: 500;
-   /* text-transform: none; */
-   /* margin-bottom: 20px; */
-   margin-bottom: 8px;
-   /* color: var(--on-surface); */
-   /* margin-left: 8px; */
 }
 
-.services__card .services__title,
-.services__card .services__description,
+/* .services__card .services__description,
 .services__card .services-btn {
    text-align: left;
-   /* color: var(--on-surface-variant); */
-}
+} */
 .services__card .services-btn {
-   margin-right: 0;
-   margin: 14px 0 4px auto;
+   margin: 14px 0;
+   border-radius: 0;
+   border-bottom: 1px solid transparent;
+   padding: 4px;
 }
+
+.services__card .services-btn:active,
+.services__card .services-btn:hover {
+   background: transparent;
+   border-color: var(--on-surface);
+}
+/* .services__card .services-btn:active {
+   box-shadow: var(--elevation-light-1);
+} */
 
 .services__card {
    align-items: center;
@@ -1177,9 +1187,7 @@ h1 {
 }
 
 .services-btn {
-   border-width: 1px;
-   letter-spacing: 2px;
-   margin: auto auto 40px;
+   /* margin: auto auto 40px; */
    background: transparent;
    cursor: pointer;
 }
