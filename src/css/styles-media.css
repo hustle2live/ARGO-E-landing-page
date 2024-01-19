@@ -3,11 +3,9 @@
 @media screen and (max-width: 1200px) {
    .features .container,
    .container {
-      /* max-width: 98%; */
       max-width: 100%;
    }
 
-   /* .header__navbar.container, */
    .features .container,
    .cta .container,
    .features-label,
@@ -603,10 +601,10 @@
       padding: 20px 20px 60px;
       background: linear-gradient(
          0deg,
-         rgba(198, 75, 222, 1) 0%,
-         rgba(198, 75, 222, 1) 44.8%,
-         rgba(229, 229, 229, 1) 44.8%,
-         rgba(229, 229, 229, 1) 100%
+         var(--surface-tint) 0%,
+         var(--surface-tint) 44.8%,
+         var(--background) 44.8%,
+         var(--background) 100%
       );
    }
 
@@ -1431,10 +1429,10 @@
    .about {
       background: linear-gradient(
          0deg,
-         rgba(198, 75, 222, 1) 0%,
-         rgba(198, 75, 222, 1) 42.5%,
-         rgba(229, 229, 229, 1) 42.5%,
-         rgba(229, 229, 229, 1) 100%
+         var(--surface-tint) 0%,
+         var(--surface-tint) 42.5%,
+         var(--background) 42.5%,
+         var(--background) 100%
       );
    }
 
