@@ -2263,10 +2263,10 @@ sub {
 }
 
 .cta-buttons .prev {
-   left: -10%;
+   left: -9%;
 }
 .cta-buttons .next {
-   right: -10%;
+   right: -9%;
 }
 
 .cta__description::before {
