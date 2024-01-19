@@ -619,6 +619,7 @@ h6 {
    font-size: 1.125rem; /* 18px font size  */
 }
 
+.nav-menu__item,
 .cta__description,
 .text-button,
 .cta-button,
@@ -642,10 +643,11 @@ h6 {
    font-size: 1rem; /* 16px font size  */
 }
 
-.nav-menu__item a {
+.nav-menu__item {
    /* font-size: 0.75rem; 12px font size  */
    /* font-size: 0.875rem; 14px font size  */
-   font-size: 0.95rem; /* 15px font size  */
+   /* font-size: 0.95rem;  */
+   /* 15px font size  */
 }
 
 .cta__description .section-title,
@@ -685,8 +687,7 @@ h6 {
 .about__concepts-item > div > p:nth-of-type(1),
 .footer-section .label,
 .features__description p,
-.card__description .object-description,
-.nav-menu__item a {
+.card__description .object-description {
    font-family: 'Open Sans', sans-serif;
 }
 
@@ -699,6 +700,7 @@ h6 {
 
 /* .about__concepts-item > div > p:nth-of-type(2), */
 
+.nav-menu__item,
 .cta-button,
 .card__description .object-name,
 .extra-services__title,
@@ -809,8 +811,8 @@ header {
 
 header,
 .header__navbar {
-   background: var(--surface-bright);
-   /* background: var(--surface-container-lowest); */
+   /* background: var(--surface-bright); */
+   background: var(--surface-container-lowest);
 }
 
 .divider {
@@ -1055,7 +1057,6 @@ h1 {
 
    /* color: var(--outline); */
    color: var(--primary);
-   font-size: 14px;
    font-style: normal;
    font-weight: 500;
    line-height: 1.4; /* 142.857% */
@@ -1066,10 +1067,6 @@ h1 {
    transition-duration: 300ms;
    display: block;
    color: inherit;
-   font-family: inherit;
-   font-size: inherit;
-   font-style: inherit;
-   font-weight: inherit;
    line-height: inherit;
    background-color: transparent;
 
