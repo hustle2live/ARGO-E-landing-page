@@ -829,12 +829,17 @@
    }
 
    .divider.mobile {
+      display: block;
       margin: 6px 0;
    }
 
    .header__navbar_social {
       margin-left: auto;
       margin-right: 30px;
+   }
+
+   .nav-menu__item.mobile .header__navbar_social {
+      margin: 0;
    }
 
    .header__navbar_social li {
