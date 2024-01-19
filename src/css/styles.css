@@ -773,6 +773,7 @@ ol.our-clients__gallery,
    position: absolute;
 }
 
+.header,
 .header__content-section,
 .header__content,
 .services,
@@ -805,6 +806,39 @@ header,
 .header__navbar {
    background: var(--surface-bright);
    /* background: var(--surface-container-lowest); */
+}
+
+.tip-card {
+   display: flex;
+   padding: 24px;
+   width: 760px;
+   max-width: 100%;
+   min-height: 60px;
+   align-items: flex-start;
+   border-radius: 12px;
+   margin: 30px auto;
+   font-size: 1.125rem;
+}
+
+.tip-card i {
+   font-size: 1.5rem;
+}
+.tip-card span {
+   margin-left: 8px;
+}
+
+.tip-card svg {
+   height: 2rem;
+   width: 2rem;
+}
+
+.card-filled svg path {
+   fill: var(--on-tertiary-container);
+}
+
+.card-filled {
+   background-color: var(--tertiary-container);
+   color: var(--on-tertiary-container);
 }
 
 h1 {
@@ -978,10 +1012,6 @@ h1 {
    display: flex;
    gap: 1rem;
    z-index: 1;
-}
-
-.header {
-   position: relative;
 }
 
 .header__navbar.container {
@@ -1864,6 +1894,10 @@ sub {
    margin: 0 auto;
 }
 
+.features .section-subtitle.tip-card {
+   margin: 30px auto;
+}
+
 /* Dribbble-Light-Preview, */
 .header__description svg {
    width: 14px;
@@ -2229,10 +2263,10 @@ sub {
 }
 
 .cta-buttons .prev {
-   left: -7%;
+   left: -10%;
 }
 .cta-buttons .next {
-   right: -7%;
+   right: -10%;
 }
 
 .cta__description::before {
