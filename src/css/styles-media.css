@@ -292,10 +292,10 @@
       padding: 0 30px;
       max-width: 100%;
       margin: 0;
+      padding-bottom: 20px;
    }
 
    .header__navbar.container {
-      /* max-width: 98%; */
       padding: 0 10px 0 20px;
    }
 
@@ -354,6 +354,10 @@
    .cta__description .section-title,
    .cta__description .section-subtitle {
       padding: 0;
+   }
+
+   .card-filled.tip-card {
+      max-width: 80vw;
    }
 
    .cta .container .text {
@@ -423,9 +427,10 @@
    }
 
    .features .container {
-      grid-template-columns: 1fr 1fr;
       /* grid-template-rows: 1fr 1fr 1fr; */
+      grid-template-columns: 1fr 1fr;
       grid-template-rows: auto;
+      margin-top: 2px;
    }
 
    .extra-services__text-content,
@@ -497,6 +502,22 @@
 
    .header .cta-button {
       z-index: 1;
+   }
+
+   .features-label {
+      flex-direction: row;
+      margin: 0 auto;
+      justify-content: center;
+      flex-wrap: nowrap;
+      gap: 2px;
+   }
+
+   .features-label .features__subtitle {
+      box-sizing: border-box;
+      width: 50%;
+      padding-left: 0;
+      padding-right: 0;
+      justify-content: center;
    }
 }
 
@@ -831,6 +852,19 @@
    .header__content.container {
       padding-bottom: 90px;
    }
+
+   .cta-buttons .prev {
+      left: 0;
+   }
+   .cta-buttons .next {
+      right: 0;
+   }
+
+   .features-label {
+      padding-top: 10px;
+      align-items: flex-start;
+      text-align: left;
+   }
 }
 
 @media screen and (max-width: 519px) {
@@ -879,6 +913,14 @@
       margin: 0;
       padding-bottom: 2px;
       font-size: 1rem;
+   }
+
+   .features-label {
+      padding: 4px;
+   }
+
+   .features__subtitle::before {
+      margin: 0 10px;
    }
 
    .features__text p {
@@ -977,7 +1019,15 @@
    }
 
    .features__card {
+      flex-basis: 50%;
+      flex-shrink: 0;
+      flex-grow: 0;
       padding: 20px 5px;
+   }
+
+   .features__image {
+      width: 90px;
+      height: 90px;
    }
 
    .services__card {
@@ -1212,6 +1262,18 @@
    .cta__slider img {
       padding-left: 10%;
    }
+
+   .features-label {
+      align-items: center;
+      justify-content: center;
+   }
+
+   .features-label .features__subtitle {
+      justify-content: center;
+      font-size: 0.875rem;
+      flex-shrink: 0;
+      flex-grow: 0;
+   }
 }
 
 @media screen and (max-width: 380px) {
@@ -1288,6 +1350,11 @@
       padding: 10px 20px;
       margin-bottom: 10px;
    }
+   .features__subtitle::before {
+      padding: 0;
+      margin: auto;
+      margin-right: 5px;
+   }
 }
 
 @media screen and (max-width: 340px) {
@@ -1299,7 +1366,6 @@
    .header__navbar.container,
    .cta .section-subtitle,
    .cta .container,
-   .features-label,
    .about__concepts,
    .about .container,
    .our-clients .container,
