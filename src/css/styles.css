@@ -1663,6 +1663,8 @@ ol.our-clients__gallery {
    align-items: center;
    justify-content: center;
    background: var(--inverse-surface);
+   /* background: var(--tertiary); */
+
    left: 0;
    bottom: 0;
    padding: 20px;
@@ -1710,6 +1712,8 @@ sub {
    bottom: 28%;
    border: none;
    background-color: var(--on-surface-variant);
+   /* background-color: var(--inverse-surface); */
+   /* background-color: var(--tertiary); */
 }
 
 .our-clients .prev-btn,
