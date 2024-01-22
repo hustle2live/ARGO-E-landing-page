@@ -1,5 +1,6 @@
 const topButton = document.querySelector('.top-btn');
 const menuButton = document.querySelector('.menu-btn');
+const menuButtonClose = document.querySelector('.mobile.icon.close');
 const openClosedNodes = document.querySelectorAll('.open.closed');
 
 const navMenuOpen = document.querySelector('.nav-menu.open');
@@ -24,10 +25,6 @@ function menuOpenClose() {
 const isMenuOpened = () => !navMenuOpen.classList.contains('closed');
 
 menuButton.addEventListener('click', menuOpenClose);
+menuButtonClose.addEventListener('click', menuOpenClose);
 
-navMenuList.addEventListener('click', (e) => {
-   if (isMenuOpened()) {
-      menuOpenClose();
-   }
-   return;
-});
+// navMenuList.addEventListener('click', () => (isMenuOpened() ? menuOpenClose() : null));

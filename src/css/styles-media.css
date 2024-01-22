@@ -654,23 +654,28 @@
       display: block;
    }
 
+   .mobile.icon.close:active,
+   .menu-btn:active {
+      /* background-color: var(--surface-container-low); */
+      box-shadow: 1px 1px 21px 1px rgba(0, 0, 0, 0.15);
+   }
+
    .menu-btn {
       display: flex;
       align-items: center;
-   }
-   .menu-btn {
       box-sizing: border-box;
       height: 54px;
       width: 54px;
-      z-index: 99;
       background: transparent;
       padding: 10px;
       cursor: pointer;
+
+      /* z-index: 99; */
+      /* transition: all 300ms ease-in-out; */
    }
 
-   .menu-btn.open,
    .nav-menu.open {
-      transition: all 800ms ease-in-out;
+      transition: all 700ms ease-in-out;
    }
 
    .nav-menu__item {
@@ -697,18 +702,20 @@
    }
 
    .menu-btn.open {
-      content: url('../images/icons/close.svg');
-      background-color: var(--middle-bg-color);
+      content: url('../images/icons/menu.svg');
+
+      /* content: url('../images/icons/close.svg'); */
+
+      /* content: url('../images/icons/chevron-back.svg'); */
+      /* background-color: var(--middle-bg-color); */
    }
-   .menu-btn.open.closed {
+   /* .menu-btn.open.closed {
       content: url('../images/icons/menu.svg');
       background: #fff;
-   }
+   } */
 
    .nav-menu.open {
       transform: translate(0, 0);
-      /* overflow-y: scroll;
-      height: auto; */
    }
 
    .nav-menu.open.closed {
@@ -779,12 +786,14 @@
       margin: 2px 0;
    }
    .nav-menu .nav-menu__item.mobile:first-of-type {
-      align-items: center;
-      justify-content: center;
+      /* align-items: center; */
+      /* justify-content: center; */
    }
 
    .nav-menu__item.mobile .company-name {
-      margin: 0;
+      /* margin: 0; */
+      font-family: 'Raleway', sans-serif;
+      margin: 0 auto;
       padding-left: 0;
       font-weight: 600;
    }
@@ -804,10 +813,16 @@
       margin: auto 12px auto 4px;
    }
 
-   /* .nav-menu__item.mobile .icon.company-logo {
-      margin: 0;
+   /* .nav-menu__item.mobile .company-logo {
+      margin-left: 6px;
    } */
-   .nav-menu__item.mobile .icon.company-logo img {
+
+   .mobile.icon.close {
+      position: absolute;
+      right: 12px;
+   }
+
+   .nav-menu__item.mobile .company-logo img {
       width: 20px;
       height: auto;
    }
@@ -1348,8 +1363,8 @@
 
    .menu-btn {
       padding: 0;
-      width: 34px;
-      height: 34px;
+      width: 32px;
+      height: 32px;
    }
 
    .cta .cta__gallery .label {
