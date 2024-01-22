@@ -18,7 +18,7 @@ const regExpTextArea = /[a-z а-яёЁЇїІіЄєҐґ 0-9 ,.'\-)(\+]/i;
 const feedbackWrapper = document.querySelector('.feedback-wrapper');
 const feedbackForm = document.querySelector('.feedback-wrapper form');
 const buttonFeedbackClose = document.querySelector('.feedback-wrapper .btn-close');
-const ctaButtonsAll = document.querySelectorAll('.cta-button');
+const ctaButtonsAll = document.querySelectorAll('button.cta-button');
 const submitButton = document.querySelector('.btn-submit');
 
 const inputName = document.querySelector('.feedback-wrapper form input[name="name"]');
