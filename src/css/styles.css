@@ -3,10 +3,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800;900&display=swap');
 
 @import './variables.css';
-@import './theme/palette-1/light.css';
+@import './theme/palette-3/light.css';
 
 :root {
-   --primary: rgb(104 84 142);
+   --primary: rgb(124 78 126);
+   --on-primary-fixed-variant: rgb(98 55 101);
+   --surface-tint: rgb(124 78 126);
+
+   /* --primary: rgb(87 89 146); */
+   /* --on-primary-fixed-variant: rgb(63 65 120); */
+
+   /* --surface-tint: rgb(104 84 142); */
+
+   /* --primary: rgb(104 84 142); */
+   /* --on-primary-fixed-variant: rgb(79 61 116); */
+
+   /* 
    --surface-tint: rgb(104 84 142);
    --on-primary: rgb(255 255 255);
    --primary-container: rgb(235 221 255);
@@ -39,7 +51,6 @@
    --primary-fixed: rgb(235 221 255);
    --on-primary-fixed: rgb(35 15 70);
    --primary-fixed-dim: rgb(211 188 253);
-   --on-primary-fixed-variant: rgb(79 61 116);
    --secondary-fixed: rgb(233 222 248);
    --on-secondary-fixed: rgb(31 24 43);
    --secondary-fixed-dim: rgb(205 194 219);
@@ -54,7 +65,7 @@
    --surface-container-low: rgb(248 241 250);
    --surface-container: rgb(242 236 244);
    --surface-container-high: rgb(237 230 238);
-   --surface-container-highest: rgb(231 224 232);
+   --surface-container-highest: rgb(231 224 232); */
 
    /* M3/ box-shadow Elevation Light/1 */
    --elevation-light-1: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
@@ -1027,6 +1038,7 @@ h1 {
 .header .cta-button {
    margin: 30px auto 20px;
    z-index: 2;
+   text-decoration: none;
 }
 
 .header-buttons {
