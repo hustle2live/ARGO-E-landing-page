@@ -763,7 +763,7 @@
    }
 
    .nav-menu__list {
-      margin-top: 10px;
+      margin-top: 0;
       position: absolute;
       box-sizing: border-box;
       width: 100%;
@@ -772,22 +772,23 @@
       height: auto;
       padding-bottom: 50px;
       padding-right: 10px;
+      padding-top: 10px;
       text-align: left;
       overflow-x: hidden;
    }
 
    .nav-menu .nav-menu__item {
       display: flex;
-      font-weight: 400;
-      align-items: center;
       font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
       line-height: 1.7;
+      align-items: center;
       justify-content: flex-start;
       margin: 2px 0;
    }
-   .nav-menu .nav-menu__item.mobile:first-of-type {
-      /* align-items: center; */
-      /* justify-content: center; */
+   .nav-menu .nav-menu__item .mobile.icon.top,
+   .nav-menu .nav-menu__item .mobile.icon.top {
+      margin-top: 2px;
    }
 
    .nav-menu__item.mobile .company-name {
@@ -820,6 +821,8 @@
    .mobile.icon.close {
       position: absolute;
       right: 12px;
+      padding: 6px 8px 6px 4px;
+      border-radius: 50%;
    }
 
    .nav-menu__item.mobile .company-logo img {
