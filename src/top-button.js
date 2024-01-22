@@ -18,13 +18,34 @@ window.onscroll = function () {
    scrollFunction();
 };
 
-function menuOpenClose() {
-   openClosedNodes.forEach((element) => element.classList.toggle('closed'));
-}
+const menuOpenClose = () => navMenuOpen.classList.toggle('closed');
+// const menuOpenClose = () => openClosedNodes.forEach((element) => element.classList.toggle('closed'));
+
+const menuClose = () => navMenuOpen.classList.add('closed');
 
 const isMenuOpened = () => !navMenuOpen.classList.contains('closed');
 
-menuButton.addEventListener('click', menuOpenClose);
-menuButtonClose.addEventListener('click', menuOpenClose);
+menuButton.addEventListener('click', () => menuOpenClose());
+menuButtonClose.addEventListener('click', () => menuClose());
 
-// navMenuList.addEventListener('click', () => (isMenuOpened() ? menuOpenClose() : null));
+navMenuList.addEventListener('click', (e) => {
+   if (isMenuOpened()) {
+      switch (true) {
+         case e.target.tagName === 'A':
+            menuClose();
+            break;
+         case [...e.target.children].some((child) => child.tagName === 'A'):
+            menuClose();
+            break;
+         case e.target.classList.contains('clicked'):
+            menuClose();
+            break;
+         default:
+            break;
+      }
+   }
+   return;
+});
+
+// const staticItems = document.querySelectorAll('.unclick');
+// staticItems.forEach((item) => item.addEventListener('click', (e) => e.stopPropagation()));
