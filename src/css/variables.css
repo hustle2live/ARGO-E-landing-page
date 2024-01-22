@@ -6,6 +6,11 @@
    --theme-sheet-width-sm: 560px;
    --theme-sheet-width-xs: 340px;
    --theme-sheet-width-xxs: 300px;
+
+   --source-primary: #9d14bb;
+   --source-secondary: #6f43c0;
+   --source-tertiary: #5854a8;
+
    --primary-color: #c64bde;
    --secondary-color: rgba(179, 94, 244, 1);
    --dark-primary-color: #764bde;

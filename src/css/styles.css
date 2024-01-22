@@ -7,6 +7,7 @@
 
 :root {
    /* M3/ box-shadow Elevation Light/1 */
+
    --elevation-light-1: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
    --elevation-light-2: 0px 0px 3px 1px rgba(255, 255, 255, 0.15), 0px 0px 2px 0px rgba(255, 255, 255, 0.3);
    --elevation-light-3: 0px 1px 3px 1px rgba(255, 255, 255, 0.15), 0px 1px 2px 0px rgba(255, 255, 255, 0.3);
@@ -212,10 +213,9 @@ body {
    transform: translate(-50%, -50%);
    background: var(--inverse-surface);
 
-   /* opacity: 0.978; */
-   /* border-radius: 10px; */
-   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+   border-radius: 10px;
 
+   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
    transition-duration: 1s;
    z-index: 5;
 }
@@ -258,7 +258,8 @@ body {
 
 .feedback-wrapper .icon.close:hover {
    opacity: 1;
-   fill: var(--primary);
+   /* fill: var(--primary); */
+   fill: var(--source-primary);
 }
 
 .feedback-wrapper .label {
@@ -308,7 +309,7 @@ body {
 .feedback-wrapper .user-box input:valid ~ label {
    top: -20px;
    left: 0;
-   color: var(--primary);
+   color: var(--source-primary);
    font-size: 12px;
 }
 
@@ -317,7 +318,7 @@ body {
    display: inline-block;
    padding: 10px 20px;
 
-   color: var(--primary);
+   color: var(--source-primary);
    background: transparent;
 
    font-size: 16px;
@@ -336,7 +337,6 @@ body {
 
    cursor: default;
    box-shadow: none;
-   /* border-radius: 5px; */
    border-radius: 0;
 }
 
@@ -347,8 +347,9 @@ body {
 .feedback-wrapper .btn-submit:hover {
    background: var(--primary);
    color: var(--on-primary);
-   /* border-radius: 5px; */
-   box-shadow: 0 0 5px var(--primary), 0 0 25px var(--primary), 0 0 50px var(--primary), 0 0 100px var(--primary);
+   /* box-shadow: 0 0 5px var(--primary), 0 0 25px var(--primary), 0 0 50px var(--primary), 0 0 100px var(--primary); */
+
+   box-shadow: 0 0 5px var(--primary), 0 0 15px var(--primary), 0 0 25px var(--primary), 0 0 50px var(--primary);
 }
 
 .feedback-wrapper .btn-submit:active {
@@ -366,8 +367,38 @@ body {
    left: -100%;
    width: 100%;
    height: 2px;
-   background: linear-gradient(90deg, transparent, var(--primary));
+   background: linear-gradient(90deg, transparent, var(--source-primary));
    animation: btn-anim1 6s linear infinite;
+}
+
+.feedback-wrapper .btn-submit span:nth-child(2) {
+   top: -100%;
+   right: 0;
+   width: 2px;
+   height: 100%;
+   background: linear-gradient(180deg, transparent, var(--source-primary));
+   animation: btn-anim2 6s linear infinite;
+   animation-delay: 1.5s;
+}
+
+.feedback-wrapper .btn-submit span:nth-child(3) {
+   bottom: 0;
+   right: -100%;
+   width: 100%;
+   height: 2px;
+   background: linear-gradient(270deg, transparent, var(--source-primary));
+   animation: btn-anim3 6s linear infinite;
+   animation-delay: 3s;
+}
+
+.feedback-wrapper .btn-submit span:nth-child(4) {
+   bottom: -100%;
+   left: 0;
+   width: 2px;
+   height: 100%;
+   background: linear-gradient(360deg, transparent, var(--source-primary));
+   animation: btn-anim4 6s linear infinite;
+   animation-delay: 4.5s;
 }
 
 @keyframes btn-anim1 {
@@ -380,16 +411,6 @@ body {
    }
 }
 
-.feedback-wrapper .btn-submit span:nth-child(2) {
-   top: -100%;
-   right: 0;
-   width: 2px;
-   height: 100%;
-   background: linear-gradient(180deg, transparent, var(--primary));
-   animation: btn-anim2 6s linear infinite;
-   animation-delay: 1.5s;
-}
-
 @keyframes btn-anim2 {
    0% {
       top: -100%;
@@ -400,16 +421,6 @@ body {
    }
 }
 
-.feedback-wrapper .btn-submit span:nth-child(3) {
-   bottom: 0;
-   right: -100%;
-   width: 100%;
-   height: 2px;
-   background: linear-gradient(270deg, transparent, var(--primary));
-   animation: btn-anim3 6s linear infinite;
-   animation-delay: 3s;
-}
-
 @keyframes btn-anim3 {
    0% {
       right: -100%;
@@ -418,16 +429,6 @@ body {
    100% {
       right: 100%;
    }
-}
-
-.feedback-wrapper .btn-submit span:nth-child(4) {
-   bottom: -100%;
-   left: 0;
-   width: 2px;
-   height: 100%;
-   background: linear-gradient(360deg, transparent, var(--primary));
-   animation: btn-anim4 6s linear infinite;
-   animation-delay: 4.5s;
 }
 
 @keyframes btn-anim4 {

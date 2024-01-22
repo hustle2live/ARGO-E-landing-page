@@ -883,10 +883,10 @@
    }
 
    .nav-menu__item.mobile .cta-button.outlined {
-      color: var(--primary);
-      background-color: var(--surface-container-lowest);
-      /* color: var(--on-primary);
-      background-color: var(--primary); */
+      /* color: var(--primary);
+      background-color: var(--surface-container-lowest); */
+      color: var(--on-primary);
+      background-color: var(--primary);
       border: 1px solid var(--primary);
       font-size: 1rem;
       border-radius: 6px;
@@ -896,8 +896,10 @@
    }
    .nav-menu__item.mobile .cta-button.outlined:hover,
    .nav-menu__item.mobile .cta-button.outlined:active {
-      color: var(--on-primary);
-      background-color: var(--primary);
+      /* color: var(--on-primary);
+      background-color: var(--primary); */
+      color: var(--primary);
+      background-color: var(--surface-container-lowest);
    }
 
    .divider.mobile {
