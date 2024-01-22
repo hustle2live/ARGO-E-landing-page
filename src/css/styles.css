@@ -888,6 +888,11 @@ h1 {
    object-fit: cover;
 }
 
+.header__navbar_company-logo {
+   margin-left: 0;
+   margin-right: auto;
+}
+
 .header__navbar_company-logo a {
    cursor: pointer;
    line-height: 70px;
@@ -901,6 +906,8 @@ h1 {
 }
 
 .header__navbar_social {
+   margin-left: 10px;
+   margin-right: 0;
    display: flex;
    padding-left: 0;
    box-sizing: inherit;
@@ -1033,6 +1040,10 @@ h1 {
 
 .nav-menu__item a:hover {
    border-bottom: 1px solid var(--on-surface);
+}
+
+.nav-menu__item:nth-last-of-type(6) {
+   margin: 0 30px;
 }
 
 /* --/ header-content */

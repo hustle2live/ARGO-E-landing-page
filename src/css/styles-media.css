@@ -285,6 +285,20 @@
    .next-btn {
       right: 0;
    }
+   .nav-menu__item:nth-last-of-type(6),
+   .nav-menu__item {
+      padding: 0;
+      margin: 0;
+      font-size: 14px;
+   }
+
+   .header__navbar_company-logo {
+      margin: auto 0;
+   }
+
+   .nav-menu__item a {
+      margin: 0 4px;
+   }
 }
 
 @media screen and (max-width: 820px) {
@@ -307,6 +321,10 @@
       padding: 0 4px;
       margin: 0 4px;
       font-size: 14px;
+   }
+
+   .nav-menu__item:nth-last-of-type(6) {
+      display: none;
    }
 }
 
