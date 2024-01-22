@@ -1083,29 +1083,14 @@ h1 {
    border-bottom: 1px solid var(--on-surface);
 }
 
-/* .nav-menu__item:active {
-   background-color: rgba(var(--primary), 0.48);
-} */
-
 /* --/ header-content */
 
 /* ------------ body-content -------- */
 /* ------------ body __ services-content -------- */
 
 .services {
-   background: var(--surface);
-   background: var(--surface-bright);
-   /* background: var(--surface-container); */
-   background: var(--surface-container-low);
-   /* background: var(--surface-container-lowest); */
-   /* background: var(--surface-container-high); */
-   /* background: var(--surface-container-highest); */
-   /* background: var(--surface-dim); */
-   /* background: var(--surface-tint); */
-   /* background: var(--surface-variant); */
-   /* background: var(--primary-container); */
-   /* background: var(--secondary-container); */
-
+   /* background: var(--surface-container-low); */
+   background: var(--surface-container-lowest);
    min-height: 870px;
    z-index: 0;
 }
@@ -1269,7 +1254,7 @@ h1 {
    padding-top: 40px;
    line-height: normal;
 
-   background: var(--surface-container-low);
+   background: var(--surface-container-lowest);
    background: linear-gradient(
       0deg,
       var(--surface-tint) 0%,
