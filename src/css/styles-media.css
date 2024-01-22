@@ -1352,6 +1352,14 @@
       bottom: -140px;
    }
 
+   .header__navbar {
+      height: 4rem;
+   }
+
+   .header__navbar_company-logo img {
+      height: 28px;
+   }
+
    .extra-services__image {
       height: 240px;
    }
