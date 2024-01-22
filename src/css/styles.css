@@ -798,11 +798,20 @@ header {
 }
 
 .services__card,
-.features__card,
-.our-clients,
-.extra-services__card {
+.features__card {
    background: var(--background);
 }
+
+.our-clients {
+   background: var(--surface);
+}
+
+.extra-services {
+   background: var(--surface-container-low);
+}
+
+/* background: var(--surface-container-lowest); */
+/* background: var(--surface); */
 
 header,
 .header__navbar {
@@ -1084,7 +1093,19 @@ h1 {
 /* ------------ body __ services-content -------- */
 
 .services {
-   background: var(--background);
+   background: var(--surface);
+   background: var(--surface-bright);
+   /* background: var(--surface-container); */
+   background: var(--surface-container-low);
+   /* background: var(--surface-container-lowest); */
+   /* background: var(--surface-container-high); */
+   /* background: var(--surface-container-highest); */
+   /* background: var(--surface-dim); */
+   /* background: var(--surface-tint); */
+   /* background: var(--surface-variant); */
+   /* background: var(--primary-container); */
+   /* background: var(--secondary-container); */
+
    min-height: 870px;
    z-index: 0;
 }
@@ -1248,13 +1269,13 @@ h1 {
    padding-top: 40px;
    line-height: normal;
 
-   background: var(--background);
+   background: var(--surface-container-low);
    background: linear-gradient(
       0deg,
       var(--surface-tint) 0%,
       var(--surface-tint) 39%,
-      var(--background) 39%,
-      var(--background) 100%
+      var(--surface-container-low) 39%,
+      var(--surface-container-low) 100%
    );
 }
 
@@ -1609,16 +1630,6 @@ strong,
    text-align: left;
    min-height: 800px;
    color: var(--on-surface);
-   background: var(--surface-bright);
-   /* background: var(--surface-variant); */
-   /* background: var(--surface-tint); */
-   /* background: var(--surface-dim); */
-   /* background: var(--surface-container-lowest); */
-   /* background: var(--surface-container-low); */
-   /* background: var(--surface-container-highest); */
-   /* background: var(--surface-container-high); */
-   /* background: var(--surface-container); */
-   /* background: var(--on-surface-variant); */
 }
 
 .section-title,
@@ -1886,7 +1897,8 @@ sub {
 }
 
 .features__subtitle:last-of-type {
-   background: var(--background);
+   background: var(--surface-container-lowest);
+   border: 1px solid var(--surface);
 }
 
 .section-subtitle,
@@ -2582,7 +2594,6 @@ footer .container {
 .extra-services {
    padding-top: 60px;
    padding-bottom: 60px;
-   background: var(--surface-bright);
 }
 
 .extra-services__introduction {
