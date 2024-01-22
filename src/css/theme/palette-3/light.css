@@ -1,6 +1,12 @@
 :root {
-   --primary: rgb(87 89 146);
-   --surface-tint: rgb(87 89 146);
+   --primary: rgb(124 78 126);
+   --on-primary-fixed-variant: rgb(98 55 101);
+   --surface-tint: rgb(124 78 126);
+
+   /* --primary: rgb(87 89 146); */
+   /* --on-primary-fixed-variant: rgb(63 65 120); */
+   /* --surface-tint: rgb(87 89 146); */
+
    --on-primary: rgb(255 255 255);
    --primary-container: rgb(225 224 255);
    --on-primary-container: rgb(18 20 75);
@@ -32,7 +38,6 @@
    --primary-fixed: rgb(225 224 255);
    --on-primary-fixed: rgb(18 20 75);
    --primary-fixed-dim: rgb(192 193 255);
-   --on-primary-fixed-variant: rgb(63 65 120);
    --secondary-fixed: rgb(226 224 249);
    --on-secondary-fixed: rgb(25 26 44);
    --secondary-fixed-dim: rgb(197 196 221);

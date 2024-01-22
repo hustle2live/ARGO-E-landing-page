@@ -6,9 +6,7 @@
 @import './theme/palette-3/light.css';
 
 :root {
-   --primary: rgb(124 78 126);
-   --on-primary-fixed-variant: rgb(98 55 101);
-   --surface-tint: rgb(124 78 126);
+
 
    /* --primary: rgb(87 89 146); */
    /* --on-primary-fixed-variant: rgb(63 65 120); */
