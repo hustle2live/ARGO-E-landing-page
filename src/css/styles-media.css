@@ -1343,11 +1343,12 @@
       right: 0;
    }
 
-   h1,
    .header__title {
       font-size: 1.875rem; /* 30px font size  */
-      margin: 20px 0 10px;
+      margin-bottom: 10px;
+      margin-top: 90px;
    }
+
    .header__description ul {
       margin-bottom: 10px;
    }
