@@ -602,8 +602,8 @@
          0deg,
          var(--surface-tint) 0%,
          var(--surface-tint) 44.8%,
-         var(--background) 44.8%,
-         var(--background) 100%
+         var(--surface-container-low) 44.8%,
+         var(--surface-container-low) 100%
       );
    }
 
@@ -1616,8 +1616,8 @@
          0deg,
          var(--surface-tint) 0%,
          var(--surface-tint) 42.5%,
-         var(--background) 42.5%,
-         var(--background) 100%
+         var(--surface-container-low) 42.5%,
+         var(--surface-container-low) 100%
       );
    }
 
