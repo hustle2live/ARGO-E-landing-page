@@ -791,12 +791,25 @@
       margin-top: 2px;
    }
 
+   .nav-menu__item.mobile.social p {
+      /* font-size: 0.875rem;
+      font-weight: 700;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      color: var(--secondary-fixed-dim); */
+      margin-bottom: 4px;
+   }
+
    .nav-menu__item.mobile .company-name {
-      /* margin: 0; */
       font-family: 'Raleway', sans-serif;
       margin: 0 auto;
       padding-left: 0;
-      font-weight: 600;
+      font-weight: 800;
+
+      /* letter-spacing: normal; */
+      /* font-weight: 900; */
+      /* text-transform: uppercase; */
+      /* color: var(--on-secondary-fixed); */
    }
 
    .nav-menu .nav-menu__item a,
