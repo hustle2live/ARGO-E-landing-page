@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800;900&display=swap');
 
 @import './variables.css';
-@import './theme/palette-2/light.css';
+@import './theme/palette-3/light.css';
 
 :root {
    /* M3/ box-shadow Elevation Light/1 */
@@ -2224,11 +2224,16 @@ sub {
    padding: 34px 20px;
    width: 264px;
    height: fit-content;
-   background-color: var(--secondary);
+   background: var(--surface-tint);
+
+   /* background: var(--secondary); */
+   /* background: var(--); */
+
+   color: var(--on-secondary);
+
    margin: 0;
    margin-bottom: 10px;
    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
-   /* text-align: center; */
 }
 
 .cta__description::before {
@@ -2244,7 +2249,7 @@ sub {
 }
 
 .cta .cta__description .text-button {
-   color: var(--on-secondary);
+   color: inherit;
    margin-left: auto;
    font-size: 0.875rem;
    margin-top: 20px;
@@ -2271,7 +2276,7 @@ sub {
 
 .cta__description .section-title,
 .cta__description p {
-   color: var(--on-secondary);
+   color: inherit;
    text-align: left;
 }
 
@@ -2586,7 +2591,7 @@ footer .container {
 }
 
 .extra-services__card:nth-child(1) .extra-services__text-content {
-   background: var(--on-primary-fixed-variant);
+   background: var(--secondary);
    color: var(--on-secondary);
 }
 .extra-services__card:nth-child(2) .extra-services__image.animated {

@@ -1,4 +1,4 @@
-@import './variables.css';
+/* @import './variables.css'; */
 
 @media screen and (max-width: 1200px) {
    .features .container,
@@ -460,6 +460,7 @@
 
    .header__content {
       margin: 0;
+      padding-bottom: 60px;
    }
 
    .our-clients__article,
@@ -474,10 +475,6 @@
 
    .about__concepts-item > div > p:last-of-type {
       padding-left: 0px;
-   }
-
-   .header__content {
-      padding-bottom: 60px;
    }
 
    .header__title {
@@ -1037,10 +1034,6 @@
       font-size: 0.875rem; /* 14px font size  */
    }
 
-   .header__title {
-      line-height: 1.1;
-   }
-
    .icon {
       /* margin: -4px 0; */
       margin: 0;
@@ -1298,8 +1291,19 @@
       bottom: -170px;
    }
 
+   .header__content-section,
    .header__content.container {
-      padding-bottom: 120px;
+      padding-top: 0;
+      padding-bottom: 0;
+   }
+
+   .header__title {
+      margin-top: 120px;
+      line-height: 1.1;
+   }
+
+   .header-buttons {
+      margin-bottom: 120px;
    }
 
    .features__subtitle,
@@ -1491,6 +1495,18 @@
       padding: 10px 20px;
       margin-bottom: 10px;
    }
+
+   .header-buttons {
+      gap: 0.8rem;
+   }
+
+   .header__content.container {
+      padding-right: 20px;
+   }
+   .header__content::before {
+      top: 0;
+   }
+
    .features__subtitle::before {
       padding: 0;
       margin: auto;
@@ -1524,6 +1540,7 @@
 
    .header__content.container {
       padding-left: 16px;
+      padding-right: 16px;
    }
 
    .our-clients__article,
