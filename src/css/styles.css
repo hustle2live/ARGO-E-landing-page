@@ -861,6 +861,7 @@ h1 {
    background-color: var(--shadow);
    opacity: 0.3;
    left: 0;
+   top: 0;
    z-index: 0;
 }
 

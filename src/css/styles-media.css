@@ -1639,8 +1639,9 @@
       );
    }
 
-   .services-btn {
-      font-size: 0.6rem;
+   .services__card .services-btn {
+      margin-top: 0;
+      font-size: 0.875rem;
    }
 
    .services__card {
