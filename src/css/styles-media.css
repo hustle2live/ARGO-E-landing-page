@@ -674,6 +674,8 @@
    }
 
    .nav-menu__item {
+      color: var(--on-surface);
+      font-size: 1rem;
       min-width: 90%;
       width: -webkit-fill-available;
       margin: 0 auto;
@@ -769,10 +771,12 @@
 
    .nav-menu .nav-menu__item {
       display: flex;
-      flex-wrap: wrap;
-      align-items: flex-start;
+      font-weight: 400;
+      align-items: center;
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.7;
       justify-content: flex-start;
-      margin: 4px 0;
+      margin: 2px 0;
    }
    .nav-menu .nav-menu__item.mobile:first-of-type {
       align-items: center;
@@ -784,18 +788,9 @@
       padding-left: 0;
       font-weight: 600;
    }
-   /* .nav-menu__item.mobile .icon.company-logo {
-      width: 100%;
-      height: 100%;
-   } */
-   .nav-menu__item.mobile .icon.company-logo img {
-      width: auto;
-      height: 100%;
-   }
 
    .nav-menu .nav-menu__item a,
    .nav-menu .nav-menu__item div p {
-      line-height: 1.4;
       margin: 0;
       padding: 0;
    }
@@ -805,15 +800,21 @@
       content: '';
       width: 24px;
       height: 24px;
-      margin-right: 8px;
+      padding: 0;
+      margin: auto 12px auto 4px;
    }
-   /* .nav-menu .nav-menu__item {
-      margin-top: 2px;
+
+   /* .nav-menu__item.mobile .icon.company-logo {
+      margin: 0;
    } */
+   .nav-menu__item.mobile .icon.company-logo img {
+      width: 20px;
+      height: auto;
+   }
 
    .nav-menu .mobile.icon svg {
-      width: 100%;
-      height: 100%;
+      width: 24px;
+      height: 24px;
    }
 
    .nav-menu .mobile.icon .cls-1 {
@@ -827,7 +828,7 @@
       fill: #000000;
    }
    .nav-menu .mobile.icon .icon-viber {
-      width: 22px;
+      /* width: 22px; */
       height: 22px;
    }
 
@@ -836,15 +837,26 @@
    }
 
    .nav-menu__item.mobile .cta-button.outlined {
-      border-radius: 10px;
+      color: var(--primary);
+      background-color: var(--surface-container-lowest);
+      /* color: var(--on-primary);
+      background-color: var(--primary); */
+      border: 1px solid var(--primary);
+      font-size: 1rem;
+      border-radius: 6px;
       box-sizing: border-box;
       padding: 6px 14px;
-      margin: 0;
+      margin-top: 10px;
+   }
+   .nav-menu__item.mobile .cta-button.outlined:hover,
+   .nav-menu__item.mobile .cta-button.outlined:active {
+      color: var(--on-primary);
+      background-color: var(--primary);
    }
 
    .divider.mobile {
       display: block;
-      margin: 6px 0;
+      margin: 10px 0;
    }
 
    .header__navbar_social {
