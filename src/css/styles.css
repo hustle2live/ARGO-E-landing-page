@@ -2061,7 +2061,7 @@ sub {
    z-index: 2;
    bottom: 50%;
    right: 50%;
-   box-shadow: 0 0 0px 730px rgba(var(--shadow), 0.2);
+   box-shadow: 0 0 0px 730px rgba(0, 0, 0, 0.7);
    transform: translate(50%, 50%);
 }
 
