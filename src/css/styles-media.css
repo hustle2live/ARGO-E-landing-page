@@ -1272,6 +1272,11 @@
       padding: 10px 0;
    }
 
+   .our-clients__article,
+   .our-clients__gallery li.card {
+      height: 520px;
+   }
+
    .cta-picture img {
       width: 33%;
       height: 120px;
@@ -1290,13 +1295,19 @@
       gap: 0;
    }
 
-   .our-clients__article,
-   .our-clients__gallery li.card {
-      height: 520px;
-   }
-
    .cta span.hyphen {
       display: contents;
+   }
+
+   .cta__gallery.show .prev-btn svg,
+   .cta__gallery.show .next-btn svg {
+      width: 24px;
+      height: 24px;
+   }
+
+   .cta__gallery.show .cta-buttons .prev:active,
+   .cta__gallery.show .cta-buttons .next:active {
+      opacity: 0.75;
    }
 
    .services__content {
