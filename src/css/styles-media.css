@@ -1299,15 +1299,29 @@
       display: contents;
    }
 
-   .cta__gallery.show .prev-btn svg,
-   .cta__gallery.show .next-btn svg {
+   .cta__gallery .prev-btn svg,
+   .cta__gallery .next-btn svg {
       width: 24px;
       height: 24px;
    }
 
+   .cta__gallery.show .cta-buttons .prev:hover,
+   .cta__gallery.show .cta-buttons .next:hover,
    .cta__gallery.show .cta-buttons .prev:active,
    .cta__gallery.show .cta-buttons .next:active {
       opacity: 0.75;
+   }
+
+   .cta__gallery.show .cta-buttons .prev,
+   .cta__gallery.show .cta-buttons .next {
+      height: 40px;
+      width: 40px;
+      margin-top: auto;
+      margin-bottom: auto;
+      transform: translate(0, 50%);
+      bottom: 50%;
+      border-radius: 50%;
+      padding: 3px 4px;
    }
 
    .services__content {
