@@ -2054,10 +2054,12 @@ sub {
 /* .our-clients__article.show, */
 .cta__gallery.show {
    position: fixed;
+   box-sizing: border-box;
    height: 80vh;
    width: 80vw;
-   max-width: 1100px;
+   /* max-width: 1100px; */
    max-height: 600px;
+   max-width: 96vw;
    z-index: 2;
    bottom: 50%;
    right: 50%;
