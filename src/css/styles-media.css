@@ -198,7 +198,6 @@
    }
 
    .header__navbar.container {
-      /* max-width: 98%; */
       max-width: 100%;
       padding: 0 60px;
    }
@@ -208,10 +207,8 @@
       width: 600px;
    }
 
-   .services__card:nth-child(3) {
-      margin-top: 0;
-      margin-right: 26%;
-      margin-bottom: -240px;
+   .services__card:nth-child(1n) {
+      margin: 0;
    }
 
    .about .container {
@@ -600,9 +597,7 @@
       height: 240px;
    }
 
-   .services__card,
-   .services__card:nth-child(2),
-   .services__card:nth-child(3) {
+   .services__card:nth-child(1n) {
       margin: 0 auto;
    }
 
