@@ -1146,17 +1146,20 @@ h1 {
 
    line-height: 1.5rem;
    overflow: hidden;
-   /* text-align: center; */
 
    border: 1px solid var(--surface-container-low);
    box-shadow: 4px 5px 30px rgba(79, 29, 88, 0.15);
 }
 
+.services__card:nth-child(5),
+.services__card:nth-child(7),
 .services__card:nth-child(2) {
    margin-top: 120px;
    margin-bottom: -120px;
 }
 
+.services__card:nth-child(6),
+.services__card:nth-child(8),
 .services__card:nth-child(3) {
    margin-top: 240px;
    margin-bottom: -240px;
@@ -1170,7 +1173,6 @@ h1 {
 }
 
 .services__title {
-   /* font-size: 1.25rem; 20px font size   */
    font-size: 1.125rem; /* 18px font size  */
    font-weight: 400;
    line-height: 1.4;
@@ -1179,7 +1181,6 @@ h1 {
 }
 
 .services__description {
-   /* text-align: center; */
    line-height: 1.6rem;
    margin-top: 0;
    margin-bottom: 20px;
@@ -2468,7 +2469,6 @@ sub {
    color: var(--on-surface-variant);
 }
 
-/* .cta-button.text-button, */
 .text-button {
    color: var(--on-surface-variant);
    letter-spacing: normal;
@@ -2476,12 +2476,10 @@ sub {
    border: none;
 }
 
-/* .cta-button.text-button:hover, */
 .text-button:hover {
    background-color: var(--prime-08);
 }
 
-/* .cta-button.text-button:active, */
 .text-button:active {
    background-color: var(--prime-012);
 }
