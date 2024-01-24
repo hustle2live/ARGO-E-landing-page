@@ -120,7 +120,6 @@
 .services__card.animated.customAnimationIn {
    opacity: 1;
    transition: 1s;
-   /* transition: opacity 1s; */
 }
 
 .services__card.customAnimationIn:nth-of-type(2) {
@@ -321,7 +320,6 @@ body {
    color: var(--source-primary);
    background: transparent;
 
-   font-size: 16px;
    text-decoration: none;
    text-transform: uppercase;
    overflow: hidden;
@@ -551,6 +549,7 @@ h5,
    font-size: 1.625rem; /* 26px font size  */
 }
 
+.service-story__title,
 .extra-services__title,
 h6 {
    font-size: 1.5rem; /* 24px font size  */
@@ -592,7 +591,9 @@ h6 {
 .extra-services__card,
 .extra-services__footer,
 .extra-services__footer a,
-.service-description__service-types h4 {
+.service-description__service-types h4,
+.feedback-wrapper form .btn-submit,
+.service-story ol li {
    font-size: 1rem; /* 16px font size  */
 }
 
@@ -1128,6 +1129,7 @@ h1 {
 } */
 
 .services__card {
+   position: relative;
    align-items: center;
    list-style-type: none;
    cursor: default;
@@ -1203,6 +1205,98 @@ h1 {
    padding: 0 0 4px;
    text-decoration: none;
    border-bottom: 1px solid var(--on-surface);
+}
+
+.service-story {
+   position: absolute;
+   display: block;
+   box-sizing: border-box;
+   color: var(--on-secondary-container);
+   line-height: normal;
+   padding: 1rem;
+   height: 100%;
+   width: 100%;
+   left: 0;
+   top: 0;
+   background: var(--secondary-container);
+   transform: rotate3d(0, 1, 0, 180deg);
+   opacity: 0;
+}
+
+.services__card.animated.spin {
+   -webkit-animation: spin-to 1.2s linear;
+   -moz-animation: spin-to 1.2s linear;
+   animation: spin-to 1.2s linear;
+
+   transform: rotate3d(0, 1, 0, -180deg);
+}
+
+.services__card.animated.spin .service-story {
+   opacity: 1;
+   border-left: 2px solid var(--secondary);
+   animation: spin linear 1.2s;
+}
+
+.service-story__title {
+   text-transform: uppercase;
+   margin-bottom: 20px;
+}
+
+.service-story .image img {
+   height: 100%;
+   width: 100%;
+}
+.service-story .image {
+   position: absolute;
+   bottom: 0;
+   right: 20px;
+   height: 80px;
+   width: auto;
+}
+
+/* -moz-transform: rotate(360deg); */
+/* @-moz-keyframes spin {
+   100% {
+      transform: rotate3d(0, 1, 0, 180deg);
+   }
+} */
+/* -webkit-transform: rotate(360deg); */
+/* @-webkit-keyframes spin {
+   100% {
+      transform: rotate3d(0, 1, 0, 180deg);
+   }
+} */
+
+@keyframes spin-to {
+   0% {
+      transform: rotate3d(0, 1, 0, 0deg);
+   }
+   100% {
+      transform: rotate3d(0, 1, 0, -180deg);
+   }
+}
+
+@keyframes spin {
+   0% {
+      opacity: 0;
+   }
+   49% {
+      opacity: 0;
+   }
+   50% {
+      opacity: 1;
+   }
+   100% {
+      opacity: 1;
+   }
+}
+
+.service-story ol {
+   padding-left: 25px;
+   text-align: left;
+}
+.service-story ol li {
+   line-height: 1.4;
 }
 
 /* --/ services-content */
