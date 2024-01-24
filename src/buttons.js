@@ -50,16 +50,17 @@ navMenuList.addEventListener('click', (e) => {
    return;
 });
 
-const cardSpinRotate = (e, thisCard) => {
+const cardSpinRotate = (e, card) => {
    if (e.target.tagName.toLowerCase() === 'button') {
-      thisCard.classList.add('spin');
+      card.classList.add('spin');
+      card.classList.remove('customAnimationIn');
 
-      thisCard.addEventListener('mouseleave', function removeSpin() {
+      card.addEventListener('mouseleave', function removeSpin() {
          const intervalSpinBack = window.setTimeout(function removeSpinClass() {
-            thisCard.classList.remove('spin');
-            thisCard.removeEventListener('mouseleave', removeSpin);
+            card.classList.remove('spin');
+            card.removeEventListener('mouseleave', removeSpin);
             window.clearTimeout(intervalSpinBack);
-         }, 2000);
+         }, 700);
       });
    }
 
