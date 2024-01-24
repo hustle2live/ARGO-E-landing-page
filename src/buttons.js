@@ -52,8 +52,8 @@ navMenuList.addEventListener('click', (e) => {
 
 const cardSpinRotate = (e, card) => {
    if (e.target.tagName.toLowerCase() === 'button') {
-      card.classList.add('spin');
       card.classList.remove('customAnimationIn');
+      card.classList.add('spin');
 
       card.addEventListener('mouseleave', function removeSpin() {
          const intervalSpinBack = window.setTimeout(function removeSpinClass() {

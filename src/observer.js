@@ -41,9 +41,7 @@ const serviceSectionEntryCallback = (entries) => {
          for (const card of serviceCardsAll) {
             card.classList.add(animationIn);
          }
-         // observer(serviceSectionEntryCallback, {
-         //    threshold: [0.25]
-         // }).unobserve(servicesContainer);
+         io.unobserve(servicesContainer);
       }
       // else {
       //    for (const card of serviceCardsAll) {
@@ -52,6 +50,10 @@ const serviceSectionEntryCallback = (entries) => {
       // }
    });
 };
+
+const io = new IntersectionObserver(serviceSectionEntryCallback, {
+   threshold: [0.25]
+});
 
 const extraServiceSectionEntryCallback = (entries) => {
    entries.forEach((entry) => {
@@ -80,9 +82,11 @@ const extraServiceSectionEntryCallback = (entries) => {
    });
 };
 
-observer(serviceSectionEntryCallback, {
-   threshold: [0.25]
-}).observe(servicesContainer);
+// observer(serviceSectionEntryCallback, {
+//    threshold: [0.25]
+// }).observe(servicesContainer);
+
+io.observe(servicesContainer);
 
 observer(extraServiceSectionEntryCallback, {
    threshold: [0.25]

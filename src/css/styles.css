@@ -95,8 +95,8 @@
    }
 }
 
-/* .customAnimationIn { */
-.services__card.animated.customAnimationIn {
+.services__card.animated.customAnimationIn,
+.customAnimationIn {
    animation-name: customAnimationIn;
 }
 
@@ -1279,18 +1279,10 @@ h1 {
 
 .services__card.animated {
    opacity: 1;
-   transform: translate3d(0, 0, 0) rotate3d(0, 1, 0, 0);
+   /* transform: translate3d(0, 0, 0) rotate3d(0, 1, 0, 0); */
+   transform: rotate3d(0, 1, 0, 0);
    transition: 1.2s;
    animation-name: unSpin;
-}
-
-.services__card.animated .services-btn {
-   opacity: 1;
-   transition: opacity step-end 0.65s;
-}
-
-.services__card.animated.spin .services-btn {
-   opacity: 0;
 }
 
 .services__card.animated.spin {
@@ -1313,6 +1305,15 @@ h1 {
    animation-name: appear;
    animation-duration: 1.2s;
    animation-timing-function: steps(1, end);
+}
+
+.services__card.animated .services-btn {
+   opacity: 1;
+   transition: opacity step-end 0.65s;
+}
+
+.services__card.animated.spin .services-btn {
+   opacity: 0;
 }
 
 .service-story__title {
