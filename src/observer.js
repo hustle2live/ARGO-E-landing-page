@@ -41,6 +41,9 @@ const serviceSectionEntryCallback = (entries) => {
          for (const card of serviceCardsAll) {
             card.classList.add(animationIn);
          }
+         // observer(serviceSectionEntryCallback, {
+         //    threshold: [0.25]
+         // }).unobserve(servicesContainer);
       }
       // else {
       //    for (const card of serviceCardsAll) {
@@ -96,36 +99,3 @@ observer((e) => onEntryCallback(e, animationSlideInLeftRotate), {
 observer((e) => onEntryCallback(e, animationSlideInRight), {
    threshold: [0]
 }).observe(serviceDescriptionText);
-
-// const servicesObserver = new IntersectionObserver(serviceSectionEntryCallback, options);
-
-// console.log(elements);
-// console.log(iconsAboutAll);
-
-// function onScale(nodeList) {
-//    nodeList.forEach((domElem) => {
-//       if (domElem.isIntersecting) {
-//          domElem.target.classList.add('customAnimationScale');
-//       }
-//    });
-// }
-
-//  if (entry.intersectionRatio === 0) {
-//     console.log('Элемент удален полностью в области наблюдения');
-//     entry.target.classList.remove(animatedClassName);
-//  }
-
-// moveObserver.observe(elem);
-// scaleObserver.observe(elem);
-
-// const moveObserver = new IntersectionObserver((animationObject) => onEntryCallback(animationObject, animationIn), options);
-
-// const scaleObserver = new IntersectionObserver((animationObject) => onEntryCallback(animationObject, animationScale), options);
-
-// for (const elem of serviceCardsAll) {
-//    observer(animationIn, {
-//       root: document.querySelector('.services__content.container'),
-//       threshold: [0.5]
-//    }).observe(elem);
-//    console.log('observe');
-// }

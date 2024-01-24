@@ -57,7 +57,6 @@ const cardSpinRotate = (e, thisCard) => {
       thisCard.addEventListener('mouseleave', function removeSpin() {
          const intervalSpinBack = window.setTimeout(function removeSpinClass() {
             thisCard.classList.remove('spin');
-
             thisCard.removeEventListener('mouseleave', removeSpin);
             window.clearTimeout(intervalSpinBack);
          }, 2000);
