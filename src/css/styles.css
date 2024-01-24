@@ -605,7 +605,7 @@ h6 {
    font-family: 'Raleway', sans-serif;
 }
 
-/* .cta-button, */
+.cta__description .text-button,
 .text-button,
 .cta__description,
 .about__concepts p,
@@ -2275,6 +2275,7 @@ sub {
    margin-right: 20px;
    padding: 2px;
    border-bottom: 1px solid transparent;
+   border-radius: 0;
 }
 .cta .cta__description .text-button:hover {
    border-bottom: 1px solid var(--inverse-on-surface);
@@ -2467,15 +2468,20 @@ sub {
    color: var(--on-surface-variant);
 }
 
+/* .cta-button.text-button, */
 .text-button {
    color: var(--on-surface-variant);
    letter-spacing: normal;
    font-weight: 400;
    border: none;
 }
+
+/* .cta-button.text-button:hover, */
 .text-button:hover {
    background-color: var(--prime-08);
 }
+
+/* .cta-button.text-button:active, */
 .text-button:active {
    background-color: var(--prime-012);
 }
