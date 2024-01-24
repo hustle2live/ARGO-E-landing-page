@@ -51,17 +51,19 @@ navMenuList.addEventListener('click', (e) => {
 });
 
 const cardSpinRotate = (e, card) => {
+   function removeSpin() {
+      const intervalSpinBack = window.setTimeout(function removeSpinClass() {
+         card.classList.remove('spin');
+         card.removeEventListener('mouseleave', removeSpin);
+         window.clearTimeout(intervalSpinBack);
+      }, 700);
+   }
+
    if (e.target.tagName.toLowerCase() === 'button') {
       card.classList.remove('customAnimationIn');
       card.classList.add('spin');
 
-      card.addEventListener('mouseleave', function removeSpin() {
-         const intervalSpinBack = window.setTimeout(function removeSpinClass() {
-            card.classList.remove('spin');
-            card.removeEventListener('mouseleave', removeSpin);
-            window.clearTimeout(intervalSpinBack);
-         }, 700);
-      });
+      card.addEventListener('mouseleave', removeSpin);
    }
 
    return;

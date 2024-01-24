@@ -1279,15 +1279,14 @@ h1 {
 
 .services__card.animated {
    opacity: 1;
-   /* transform: translate3d(0, 0, 0) rotate3d(0, 1, 0, 0); */
    transform: rotate3d(0, 1, 0, 0);
    transition: 1.2s;
    animation-name: unSpin;
 }
 
+/* -webkit-animation: spin 1.2s linear; */
+/* -moz-animation: spin 1.2s linear; */
 .services__card.animated.spin {
-   /* -webkit-animation: spin 1.2s linear; */
-   /* -moz-animation: spin 1.2s linear; */
    animation: spin 1.2s linear;
    transform: rotate3d(0, 1, 0, -180deg);
 }
