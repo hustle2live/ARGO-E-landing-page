@@ -6,6 +6,9 @@ const openClosedNodes = document.querySelectorAll('.open.closed');
 const navMenuOpen = document.querySelector('.nav-menu.open');
 const navMenuList = document.querySelector('.nav-menu__list');
 
+const servicesCards = document.querySelectorAll('.services__card');
+const servicesButtons = document.querySelectorAll('.services-btn');
+
 function scrollFunction() {
    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       topButton.style.display = 'block';
@@ -47,5 +50,21 @@ navMenuList.addEventListener('click', (e) => {
    return;
 });
 
-// const staticItems = document.querySelectorAll('.unclick');
-// staticItems.forEach((item) => item.addEventListener('click', (e) => e.stopPropagation()));
+const cardSpinRotate = (e, thisCard) => {
+   if (e.target.tagName.toLowerCase() === 'button') {
+      thisCard.classList.add('spin');
+
+      thisCard.addEventListener('mouseleave', function removeSpin() {
+         const intervalSpinBack = window.setTimeout(function removeSpinClass() {
+            thisCard.classList.remove('spin');
+
+            thisCard.removeEventListener('mouseleave', removeSpin);
+            window.clearTimeout(intervalSpinBack);
+         }, 2000);
+      });
+   }
+
+   return;
+};
+
+servicesCards.forEach((card) => card.addEventListener('click', (e) => cardSpinRotate(e, card)));

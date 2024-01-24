@@ -1221,6 +1221,7 @@ h1 {
    background: var(--secondary-container);
    transform: rotate3d(0, 1, 0, 180deg);
    opacity: 0;
+   z-index: -1;
 }
 
 .services__card.animated.spin {
@@ -1235,6 +1236,7 @@ h1 {
    opacity: 1;
    border-left: 2px solid var(--secondary);
    animation: spin linear 1.2s;
+   z-index: 0;
 }
 
 .service-story__title {
