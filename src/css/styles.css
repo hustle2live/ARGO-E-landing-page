@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Roboto:wght@300;400&family=Montserrat:wght@300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Roboto:wght@300;400&family=Montserrat:wght@300;400;500;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800;900&display=swap');
 
 @import './variables.css';
-@import './theme/palette-3/light.css';
+/* @import './theme/palette-3/light.css'; */
+/* @import './theme/palette-3/dark.css'; */
 
 :root {
    --elevation-light-1: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
@@ -679,15 +680,15 @@ h6 {
 
 .service-story,
 .about__concepts-item > div > p:nth-of-type(1),
-.footer-section .label,
 .features__description p,
+.footer-section .label,
+.footer-section .text,
 .card__description .object-description {
    font-family: 'Open Sans', sans-serif;
 }
 
 .about__concepts-item > div > p:nth-of-type(2),
 .features__subtitle,
-.footer-section .text,
 .features__text p {
    font-family: 'AR One Sans', sans-serif;
 }
@@ -742,9 +743,12 @@ header,
 .about-company .description,
 .about-company p,
 .features h3,
-.extra-services__card:nth-child(1),
-footer .container {
+.extra-services__card:nth-child(1) {
    color: var(--on-surface); /* black */
+}
+
+footer .container {
+   color: var(--inverse-on-surface);
 }
 
 .services__image img,
@@ -809,12 +813,9 @@ header {
    background: var(--surface-container-low);
 }
 
-/* background: var(--surface-container-lowest); */
-/* background: var(--surface); */
-
 header,
+.nav-menu,
 .header__navbar {
-   /* background: var(--surface-bright); */
    background: var(--surface-container-lowest);
 }
 
@@ -907,7 +908,7 @@ h1 {
    content: '';
    width: 100%;
    height: 100%;
-   background-color: var(--shadow);
+   background-color: var(--inverse-surface);
    opacity: 0.3;
    left: 0;
    top: 0;
@@ -1044,8 +1045,6 @@ h1 {
 }
 
 .header__navbar.container {
-   /* background: var(--surface-bright); */
-   /* background: transparent; */
    color: var(--on-background);
    z-index: 1;
 }
@@ -1062,13 +1061,11 @@ h1 {
 }
 
 .nav-menu__item {
-   /* margin: 0 5px; */
    color: inherit;
    border-bottom: 1px solid transparent;
    font-weight: 500;
 
-   /* color: var(--outline); */
-   color: var(--primary);
+   color: var(--on-surface);
    font-style: normal;
    font-weight: 500;
    line-height: 1.4; /* 142.857% */
@@ -1172,9 +1169,6 @@ h1 {
    background: transparent;
    border-color: var(--on-surface);
 }
-/* .services__card .services-btn:active {
-   box-shadow: var(--elevation-light-1);
-} */
 
 .services__card {
    position: relative;
@@ -1185,7 +1179,6 @@ h1 {
    min-height: 178px;
    height: auto;
    flex-grow: 0;
-   /* text-align: justify; */
    padding: 30px;
 
    margin: 0;
@@ -1709,6 +1702,7 @@ strong,
 
 /* ------------ body __ our-clients-description -------- */
 
+.section-subtitle,
 .our-clients .section-title,
 .our-clients .section-subtitle,
 .our-clients .section-subtitle b,
@@ -2090,7 +2084,7 @@ sub {
 
 .features__card .features__text,
 .features__card .features__card-title {
-   color: var(--on-tertiary-fixed-variant);
+   color: var(--on-surface);
 }
 
 .features__card-title {
@@ -2653,7 +2647,6 @@ footer .container {
    grid-template-rows: 1fr;
    gap: 30px;
    padding: 2.5rem 0;
-   color: var(--inverse-on-surface);
 }
 
 .footer-section {
@@ -2668,7 +2661,15 @@ footer .container {
 }
 
 .footer-section .label {
+   font-weight: 500;
    height: 2rem;
+}
+.footer-section .text {
+   font-weight: 300;
+   font-size: 0.94rem;
+   color: var(--inverse-on-surface);
+   margin: 6px 0;
+   cursor: default;
 }
 
 .footer-section.logo img {
@@ -2684,12 +2685,6 @@ footer .container {
    cursor: default;
 }
 
-.footer-section .text {
-   font-size: 0.94rem;
-   color: var(--middle-bg-color);
-   margin: 6px 0;
-   cursor: default;
-}
 .footer-section a {
    cursor: pointer;
 }
@@ -2772,7 +2767,7 @@ footer .container {
 }
 .extra-services__card:nth-child(2) .extra-services__text-content {
    background: var(--surface-container);
-   color: var(--scrim);
+   color: var(--on-surface);
 }
 .extra-services__card:nth-child(2) .extra-services__text-content.animated.customAnimationScale {
    transition: scale 2s;
