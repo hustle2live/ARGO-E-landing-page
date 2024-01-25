@@ -831,15 +831,27 @@
       border-radius: 50%;
    }
 
+   .nav-menu__item.mobile .company-logo {
+      position: absolute;
+      top: 8px;
+   }
+
    .nav-menu__item.mobile .company-logo img {
-      width: 20px;
+      width: 100%;
       height: auto;
    }
 
+   
+   .nav-menu .mobile.icon.top .svg8,
    .nav-menu .mobile.icon svg {
       width: 24px;
       height: 24px;
    }
+
+   /* .nav-menu .mobile.icon .svg8 {
+      width: 26px;
+      height: 26px;
+   } */
 
    .nav-menu .mobile.icon .icon-viber {
       height: 22px;
