@@ -6,11 +6,8 @@
 @import './theme/palette-3/light.css';
 
 :root {
-   /* M3/ box-shadow Elevation Light/1 */
-
    --elevation-light-1: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
-   --elevation-light-2: 0px 0px 3px 1px rgba(255, 255, 255, 0.15), 0px 0px 2px 0px rgba(255, 255, 255, 0.3);
-   --elevation-light-3: 0px 1px 3px 1px rgba(255, 255, 255, 0.15), 0px 1px 2px 0px rgba(255, 255, 255, 0.3);
+   --elevation-light-2: 0px 2px 6px 2px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
    --dark-015: rgba(0, 0, 0, 0.015);
    --dark-08: rgba(0, 0, 0, 0.08);
    --prime-08: rgba(104, 84, 142, 0.08);
@@ -65,12 +62,6 @@
    from {
       transform: rotate3d(0, 1, 0, -180deg);
    }
-   /* 0% {
-      transform: rotate3d(0, 1, 0, -180deg);
-   }
-   100% {
-      transform: rotate3d(0, 1, 0, 0deg);
-   } */
 }
 
 @keyframes spin {
@@ -603,12 +594,12 @@ h5,
    font-size: 1.625rem; /* 26px font size  */
 }
 
-.service-story__title,
 .extra-services__title,
 h6 {
    font-size: 1.5rem; /* 24px font size  */
 }
 
+.service-story__title,
 .features__card-title,
 .services__title,
 .our-clients > p,
@@ -656,6 +647,7 @@ h6 {
 .service-description h4,
 .heading,
 .section-title,
+.service-story__title,
 .about .section-title {
    font-family: 'Raleway', sans-serif;
 }
@@ -685,6 +677,7 @@ h6 {
    font-family: 'Montserrat', sans-serif;
 }
 
+.service-story,
 .about__concepts-item > div > p:nth-of-type(1),
 .footer-section .label,
 .features__description p,
@@ -1266,15 +1259,20 @@ h1 {
    position: absolute;
    display: block;
    box-sizing: border-box;
-   color: var(--on-secondary-container);
    line-height: normal;
-   padding: 1rem;
+
+   padding: 20px;
+   padding-bottom: 60px;
+
    height: 100%;
    width: 100%;
    left: 0;
    top: 0;
-   background: var(--secondary-container);
-   border-left: 2px solid var(--secondary);
+   color: var(--on-surface);
+   background-color: var(--surface-container);
+
+   /* border-top-left-radius: 100px; */
+   /* box-shadow: var(--elevation-light-2); */
 }
 
 .services__card.animated {
@@ -1317,7 +1315,11 @@ h1 {
 
 .service-story__title {
    text-transform: uppercase;
-   margin-bottom: 20px;
+   margin: 20px auto 10px;
+   width: 80%;
+   max-width: 100%;
+   font-weight: 700;
+   color: var(--tertiary);
 }
 
 .service-story .image img {
@@ -1330,12 +1332,21 @@ h1 {
    right: 20px;
    height: 80px;
    width: auto;
+   z-index: -1;
+}
+
+.service-story p {
+   margin: 10px auto;
 }
 
 .service-story ol {
-   padding-left: 25px;
+   display: block;
+   box-sizing: border-box;
    text-align: left;
+   padding-left: 25px;
+   padding-right: 10px;
 }
+
 .service-story ol li {
    line-height: 1.4;
 }

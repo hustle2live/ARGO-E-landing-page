@@ -1560,7 +1560,6 @@
       width: 310px;
    }
 
-   /* .features .container, */
    .header__navbar.container,
    .cta .section-subtitle,
    .cta .container,
@@ -1613,6 +1612,11 @@
       padding: 0 6px;
    }
 
+   .service-story {
+      padding: 20px 10px;
+   }
+
+   .service-story__title,
    .section-title,
    .service-description .section-title,
    .our-clients .section-title,
@@ -1632,15 +1636,14 @@
       font-size: 1.875rem;
    }
 
-   .features__subtitle,
-   .cta .cta__gallery .label {
-      font-size: 0.875rem;
-   }
-
    .features__text .icon {
       margin-top: 0;
    }
 
+   .service-story,
+   .service-story ol li,
+   .features__subtitle,
+   .cta .cta__gallery .label,
    .our-clients > p,
    .about__concepts-item p,
    .header__description,
@@ -1693,9 +1696,16 @@
    .services__image {
       height: 190px;
    }
+
    .services__title {
-      margin: 16px auto 10px;
+      margin: 20px auto 16px;
    }
+
+   .services__description,
+   .services__title {
+      line-height: 1.4;
+   }
+
    .services-btn {
       margin: 0 auto 14px;
    }
