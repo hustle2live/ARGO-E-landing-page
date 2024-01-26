@@ -323,6 +323,10 @@
    .nav-menu__item:nth-last-of-type(6) {
       display: none;
    }
+
+   .theme-btn {
+      margin: auto 20px;
+   }
 }
 
 @media screen and (max-width: 767px) {
@@ -841,17 +845,11 @@
       height: auto;
    }
 
-   
    .nav-menu .mobile.icon.top .svg8,
    .nav-menu .mobile.icon svg {
       width: 24px;
       height: 24px;
    }
-
-   /* .nav-menu .mobile.icon .svg8 {
-      width: 26px;
-      height: 26px;
-   } */
 
    .nav-menu .mobile.icon .icon-viber {
       height: 22px;

@@ -10,7 +10,19 @@ const servicesCards = document.querySelectorAll('.services__card');
 const servicesButtons = document.querySelectorAll('.services-btn');
 
 const styleHTMLLink = document.querySelector('.style-link');
-const dayNightThemeButton = document.querySelector('.theme-btn');
+const themeButton = document.querySelector('.theme-btn');
+
+const themeLightPath = './css/theme/palette-3/light.css';
+const themeDarkPath = './css/theme/palette-3/dark.css';
+
+themeButton.addEventListener('click', () => {
+   themeButton.classList.toggle('dark');
+   if (themeButton.classList.contains('dark')) {
+      styleHTMLLink.setAttribute('href', themeDarkPath);
+   } else {
+      styleHTMLLink.setAttribute('href', themeLightPath);
+   }
+});
 
 console.log(styleHTMLLink);
 
