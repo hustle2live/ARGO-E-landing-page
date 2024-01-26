@@ -16,6 +16,23 @@
    --prime-015: rgba(104, 84, 142, 0.15);
 }
 
+.theme-btn {
+   display: block;
+   width: 28px;
+   height: 28px;
+   margin: auto 0 auto 20px;
+   /* border: 2px solid var(--tertiary-fixed-dim); */
+}
+
+.theme-btn.light {
+   content: url('../images/icons/moon-stars.svg');
+}
+
+.theme-btn.light.dark {
+   content: url('../images/icons/sun.svg');
+
+}
+
 /* animations css */
 .animated {
    animation-duration: 1s;

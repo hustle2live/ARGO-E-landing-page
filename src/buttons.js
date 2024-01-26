@@ -9,6 +9,11 @@ const navMenuList = document.querySelector('.nav-menu__list');
 const servicesCards = document.querySelectorAll('.services__card');
 const servicesButtons = document.querySelectorAll('.services-btn');
 
+const styleHTMLLink = document.querySelector('.style-link');
+const dayNightThemeButton = document.querySelector('.theme-btn');
+
+console.log(styleHTMLLink);
+
 function scrollFunction() {
    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       topButton.style.display = 'block';
