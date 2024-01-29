@@ -1555,11 +1555,16 @@ strong,
    width: 90px;
    height: 90px;
 }
+
 .about__concepts-item:last-of-type svg {
    width: 120px;
    height: 120px;
 }
 
+/* .about__concepts-item:nth-of-type(2) svg {
+   width: 108px;
+   height: 108px;
+} */
 
 .about__concepts-item > div > p,
 .about .icon svg path {
