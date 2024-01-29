@@ -767,7 +767,7 @@ footer .container {
    color: var(--inverse-on-surface);
 }
 
-.services__image img,
+/* .services__image img, */
 .header__background-image img,
 .header__background-image,
 .service-description__backgroung,
@@ -2764,6 +2764,15 @@ footer .container {
 
 .extra-services__card:nth-child(2) .extra-services__text-content {
    width: 40%;
+}
+
+.services__image img {
+   height: auto;
+   width: 120%;
+   min-width: 100%;
+   min-height: 100%;
+   object-fit: cover;
+   object-position: center;
 }
 
 .extra-services__image img {
