@@ -1134,9 +1134,29 @@ h1 {
 }
 
 .services__content {
+   /* position: relative; */
    text-align: center;
    margin: 0 auto;
 }
+
+/* .image-back {
+   position: absolute;
+}
+
+.image-back.start {
+   top: 55px;
+   left: -15px;
+}
+
+.image-back.end {
+   right: -15px;
+   top: 245px;
+}
+
+.services__content .section-title,
+.services__content .section-subtitle {
+   background: url('../images/background/header-icon16.png') repeat;
+} */
 
 .section-subtitle {
    text-align: start;
@@ -1168,10 +1188,7 @@ h1 {
    font-weight: 500;
 }
 
-/* .services__card .services__description,
-.services__card .services-btn {
-   text-align: left;
-} */
+
 .services__card .services-btn {
    margin: 14px 0;
    border-radius: 0;
