@@ -1,6 +1,12 @@
 :root {
-   --primary: rgb(192 193 255);
-   --surface-tint: rgb(192 193 255);
+   /* --primary: rgb(236, 192, 255); */
+   /* --primary: #d0bcff; */
+   --primary: #bba2f7;
+
+   /* --primary: rgb(192 193 255); */
+
+   --surface-tint: #bba2f7;
+   /* --surface-tint: rgb(192 193 255); */
    --primary-container: rgb(63 65 120);
    --secondary: rgb(197 196 221);
    --secondary-container: rgb(69 69 89);
@@ -16,14 +22,20 @@
    --on-secondary-container: rgb(226 224 249);
    --on-error-container: rgb(255 218 214);
    --on-background: rgb(228 225 233);
-   --on-surface: rgb(228 225 233);
    --on-surface-variant: rgb(199 197 208);
+
+   --on-surface: rgb(239, 239, 239);
+   /* --on-surface: rgb(228 225 233); */
 
    --error-container: rgb(147 0 10);
    --background: rgb(19 19 24);
    --tertiary: rgb(232 185 212);
    --surface-variant: rgb(70 70 79);
-   --surface: rgb(19 19 24);
+
+   --surface: rgb(95 60 82);
+   --surface: rgb(70 70 79);
+   /* --surface: rgb(69 69 89); */
+
    --outline: rgb(145 143 154);
    --outline-variant: rgb(70 70 79);
    --shadow: rgb(0 0 0);
@@ -35,7 +47,11 @@
    --primary-fixed: rgb(225 224 255);
    --on-primary-fixed: rgb(18 20 75);
    --primary-fixed-dim: rgb(192 193 255);
-   --on-primary-fixed-variant: rgb(63 65 120);
+
+   --on-primary-fixed-variant: rgb(184, 131, 209);
+   /* --on-primary-fixed-variant: rgb(109, 112, 189); */
+   /* --on-primary-fixed-variant: rgb(63 65 120); */
+
    --secondary-fixed: rgb(226 224 249);
    --on-secondary-fixed: rgb(25 26 44);
    --secondary-fixed-dim: rgb(197 196 221);
@@ -46,8 +62,14 @@
    --on-tertiary-fixed-variant: rgb(95 60 82);
    --surface-dim: rgb(19 19 24);
    --surface-bright: rgb(57 56 63);
-   --surface-container-lowest: rgb(14 14 19);
-   --surface-container-low: rgb(27 27 33);
+
+   /* --surface-container-lowest: rgb(14 14 19); */
+   /* --surface-container-lowest: rgb(95 60 82); */
+   --surface-container-lowest: rgb(94, 60, 95);
+
+   --surface-container-low: rgb(78, 78, 78);
+   /* --surface-container-low: rgb(27 27 33); */
+
    --surface-container: rgb(31 31 37);
    --surface-container-high: rgb(42 41 47);
    --surface-container-highest: rgb(53 52 58);

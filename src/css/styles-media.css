@@ -1192,13 +1192,17 @@
       padding-bottom: 40px;
    }
 
-   .about-company p:nth-of-type(2) {
+   .about-company .description {
       padding-right: 35%;
       position: relative;
       overflow: hidden;
    }
 
-   .about-company p:nth-of-type(2)::after {
+   .about-company .description.dark::after {
+      background-image: url('../images/logo/logo-white.png');
+   }
+
+   .about-company .description::after {
       display: block;
       content: '';
       background-image: url('../images/logo/logo-transparent.png');
@@ -1495,11 +1499,11 @@
       padding-right: 0;
    }
 
-   .about-company p:nth-of-type(2) {
+   .about-company .description {
       padding-right: 28%;
    }
 
-   .about-company p:nth-of-type(2)::after {
+   .about-company .description::after {
       width: 80px;
       height: 96px;
       top: 0;
