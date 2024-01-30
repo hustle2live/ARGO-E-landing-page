@@ -1430,7 +1430,12 @@
       width: 18px;
    }
 
+   .theme-btn {
+      margin-left: auto;
+   }
+
    .header__navbar_social {
+      display: none;
       height: 25px;
       margin: 0 auto;
    }
