@@ -4,13 +4,12 @@
    display: block;
    position: relative;
 
-   height: 560px;
+   /* height: 560px; */
    background: #a9a7a7;
    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
    font-size: 14px;
    color: #000;
-   margin: 40px auto;
-   padding: 0;
+  
 }
 
 .swiper {
@@ -18,9 +17,14 @@
    height: 100%;
 }
 
-.swiper {
+/* .swiper {
    width: 600px;
    height: 300px;
+} */
+
+.swiper-wrapper {
+   padding: 0;
+   margin: 0;
 }
 
 .swiper-slide {

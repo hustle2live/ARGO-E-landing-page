@@ -1784,18 +1784,16 @@ strong,
    margin: 40px auto 0;
 }
 
-/* .our-clients__gallery li.card, */
 .our-clients__article {
    width: 689px;
    height: 475px;
-   /* padding: 0; */
+   margin: 40px auto 0;
+   padding: 0;
 }
 
 /* .our-clients__article {
    box-sizing: border-box;
    overflow: hidden;
-   margin: auto;
-   margin-top: 40px;
    box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.1);
 } */
 
