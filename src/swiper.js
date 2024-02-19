@@ -26,6 +26,9 @@ const ctaSectionSwiperPag = new Swiper('.ctaSwiper', {
    // Optional parameters
    direction: 'horizontal',
    loop: true,
+   autoplay: true,
+   delay: 4000,
+   pauseOnMouseEnter: true,
 
    // If we need pagination
    pagination: {
