@@ -1821,6 +1821,7 @@ strong,
 
 .card__picture {
    left: 0;
+   top: 0;
 }
 
 .card__picture img {
@@ -1882,11 +1883,10 @@ sub {
    height: 40px;
    border-radius: 50%;
    cursor: pointer;
-   bottom: 28%;
+   bottom: 50%;
    border: none;
    background-color: var(--on-surface-variant);
-   /* background-color: var(--inverse-surface); */
-   /* background-color: var(--tertiary); */
+   transform: translate(0, 50%);
 }
 
 .our-clients .prev-btn,
@@ -1903,18 +1903,20 @@ sub {
 }
 
 .prev-btn svg {
-   padding-right: 3px;
+   /* padding-right: 0px; */
+   padding-left: 3px;
 }
 .next-btn svg {
-   padding-left: 3px;
+   /* padding-left: 3px; */
+   padding-left: 6px;
 }
 
 .prev-btn {
-   left: 15%;
+   left: -15%;
 }
 
 .next-btn {
-   right: 15%;
+   right: -15%;
 }
 
 .prev-btn:hover,

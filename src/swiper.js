@@ -12,12 +12,12 @@ const swiper = new Swiper('.swiper', {
 
    // Navigation arrows
    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
+      nextEl: '.our-clients .next-btn',
+      prevEl: '.our-clients .prev-btn'
    },
 
    // And if we need scrollbar
-   scrollbar: {
-      el: '.swiper-scrollbar'
-   }
+   // scrollbar: {
+   //    el: '.swiper-scrollbar'
+   // }
 });
