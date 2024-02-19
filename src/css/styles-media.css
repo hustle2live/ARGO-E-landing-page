@@ -1011,13 +1011,18 @@
    .prev-btn,
    .next-btn {
       z-index: 1;
-      /* opacity: 0.86; */
    }
    .prev-btn {
       left: 5%;
    }
    .next-btn {
       right: 5%;
+   }
+
+   .prev-btn svg,
+   .next-btn svg {
+      width: 54%;
+      height: 54%;
    }
 }
 

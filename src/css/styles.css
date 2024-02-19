@@ -1899,24 +1899,20 @@ sub {
    fill: var(--surface-container-lowest);
    width: 70%;
    height: 70%;
-   padding: 6px 0;
-}
-
-.prev-btn svg {
-   /* padding-right: 0px; */
-   padding-left: 3px;
-}
-.next-btn svg {
-   /* padding-left: 3px; */
-   padding-left: 6px;
+   padding: 2px 0;
+   margin: auto;
+   display: block;
+   box-sizing: border-box;
 }
 
 .prev-btn {
    left: -15%;
+   padding-left: 4px;
 }
 
 .next-btn {
    right: -15%;
+   padding-right: 4px;
 }
 
 .prev-btn:hover,
