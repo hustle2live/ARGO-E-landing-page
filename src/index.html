@@ -18,6 +18,13 @@
       <link class="style-link" rel="stylesheet" href="./css/theme/palette-3/light.css" />
       <!-- dark theme -->
       <!-- <link rel="stylesheet" href="./css/theme/palette-3/dark.css" /> -->
+
+      <!-- Import Swiper  -->
+      <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+
+      <link class="style-link" rel="stylesheet" href="./css/swiper.css" />
+
+      <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
    </head>
 
    <body id="top" class="u-body">
@@ -852,7 +859,6 @@
                         </g>
                      </svg>
 
-
                      <!-- <svg
                         version="1.1"
                         id="Uploaded to svgrepo.com"
@@ -1415,7 +1421,7 @@
          </div>
       </div>
 
-      <section id="objects" class="our-clients">
+      <section class="our-clients" id="objects">
          <div class="container">
             <p class="section-title">професійно встановлюємо</p>
             <h3 class="section-subtitle inline">Проектне бюро виконає найкращий проект,</h3>
@@ -1430,7 +1436,30 @@
             </p>
             <p class="section-subtitle">Останні проекти, що виконувала компанія:</p>
 
-            <div class="our-clients__article">
+            <div class="swiper-container">
+               <!-- Slider main container -->
+               <div class="swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                     <!-- Slides -->
+                     <div class="swiper-slide">Slide 1</div>
+                     <div class="swiper-slide">Slide 2</div>
+                     <div class="swiper-slide">Slide 3</div>
+                     ...
+                  </div>
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+
+                  <!-- If we need scrollbar -->
+                  <div class="swiper-scrollbar"></div>
+               </div>
+            </div>
+
+            <!-- <div class="our-clients__article">
                <ol class="our-clients__gallery">
                   <li class="card">
                      <div class="card__content">
@@ -1528,9 +1557,9 @@
                      </div>
                   </li>
                </ol>
-            </div>
+            </div> -->
 
-            <button class="prev-btn">
+            <!-- <button class="prev-btn">
                <svg viewBox="0 0 451.847 451.847">
                   <path
                      d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
@@ -1548,7 +1577,7 @@
                   c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
                   ></path>
                </svg>
-            </button>
+            </button> -->
          </div>
          <p><a href="#features"> читати далі >> </a></p>
       </section>
@@ -2250,8 +2279,36 @@
       <script src="form-send.js"></script>
       <script src="observer.js"></script>
       <script src="buttons.js"></script>
-      <script async src="gallery-slider.js"></script>
+      <!-- <script async src="gallery-slider.js"></script> -->
       <script async src="cta-pagination-slider.js"></script>
       <script src="./footer-date.js"></script>
+
+      <script type="module" src="./swiper.js"></script>
+
+      <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <script>
+         const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+               el: '.swiper-pagination'
+            },
+
+            // Navigation arrows
+            navigation: {
+               nextEl: '.swiper-button-next',
+               prevEl: '.swiper-button-prev'
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+               el: '.swiper-scrollbar'
+            }
+         });
+      </script> -->
    </body>
 </html>
