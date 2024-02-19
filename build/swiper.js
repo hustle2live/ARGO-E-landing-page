@@ -1,0 +1,1 @@
+import Swiper from"https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";const swiper=new Swiper(".swiper",{direction:"horizontal",loop:!0,pagination:{el:".swiper-pagination"},navigation:{nextEl:".our-clients .next-btn",prevEl:".our-clients .prev-btn"}});
