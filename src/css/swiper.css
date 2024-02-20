@@ -1,0 +1,103 @@
+@import url('https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css');
+/* @import './variables.css'; */
+:root {
+   --swiper-theme-color: var(--dark-primary-color);
+}
+
+@keyframes motion-autoplay-circle {
+   0% {
+      stroke-dasharray: 565 565;
+      transform: rotate(-90deg);
+   }
+   10%,
+   50% {
+      stroke-dasharray: 0 565;
+      transform: rotate(270deg);
+   }
+   100% {
+      stroke-dasharray: 565 565;
+      transform: rotate(270deg);
+   }
+}
+
+.swiper-container {
+   display: block;
+   position: relative;
+   font-size: 1rem;
+   color: #000;
+}
+
+.swiper {
+   width: 689px;
+   height: 475px;
+}
+
+.swiper-wrapper {
+   padding: 0;
+   margin: 0;
+}
+
+.swiper.ctaSwiper {
+   width: 100%;
+   height: 100%;
+}
+
+.swiper-slide {
+   text-align: center;
+   font-size: 1.4rem;
+   background: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.swiper-slide img {
+   display: block;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+   height: 2px;
+}
+
+.swiper-scrollbar-drag {
+   background: var(--surface);
+}
+
+/* .motion-autoplay svg {
+   position: absolute;
+   width: 32px;
+   height: 32px;
+   z-index: 10;
+   right: 0;
+   bottom: 16px;
+}
+
+.motion * {
+   transform-style: preserve-3d;
+}
+
+.motion-autoplay circle:first-child {
+   fill: none;
+   stroke-width: 16;
+   stroke: var(--primary);
+   opacity: 0.25;
+}
+
+.motion-autoplay circle:nth-child(2) {
+   fill: none;
+   stroke: var(--swiper-theme-color);
+   stroke-width: 16;
+   stroke-dasharray: 400 565;
+   animation: motion-autoplay-circle 3700ms infinite;
+} */
+
+@media screen and (max-width: 1023px) {
+   .swiper {
+      width: 100%;
+      height: 100%;
+   }
+}

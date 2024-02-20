@@ -21,7 +21,7 @@ function clear() {
 // CSS
 
 function css() {
-   const source = './src/css/*.css';
+   const source = './src/css/**/*.css';
    return src(source)
       .pipe(changed(source))
       .pipe(
@@ -33,7 +33,7 @@ function css() {
          })
       )
       .pipe(cssnano())
-      .pipe(dest('./build/css/'))
+      .pipe(dest('./build/css'))
       .pipe(browsersync.stream());
 }
 

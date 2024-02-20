@@ -88,13 +88,11 @@ paginationDiv.addEventListener('click', (e) => (handlePagElementClass(e.target) 
 
 // ------ initial function ------
 
-
 // cta__gallery slider show full width events
 
-sliderDiv.addEventListener('click', galleryShow);
+sliderImage.addEventListener('click', galleryShow);
 showGalleryButtonClose.addEventListener('click', galleryClose);
 
 // ---
-
 
 autoSetImageNumber();

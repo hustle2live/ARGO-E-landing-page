@@ -8,12 +8,23 @@
       <!-- отключение индексирования файла  -->
 
       <title>
-         Проектування системи вентиляції, кондиціонування, опалення - замовити робочий проект із встановленням в Києві
-         та Україні.
+         Проектування системи вентиляції, кондиціонування, опалення - замовити робочий проект в Києві та Україні.
       </title>
       <link rel="icon" type="image/x-icon" href="./images/favicon/logo-1.ico" />
       <link rel="stylesheet" href="./css/styles.css" />
       <link rel="stylesheet" href="./css/styles-media.css" />
+
+      <!-- light theme -->
+      <link class="style-link" rel="stylesheet" href="./css/theme/palette-3/light.css" />
+      <!-- dark theme -->
+      <!-- <link rel="stylesheet" href="./css/theme/palette-3/dark.css" /> -->
+
+      <!-- Import Swiper  -->
+      <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+
+      <link class="style-link" rel="stylesheet" href="./css/swiper.css" />
+
+      <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
    </head>
 
    <body id="top" class="u-body">
@@ -26,11 +37,255 @@
             </div>
             <nav class="nav-menu open closed">
                <ul class="nav-menu__list">
-                  <li class="nav-menu__item"><a href="#services">Послуги</a></li>
-                  <li class="nav-menu__item"><a href="#objects">Наші клієнти</a></li>
-                  <li class="nav-menu__item"><a href="#technologies">Технології</a></li>
-                  <li class="nav-menu__item"><a href="#about">Про нас</a></li>
-                  <li class="nav-menu__item"><a href="#contacts">Зв'язатися</a></li>
+                  <li class="nav-menu__item mobile">
+                     <div class="mobile icon company-logo">
+                        <img src="./images/logo/logo-transparent.png" alt="logo" />
+                        <!-- <img src="./images/logo/top-triangle.png" alt="logo" /> -->
+                     </div>
+                     <p class="company-name">ARGOENGINEERING</p>
+                     <div class="mobile icon close">
+                        <svg width="80px" height="80px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                           <title>ionicons-v5-a</title>
+                           <polyline points="328 112 184 256 328 400" />
+                        </svg>
+                     </div>
+                  </li>
+
+                  <span class="divider mobile"></span>
+
+                  <li class="nav-menu__item">
+                     <div class="mobile icon">
+                        <svg
+                           width="80px"
+                           height="80px"
+                           viewBox="0 0 24 24"
+                           id="Layer_1"
+                           data-name="Layer 1"
+                           xmlns="http://www.w3.org/2000/svg"
+                        >
+                           <line class="cls-1" x1="6.27" y1="13.91" x2="13.91" y2="13.91" />
+                           <line class="cls-1" x1="6.27" y1="10.09" x2="13.91" y2="10.09" />
+                           <line class="cls-1" x1="6.27" y1="17.73" x2="13.91" y2="17.73" />
+                           <polygon
+                              class="cls-1"
+                              points="16.77 8.18 16.77 22.5 3.41 22.5 3.41 5.32 16.77 5.32 16.77 8.18"
+                           />
+                           <polyline
+                              class="cls-1"
+                              points="16.77 18.68 20.59 18.68 20.59 4.36 20.59 1.5 7.23 1.5 7.23 5.32"
+                           />
+                        </svg>
+                     </div>
+                     <a href="#services">Послуги</a>
+                  </li>
+                  <li class="nav-menu__item">
+                     <div class="mobile icon"></div>
+                     <a href="#about">Про нас</a>
+                  </li>
+                  <li class="nav-menu__item">
+                     <div class="mobile icon"></div>
+                     <a href="#objects">Наші клієнти</a>
+                  </li>
+                  <li class="nav-menu__item">
+                     <div class="mobile icon"></div>
+                     <a href="#technologies">Технології</a>
+                  </li>
+                  <li class="nav-menu__item">
+                     <div class="mobile icon"></div>
+                     <a href="#contacts">Зв'язатися</a>
+                  </li>
+
+                  <span class="divider mobile"></span>
+
+                  <li class="nav-menu__item mobile">
+                     <div class="mobile icon">
+                        <svg
+                           width="80px"
+                           height="80px"
+                           viewBox="0 0 24 24"
+                           fill="none"
+                           xmlns="http://www.w3.org/2000/svg"
+                           class="svg8"
+                        >
+                           <path
+                              d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7"
+                              stroke="#000000"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                           />
+                           <rect
+                              x="3"
+                              y="5"
+                              width="18"
+                              height="14"
+                              rx="2"
+                              stroke="#000000"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                           />
+                        </svg>
+                     </div>
+                     <a href="mailto:office@argo-e.com.ua">office@argo-e.com.ua</a>
+                  </li>
+                  <li class="nav-menu__item">
+                     <div class="mobile icon">
+                        <svg
+                           class="icon-viber"
+                           version="1.1"
+                           id="Icons"
+                           xmlns="http://www.w3.org/2000/svg"
+                           xmlns:xlink="http://www.w3.org/1999/xlink"
+                           viewBox="0 0 32 32"
+                           xml:space="preserve"
+                        >
+                           <path
+                              class="st21"
+                              d="M16,0C8.1,0,0,1.7,0,14c0,6.6,2.3,10.7,7,12.6v3.7c0,0.7,0.4,1.3,1,1.6C8.2,32,8.5,32,8.7,32
+                       c0.4,0,0.9-0.2,1.2-0.5l3.6-3.6c0.8,0,1.6,0.1,2.5,0.1c7.9,0,16-1.7,16-14S23.9,0,16,0z"
+                           />
+                           <g>
+                              <g>
+                                 <path
+                                    class="st0"
+                                    d="M15.5,9.1c2.4,0,4.4,2,4.4,4.4c0,0.6,0.4,1,1,1s1-0.4,1-1c0-3.5-2.9-6.4-6.4-6.4c-0.6,0-1,0.4-1,1
+                             S14.9,9.1,15.5,9.1z"
+                                 />
+                                 <path
+                                    class="st0"
+                                    d="M15.5,12.2c0.7,0,1.3,0.6,1.3,1.3c0,0.6,0.4,1,1,1s1-0.4,1-1c0-1.8-1.5-3.3-3.3-3.3c-0.6,0-1,0.4-1,1
+                             S14.9,12.2,15.5,12.2z"
+                                 />
+                                 <path
+                                    class="st0"
+                                    d="M15.5,4c-0.6,0-1,0.4-1,1s0.4,1,1,1c4.1,0,7.5,3.4,7.5,7.5c0,0.6,0.4,1,1,1s1-0.4,1-1C25,8.3,20.7,4,15.5,4z"
+                                 />
+                                 <path
+                                    class="st0"
+                                    d="M21.9,17.1L21.7,17c0,0-2.2-1.1-2.6-1.2c-0.8-0.3-1.6-0.1-2.1,0.6l-0.1,0.2c-0.2,0.3-0.5,0.7-0.7,0.9l0,0
+                             c-0.5-0.2-1.4-0.6-2.6-1.6c-0.8-0.7-1.4-1.6-1.7-2.1c0.1-0.1,0.1-0.1,0.2-0.2c0.1-0.1,0.2-0.2,0.3-0.3c0.2-0.2,0.3-0.4,0.5-0.7
+                             c0.2-0.5,0.2-1,0-1.6c-0.1-0.2-0.5-1.1-0.8-1.8l-0.4-0.8c-0.4-1-1-1.2-1.7-1.2C9.9,7,9.8,7,9.6,7c-0.8,0-1.5,0.3-2,0.8
+                             C7.1,8.3,6,9.4,6,11.6c0,1.8,1.1,3.5,1.7,4.4l0.1,0.1c1.9,2.8,4.3,4.8,6.7,5.8c2.1,0.9,3.3,1.1,4.1,1.1c0.4,0,0.7,0,0.9-0.1
+                             c1.3-0.3,2.8-1.2,3.2-2.4c0.2-0.7,0.5-1.9,0.1-2.6C22.6,17.5,22.2,17.3,21.9,17.1z"
+                                 />
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     <a href="tel:+380675514773">+38 (067) 551-47-73</a>
+                  </li>
+                  <li class="nav-menu__item mobile">
+                     <div class="mobile icon">
+                        <svg
+                           width="80px"
+                           height="80px"
+                           viewBox="0 0 48 48"
+                           fill="none"
+                           xmlns="http://www.w3.org/2000/svg"
+                        >
+                           <path
+                              d="M41.4193 7.30899C41.4193 7.30899 45.3046 5.79399 44.9808 9.47328C44.8729 10.9883 43.9016 16.2908 43.1461 22.0262L40.5559 39.0159C40.5559 39.0159 40.3401 41.5048 38.3974 41.9377C36.4547 42.3705 33.5408 40.4227 33.0011 39.9898C32.5694 39.6652 24.9068 34.7955 22.2086 32.4148C21.4531 31.7655 20.5897 30.4669 22.3165 28.9519L33.6487 18.1305C34.9438 16.8319 36.2389 13.8019 30.8426 17.4812L15.7331 27.7616C15.7331 27.7616 14.0063 28.8437 10.7686 27.8698L3.75342 25.7055C3.75342 25.7055 1.16321 24.0823 5.58815 22.459C16.3807 17.3729 29.6555 12.1786 41.4193 7.30899Z"
+                              fill="#000000"
+                           />
+                        </svg>
+                     </div>
+                     <a href="https://t.me/pavlo_tytarenko" target="_blank"> @ArgoEngineering </a>
+                  </li>
+                  <li class="nav-menu__item mobile">
+                     <div class="mobile icon"></div>
+                     <button class="cta-button outlined clicked">Замовити дзвінок</button>
+                  </li>
+
+                  <span class="divider mobile"></span>
+
+                  <li class="nav-menu__item mobile unclick">
+                     <div class="mobile icon top">
+                        <svg
+                           width="80px"
+                           height="80px"
+                           viewBox="0 0 24 24"
+                           fill="none"
+                           xmlns="http://www.w3.org/2000/svg"
+                           class="svg8"
+                        >
+                           <path
+                              d="M12 7V12L14.5 13.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                              stroke="#000000"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                           />
+                        </svg>
+                     </div>
+                     <div>
+                        <p>Будні: 9:00-18:00</p>
+                        <p>Сб: 10:00-17:00</p>
+                        <p>Нд: Вихідний</p>
+                     </div>
+                  </li>
+
+                  <span class="divider mobile"></span>
+
+                  <li class="nav-menu__item mobile unclick">
+                     <div class="mobile icon top">
+                        <svg
+                           width="80px"
+                           height="80px"
+                           viewBox="0 0 8.4666669 8.4666669"
+                           version="1.1"
+                           xmlns="http://www.w3.org/2000/svg"
+                           xmlns:cc="http://creativecommons.org/ns#"
+                           xmlns:dc="http://purl.org/dc/elements/1.1/"
+                           xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                           xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                           xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                           xmlns:svg="http://www.w3.org/2000/svg"
+                        >
+                           <defs id="defs2" />
+
+                           <g id="layer1" class=".layer1" transform="translate(0,-288.53332)">
+                              <path
+                                 d="m 15.996094,0.99609375 c -6.0632836,0 -10.9980445,4.93673065 -10.9980471,11.00000025 -3.8e-6,10.668737 10.3789061,18.779297 10.3789061,18.779297 0.364612,0.290384 0.881482,0.290384 1.246094,0 0,0 10.380882,-8.11056 10.380859,-18.779297 C 27.003893,5.9328244 22.059377,0.99609375 15.996094,0.99609375 Z m 0,6.00195315 c 2.749573,0 5.00585,2.2484784 5.005859,4.9980471 C 21.001971,14.7457 18.745685,17 15.996094,17 c -2.749591,0 -4.998064,-2.2543 -4.998047,-5.003906 9e-6,-2.7495687 2.248474,-4.9980471 4.998047,-4.9980471 z"
+                                 id="path929"
+                                 transform="matrix(0.26458333,0,0,0.26458333,0,288.53332)"
+                              />
+                           </g>
+                        </svg>
+                     </div>
+                     <div>
+                        <p>Адреса:</p>
+                        <p>
+                           02068 м.Київ, Україна <br />
+                           вул. М. Драгоманова, 23Б
+                        </p>
+                     </div>
+                  </li>
+
+                  <span class="divider mobile"></span>
+
+                  <li class="nav-menu__item mobile social">
+                     <div class="mobile icon"></div>
+                     <div>
+                        <p>Ми в соцмережах:</p>
+                        <ul class="header__navbar_social">
+                           <li>
+                              <a href="https://www.facebook.com/argoengineering" target="_blank">
+                                 <img class="clicked" src="./images/social/facebook-circle.png" alt="facebook" />
+                              </a>
+                           </li>
+                           <li>
+                              <a href="https://www.instagram.com/argoengineering_kyiv/" target="_blank">
+                                 <img class="clicked" src="./images/social/instagram-circle.png" alt="instagram" />
+                              </a>
+                           </li>
+                           <li>
+                              <a href="https://t.me/pavlo_tytarenko" target="_blank">
+                                 <img class="clicked" src="./images/social/telegram-circle.png" alt="telegram" />
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
                </ul>
             </nav>
             <ul class="header__navbar_social">
@@ -50,7 +305,19 @@
                   </a>
                </li>
             </ul>
-            <div class="menu-btn open closed"></div>
+            <div class="theme-btn light"></div>
+
+            <div class="menu-btn open closed">
+               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                     d="M4 6H20M4 12H20M4 18H20"
+                     stroke="#000000"
+                     stroke-width="2"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                  />
+               </svg>
+            </div>
          </div>
          <div class="header__content-section">
             <div class="header__background-image">
@@ -73,16 +340,14 @@
             </div>
             <div class="header__content container">
                <div class="header-picture">
-                  <img src="./images/img/png/project_A1.png" alt="engineer project paper hvac" />
+                  <!-- <img src="./images/img/png/project_A1.png" alt="engineer project paper hvac" /> -->
+                  <img src="./images/img/png/project_13.png" alt="engineer project paper hvac" />
                </div>
-               <p class="header__title heading">
-                  Проектування та Монтаж Інженерних Систем <br />
-                  в Києві та Україні
-               </p>
+               <p class="header__title heading">Проектування Інженерних Мереж в Києві та Україні</p>
                <div class="header__description">
                   <span>
                      Компанія АРГО-ІНЖИНІРИНГ вивчає всі вимоги та деталі Вашого проекту, для створення найбільш
-                     оптимальнго плану дій.
+                     оптимального плану дій.
                   </span>
                   <ul>
                      <li>
@@ -163,46 +428,26 @@
                         </div>
                         <p>3D-моделювання з використанням новітніх технологій</p>
                      </li>
-                     <li>
-                        <div>
-                           <svg
-                              viewBox="0 -1.5 11 11"
-                              version="1.1"
-                              xmlns="http://www.w3.org/2000/svg"
-                              xmlns:xlink="http://www.w3.org/1999/xlink"
-                              fill="#000000"
-                           >
-                              <g stroke-width="0"></g>
-                              <g stroke-linecap="round" stroke-linejoin="round"></g>
-                              <g>
-                                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <g transform="translate(-304.000000, -366.000000)" fill="#000000">
-                                       <g transform="translate(56.000000, 160.000000)">
-                                          <polygon
-                                             points="259 207.6 252.2317 214 252.2306 213.999 252.2306 214 248 210 249.6918 208.4 252.2306 210.8 257.3082 206"
-                                          ></polygon>
-                                       </g>
-                                    </g>
-                                 </g>
-                              </g>
-                           </svg>
-                        </div>
-                        <p>Послуги монтажу та супровід експлуатації</p>
-                     </li>
                   </ul>
                </div>
-               <button class="cta-button">Детальніше</button>
+               <div class="header-buttons">
+                  <a href="#services" class="cta-button outlined">Детальніше</a>
+                  <button class="cta-button">Замовити проект</button>
+               </div>
             </div>
          </div>
       </header>
 
       <div id="services" class="services">
          <div class="services__content container">
+            <!-- <img class="image-back start" src="./images/background/header-icon17.png" alt=""> -->
+            <!-- <img class="image-back end" src="./images/background/header-icon17.png" alt=""> -->
             <p class="section-title">Які системи ми проектуємо?</p>
             <p class="section-subtitle">
-               Сучасні інженерні системи, зокрема <strong> вентиляція, опалення та кондиціонування (ОВіК)</strong> ,
-               відіграють ключову роль у забезпеченні оптимальних умов життєдіяльності будь-якого побутового або
-               комерційного приміщення. Вони є необхідним елементом промислової сфери, та визначають якість,
+               Сучасні інженерні системи, зокрема
+               <strong> вентиляція, кондиціонування та опалення <span hidden> (ОВіК)</span></strong> , відіграють
+               ключову роль у забезпеченні оптимальних умов життєдіяльності будь-якого побутового і комерційного
+               приміщення. Вони є необхідним елементом промислової сфери, та визначають якість,
                <strong> ефективність і безпеку виробничих процесів</strong>.
             </p>
             <p class="section-subtitle">
@@ -216,15 +461,29 @@
                         <img src="./images/pictures/ventilation/11.jpg" alt="вентиляційна система, повітропроводи" />
                      </div>
                      <div class="services__text-content">
-                        <h2 class="services__title">
-                           <span hidden>Проект </span>вентиляці<span hidden>ї </span><span>я</span>
-                        </h2>
+                        <h2 class="services__title">Вентиляція</h2>
                         <p class="services__description">
                            Проектування припливних та витяжних вентиляційних систем. Рекуперація тепла, осушення,
                            зволоження, димовидалення.
                         </p>
                      </div>
-                     <button class="services-btn">Більше</button>
+                     <button class="services-btn text-button">Більше</button>
+                     <div class="service-story">
+                        <h3 class="service-story__title">Проект системи вентиляції</h3>
+                        <p>До послуги проектування входить:</p>
+                        <ol>
+                           <li>Обчислення потужності системи</li>
+                           <li>Розробка системи розподілу повітря та охолодження</li>
+                           <li>Оптимізація системи</li>
+                           <li>Виправлення можливих дефектів та оптимізація роботи системи.</li>
+                           <li>Аналіз енергоефективності та робочих параметрів.</li>
+                           <li>Підготовка технічного креслення та документації</li>
+                           <li>Специфікація обладнання та вартісно-фінансовий розрахунок</li>
+                        </ol>
+                        <div class="image">
+                           <img src="./images/logo/top-triangle.png" alt="argo-e colors" />
+                        </div>
+                     </div>
                   </li>
 
                   <li class="services__card animated">
@@ -235,35 +494,73 @@
                         />
                      </div>
                      <div class="services__text-content">
-                        <h2 class="services__title"><span hidden>Проект </span>кондиціонування</h2>
+                        <h2 class="services__title">Кондиціонування</h2>
                         <p class="services__description">
-                           Побутові і промислові системи кондиціонування. VRF мульти- зональні кондиціонери,
+                           Побутові і промислові системи кондиціонування. VRF мультизональні кондиціонери,
                            чилер-фанкойл, спліт системи.
                         </p>
                      </div>
-                     <button class="services-btn">Більше</button>
+                     <button class="services-btn text-button">Більше</button>
+                     <div class="service-story">
+                        <h3 class="service-story__title">Проект системи кондиціонування</h3>
+                        <p>До послуги проектування входить:</p>
+                        <ol>
+                           <li>Оцінка теплових навантажень в приміщеннях</li>
+                           <li>Розрахунок теплопритоків від сонячної радіації</li>
+                           <li>Визначення потреби в охолодженні (та обігріві) приміщення</li>
+                           <li>Аналіз теплових втрат</li>
+                           <li>Визначення типу та кількості кондиціонерів</li>
+                           <li>Врахування енергоефективності та технічних характеристик</li>
+                           <li>Розробка технічних креслень та ескізів</li>
+                           <li>Техніко-комерційний розрахунок</li>
+                        </ol>
+                        <div class="image">
+                           <img src="./images/logo/top-triangle.png" alt="argo-e colors" />
+                        </div>
+                     </div>
                   </li>
 
                   <li class="services__card animated">
                      <div class="services__image">
-                        <img src="./images/pictures/heating/2.jpg" alt="гребінка, колектор систем тепла підлога" />
+                        <img
+                           src="./images/pictures/heating/Central_Heating.jpg"
+                           alt="система централізованого опалення"
+                        />
                      </div>
                      <div class="services__text-content">
-                        <h2 class="services__title"><span hidden>Проект </span>опалення</h2>
+                        <h2 class="services__title">Опалення</h2>
                         <p class="services__description">
                            Проект системи опалення офісу, виробничого цеху, приватного будинку. Сучасні котельні на базі
                            теплового насосу або котла.
                         </p>
                      </div>
-                     <button class="services-btn">Більше</button>
+                     <button class="services-btn text-button">Більше</button>
+                     <div class="service-story">
+                        <h3 class="service-story__title">Проект системи опалення</h3>
+                        <p>До послуги проектування входить:</p>
+                        <ol>
+                           <li>Розрахунок теплових втрат будівлі</li>
+                           <li>Аналіз теплових потреб та обсягу тепла, кВт</li>
+                           <li>
+                              Вибір оптимального опалювального обладнання (радіатори, підлогове опалення, конвектори).
+                           </li>
+                           <li>Проектування системи розподілу тепла та регулювання температури</li>
+                           <li>Розробка технічних креслень опалювальної системи.</li>
+                           <li>Специфікація необхідного обладнання та матеріалів.</li>
+                           <li>Розрахунок вартості проекту</li>
+                        </ol>
+                        <div class="image">
+                           <img src="./images/logo/top-triangle.png" alt="argo-e colors" />
+                        </div>
+                     </div>
                   </li>
 
-                  <li class="services__card hidden">
+                  <li class="services__card animated hidden">
                      <div class="services__image">
-                        <!-- <img
+                        <img
                            src="./images/pictures/heat_supply/heat-supply-small.jpg"
                            alt="Системи теплопостачання, котельня"
-                        /> -->
+                        />
                      </div>
                      <h2 class="services__title">Теплопостачання</h2>
                      <p class="services__description">
@@ -272,34 +569,34 @@
                      </p>
                   </li>
 
-                  <li class="services__card hidden">
+                  <li class="services__card animated hidden">
                      <div class="services__image">
-                        <!-- <img
+                        <img
                            src="./images/pictures/electricity/electricity-project-small.jpg"
                            alt="Автоматика, електрика, автоматизовані системи управління системами вентиляції"
-                        /> -->
+                        />
                      </div>
                      <h2 class="services__title">Електротехнічне <br />рішення</h2>
                      <p class="services__description">Проект автоматизованих систем управління та безпеки.</p>
                   </li>
 
-                  <li class="services__card hidden">
+                  <li class="services__card animated hidden">
                      <div class="services__image">
-                        <!-- <img
+                        <img
                            src="./images/pictures/water_supply/water-supply-small.jpg"
                            alt="Трубопроводи, система водопостачання"
-                        /> -->
+                        />
                      </div>
                      <h2 class="services__title">Водо- <br />постачання</h2>
                      <p class="services__description">Проектування системи водопостачання та водовідведення.</p>
                   </li>
 
-                  <li class="services__card hidden">
+                  <li class="services__card animated hidden">
                      <div class="services__image">
-                        <!-- <img
+                        <img
                            src="./images/pictures/cool_supply/cooling-commercial-small.jpg"
                            alt="Промисловий кондиціонер. Холодопостачання"
-                        /> -->
+                        />
                      </div>
                      <h2 class="services__title">Холодо-постачання</h2>
                      <p class="services__description">
@@ -307,12 +604,12 @@
                      </p>
                   </li>
 
-                  <li class="services__card hidden">
+                  <li class="services__card animated hidden">
                      <div class="services__image">
-                        <!-- <img
+                        <img
                            src="./images/pictures/drainage/drainage-small.jpg"
                            alt="Дренажні трубопроводи, каналізація, системв водовідведення"
-                        /> -->
+                        />
                      </div>
                      <h2 class="services__title">Каналізація <br />та дренаж</h2>
                      <p class="services__description">Системи водовідведення. Каналізація та дренаж.</p>
@@ -350,10 +647,12 @@
                   <strong> комфорт та екологічність</strong> Вашого простору
                </p>
                <p class="description">
-                  Ми, Товариство з обмеженою відповідністю <b><q class="nowrap">АРГО-ІНЖИНІРИНГ</q></b> - з 2016 року
-                  провідний постачальник послуг у сфері <abbr>ОВіК</abbr>
-                  <span>(опалення, вентиляції і кондиціонування повітря)</span> на території України.
+                  Ми, Товариство з обмеженою відповідністю
+                  <q class="nowrap bold">АРГО-ІНЖИНІРИНГ</q> - з 2016 року провідний постачальник послуг у сфері
+                  <strong>проектування систем вентиляції, кондиціонування і опалення </strong>на території України.
                </p>
+
+               <!-- <abbr>ОВіК</abbr> -->
                <p class="label"><b>Гарантії надійного партнера </b>і репутацію професійної компанії підтверджують:</p>
                <ul>
                   <li>
@@ -387,35 +686,390 @@
                         alt="планування роботи в офісі за столом"
                      /> -->
 
-                     <svg
+                     <!-- <svg
                         fill="#000000"
+                        height="80px"
+                        width="80px"
                         version="1.1"
-                        id="Capa_1"
+                        id="Layer_1"
                         xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink"
-                        viewBox="0 0 502.298 502.298"
+                        viewBox="0 0 512.002 512.002"
                         xml:space="preserve"
                      >
-                        <g stroke-width="0"></g>
-                        <g stroke-linecap="round" stroke-linejoin="round"></g>
                         <g>
                            <g>
                               <path
-                                 d="M500.824,154.513l-0.011-0.005c-0.005-0.005-0.005-0.005-0.005-0.005l-18.364-18.506v-1.223h-1.209L368.541,21.236 l-0.312-2.552c-0.313-2.55-2.47-4.468-5.028-4.468h-1.633l-1.39-1.401l-2.198,1.401h-3.591c-2.614,0-4.794,1.984-5.038,4.58 l-0.106,0.974L141.46,152.01H35.738L0,198.04h55.954v119.166c-3.966,1.658-6.758,5.565-6.758,10.141 c0,2.26,0.695,4.361,1.866,6.106c-0.936,0.603-1.877,1.401-2.892,2.298c-0.919,0.757-1.349,1.412-1.948,2.124l-0.843,1.104 l-0.418,0.569l-0.219,0.298l-0.364,0.785c-0.465,1.067-0.892,2.212-1.335,3.384c-0.362,1.186-0.465,2.472-0.675,3.779 c-0.479,5.237,1.338,11.103,5.204,15.37c1.754,2.081,5.16,4.411,6.758,4.937l0.738,0.35l0.378,0.171l0.184,0.093l0.47,0.207 l0.027,0.012l0.064,0.021l0.122,0.022l2.006,0.486c1.325,0.345,2.64,0.58,3.973,0.498c2.63,0.154,5.133-0.465,7.313-1.214 c1.07-0.493,2.106-0.942,3.048-1.445c0.851-0.656,1.675-1.286,2.465-1.905c1.513-1.247,2.55-2.708,3.401-4.011 c0.747-1.434,1.39-2.653,1.587-3.628c0.381-1.985,0.514-3.173,0.514-3.173s-0.884,0.799-2.29,2.255 c-0.701,0.754-1.772,1.22-2.657,1.944c-1.058,0.572-2.309,1.24-3.62,1.71c-0.667,0.199-1.368,0.4-2.09,0.613 c-0.764,0.061-1.502,0.175-2.246,0.273c-1.519,0.055-3.073,0.077-4.581-0.339c-0.777-0.088-1.518-0.356-2.241-0.679l-0.974-0.355 v-0.006l-0.358-0.196l-0.711-0.405c-0.941-0.523-2.08-1.139-2.293-1.555c-0.443-0.476-0.968-0.695-1.438-1.438 c-1.09-1.134-1.919-2.522-2.551-3.951c-0.645-1.45-1.02-2.977-1.209-4.524c-0.014-0.772-0.112-1.549-0.101-2.32 c0.107-0.756,0.213-1.511,0.268-2.282l0.011-0.141l0.006-0.078l0.005-0.033c0.164-0.372-0.236,0.481-0.189,0.389l0.011-0.028 l0.117-0.333l0.247-0.667l0.46-1.303c0.285-0.859,0.536-1.827,0.872-2.209c0.476-0.714,0.854-1.522,1.33-2.278 c1.685,1.051,3.653,1.686,5.782,1.686c6.056,0,10.976-4.913,10.976-10.977c0-5.776-4.471-10.451-10.137-10.89V198.035h238.98 c5.696,12.276,18.11,20.81,32.534,20.81h5.075v246.986h-40.961v23.651h128.368v-23.651h-43.082V218.845h17.741v-19.8h34.627v31.166 h16.897v-31.166h14.353v31.166h16.893v-31.166h14.787c2.802,0,5.066-2.265,5.066-5.067v-35.894 C502.293,156.693,501.729,155.433,500.824,154.513z M358.854,25.866l0.038,0.039l4.197,35.056c-0.048,0-0.099-0.03-0.142-0.03 h-7.451L358.854,25.866z M354.52,71.062h8.428c0.472,0,0.883-0.145,1.318-0.268l2.927,24.499H352.19L354.52,71.062z M20.698,187.903l17.175-22.12l17.129,22.12H20.698z M47.875,162.142h51.832l-36.475,19.836L47.875,162.142z M73.555,187.903 l35.086-19.078l14.777,19.078H73.555z M116.287,162.142h58.166l-42.657,20.03L116.287,162.142z M143.438,187.903l41.506-19.494 l19.494,19.494H143.438z M193.005,162.142h45.869l-26.207,19.655L193.005,162.142z M221.415,187.903l30.936-23.201l24.489,23.201 H221.415z M291.581,187.903h-1.789c-0.126-1.138-0.584-2.241-1.483-3.091l-23.93-22.67h27.202V187.903z M296.647,131.438v20.572 H160.344L348.03,32.564l-6.009,62.729h-9.483v0.257C312.714,95.55,296.647,111.621,296.647,131.438z M371.811,463.293h-20.175 l20.175-21.286V463.293z M347.74,452.689v-46.53l19.475,25.965L347.74,452.689z M371.811,421.366l-21.689-28.926l21.689-21.689 V421.366z M347.74,380.486v-49.343l15.765,33.565L347.74,380.486z M371.811,358.547l-22.067-46.981l22.067-17.084V358.547z M347.74,300.293v-40.121l15.354,28.235L347.74,300.293z M371.811,283.22l-21.865-40.218l21.865-16.929V283.22z M347.74,231.89 v-13.039h16.837L347.74,231.89z M385.907,176.625h-42.024c-19.73,0-35.732-16-35.732-35.731c0-27.155,15.983-35.722,35.71-35.735 h31.956h10.091V176.625z M434.307,188.913h-34.621v-25.759h34.621V188.913z M465.552,188.913h-14.353v-25.759h14.353V188.913z M465.552,134.773v18.238h-14.353v-18.238h-16.897v18.238h-34.627V95.298h-22.271l-6.905-57.691l96.455,97.171h-1.401V134.773z M482.44,150.385l2.619,2.632h-2.619V150.385z M492.162,188.913h-9.718v-25.759h9.718V188.913z"
-                              ></path>
+                                 d="M505.327,498.2L18.104,10.977c-2.311-2.311-5.791-3.003-8.81-1.752c-3.021,1.25-4.991,4.2-4.991,7.469v487.223
+                              c0,4.466,3.62,8.085,8.084,8.085h64.676h64.676h64.676h64.676h64.676h64.676h99.169c3.27,0,6.217-1.969,7.469-4.991
+                              C508.331,503.989,507.639,500.513,505.327,498.2z M408.526,495.833v-0.001v-26.409c0-4.466-3.62-8.084-8.084-8.084
+                              c-4.465,0-8.084,3.619-8.084,8.084v26.409H343.85v-26.409c0-4.466-3.62-8.084-8.084-8.084c-4.465,0-8.084,3.619-8.084,8.084
+                              v26.409h-48.507v-26.409c0-4.466-3.62-8.084-8.084-8.084c-4.465,0-8.084,3.619-8.084,8.084v26.409h-48.507v-26.409
+                              c0-4.466-3.62-8.084-8.084-8.084s-8.084,3.619-8.084,8.084v26.409h-48.507v-26.409c0-4.466-3.62-8.084-8.084-8.084
+                              s-8.084,3.619-8.084,8.084v26.409H85.148v-26.409c0-4.466-3.62-8.084-8.084-8.084s-8.084,3.619-8.084,8.084v26.409H20.472V36.211
+                              l459.621,459.621H408.526z"
+                              />
+                           </g>
+                        </g>
+                        <g>
+                           <g>
+                              <path
+                                 d="M350.096,433.514L82.77,167.107c-2.313-2.306-5.79-2.993-8.807-1.74c-3.017,1.253-4.984,4.2-4.984,7.467v266.407
+                              c0,4.466,3.62,8.084,8.084,8.084h267.326c3.273,0,6.222-1.973,7.472-4.997C353.111,439.304,352.414,435.824,350.096,433.514z
+                               M85.148,431.156V192.304l239.676,238.852H85.148z"
+                              />
+                           </g>
+                        </g>
+                        <g>
+                           <g>
+                              <path
+                                 d="M181.949,217.939L61.221,97.211c-3.157-3.156-8.276-3.156-11.432,0c-3.157,3.158-3.157,8.276,0,11.434l120.728,120.728
+                              c1.578,1.578,3.648,2.367,5.716,2.367c2.068,0,4.138-0.789,5.716-2.367C185.106,226.214,185.106,221.096,181.949,217.939z"
+                              />
+                           </g>
+                        </g>
+                        <g>
+                           <g>
+                              <path
+                                 d="M225.066,265.368l-21.559-21.559c-3.157-3.156-8.276-3.156-11.432,0c-3.157,3.158-3.157,8.276,0,11.434l21.559,21.559
+                              c1.578,1.578,3.648,2.367,5.716,2.367s4.138-0.789,5.716-2.367C228.223,273.643,228.223,268.525,225.066,265.368z"
+                              />
+                           </g>
+                        </g>
+                        <g>
+                           <g>
+                              <path
+                                 d="M505.33,275.584l-60.979-60.974L257.784,28.043c-0.004-0.004-0.01-0.009-0.014-0.014l-0.023-0.023
+                              c-0.038-0.038-0.079-0.068-0.116-0.105c-0.153-0.147-0.308-0.292-0.472-0.427c-0.072-0.06-0.15-0.112-0.224-0.169
+                              c-0.136-0.103-0.271-0.208-0.414-0.304c-0.1-0.067-0.205-0.125-0.307-0.188c-0.122-0.074-0.243-0.151-0.37-0.219
+                              c-0.126-0.068-0.255-0.125-0.384-0.184c-0.11-0.052-0.217-0.107-0.33-0.153c-0.156-0.065-0.316-0.119-0.475-0.172
+                              c-0.092-0.031-0.18-0.067-0.273-0.096c-0.196-0.059-0.396-0.107-0.596-0.151c-0.058-0.013-0.113-0.031-0.172-0.043l-0.036-0.008
+                              c-0.003-0.001-0.006-0.001-0.01-0.002L147.01,4.475c-0.298-0.064-0.6-0.111-0.907-0.14c-0.043-0.004-0.085-0.004-0.127-0.008
+                              c-0.069-0.005-0.139-0.006-0.208-0.011c-0.148-0.008-0.294-0.021-0.443-0.019c-0.099,0-0.197,0.008-0.296,0.011
+                              c-0.08,0.003-0.16,0.008-0.239,0.013c-0.042,0.003-0.084,0.003-0.125,0.006c-0.039,0.003-0.078,0.002-0.117,0.006
+                              c-0.166,0.016-0.329,0.043-0.493,0.069c-0.059,0.01-0.12,0.017-0.179,0.028c-0.617,0.112-1.214,0.293-1.78,0.54
+                              c-0.047,0.02-0.094,0.045-0.141,0.067c-0.163,0.074-0.326,0.149-0.483,0.234c-0.067,0.037-0.129,0.079-0.195,0.116
+                              c-0.068,0.039-0.135,0.081-0.202,0.122c-0.089,0.055-0.182,0.107-0.269,0.166c-0.095,0.064-0.183,0.135-0.275,0.203
+                              c-0.019,0.014-0.038,0.028-0.056,0.042c-0.053,0.04-0.108,0.077-0.16,0.117c-0.046,0.037-0.094,0.07-0.138,0.108
+                              c-0.076,0.061-0.143,0.129-0.217,0.194c-0.124,0.11-0.25,0.22-0.368,0.337c-0.048,0.048-0.092,0.101-0.138,0.15
+                              c-0.134,0.141-0.266,0.285-0.39,0.435c-0.025,0.03-0.045,0.063-0.07,0.093c-0.001,0.001-0.001,0.002-0.002,0.003
+                              c-0.043,0.055-0.084,0.111-0.126,0.167c-0.092,0.121-0.183,0.24-0.268,0.368c-0.01,0.014-0.017,0.029-0.027,0.044
+                              C138.53,8,138.493,8.067,138.453,8.13c-0.04,0.065-0.08,0.128-0.117,0.193c-0.045,0.079-0.094,0.155-0.137,0.236
+                              c-0.013,0.024-0.023,0.049-0.034,0.072c-0.064,0.122-0.123,0.248-0.18,0.374c-0.023,0.049-0.049,0.096-0.07,0.144
+                              c-0.015,0.036-0.033,0.07-0.049,0.106c-0.107,0.253-0.198,0.512-0.279,0.776c-0.003,0.012-0.005,0.025-0.01,0.037
+                              c-0.083,0.277-0.149,0.562-0.202,0.848c-0.014,0.074-0.023,0.151-0.034,0.225c-0.023,0.15-0.05,0.298-0.064,0.45
+                              c-0.008,0.082-0.008,0.162-0.013,0.244c-0.006,0.088-0.011,0.176-0.014,0.264c-0.003,0.094-0.011,0.187-0.011,0.281
+                              c0,0.144,0.012,0.287,0.019,0.43c0.004,0.077,0.005,0.152,0.012,0.229c0.003,0.043,0.004,0.086,0.008,0.129
+                              c0.029,0.294,0.072,0.584,0.133,0.871l21.316,106.582c0.002,0.01,0.004,0.019,0.005,0.029l0.005,0.025
+                              c0.03,0.153,0.072,0.301,0.111,0.451c0.044,0.17,0.094,0.338,0.149,0.505c0.051,0.154,0.101,0.309,0.161,0.458
+                              c0.036,0.088,0.078,0.174,0.116,0.261c0.064,0.144,0.127,0.288,0.198,0.427c0.043,0.085,0.093,0.167,0.139,0.251
+                              c0.078,0.14,0.157,0.278,0.244,0.412c0.05,0.078,0.102,0.154,0.155,0.231c0.095,0.138,0.194,0.273,0.297,0.404
+                              c0.054,0.069,0.108,0.137,0.164,0.204c0.117,0.14,0.24,0.275,0.368,0.406c0.039,0.04,0.071,0.083,0.11,0.122l186.603,186.602
+                              l60.977,60.976c1.578,1.578,3.648,2.367,5.716,2.367s4.138-0.789,5.716-2.367l85.367-85.366c1.517-1.517,2.368-3.573,2.368-5.717
+                              S506.847,277.102,505.33,275.584z M252.031,45.157l175.169,175.169l-16.006,16.006L236.025,61.163L252.031,45.157z
+                               M399.761,247.766l-19.055,19.055L205.536,91.651l9.517-9.517c0.003-0.003,0.008-0.006,0.011-0.01l9.528-9.528L399.761,247.766z
+                               M159.433,41.716l-3.806-19.029l5.32,1.064l13.71,2.742L159.433,41.716z M163.245,60.772l30.468-30.468l41.921,8.384
+                              L203.631,70.69c-0.003,0.003-0.006,0.008-0.01,0.011l-15.224,15.224c-0.003,0.003-0.008,0.006-0.011,0.01l-16.758,16.758
+                              L163.245,60.772z M178.097,119.092l16.006-16.006l175.17,175.168l-16.006,16.006L178.097,119.092z M414.243,355.238
+                              l-49.544-49.544l21.722-21.722l52.211-52.211l49.544,49.544L414.243,355.238z"
+                              />
+                           </g>
+                        </g>
+                        <g>
+                           <g>
+                              <path
+                                 d="M462.21,278.303l-21.558-21.559c-3.156-3.156-8.275-3.156-11.433,0c-3.157,3.158-3.157,8.276,0,11.434l21.559,21.559
+                              c1.578,1.578,3.648,2.367,5.716,2.367s4.138-0.789,5.716-2.367C465.367,286.578,465.367,281.46,462.21,278.303z"
+                              />
+                           </g>
+                        </g>
+                        <g>
+                           <g>
+                              <path
+                                 d="M505.326,100.133L444.35,39.157l-30.488-30.49c-11.557-11.556-30.363-11.555-41.922,0l-27.44,27.44
+                              c-11.558,11.559-11.558,30.364,0,41.923l30.489,30.488l60.976,60.977c1.516,1.516,3.572,2.367,5.716,2.367
+                              c2.144,0,4.201-0.852,5.716-2.367l57.928-57.928C508.483,108.409,508.483,103.291,505.326,100.133z M355.935,66.595
+                              c-5.254-5.253-5.254-13.801,0-19.053l27.439-27.44c5.254-5.254,13.802-5.254,19.056,0l24.772,24.772l-46.494,46.494
+                              L355.935,66.595z M441.683,152.345L392.14,102.8l46.494-46.493l49.544,49.543L441.683,152.345z"
+                              />
+                           </g>
+                        </g>
+                        <g>
+                           <g>
+                              <path
+                                 d="M468.741,100.133l-24.39-24.391c-3.157-3.156-8.276-3.156-11.432,0c-3.157,3.158-3.157,8.276,0,11.434l24.39,24.391
+                              c1.578,1.578,3.648,2.367,5.716,2.367s4.138-0.789,5.716-2.367C471.898,108.409,471.898,103.291,468.741,100.133z"
+                              />
+                           </g>
+                        </g>
+                     </svg> -->
+
+                     <!-- <svg fill="#000000" width="800px" height="800px" viewBox="0 0 54.532 54.532" xmlns="http://www.w3.org/2000/svg">
+                        <path id="designing_ruller" data-name="designing ruller" d="M176.258,251l.657-.652.656.655,1.361,1.359.66.657-.659.66-4.332,4.333,2.123,2.123,1.945-1.945.659-.659.656.659,1.362,1.357.659.658-.658.659-1.949,1.947,2.126,2.126,1.944-1.948.657-.657.659.657,1.361,1.36.66.656-.66.659-1.945,1.947,1.635,1.634,10.177-10.177L180.835,243.89a1.3,1.3,0,0,0-1.824,0l-8.352,8.352a1.3,1.3,0,0,0,0,1.825l1.266,1.264,4.167-4.168Zm37.61,13.426-9.961-9.96-6.794,6.794-10.621,10.62-10.942,10.94.482.329,1.8,1.228.188.128.108.2.1.178,1.82,3.384,3.562,1.917.2.108.128.188,1.166,1.713.4.591,10.946-10.945,12.152-12.152Zm10.574,23.072-15.176-15.178L199.087,282.5l1.635,1.634,1.946-1.946.658-.661.659.662,1.359,1.362.657.657-.657.658-1.946,1.945,2.124,2.124,1.947-1.947.659-.657.658.657,1.358,1.36.659.658-.659.658-1.947,1.946,2.124,2.124,4.167-4.169.169-.167.658-.653.656.656,1.359,1.359.657.66-.657.658L213,296.408l1.265,1.264a1.3,1.3,0,0,0,1.826,0l4.176-4.175,4.175-4.179a1.3,1.3,0,0,0,0-1.823Zm-45.867,2.62-.246-.132-.132-.245-.37-.687-1.584-2.947-.977-.664-.672-.459-.849,5.269,4.338,4.335,5.26-.846-1.137-1.669ZM222.05,256.24a1.3,1.3,0,0,0,0-1.823l-8.138-8.136a1.3,1.3,0,0,0-1.823,0l-4.564,4.565,9.96,9.961Zm-6.211,6.212-9.961-9.96-.325.325,9.961,9.96ZM173.122,294.12l-.207,1.3,2.33-.373-1.955-1.957Z" transform="translate(-170.284 -243.515)"/>
+                      </svg> -->
+
+                     <svg
+                        version="1.1"
+                        id="DESIGN"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="80px"
+                        height="80px"
+                        viewBox="0 0 1800 1800"
+                        enable-background="new 0 0 1800 1800"
+                        xml:space="preserve"
+                     >
+                        <g id="Layer">
+                           <g>
+                              <path
+                                 fill="#333333"
+                                 d="M1541.606,1540.146l0.009-0.008c35.598-35.594,35.598-93.52,0-129.121
+                           c-17.24-17.236-40.178-26.745-64.569-26.745c-24.378,0-47.314,9.509-64.564,26.763c-35.588,35.584-35.588,93.51,0.009,129.104
+                           C1448.096,1575.73,1506.014,1575.73,1541.606,1540.146z M1440.885,1511.743c-9.656-9.655-14.975-22.498-14.975-36.165
+                           c0-13.659,5.318-26.511,14.975-36.167c9.665-9.655,22.512-14.979,36.175-14.979c13.659,0,26.497,5.323,36.161,14.979
+                           c19.938,19.945,19.938,52.387-0.008,72.332C1493.271,1531.689,1460.831,1531.681,1440.885,1511.743z"
+                              />
+                              <path
+                                 fill="#333333"
+                                 d="M1700.934,402.736c0.021-0.026,0.047-0.043,0.068-0.065c0.044-0.043,0.083-0.091,0.127-0.134l5.504-5.505
+                           l-0.138-0.139c81.836-87.814,80.038-225.814-5.507-311.356c-42.353-42.357-98.664-65.685-158.565-65.685
+                           c-57.228,0-111.154,21.339-152.792,60.18l-0.134-0.134l-5.511,5.507c-0.043,0.046-0.09,0.085-0.134,0.131
+                           c-0.021,0.021-0.039,0.045-0.061,0.069L66.371,1403.02l0.513,0.513c-7.364,4.749-12.699,12.548-13.98,21.907L9.578,1741.903
+                           c-1.319,9.647,1.95,19.347,8.831,26.232c5.875,5.87,13.807,9.108,22.004,9.108c1.402,0,2.813-0.095,4.224-0.286l316.451-43.338
+                           c9.365-1.276,17.163-6.617,21.912-13.98l0.512,0.513L1700.934,402.736z M1542.423,82.094c43.272,0,83.954,16.852,114.551,47.452
+                           c55.643,55.638,62.276,142.02,19.897,204.983L1451.973,109.64C1478.482,91.724,1509.717,82.094,1542.423,82.094z
+                            M1389.497,167.919l229.113,229.112L383.512,1632.129l-86.195-86.19l991.423-991.409l-59.351-59.342l-991.41,991.418
+                           l-83.585-83.586L1389.497,167.919z M76.804,1709.731l35.68-260.604l224.915,224.916L76.804,1709.731z"
+                              />
+                              <path
+                                 fill="#333333"
+                                 d="M506.941,804.479l56.789-56.789l-454.446-454.45l185.432-185.437l87.924,87.932l-63.792,63.783
+                           l50.362,50.359l63.792-63.779l51.262,51.258l-63.792,63.788l50.363,50.354l63.797-63.779l51.257,51.267l-94.375,94.353
+                           l50.376,50.363l94.362-94.362l62.502,62.498l-63.792,63.801l50.363,50.354l63.792-63.792l0.043,0.047l56.789-56.789
+                           L323.106,22.622c-15.682-15.686-41.102-15.686-56.784,0L24.102,264.845c-15.687,15.683-15.687,41.107,0,56.789L506.941,804.479z"
+                              />
+                              <path
+                                 fill="#333333"
+                                 d="M1778.944,1478.287c-0.726-0.729-1.478-1.424-2.241-2.085l-505.282-505.273l-151.159,151.159l50.259,50.26
+                           l94.371-94.37l428.79,428.782l-185.441,185.432l-479.045-479.041l-56.789,56.798l507.437,507.427
+                           c15.682,15.69,41.102,15.69,56.788,0l242.234-242.213c0.021-0.034,0.048-0.052,0.079-0.086
+                           C1794.63,1519.402,1794.63,1493.969,1778.944,1478.287z"
+                              />
                            </g>
                         </g>
                      </svg>
+
+                     <!-- <svg
+                        version="1.1"
+                        id="Uploaded to svgrepo.com"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 32 32"
+                        xml:space="preserve"
+                        fill="#000000"
+                     >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                           <style type="text/css">
+                              .isometric_vijf {
+                                 fill: #f29227;
+                              }
+                              .isometric_zes {
+                                 fill: #f28103;
+                              }
+                              .isometric_zeven {
+                                 fill: #ff7344;
+                              }
+                              .isometric_acht {
+                                 fill: #f05a28;
+                              }
+                              .isometric_negen {
+                                 fill: #be1e2d;
+                              }
+                              .isometric_tien {
+                                 fill: #7bd6c4;
+                              }
+                              .isometric_elf {
+                                 fill: #72c0ab;
+                              }
+                              .isometric_twaalf {
+                                 fill: #569080;
+                              }
+                              .st0 {
+                                 fill: #225b49;
+                              }
+                              .st1 {
+                                 fill: #f8f7c5;
+                              }
+                              .st2 {
+                                 fill: #be1e2d;
+                              }
+                              .st3 {
+                                 fill: #ad9a74;
+                              }
+                              .st4 {
+                                 fill: #f2d76c;
+                              }
+                              .st5 {
+                                 fill: #f5df89;
+                              }
+                              .st6 {
+                                 fill: #7bd6c4;
+                              }
+                              .st7 {
+                                 fill: #80ccbe;
+                              }
+                           </style>
+                           <g>
+                              <line class="isometric_twaalf" x1="10" y1="20.356" x2="16" y2="16.923"></line>
+                              <polygon
+                                 class="isometric_acht"
+                                 points="4,16.915 10,13.466 16,16.923 10,20.356 "
+                              ></polygon>
+                              <polygon class="isometric_negen" points="10,28 16,24.536 16,16.923 10,20.356 "></polygon>
+                              <line class="isometric_twaalf" x1="10" y1="20.356" x2="16" y2="16.923"></line>
+                              <polygon
+                                 class="isometric_acht"
+                                 points="4,16.915 10,13.466 16,16.923 10,20.356 "
+                              ></polygon>
+                              <polygon class="isometric_negen" points="10,28 16,24.536 16,16.923 10,20.356 "></polygon>
+                              <polygon class="isometric_zeven" points="10,28 4,24.536 4,16.915 10,20.356 "></polygon>
+                              <line class="isometric_twaalf" x1="22" y1="20.379" x2="27.962" y2="16.915"></line>
+                              <polygon
+                                 class="isometric_zes"
+                                 points="16,16.923 21.962,13.456 27.962,16.915 22,20.379 "
+                              ></polygon>
+                              <polygon class="isometric_vijf" points="22,28 16,24.536 16,16.923 22,20.379 "></polygon>
+                              <polygon
+                                 class="isometric_acht"
+                                 points="22,28 27.962,24.536 27.962,16.915 22,20.379 "
+                              ></polygon>
+                              <line class="isometric_twaalf" x1="16" y1="9.323" x2="21.962" y2="5.865"></line>
+                              <polygon
+                                 class="isometric_elf"
+                                 points="10,5.865 16.037,2.406 21.962,5.865 16,9.323 "
+                              ></polygon>
+                              <polygon
+                                 class="isometric_twaalf"
+                                 points="16,16.923 21.962,13.456 21.962,5.865 16,9.323 "
+                              ></polygon>
+                              <polygon class="isometric_tien" points="16,16.923 10,13.466 10,5.865 16,9.323 "></polygon>
+                           </g>
+                        </g>
+                     </svg> -->
+
+                     <!-- <svg
+                        height="800px"
+                        width="800px"
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 512 512"
+                        xml:space="preserve"
+                     >
+                        <g>
+                           <path
+                              style="fill: #2ba5f7"
+                              d="M496.022,170.007c4.941,9.985,7.411,20.854,7.411,31.701c0,10.87-2.47,21.716-7.411,31.712h-36.458
+                           c4.941-9.996,7.411-20.843,7.411-31.712c0-10.847-2.47-21.716-7.411-31.701H496.022z"
+                           />
+                           <path
+                              style="fill: #2ba5f7"
+                              d="M427.392,460.222H237.819v-39.629V270.648l149.944,149.944L427.392,460.222z M269.991,428.05h79.729
+                           l-79.729-79.729V428.05L269.991,428.05z"
+                           />
+                        </g>
+                        <path
+                           style="fill: #f95428"
+                           d="M309.608,184.887c3.24,4.803,5.125,10.594,5.125,16.821c0,6.239-1.873,12.019-5.125,16.833
+                        l-25.106-16.833L309.608,184.887z"
+                        />
+                        <path
+                           style="fill: #f2f2f2"
+                           d="M331.796,170.019c4.366,10.111,6.561,20.9,6.561,31.689c0,10.801-2.195,21.59-6.561,31.701v0.011
+                        l-22.187-14.88c3.252-4.814,5.125-10.594,5.125-16.833c0-6.228-1.884-12.019-5.125-16.821l22.187-14.88V170.019z"
+                        />
+                        <g>
+                           <path
+                              style="fill: #f95428"
+                              d="M466.573,201.708h0.402c0,10.87-2.47,21.716-7.411,31.712h-19.108H331.795v-0.011
+                           c4.366-10.111,6.561-20.9,6.561-31.701L466.573,201.708L466.573,201.708z"
+                           />
+                           <path
+                              style="fill: #f95428"
+                              d="M338.356,201.708c0-10.789-2.195-21.578-6.561-31.689v-0.011h108.661h19.108
+                           c4.941,9.985,7.411,20.854,7.411,31.701h-0.402H338.356z"
+                           />
+                        </g>
+                        <path
+                           style="fill: #f2f2f2"
+                           d="M76.809,133.032v219.356H42.719c-18.832,0-34.102,15.27-34.102,34.102V98.93
+                        c0-4.699,0.954-9.192,2.677-13.271s4.228-7.756,7.308-10.847c6.17-6.17,14.696-9.985,24.118-9.985h34.091V133.032z"
+                        />
+                        <g>
+                           <polygon style="fill: #cccccc" points="349.72,428.05 269.991,428.05 269.991,348.321 	" />
+                           <path
+                              style="fill: #cccccc"
+                              d="M440.456,233.421v187.172h-52.693L237.819,270.648v149.944H76.809H42.719
+                           c-9.422,0-17.947-3.815-24.118-9.985c-6.17-6.17-9.985-14.696-9.985-24.117c0-18.832,15.27-34.102,34.102-34.102h34.091V133.033
+                           h69.308v36.963v41.019v41.019v41.019v36.193h53.428V133.032h240.911v36.975H331.795l-22.187,14.88l-25.106,16.821l25.106,16.833
+                           l22.187,14.88L440.456,233.421L440.456,233.421z"
+                           />
+                        </g>
+                        <polygon
+                           style="fill: #f7b239"
+                           points="146.117,128.988 146.117,87.969 146.117,51.775 199.546,51.775 199.546,133.032 
+                        199.546,329.247 146.117,329.247 146.117,293.054 146.117,252.034 146.117,211.015 146.117,169.996 146.117,133.032 "
+                        />
+                        <g>
+                           <path
+                              style="fill: #333333"
+                              d="M269.99,436.669h79.734c3.485,0,6.629-2.099,7.961-5.32c1.334-3.221,0.597-6.926-1.867-9.391
+                           l-79.734-79.734c-2.466-2.466-6.171-3.202-9.392-1.868c-3.221,1.334-5.32,4.477-5.32,7.961v79.734
+                           C261.372,432.811,265.229,436.669,269.99,436.669z M278.607,369.123l50.311,50.311h-50.311L278.607,369.123L278.607,369.123z"
+                           />
+                           <path
+                              style="fill: #333333"
+                              d="M503.749,166.189c-1.453-2.938-4.447-4.797-7.725-4.797h-46.949V133.03
+                           c0-4.759-3.857-8.618-8.617-8.618H208.16V51.776c0-4.759-3.857-8.617-8.618-8.617h-53.425c-4.76,0-8.617,3.858-8.617,8.617v72.637
+                           H85.428V64.827c0-4.759-3.857-8.617-8.617-8.617H42.72c-11.416,0-22.145,4.442-30.216,12.515C4.439,76.802,0,87.53,0.002,98.928
+                           v287.121C0.001,386.195,0,386.342,0,386.489c0,11.415,4.442,22.144,12.509,30.21c8.066,8.067,18.794,12.509,30.211,12.509H229.2
+                           v31.016c0,4.759,3.857,8.617,8.618,8.617h189.576c3.485,0,6.629-2.099,7.961-5.32c1.334-3.221,0.597-6.926-1.867-9.391
+                           l-24.923-24.923h31.893c4.76,0,8.618-3.858,8.618-8.617V242.033h46.949c3.278,0,6.271-1.859,7.725-4.797
+                           C514.751,214.992,514.751,188.433,503.749,166.189z M305.758,197.838c0.23,1.27,0.361,2.562,0.361,3.872
+                           c0,1.312-0.131,2.606-0.361,3.876l-5.778-3.874L305.758,197.838z M320.77,187.773l6.549-4.391c3.18,11.991,3.18,24.67,0,36.661
+                           l-6.549-4.391c1.701-4.413,2.583-9.124,2.583-13.941C323.354,196.897,322.47,192.188,320.77,187.773z M346.519,210.33H457.71
+                           c-0.674,4.933-1.931,9.792-3.771,14.468h-110.06C345.158,220.044,346.044,215.206,346.519,210.33z M457.71,193.095H346.519
+                           c-0.473-4.875-1.359-9.714-2.639-14.467h110.06C455.778,183.305,457.035,188.163,457.71,193.095z M190.925,60.394v260.235h-36.19
+                           v-18.957h12.063c4.76,0,8.617-3.858,8.617-8.617s-3.857-8.617-8.617-8.617h-12.063v-23.782h12.063c4.76,0,8.617-3.858,8.617-8.617
+                           s-3.857-8.617-8.617-8.617h-12.063v-23.782h12.063c4.76,0,8.617-3.858,8.617-8.617s-3.857-8.617-8.617-8.617h-12.063V178.62h12.063
+                           c4.76,0,8.617-3.858,8.617-8.618c0-4.759-3.857-8.617-8.617-8.617h-12.063v-23.782h12.063c4.76,0,8.617-3.858,8.617-8.617
+                           s-3.857-8.617-8.617-8.617h-12.063V96.585h12.063c4.76,0,8.617-3.858,8.617-8.618s-3.857-8.617-8.617-8.617h-12.063V60.394H190.925
+                           z M24.697,80.904c4.811-4.811,11.211-7.46,18.023-7.46h25.473v270.325H42.72c-9.542,0-18.363,3.145-25.483,8.452L17.235,98.928
+                           C17.235,92.126,19.887,85.722,24.697,80.904z M246.435,451.608V291.453L406.59,451.606H246.435V451.608z M431.84,411.973h-40.51
+                           L243.911,264.556c-2.466-2.465-6.172-3.203-9.392-1.868c-3.221,1.334-5.32,4.477-5.32,7.961v141.325H42.72
+                           c-6.812,0-13.212-2.65-18.023-7.46c-4.811-4.812-7.462-11.213-7.462-18.024c0,0,0,0,0-0.001l0.002-0.338
+                           c0.182-13.897,11.543-25.146,25.483-25.146h34.091c4.76,0,8.617-3.858,8.617-8.617V141.649H137.5v187.597
+                           c0,4.759,3.857,8.617,8.617,8.617h53.425c4.76,0,8.618-3.858,8.618-8.617V141.649h223.68v19.744H331.791
+                           c-1.709,0-3.379,0.508-4.799,1.46l-47.285,31.702c-2.386,1.601-3.818,4.285-3.818,7.157s1.432,5.558,3.818,7.157l47.285,31.703
+                           c1.419,0.951,3.09,1.46,4.799,1.46H431.84L431.84,411.973L431.84,411.973z M490.424,224.799h-18.256
+                           c4.486-15.019,4.486-31.153,0-46.17h18.256C496.228,193.396,496.228,210.029,490.424,224.799z"
+                           />
+                        </g>
+                     </svg> -->
                   </div>
                   <div>
                      <p>01 /</p>
-                     <p>більше 8 років досвіду роботи</p>
+                     <p>8 років досвіду проектування</p>
                      <p>
                         Наші інженери мають великий досвід роботи, всі ліцензії та сертифікати, необхідні для якісного
                         проектування і виконання монтажних робіт.
                      </p>
                   </div>
                </div>
+
                <div class="about__concepts-item">
                   <div class="icon animated">
                      <svg
@@ -460,10 +1114,91 @@
                            </g>
                         </g>
                      </svg>
+
+                     <!-- <svg
+                        width="800px"
+                        height="800px"
+                        viewBox="0 0 48 48"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                     >
+                        <path
+                           fill-rule="evenodd"
+                           clip-rule="evenodd"
+                           d="M18.4164 31H29.5837C30.0096 30.0175 30.5783 29.0337 31.1077 28.1972C31.9501 26.8663 32.8498 25.6684 33.3793 25.0221C34.7882 23.2987 35.668 21.225 35.9229 19.0407C36.1778 16.8563 35.798 14.6443 34.8245 12.6584C33.8509 10.6721 32.3213 8.98968 30.4066 7.80939C28.4915 6.62888 26.2713 6.00036 24.0019 6C21.7326 5.99964 19.5121 6.62747 17.5967 7.80738C15.6816 8.98707 14.1514 10.6691 13.1771 12.6551C12.203 14.6407 11.8225 16.8525 12.0767 19.037C12.3308 21.2216 13.2102 23.2957 14.6187 25.0197C15.1472 25.6656 16.0473 26.8635 16.8906 28.1951C17.4206 29.032 17.9901 30.0165 18.4164 31ZM34.9273 26.2885C36.5762 24.2717 37.6099 21.8396 37.9094 19.2725C38.209 16.7053 37.7621 14.1074 36.6204 11.7782C35.4787 9.44891 33.6885 7.48298 31.4561 6.10687C29.2237 4.73075 26.6398 4.00041 24.0022 4C21.3646 3.99959 18.7806 4.72911 16.5477 6.10453C14.3149 7.47995 12.524 9.44531 11.3816 11.7742C10.2391 14.1031 9.79137 16.7008 10.0901 19.2681C10.3888 21.8354 11.4217 24.2678 13.0699 26.2851C14.0324 27.4611 16.4803 30.8176 17 33H31C31.5197 30.8193 33.9648 27.4628 34.9273 26.2885Z"
+                           fill="#333333"
+                        />
+                        <path d="M19 21L25 12V18H29L23 27L23 21H19Z" fill="#333333" />
+                        <path d="M17 35H31V37H17V35Z" fill="#333333" />
+                        <path
+                           fill-rule="evenodd"
+                           clip-rule="evenodd"
+                           d="M29 41H19L19 42H29V41ZM17 39V42C17 43.1046 17.8954 44 19 44H29C30.1046 44 31 43.1046 31 42V39H17Z"
+                           fill="#333333"
+                        />
+                     </svg> -->
+
+                     <!-- <svg
+                        height="800px"
+                        width="800px"
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 511.906 511.906"
+                        xml:space="preserve"
+                     >
+                        <polygon
+                           style="fill: #fecd57"
+                           points="320.543,225.322 290.145,225.322 298.346,152.641 307.312,73.274 259.982,137.614 
+                    173.072,255.719 148.079,289.693 190.246,289.693 221.346,289.693 215.176,362.78 208.639,440.271 253.789,376.963 337.896,259.031 
+                    361.951,225.322 "
+                        />
+                        <g>
+                           <path
+                              style="fill: #434a54"
+                              d="M255.984,0.031C115.019,0.031,0.679,113.996,0.062,254.812C0.023,255.187,0,255.562,0,255.953
+                       c0,5.889,4.78,10.669,10.668,10.669s10.661-4.78,10.661-10.669h0.055c0-31.678,6.201-62.402,18.432-91.315
+                       c11.809-27.93,28.726-53.016,50.281-74.571c21.548-21.556,46.642-38.473,74.571-50.281c28.913-12.231,59.63-18.433,91.316-18.433
+                       c31.678,0,62.387,6.201,91.315,18.433c27.929,11.809,53.015,28.726,74.571,50.281c7.936,7.95,15.245,16.37,21.899,25.242
+                       l20.291-8.372C417.623,42.206,341.724,0.031,255.984,0.031z"
+                           />
+                           <path
+                              style="fill: #434a54"
+                              d="M501.237,245.284c-5.889,0-10.669,4.78-10.669,10.669c0,31.678-6.186,62.403-18.416,91.301
+                       c-11.824,27.944-28.726,53.03-50.281,74.586c-21.557,21.541-46.643,38.473-74.587,50.281c-28.913,12.231-59.622,18.433-91.3,18.433
+                       c-31.686,0-62.403-6.201-91.316-18.433c-27.929-11.809-53.023-28.74-74.571-50.281c-8.013-8.013-15.378-16.51-22.087-25.477
+                       l-20.275,8.373c46.423,64.871,122.392,107.139,208.249,107.139c141.332,0,255.922-114.574,255.922-255.922
+                       C511.906,250.064,507.127,245.284,501.237,245.284z"
+                           />
+                        </g>
+                        <polygon
+                           style="fill: #f6bb42"
+                           points="307.312,73.274 148.079,289.693 221.346,289.693 208.639,440.271 249.931,267.122 
+                    189.754,266.122 "
+                        />
+                        <g>
+                           <path
+                              style="fill: #656d78"
+                              d="M466.732,123.884c1.109-1.421,1.859-3.124,2.125-4.998c0.077-0.5,0.124-1.016,0.124-1.531V42.69
+                       c0-5.889-4.78-10.669-10.653-10.669c-5.904,0-10.668,4.78-10.668,10.669v63.996h-63.715c-5.889,0-10.669,4.779-10.669,10.668
+                       s4.78,10.653,10.669,10.653h74.383c0.516,0,1.031-0.047,1.531-0.125c1.875-0.266,3.577-1.016,4.998-2.124
+                       c0.094-0.062,0.172-0.125,0.25-0.188c0.125-0.094,0.219-0.203,0.344-0.312c0.125-0.125,0.281-0.234,0.406-0.375
+                       c0.141-0.125,0.25-0.266,0.375-0.406c0.109-0.125,0.219-0.219,0.312-0.344C466.607,124.056,466.67,123.977,466.732,123.884z"
+                           />
+                           <path
+                              style="fill: #656d78"
+                              d="M128.023,383.586L128.023,383.586L128.023,383.586H53.64c-0.422,0-0.835,0.031-1.242,0.078
+                       c-4.194,0.484-7.638,3.406-8.896,7.295c-0.016,0.047-0.031,0.078-0.047,0.125c-0.062,0.203-0.109,0.406-0.164,0.625
+                       c-0.031,0.125-0.07,0.25-0.101,0.391c-0.141,0.688-0.211,1.422-0.211,2.155v74.962c0,5.889,4.772,10.668,10.661,10.668
+                       s10.661-4.779,10.661-10.668v-64.309h63.723l0,0l0,0c5.889,0,10.661-4.765,10.661-10.653S133.912,383.586,128.023,383.586z"
+                           />
+                        </g>
+                     </svg> -->
                   </div>
                   <div>
                      <p>02 /</p>
-                     <p>заощадження енергоресурсів</p>
+                     <p>Енергоефективні рішення</p>
                      <p>
                         Керуючись інноваційними технологіями ми проектуємо інженерні системи з акцентом на максимальну
                         енергоефективність Класу А/А++.
@@ -472,6 +1207,77 @@
                </div>
                <div class="about__concepts-item">
                   <div class="icon animated">
+                     <!-- <svg
+                        height="200px"
+                        width="200px"
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 512 512"
+                        xml:space="preserve"
+                        fill="#000000"
+                     >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                           <polygon
+                              style="fill: #e6e6e6"
+                              points="456.053,242.335 352.631,345.744 313.534,306.635 339.538,280.643 390.94,229.23 416.944,203.226 "
+                           ></polygon>
+                           <g>
+                              <path
+                                 style="fill: #b3b3b3"
+                                 d="M251.382,57.515l52.554,52.554c-7.487-7.499-19.646-7.499-27.145,0L206.8,180.061l-27.727-27.727 c13.081-13.093,19.633-30.251,19.633-47.409s-6.553-34.316-19.633-47.409C199.034,37.542,231.421,37.542,251.382,57.515z"
+                              ></path>
+                              <polygon
+                                 style="fill: #b3b3b3"
+                                 points="361.926,200.204 390.94,229.23 339.538,280.643 310.513,251.618 "
+                              ></polygon>
+                           </g>
+                           <g>
+                              <path
+                                 style="fill: #e6e6e6"
+                                 d="M222.781,196.042L206.8,180.061l69.991-69.991c7.499-7.499,19.658-7.499,27.145,0l60.49,60.478 c7.499,7.499,7.499,19.658,0,27.157l-2.5,2.5l-51.414,51.414l-16.078,16.078l-11.904-11.904l-29.875-29.875L222.781,196.042z"
+                              ></path>
+                              <path
+                                 style="fill: #e6e6e6"
+                                 d="M83.526,454.772l-34.911,6.892c-1.48-7.596-5.157-14.816-11.03-20.689 c-5.873-5.873-13.117-9.55-20.689-11.03l6.892-34.911c13.651,5.4,25.883,13.518,36.051,23.686 C70.008,428.889,78.114,441.121,83.526,454.772z"
+                              ></path>
+                           </g>
+                           <path
+                              style="fill: #e09b2d"
+                              d="M282.531,255.792L83.538,454.772h-0.012c-5.412-13.651-13.518-25.883-23.686-36.051l192.816-192.804 L282.531,255.792z"
+                           ></path>
+                           <path
+                              style="fill: #f7b239"
+                              d="M252.656,225.917L59.84,418.721c-10.169-10.169-22.4-18.287-36.051-23.686v-0.012l198.992-198.98 L252.656,225.917z"
+                           ></path>
+                           <path
+                              style="fill: #f95428"
+                              d="M48.615,461.665l-39.51,7.79l7.79-39.51c7.572,1.48,14.816,5.157,20.689,11.03 C43.458,446.848,47.135,454.068,48.615,461.665z"
+                           ></path>
+                           <g>
+                              <path
+                                 style="fill: #333333"
+                                 d="M462.483,235.896l-39.104-39.104c-1.707-1.707-4.021-2.666-6.436-2.666s-4.728,0.959-6.436,2.666 l-19.566,19.564l-16.544-16.544c7.322-10.989,6.146-26.007-3.54-35.693l0,0L257.82,51.08 c-11.377-11.377-26.504-17.642-42.593-17.642s-31.216,6.265-42.593,17.642c-3.554,3.554-3.554,9.316,0,12.87 c22.592,22.592,22.592,59.352,0,81.944c-3.554,3.554-3.554,9.317,0,12.87l37.271,37.271L17.35,388.59 c-1.277,1.277-2.144,2.904-2.494,4.674L0.172,467.699c-0.587,2.978,0.347,6.051,2.494,8.197c1.723,1.723,4.044,2.666,6.435,2.666 c0.586,0,1.176-0.056,1.762-0.172l74.434-14.684c1.77-0.349,3.398-1.217,4.674-2.494l192.555-192.554l5.47,5.47 c1.778,1.778,4.106,2.666,6.436,2.666c2.329,0,4.658-0.888,6.436-2.666l9.641-9.641l16.152,16.151l-19.566,19.566 c-1.706,1.706-2.665,4.021-2.665,6.435s0.959,4.729,2.665,6.435l39.106,39.106c1.707,1.707,4.021,2.666,6.436,2.666 s4.728-0.959,6.436-2.666l103.411-103.411C466.037,245.213,466.037,239.45,462.483,235.896z M192.081,58.57 c6.81-4.51,14.792-6.931,23.146-6.931c11.227,0,21.783,4.372,29.722,12.312l33.857,33.857c-3.109,1.392-5.971,3.348-8.452,5.828 l-63.554,63.554l-15.243-15.243C212.999,124.677,213.175,86.024,192.081,58.57z M239.781,225.911L59.562,406.129 c-6.195-5.293-12.957-9.938-20.173-13.836l183.388-183.388L239.781,225.911z M44.019,434.54c-4.78-4.78-10.423-8.45-16.6-10.911 l3.049-15.454c16.912,9.063,30.855,23.007,39.919,39.919l-15.454,3.048C52.473,444.969,48.802,439.324,44.019,434.54z M23.803,441.957c2.68,1.433,5.153,3.263,7.345,5.454c2.193,2.193,4.025,4.667,5.458,7.346l-15.948,3.146L23.803,441.957z M86.268,439.173c-3.899-7.218-8.543-13.979-13.837-20.173l180.219-180.218l17.005,17.005L86.268,439.173z M294.433,254.822 l-74.761-74.761l63.555-63.554c1.906-1.908,4.441-2.957,7.139-2.957c2.695,0,5.23,1.05,7.137,2.955l60.484,60.484 c3.936,3.938,3.936,10.343,0,14.28L294.433,254.822z M323.38,251.615l38.54-38.539l16.151,16.151l-5.231,5.232l-33.308,33.308 L323.38,251.615z M352.636,332.872l-26.235-26.235l19.551-19.55c0.005-0.005,0.011-0.01,0.016-0.015l42.099-42.1l28.875-28.875 l26.233,26.235L352.636,332.872z"
+                              ></path>
+                              <path
+                                 style="fill: #333333"
+                                 d="M459.036,332.818c-3.555-3.554-9.317-3.554-12.871,0c-3.554,3.554-3.554,9.317,0,12.87 l19.735,19.735c1.778,1.776,4.108,2.666,6.436,2.666c2.329,0,4.658-0.888,6.436-2.666c3.554-3.554,3.554-9.317,0-12.87 L459.036,332.818z"
+                              ></path>
+                              <path
+                                 style="fill: #333333"
+                                 d="M398.543,352.543c-5.027,0-9.101,4.075-9.101,9.101v27.909c0,5.026,4.074,9.101,9.101,9.101 c5.027,0,9.101-4.075,9.101-9.101v-27.909C407.644,356.618,403.57,352.543,398.543,352.543z"
+                              ></path>
+                              <path
+                                 style="fill: #333333"
+                                 d="M502.899,276.096H474.99c-5.027,0-9.101,4.075-9.101,9.101c0,5.026,4.074,9.101,9.101,9.101h27.909 c5.027,0,9.101-4.075,9.101-9.101C512,280.171,507.926,276.096,502.899,276.096z"
+                              ></path>
+                           </g>
+                        </g>
+                     </svg> -->
+
                      <svg
                         fill="#000000"
                         version="1.1"
@@ -543,7 +1349,7 @@
             <div class="service-description__image animated">
                <img
                   src="./images/pictures/engineer-teamwork-meeting-drawing-working-blueprint-meeting-project-working-with-partner_28283-1422.jpg"
-                  alt="проектна документація, проєкт"
+                  alt="проектна документація, проект"
                />
             </div>
 
@@ -565,9 +1371,9 @@
                         </svg>
                      </div>
                      <p>
-                        <strong>Ескізний проєкт </strong>— конструкторська документація, яка містить принципові
+                        <strong>Ескізний проект </strong>— конструкторська документація, яка містить принципові
                         конструктивні рішення і дає загальне уявлення про будову та принцип дії виробу; початкова стадія
-                        проєктування.
+                        проектування.
                      </p>
                   </li>
                   <li>
@@ -585,9 +1391,9 @@
                         </svg>
                      </div>
                      <p>
-                        <strong> Технічний проєкт </strong>— конструкторська документація, яка містить остаточне
+                        <strong> Технічний проект </strong>— конструкторська документація, яка містить остаточне
                         технічне рішення і дає повне уявлення про будову розроблюваного виробу; завершальна стадія
-                        проєктування.
+                        проектування.
                      </p>
                   </li>
                   <li>
@@ -605,7 +1411,7 @@
                         </svg>
                      </div>
                      <p>
-                        <strong>Робочий проєкт </strong>— робоча документація в окремих областях діяльності, яка містить
+                        <strong>Робочий проект </strong>— робоча документація в окремих областях діяльності, яка містить
                         організаційні, конструкторські та технологічні рішення щодо проведення робіт зі створення
                         виробу.
                      </p>
@@ -615,7 +1421,7 @@
          </div>
       </div>
 
-      <section id="objects" class="our-clients">
+      <section class="our-clients" id="objects">
          <div class="container">
             <p class="section-title">професійно встановлюємо</p>
             <h3 class="section-subtitle inline">Проектне бюро виконає найкращий проект,</h3>
@@ -630,125 +1436,138 @@
             </p>
             <p class="section-subtitle">Останні проекти, що виконувала компанія:</p>
 
-            <div class="our-clients__article">
-               <ol class="our-clients__gallery">
-                  <li class="card">
-                     <div class="card__content">
-                        <div class="card__picture">
-                           <img src="./images/img/IMG_(17).jpg" alt="холодильна установка тм Trane" loading="lazy" />
+            <div class="swiper-container our-clients__article">
+               <!-- Slider main container -->
+               <div class="swiper">
+                  <!-- Additional required wrapper -->
+                  <ol class="swiper-wrapper">
+                     <!-- Slides -->
+                     <li class="swiper-slide">
+                        <!-- Slide 1 -->
+                        <div class="card__content">
+                           <div class="card__picture">
+                              <img src="./images/img/IMG_(17).jpg" alt="холодильна установка тм Trane" loading="lazy" />
+                           </div>
+                           <div class="card__description">
+                              <h5 class="object-description">
+                                 Вентиляція та кондиціювання. Підприємство по виготовленню виробів медичного призначення
+                                 одноразового застосування.
+                              </h5>
+                              <p class="object-name">
+                                 ТМ «Славна», 3 черги, <span class="small">пл.</span> 8500<span class="small"
+                                    >(м<sup>2</sup>)</span
+                                 >.
+                              </p>
+                           </div>
                         </div>
-                        <div class="card__description">
-                           <h5 class="object-description">
-                              Вентиляція та кондиціювання. Підприємство по виготовленню виробів медичного призначення
-                              одноразового застосування.
-                           </h5>
-                           <p class="object-name">
-                              ТМ «Славна», 3 черги, <span class="small">пл.</span> 8500<span class="small"
-                                 >(м<sup>2</sup>)</span
-                              >.
-                           </p>
+                     </li>
+                     <li class="swiper-slide">
+                        <!-- Slide 2 -->
+                        <div class="card__content">
+                           <div class="card__picture">
+                              <img
+                                 src="./images/img/IMG_(19).jpg"
+                                 alt="встановлені повітроводи системи вентиляції"
+                                 loading="lazy"
+                              />
+                           </div>
+                           <div class="card__description">
+                              <h5 class="object-description">
+                                 Вінницький обласний центр серцево-судинної патології. Вентиляція та кондиціювання.
+                              </h5>
+                              <p class="object-name">
+                                 Кардіологічний центр,<span class="small"> пл.</span>14800<span class="small"
+                                    >(м<sup>2</sup>)</span
+                                 >
+                              </p>
+                           </div>
                         </div>
-                     </div>
-                  </li>
-                  <li class="card">
-                     <div class="card__content">
-                        <div class="card__picture">
-                           <img
-                              src="./images/img/IMG_(19).jpg"
-                              alt="встановлені повітроводи системи вентиляції"
-                              loading="lazy"
-                           />
+                     </li>
+                     <li class="swiper-slide">
+                        <!-- Slide 3 -->
+                        <div class="card__content">
+                           <div class="card__picture">
+                              <img
+                                 src="./images/img/IMG_(0).jpg"
+                                 alt="вентиляційна установка тм vts group"
+                                 loading="lazy"
+                              />
+                           </div>
+                           <div class="card__description">
+                              <h5 class="object-description">Вентиляція та кондиціювання</h5>
+                              <p class="object-name">
+                                 ТЦ «Regina», <span class="small">пл.</span> 4500<span class="small"
+                                    >(м<sup>2</sup>)</span
+                                 >.
+                              </p>
+                           </div>
                         </div>
-                        <div class="card__description">
-                           <h5 class="object-description">
-                              Вінницький обласний центр серцево-судинної патології. Вениляція та кондиціювання.
-                           </h5>
-                           <p class="object-name">
-                              Кардіологічний центр,<span class="small"> пл.</span>14800<span class="small"
-                                 >(м<sup>2</sup>)</span
-                              >
-                           </p>
+                     </li>
+                     <li class="swiper-slide">
+                        <!-- Slide 4 -->
+                        <div class="card__content">
+                           <div class="card__picture">
+                              <img
+                                 src="./images/img/IMG_(4).jpg"
+                                 alt="розгалужена система повітропроводів"
+                                 loading="lazy"
+                              />
+                           </div>
+                           <div class="card__description">
+                              <h5 class="object-description">Вентиляція та кондиціювання</h5>
+                              <p class="object-name">
+                                 Офісні приміщення, <span class="small">пл.</span> 5000<span class="small"
+                                    >(м<sup>2</sup>)</span
+                                 >.
+                              </p>
+                           </div>
                         </div>
-                     </div>
-                  </li>
-                  <li class="card">
-                     <div class="card__content">
-                        <div class="card__picture">
-                           <img
-                              src="./images/img/IMG_(0).jpg"
-                              alt="вентиляційна установка тм vts group"
-                              loading="lazy"
-                           />
+                     </li>
+                     <li class="swiper-slide">
+                        <!-- Slide 5 -->
+                        <div class="card__content">
+                           <div class="card__picture">
+                              <img
+                                 src="./images/img/IMG_(1).jpg"
+                                 alt="промислова система витяжної вентиляції на даху"
+                                 loading="lazy"
+                              />
+                           </div>
+                           <div class="card__description">
+                              <h5 class="object-description">Вентиляція та кондиціювання</h5>
+                              <p class="object-name">
+                                 Кафе, ресторани, <span class="small">пл.</span> 2000<span class="small"
+                                    >(м<sup>2</sup>)</span
+                                 >.
+                              </p>
+                           </div>
                         </div>
-                        <div class="card__description">
-                           <h5 class="object-description">Вениляція та кондиціювання</h5>
-                           <p class="object-name">
-                              ТЦ «Regina», <span class="small">пл.</span> 4500<span class="small">(м<sup>2</sup>)</span
-                              >.
-                           </p>
-                        </div>
-                     </div>
-                  </li>
-                  <li class="card">
-                     <div class="card__content">
-                        <div class="card__picture">
-                           <img
-                              src="./images/img/IMG_(4).jpg"
-                              alt="розгалужена система повітропроводів"
-                              loading="lazy"
-                           />
-                        </div>
-                        <div class="card__description">
-                           <h5 class="object-description">Вениляція та кондиціювання</h5>
-                           <p class="object-name">
-                              Офісні приміщення, <span class="small">пл.</span> 5000<span class="small"
-                                 >(м<sup>2</sup>)</span
-                              >.
-                           </p>
-                        </div>
-                     </div>
-                  </li>
-                  <li class="card">
-                     <div class="card__content">
-                        <div class="card__picture">
-                           <img
-                              src="./images/img/IMG_(1).jpg"
-                              alt="промислова система витяжної вентиляції на даху"
-                              loading="lazy"
-                           />
-                        </div>
-                        <div class="card__description">
-                           <h5 class="object-description">Вениляція та кондиціювання</h5>
-                           <p class="object-name">
-                              Кафе, ресторани, <span class="small">пл.</span> 2000<span class="small"
-                                 >(м<sup>2</sup>)</span
-                              >.
-                           </p>
-                        </div>
-                     </div>
-                  </li>
-               </ol>
-            </div>
+                     </li>
+                  </ol>
+                  <!-- If we need pagination -->
+                  <div class="swiper-scrollbar"></div>
+               </div>
 
-            <button class="prev-btn">
-               <svg viewBox="0 0 451.847 451.847">
-                  <path
-                     d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+               <!-- If we need navigation buttons -->
+               <button class="prev-btn">
+                  <svg viewBox="0 0 451.847 451.847">
+                     <path
+                        d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
                   c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
                   c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
-                  ></path>
-               </svg>
-            </button>
-
-            <button class="next-btn">
-               <svg viewBox="0 0 451.846 451.847">
-                  <path
-                     d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+                     ></path>
+                  </svg>
+               </button>
+               <button class="next-btn">
+                  <svg viewBox="0 0 451.846 451.847">
+                     <path
+                        d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
                   L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
                   c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
-                  ></path>
-               </svg>
-            </button>
+                     ></path>
+                  </svg>
+               </button>
+            </div>
          </div>
          <p><a href="#features"> читати далі >> </a></p>
       </section>
@@ -768,21 +1587,42 @@
                (max-width: 1023px) 800px,
                (max-width: 1920px) 1200px,
                (max-width: 2560px) 2400px"
-               alt="топочна кімната опалення"
+               alt="топкова кімната опалення"
                loading="lazy"
             />
          </div>
 
-         <p class="section-title">ви отримаєте переваги</p>
+         <!-- <p class="section-title">ви отримаєте переваги</p> -->
+         <p class="section-title">чи потрібен проект?</p>
          <p class="section-subtitle">
             Для будь-якого будівельного проекту, особливо для комерційних та виробничих приміщень, внутрішні кліматичні
             системи - температура, вологість та повітрообмін - можуть <b>впливати на стан та самопочуття людей </b>.
          </p>
 
          <div class="section-subtitle">
-            <p>Ваша система буде працювати настільки добре - на скільки вона спроектована.</p>
-            <p>Якісне проектування є дуже важливим. Отож, розглянемо як працюють два типи встановленних систем.</p>
+            <p>Якісне проектування є дуже важливим. Отож, розглянемо як працюють два типи встановлених систем.</p>
+            <!-- <p>Ваша система буде працювати настільки добре - на скільки вона спроектована.</p> -->
          </div>
+
+         <div class="section-subtitle tip-card card-filled">
+            <i
+               ><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g stroke-width="0"></g>
+                  <g stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g>
+                     <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M14.8562 15.6858L14.8562 15.6858C14.8219 15.769 14.7885 15.8525 14.7562 15.9363C12.9685 16.5341 11.0314 16.534 9.24375 15.9362C9.21144 15.8524 9.17811 15.7689 9.14377 15.6858C9.04854 15.4554 9.00093 15.3401 8.91839 15.2337C8.83585 15.1273 8.69186 15.0193 8.40387 14.8033C6.94433 13.7089 6 11.9647 6 10C6 6.68629 8.68629 4 12 4C15.3137 4 18 6.68629 18 10C18 11.9647 17.0557 13.7089 15.5961 14.8033L15.5961 14.8034C15.3081 15.0193 15.1641 15.1273 15.0816 15.2337C14.9991 15.3401 14.9515 15.4554 14.8562 15.6858ZM9.85021 18.1664C9.93686 18.6932 9.98631 19.227 9.99753 19.7639C10.0006 19.9086 10.0817 20.0409 10.2111 20.1056C11.3373 20.6686 12.6627 20.6686 13.7889 20.1056C13.9183 20.0409 13.9994 19.9086 14.0025 19.7639C14.0137 19.227 14.0631 18.6933 14.1498 18.1665C12.7318 18.4573 11.2682 18.4573 9.85021 18.1664Z"
+                        fill="#222222"
+                     ></path>
+                  </g>
+               </svg>
+            </i>
+            <span>Ваша система буде працювати настільки добре - наскільки вона спроектована.</span>
+            <!-- <span class="spacer8">During the winter your plants slow down and need less water.</span> -->
+         </div>
+
          <div class="features-label">
             <p class="features__subtitle">Система без проекту</p>
             <p class="features__subtitle">Сертифікований проект</p>
@@ -794,7 +1634,7 @@
                   <img src="./images/pictures/stock/in-time/out-time.jpg" alt="розчарований чоловік та годинник" />
                </div>
                <p class="features__card-title">Ризики</p>
-               <div class="features__text">
+               <ul class="features__text">
                   <li>
                      <svg
                         class="icon close"
@@ -837,7 +1677,7 @@
                      </svg>
                      <p>Затримка термінів виконання робіт</p>
                   </li>
-               </div>
+               </ul>
             </div>
 
             <div class="features__card good">
@@ -856,7 +1696,7 @@
                      >
                         <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
                      </svg>
-                     <p>Індивідуальне технічше рішення</p>
+                     <p>Індивідуальне технічне рішення</p>
                   </li>
                   <li>
                      <svg
@@ -982,14 +1822,14 @@
                      >
                         <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
                      </svg>
-                     <p>Оптимізація енерго-витрат на етапі проектування</p>
+                     <p>Оптимізація енерговитрат на етапі проектування</p>
                   </li>
                </div>
             </div>
 
             <div class="features__card bad">
                <div class="features__image">
-                  <img src="./images/pictures/stock/fail/AdobeStock_282304740.jpg" alt="робітник ремонтую обладнаня" />
+                  <img src="./images/pictures/stock/fail/AdobeStock_282304740.jpg" alt="робітник ремонтую обладнання" />
                </div>
                <p class="features__card-title">Відмова роботи</p>
                <div class="features__text">
@@ -1033,7 +1873,7 @@
                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
                         />
                      </svg>
-                     <p>Дороговартісна заміна або ремонт обладнання</p>
+                     <p>Дорого-вартісна заміна або ремонт обладнання</p>
                   </li>
                </div>
             </div>
@@ -1042,7 +1882,7 @@
                <div class="features__image">
                   <img
                      src="./images/pictures/stock/fail/AdobeStock_173532525.jpg"
-                     alt="задоволений робітник в топочній"
+                     alt="задоволений робітник в топковій"
                   />
                </div>
                <p class="features__card-title">Стабільність</p>
@@ -1090,17 +1930,15 @@
 
       <div id="technologies" class="cta">
          <p class="section-title">Енерго<span class="hyphen">-</span>ефективність та сталість</p>
-         <p class="section-subtitle">
-            ...починається з сучасних рішеннь, зниження витрат та максимальної екологічності
-         </p>
+         <p class="section-subtitle">...починається з сучасних рішень, зниження витрат та максимальної екологічності</p>
 
          <div class="cta-picture">
-            <img src="./images/pictures/air-conditioning/1.jpg" alt="касетний кондиціонер" loading="lazy" />
-            <img src="./images/pictures/cool_supply/3.jpg" alt="промисловий чилер" loading="lazy" />
-            <img src="./images/pictures/stock/SOLAR-FIELD.jpg" alt="поле сонячних колекторів" loading="lazy" />
+            <img src="./images/pictures/air-conditioning/1.jpg" alt="касетний кондиціонер " loading="lazy" />
+            <img src="./images/pictures/cool_supply/3.jpg" alt="промисловий чилер " loading="lazy" />
+            <img src="./images/pictures/stock/SOLAR-FIELD.jpg" alt="поле сонячних колекторів " loading="lazy" />
             <img
                src="./images/pictures/heating/4.jpg"
-               alt="робітники укладують систему водяна тепла підлога"
+               alt="робітники монтують систему водяна тепла підлога"
                loading="lazy"
             />
             <img src="./images/pictures/electricity/7.jpg" alt="електромонтажник в електрощитовій" loading="lazy" />
@@ -1125,12 +1963,14 @@
             </div>
 
             <div class="cta__description">
+               <!-- <span class="box-shadow"></span> -->
                <p class="section-title">Ви отримаєте</p>
-               <!-- <p class="section-title">за 7 -14 днів </p> -->
+               <span class="divider"></span>
                <p>
                   Готовий до реалізації робочий проект вентиляції, опалення або кондиціонування в 2-х форматах
                   (друкованому та електронному)
                </p>
+               <button class="cta-button text-button">Замовити</button>
             </div>
 
             <div class="cta__gallery">
@@ -1138,55 +1978,89 @@
                   Приклади проектів
                   <a href="https://www.instagram.com/argoengineering_kyiv/" target="_blank">@argoengineering</a>
                </p>
-               <div class="cta__slider">
-                  <img src="./images/img/png/0.png" alt="engineer project" />
-                  <div class="cta-buttons">
-                     <button class="prev prev-btn">
-                        <svg viewBox="0 0 451.847 451.847">
-                           <path
-                              d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
-                           c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
-                           c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
-                           ></path>
-                        </svg>
-                     </button>
+               <!-- <div class="cta__slider"> -->
+               <!-- motion motion-autoplay -->
 
-                     <button class="next next-btn">
-                        <svg viewBox="0 0 451.846 451.847">
-                           <path
-                              d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
-                           L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
-                           c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
-                           ></path>
-                        </svg>
-                     </button>
-                  </div>
+               <div class="swiper ctaSwiper cta__slider">
+                  <ol class="swiper-wrapper">
+                     <div class="swiper-slide">
+                        <div class="swiper-zoom-container">
+                           <img src="./images/img/png/1.png" alt="engineer project" />
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="swiper-zoom-container">
+                           <img src="./images/img/png/2.png" alt="engineer project" />
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="swiper-zoom-container">
+                           <img src="./images/img/png/3.png" alt="engineer project" />
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="swiper-zoom-container">
+                           <img src="./images/img/png/4.png" alt="engineer project" />
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="swiper-zoom-container">
+                           <img src="./images/img/png/5.png" alt="engineer project" />
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="swiper-zoom-container">
+                           <img src="./images/img/png/6.png" alt="engineer project" />
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="swiper-zoom-container">
+                           <img src="./images/img/png/7.png" alt="engineer project" />
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="swiper-zoom-container">
+                           <img src="./images/img/png/8.png" alt="engineer project" />
+                        </div>
+                     </div>
+                  </ol>
+                  <div class="swiper-pagination"></div>
+                  <!-- <svg width="200px" height="200px" viewBox="0 0 200 200">
+                     <circle transform="rotate(-90 100 100)" cx="100" cy="100" r="90"></circle>
+                     <circle
+                        transform-origin="center"
+                        transform="rotate(-90 100 100)"
+                        cx="100"
+                        cy="100"
+                        r="90"
+                        ></circle>
+                     </svg> -->
                </div>
-               <div class="slider-pagination">
-                  <ul class="slider-pagination__list">
-                     <li value="1" class="circle active"></li>
-                     <li value="2" class="circle"></li>
-                     <li value="3" class="circle"></li>
-                     <li value="4" class="circle"></li>
-                     <li value="5" class="circle"></li>
-                     <li value="6" class="circle"></li>
-                     <li value="7" class="circle"></li>
-                     <li value="8" class="circle"></li>
-                  </ul>
-               </div>
+               <!-- <div class="cta-buttons"> -->
+               <button class="swiper-button-prev">
+                  <svg viewBox="0 0 451.847 451.847">
+                     <path
+                        d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+                        c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+                        c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+                     ></path>
+                  </svg>
+               </button>
+
+               <button class="swiper-button-next">
+                  <svg viewBox="0 0 451.846 451.847">
+                     <path
+                        d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+                        L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+                        c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                     ></path>
+                  </svg>
+               </button>
+               <!-- </div> -->
                <div class="close-btn"><span>&times;</span></div>
             </div>
          </div>
          <!-- </div> -->
-
-         <!-- <div class="cta__submit-section">
-            <p>Потрібна консультація?</p>
-            <p>
-               Зв'яжіться з нами і ми роскажемо Вам детально про створення інженерного проекту з використанням сучасних
-               технологій
-            </p>
-            <button class="cta-button consult-btn">Отримати консультацію</button>
-         </div> -->
       </div>
 
       <section class="extra-services">
@@ -1229,7 +2103,7 @@
                            Інверторне <span class="nowrap">(А/А++)</span> Кондиціонування
                         </h2>
                         <p class="extra-services__description">
-                           Побутові та промислові системи кондиціонування. VRF- та VRV -мульти зональне кондиціювання.
+                           Побутові та промислові системи кондиціонування. VRF та VRV мультизональне кондиціювання.
                            Чилер-фанкойл. Спліт та мульти-спліт системи.
                         </p>
                      </div>
@@ -1254,23 +2128,20 @@
                         <h2 class="extra-services__title">Низько-температурні системи Опалення. Тепла підлога + ГВП</h2>
                         <p class="extra-services__description">
                            Проект системи опалення офісу, ресторану, підприємства, приватного будинку та ін. На базі
-                           теплового насосу поаітря-вода, загових або електро-котлів, грунтових систем.
+                           теплового насосу поаітря-вода, газових або електро-котлів, ґрунтових систем.
                         </p>
                      </div>
                   </li>
                </ul>
             </div>
 
-            <!-- <p class="extra-services__introduction">
-               Створення інженерного проекту з використанням сучасних технологій та енергоефективного обладнання
-            </p> -->
-
-            <!-- <p class="extra-services__introduction">
-               Отримайте готовий до реалізації проект системи вентиляції, кондиціонування або опалення в 2-х екземплярах
-               (друкованому та електронному)
-            </p> -->
-
-            <!-- <button class="cta-button">Отримати консультацію</button> -->
+            <div class="fb-posts">
+               <div class="cta__submit-section">
+                  <p>Потрібна консультація?</p>
+                  <p>Зв'яжіться з нами і ми роскажемо Вам про створення сучасного інженерного проекту</p>
+                  <button class="cta-button consult-btn">Отримати консультацію</button>
+               </div>
+            </div>
          </div>
       </section>
 
@@ -1340,7 +2211,7 @@
                      </p>
                   </li>
                   <li>
-                     <p class="text">Повітряне опалення та гаряче подопостачання (ГВП)</p>
+                     <p class="text">Повітряне опалення та гаряче водопостачання (ГВП)</p>
                   </li>
                   <li>
                      <p class="text">Теплові насоси повітря-вода</p>
@@ -1367,13 +2238,13 @@
                <p class="label">Технології</p>
                <ul>
                   <li>
-                     <p class="text">BIM-моделювання систем ОВіК</p>
+                     <p class="text">BIM моделювання систем ОВіК</p>
                   </li>
                   <li>
                      <p class="text">Проектування з акцентом на максимальну енергоефективність</p>
                   </li>
                   <li>
-                     <p class="text">VRF-мультизональне кондиціонування</p>
+                     <p class="text">VRF мультизональне кондиціонування</p>
                   </li>
                   <li>
                      <p class="text">Утилізація тепла та енергозбереження</p>
@@ -1428,9 +2299,12 @@
 
       <script src="form-send.js"></script>
       <script src="observer.js"></script>
-      <script src="top-button.js"></script>
-      <script async src="gallery-slider.js"></script>
-      <script async src="cta-pagination-slider.js"></script>
+      <script src="buttons.js"></script>
+
+      <!-- <script async src="cta-pagination-slider.js"></script> -->
       <script src="./footer-date.js"></script>
+
+      <!-- <script async src="gallery-slider.js"></script> -->
+      <script type="module" src="./swiper.js"></script>
    </body>
 </html>

@@ -1,7 +1,6 @@
 const galleryElement = document.querySelector('.our-clients__gallery');
 const slidersNodeList = document.querySelectorAll('.card');
 
-
 const galleryFullWidth = () => galleryElement.offsetWidth;
 const sliderWidth = () => slidersNodeList[0].offsetWidth;
 
