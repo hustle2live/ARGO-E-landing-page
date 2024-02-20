@@ -2243,12 +2243,13 @@ button.swiper-button-next {
    font-size: 40px;
    line-height: 40px;
 
-   color: var(--on-surface-variant);
+   color: var(--dark-primary-color);
 
    min-width: 40px;
    min-height: 40px;
    text-align: center;
    cursor: pointer;
+   z-index: 1;
 }
 
 .cta__gallery.show .prev {

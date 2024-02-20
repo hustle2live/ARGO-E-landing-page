@@ -57,7 +57,7 @@ window.onscroll = function () {
 
 // cta-gallery full width image function
 const ctaGallery = document.querySelector('.cta__gallery');
-const sliderImage = document.querySelector('.cta__slider img');
+const sliderImage = document.querySelector('.ctaSwiper');
 const showGalleryButtonClose = document.querySelector('.cta__gallery .close-btn');
 
 const galleryShow = () => ctaGallery.classList.add('show');
@@ -65,6 +65,12 @@ const galleryClose = () => ctaGallery.classList.remove('show');
 
 sliderImage.addEventListener('click', galleryShow);
 showGalleryButtonClose.addEventListener('click', galleryClose);
+
+document.addEventListener('keyup', (e) => {
+   if (e.key === 'Escape') {
+      galleryClose();
+   }
+});
 
 // -------/
 
