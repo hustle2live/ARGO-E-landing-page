@@ -104,9 +104,9 @@
       text-align: left;
    }
 
-   .service-description__service-types h4 {
+   /* .service-description__service-types h4 {
       text-transform: none;
-   }
+   } */
 
    .our-clients > p {
       max-width: 80%;
@@ -1016,6 +1016,8 @@
 
    .service-description .section-title {
       margin: 60px auto 20px;
+      padding: 0;
+      width: 100%;
    }
 
    .service-description__service-types {
@@ -1197,19 +1199,21 @@
       margin: 0 auto;
    }
 
+   .service-description .section-title span {
+      font-size: 1rem;
+   }
+
    .service-description__service-types ul li::before {
       left: -12px;
    }
 
-   /* .service-description__service-types ul li p, */
    .service-description__service-types ul {
       padding-left: 20px;
    }
 
    .card__description .object-name,
    .card__description .object-description,
-   .extra-services__description,
-   .service-description__service-types ul li p {
+   .extra-services__description {
       line-height: 1.2;
    }
 
@@ -1564,6 +1568,7 @@
 
    .header__navbar.container {
       padding-right: 20px;
+      padding-left: 20px;
    }
 
    .menu-btn svg,
@@ -1651,6 +1656,7 @@
       line-height: 1.1;
    }
 
+   .service-description__service-types h4,
    .features__card-title {
       font-size: 1rem;
    }
@@ -1701,7 +1707,6 @@
       width: 310px;
    }
 
-   .header__navbar.container,
    .cta .section-subtitle,
    .cta .container,
    .about__concepts,
@@ -1718,6 +1723,11 @@
       padding-left: 10px;
       padding-right: 10px;
    }
+
+   .header__navbar.container {
+      height: 60px;
+   }
+
 
    .header__content.container {
       padding-left: 16px;
@@ -1781,6 +1791,7 @@
       margin-top: 0;
    }
 
+   .service-description__service-types,
    .service-story,
    .service-story ol li,
    .features__subtitle,

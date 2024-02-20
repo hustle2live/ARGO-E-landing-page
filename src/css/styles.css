@@ -625,7 +625,7 @@ h6 {
    font-size: 1.375rem; /* 22px font size  */
 }
 
-/* .cta__description, */
+.service-description__service-types h4,
 .about-company .title,
 .header__description,
 .services__section-subtitle,
@@ -653,7 +653,6 @@ h6 {
 .extra-services__card,
 .extra-services__footer,
 .extra-services__footer a,
-.service-description__service-types h4,
 .feedback-wrapper form .btn-submit,
 .service-story ol li {
    font-size: 1rem; /* 16px font size  */
@@ -661,7 +660,6 @@ h6 {
 
 .cta__description .section-title,
 .about .title,
-.service-description h4,
 .heading,
 .section-title,
 .service-story__title,
@@ -685,6 +683,7 @@ h6 {
 .about .ection-title,
 .features__card-title,
 .service-description,
+.service-description h4,
 .about .description,
 .about__concepts-item p,
 .extra-services__description,
@@ -1646,6 +1645,11 @@ strong,
    white-space: nowrap;
 }
 
+.service-description .section-title span {
+   font-size: 1.4rem;
+   font-weight: 400;
+}
+
 .service-description__service-types {
    box-sizing: border-box;
    width: 50%;
@@ -1653,7 +1657,7 @@ strong,
    background-color: var(--surface-container);
 
    color: var(--on-surface-variant);
-
+   line-height: 1.4;
    border: 0;
    border-right: 18px;
    border-color: var(--tertiary-fixed);
@@ -1706,7 +1710,7 @@ strong,
 
 .service-description__service-types h4 {
    font-weight: 600;
-   letter-spacing: 1.2px;
+   /* letter-spacing: 1.2px; */
    text-transform: uppercase;
 }
 
