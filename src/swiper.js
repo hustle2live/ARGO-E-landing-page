@@ -23,27 +23,20 @@ const ourClientsSwiper = new Swiper('.swiper', {
 });
 
 const ctaSectionSwiperPag = new Swiper('.ctaSwiper', {
-   // Optional parameters
    direction: 'horizontal',
    loop: true,
    autoplay: true,
-   delay: 4000,
    pauseOnMouseEnter: true,
+   delay: 4000,
+   // zoom: false,
 
-   // If we need pagination
    pagination: {
       el: '.swiper-pagination',
       clickable: true
    },
 
-   // Navigation arrows
    navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
    }
-
-   // And if we need scrollbar
-   // scrollbar: {
-   //    el: '.swiper-scrollbar'
-   // }
 });

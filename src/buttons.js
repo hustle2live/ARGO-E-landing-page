@@ -31,17 +31,16 @@ themeButton.addEventListener('click', () => {
       footerLogoImage.setAttribute('src', logoFullDark);
       mobileMenuLogoImage.setAttribute('src', logoFullWhite);
       aboutSectionLogoImage.classList.add('dark');
-
    } else {
       styleHTMLLink.setAttribute('href', themeLightPath);
       navBarLogoImage.setAttribute('src', logoDark);
       footerLogoImage.setAttribute('src', logoFullWhite);
       mobileMenuLogoImage.setAttribute('src', logoFullDark);
       aboutSectionLogoImage.classList.remove('dark');
-
    }
 });
 
+// top button show on scroll
 function scrollFunction() {
    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       topButton.style.display = 'block';
@@ -53,6 +52,21 @@ function scrollFunction() {
 window.onscroll = function () {
    scrollFunction();
 };
+
+// -------/
+
+// cta-gallery full width image function
+const ctaGallery = document.querySelector('.cta__gallery');
+const sliderImage = document.querySelector('.cta__slider img');
+const showGalleryButtonClose = document.querySelector('.cta__gallery .close-btn');
+
+const galleryShow = () => ctaGallery.classList.add('show');
+const galleryClose = () => ctaGallery.classList.remove('show');
+
+sliderImage.addEventListener('click', galleryShow);
+showGalleryButtonClose.addEventListener('click', galleryClose);
+
+// -------/
 
 const menuOpenClose = () => navMenuOpen.classList.toggle('closed');
 // const menuOpenClose = () => openClosedNodes.forEach((element) => element.classList.toggle('closed'));

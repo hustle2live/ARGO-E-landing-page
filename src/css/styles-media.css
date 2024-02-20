@@ -644,9 +644,12 @@
    .about__introduction,
    .about-company,
    .about__concepts,
-   .cta__gallery,
    .cta .container .text {
       width: 100%;
+   }
+
+   .cta__gallery {
+      width: 90%;
    }
 
    footer .container {
@@ -1368,6 +1371,14 @@
    .cta .cta__gallery .label {
       font-size: 1rem;
    }
+
+   .header__navbar_social:not(.mobile .header__navbar_social) {
+      display: none;
+   }
+
+   .theme-btn {
+      margin-left: auto;
+   }
 }
 
 @media screen and (max-width: 424px) {
@@ -1392,6 +1403,7 @@
 
    .cta__gallery {
       padding: 0;
+      width: 96%;
    }
 
    .cta-buttons .prev {
@@ -1436,12 +1448,7 @@
       width: 18px;
    }
 
-   .theme-btn {
-      margin-left: auto;
-   }
-
    .header__navbar_social {
-      display: none;
       height: 25px;
       margin: 0 auto;
    }
