@@ -2496,28 +2496,24 @@ button.swiper-button-next {
    text-transform: none !important;
 }
 
-.cta__submit-section p::before,
-.cta__submit-section p::after {
+.cta__submit-section p::before {
    position: absolute;
    display: block;
    content: '';
-   height: 100%;
-   width: 100%;
+   height: 60px;
    border-left: 1px solid var(--on-tertiary-container);
    z-index: 1;
    padding: 20px;
-   bottom: -20px;
+   bottom: -30px;
    left: 0;
+   opacity: 0.75;
 }
 
 .cta__submit-section p {
-   min-height: 70%;
-   max-height: 70%;
    position: relative;
    padding: 0 30px;
    color: var(--on-tertiary-container);
    text-align: left;
-   vertical-align: middle;
    margin: auto;
 }
 
@@ -2532,25 +2528,29 @@ button.swiper-button-next {
    width: 1140px;
    max-width: 100vw;
    margin: 40px 0 0;
-   grid-template-columns: 22% 50% 26%;
+   grid-template-columns: 22% 56% 22%;
    grid-template-rows: 100px;
    padding: 20px 40px;
-   background: var(--tertiary-container);
+   border-radius: 2px;
+}
+
+.cta__submit-section,
+.cta__submit-section .consult-btn {
+   background: var(--outline-variant);
 }
 
 .cta__submit-section .consult-btn {
-   font-size: 0.75rem;
+   font-size: 0.875rem;
    margin: auto;
    margin-right: 0;
    padding: 10px 20px;
-   font-weight: 600;
-   background-color: var(--tertiary-container);
+   font-weight: 500;
    color: var(--on-tertiary-container);
    border: 1px solid var(--on-tertiary-container);
 }
 .cta__submit-section .consult-btn:hover {
-   background-color: var(--tertiary-fixed-dim);
-   color: var(--on-tertiary-fixed-variant);
+   background: var(--outline);
+   color: var(--inverse-primary);
 }
 
 .cta-picture {
