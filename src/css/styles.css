@@ -14,6 +14,7 @@
    --prime-08: rgba(104, 84, 142, 0.08);
    --prime-012: rgba(104, 84, 142, 0.12);
    --prime-015: rgba(104, 84, 142, 0.15);
+   scroll-behavior: smooth !important;
 }
 
 .theme-btn {
@@ -2698,6 +2699,7 @@ footer .container {
    cursor: default;
 }
 
+.theme-btn,
 .footer-section a {
    cursor: pointer;
 }
