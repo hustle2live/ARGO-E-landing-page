@@ -1,15 +1,6 @@
-// EXAMPLE POST QUERY - from postman
-// https://api.telegram.org/bot6717439509:AAHaPvuHO3WORt6_3p3CMIJgoCp5fECbX8s/sendMessage?chat_id=843486240&text=Hello Vova, this is a postman ddsaad ..
 
-// const chat_id = `843486240`; // Володимир Кузнєцов
-// const chat_id = `471789797`; // Павло Титаренко
-
-// // параметры, которые отправятся в api телеграм
-// const params = {
-//    chat_id: tg_user, // id получателя
-//    text: textMessage, // текст сообщения
-//    parse_mode: 'HTML'
-// }; // режим отображения сообщения HTML (не все HTML теги работают)
+const bot_token = process.env.BOT_TOKEN; // токен бота
+const chat_id = process.env.CHAT_ID; // id користувача
 
 const regExpName = /[a-z а-яёЁЇїІіЄєҐґ ,.'-]/i;
 const regExpPhone = /[\d-\+]/;
@@ -33,8 +24,7 @@ const dateTimeMessageFormatt = (date) => `${date.substring(8, 10)} ${date.substr
 
 const showHideFeedbackWrapper = () => feedbackWrapper.classList.toggle('hidden');
 
-const bot_token = `6717439509:AAHaPvuHO3WORt6_3p3CMIJgoCp5fECbX8s`; // токен бота
-const chat_id = `471789797`; // id користувача
+
 
 const textMessageFormatter = ({ name, tel, msg = '-' }) => {
    const time = dateTimeMessageFormatt(getCurrentTime());
@@ -120,25 +110,3 @@ ctaButtonsAll.forEach((btn) => btn.addEventListener('click', showHideFeedbackWra
 inputName.addEventListener('keypress', (e) => inputNameHandler(e, regExpName));
 inputNumber.addEventListener('keypress', (e) => inputNameHandler(e, regExpPhone));
 inputText.addEventListener('keypress', (e) => inputNameHandler(e, regExpTextArea));
-
-// добавить очистку FORM ELEMENTS после отправки        - done!
-// закрытие формы после успешной отправки через 3 сек       - done!
-// disable отправки формы       - done!
-
-// добавить макс длину и формат номера телефона      - done!
-// добавить ReGex валидацию инпутов      - done!
-
-// поменять слайдеры      - done!
-// Павлу проверить слайдеры т текст      - done!
-
-// уменьшить изобраения в розмірі    - done!
-// прописать ALT тексти    - done!
-
-// додати lazy loading    - done!
-// <img src="image.jpg" alt="..." loading="lazy" />
-
-// прописати оптимізовані зображення для gallery slides
-// srcset="1.jpg 640w, 1.jpg 920w, !.jpg 1280w, 1.jpg 1600w"
-// https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
-
-// optimized css feedback form     - done!
