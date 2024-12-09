@@ -1,1 +1,0 @@
-const footerYearElement=document.querySelector(".year"),currentYear=(new Date).getFullYear();footerYearElement.innerHTML=currentYear;
