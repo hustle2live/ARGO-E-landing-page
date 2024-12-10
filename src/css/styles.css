@@ -271,10 +271,9 @@ body {
    max-height: 98vh;
    padding: 40px;
    transform: translate(-50%, -50%);
-   background: var(--inverse-surface);
-
+   /* background: var(--inverse-surface); */
+   background: var(--surface);
    border-radius: 10px;
-
    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
    transition-duration: 1s;
    z-index: 5;
@@ -307,7 +306,7 @@ body {
 .feedback-wrapper .icon.close {
    position: absolute;
    display: block;
-   fill: var(--inverse-on-surface);
+   fill: var(--outline);
    opacity: 0.7;
    right: 20px;
    top: 20px;
@@ -318,7 +317,8 @@ body {
 
 .feedback-wrapper .icon.close:hover {
    opacity: 1;
-   fill: var(--source-primary);
+   fill: var(--on-surface);
+
 }
 
 .feedback-wrapper .label {
@@ -336,7 +336,7 @@ body {
 .feedback-wrapper .user-box input,
 .feedback-wrapper .user-box textarea:placeholder-shown ~ label,
 .feedback-wrapper .user-box label {
-   color: var(--inverse-on-surface);
+   color: var(--on-surface);
 }
 
 .feedback-wrapper .user-box textarea,
@@ -346,7 +346,7 @@ body {
    font-size: 16px;
    margin-bottom: 30px;
    border: none;
-   border-bottom: 1px solid var(--inverse-on-surface);
+   border-bottom: 1px solid var(--on-surface);
    outline: none;
    background: transparent;
 }
@@ -640,6 +640,7 @@ h6 {
 .services__description,
 .about p,
 .about-company .label,
+.about-company h2,
 .about-company .description,
 .about__concepts p,
 .about__concepts-item p,
@@ -669,11 +670,11 @@ h6 {
 .about__concepts p,
 .about .label,
 .section-subtitle,
-.our-clients,
 .our-clients .section-subtitle,
 .our-clients h3,
 .our-clients,
 .about-company p,
+.about-company h2,
 .services__title,
 .about__concepts .about__concepts-title,
 .about .ection-title,
@@ -1276,6 +1277,7 @@ h1 {
    line-height: 1.6rem;
    margin-top: 0;
    margin-bottom: 20px;
+   font-weight: 400;
 }
 
 .text-button,
@@ -1424,6 +1426,10 @@ h1 {
    );
 }
 
+.about-company h2 {
+   font-weight: 400;
+}
+
 .about__concepts .about__concepts-title {
    line-height: 1.1;
    text-align: center;
@@ -1523,6 +1529,7 @@ h1 {
    margin-top: 0;
 }
 
+.about-company h2,
 .about-company p {
    margin-top: 20px;
 }
@@ -2052,7 +2059,7 @@ sub {
 }
 
 .header__description svg g {
-   fill: var(--primary);
+   fill: var(--on-surface);
 }
 
 .features__description {
