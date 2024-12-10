@@ -1,6 +1,5 @@
-
-const bot_token = process.env.BOT_TOKEN; // токен бота
-const chat_id = process.env.CHAT_ID; // id користувача
+const bot_token = '6717439509:AAHaPvuHO3WORt6_3p3CMIJgoCp5fECbX8s'; // process.env.BOT_TOKEN; // токен бота
+const chat_id = '471789797'; // process.env.CHAT_ID; // id користувача
 
 const regExpName = /[a-z а-яёЁЇїІіЄєҐґ ,.'-]/i;
 const regExpPhone = /[\d-\+]/;
@@ -23,8 +22,6 @@ const getCurrentTime = () => new Date().toString();
 const dateTimeMessageFormatt = (date) => `${date.substring(8, 10)} ${date.substring(4, 7)} ${date.substring(11, 24)}`;
 
 const showHideFeedbackWrapper = () => feedbackWrapper.classList.toggle('hidden');
-
-
 
 const textMessageFormatter = ({ name, tel, msg = '-' }) => {
    const time = dateTimeMessageFormatt(getCurrentTime());

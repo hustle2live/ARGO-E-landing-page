@@ -29,8 +29,8 @@ const setPosGallery = () => {
    galleryElement.style.transform = `translateX(-)${sliderPosition}px`;
 };
 
-const prevSlide = () => setPosGallery(calcSliderPos());
-const nextSlide = () => setPosGallery(calcSliderPos(true));
+// const prevSlide = () => setPosGallery(calcSliderPos());
+// const nextSlide = () => setPosGallery(calcSliderPos(true));
 
 document.querySelector('.prev-btn').addEventListener('click', prevSlide);
 document.querySelector('.next-btn').addEventListener('click', nextSlide);

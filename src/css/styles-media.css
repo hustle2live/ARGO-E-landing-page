@@ -104,10 +104,6 @@
       text-align: left;
    }
 
-   /* .service-description__service-types h4 {
-      text-transform: none;
-   } */
-
    .our-clients > p {
       max-width: 80%;
    }
@@ -400,7 +396,6 @@
    .about__concepts,
    .section-title,
    .section-subtitle {
-      /* max-width: 98%; */
       max-width: 100%;
    }
 
@@ -502,7 +497,6 @@
    }
 
    .features .container {
-      /* grid-template-rows: 1fr 1fr 1fr; */
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto;
       margin-top: 2px;
@@ -753,7 +747,6 @@
 
    .mobile.icon.close:active,
    .menu-btn:active {
-      /* background-color: var(--surface-container-low); */
       box-shadow: 1px 1px 21px 1px rgba(0, 0, 0, 0.15);
    }
 
@@ -770,9 +763,6 @@
       background: transparent;
       padding: 10px;
       cursor: pointer;
-
-      /* z-index: 99; */
-      /* transition: all 300ms ease-in-out; */
    }
 
    .nav-menu.open {
@@ -872,7 +862,6 @@
       justify-content: flex-start;
       margin: 2px 0;
    }
-   .nav-menu .nav-menu__item .mobile.icon.top,
    .nav-menu .nav-menu__item .mobile.icon.top {
       margin-top: 2px;
    }
@@ -1153,7 +1142,6 @@
    }
 
    .icon {
-      /* margin: -4px 0; */
       margin: 0;
       padding-bottom: 2px;
       font-size: 1rem;
@@ -1172,7 +1160,6 @@
       text-align: start;
       max-width: 88%;
       line-height: 1.5;
-      /* padding: 4px 0; */
       padding: 0;
       margin: auto;
    }
@@ -1282,6 +1269,13 @@
 
    .about {
       padding-bottom: 80px;
+      background: linear-gradient(
+         0deg,
+         var(--surface-tint) 0%,
+         var(--surface-tint) 48%,
+         var(--surface-container-low) 48%,
+         var(--surface-container-low) 100%
+      );
    }
 
    .about-company {
@@ -1470,6 +1464,10 @@
 
    .fb-posts .cta__submit-section {
       grid-template-rows: 30px 70px 50px;
+   }
+
+   .fb-posts {
+      margin: 60px 0 40px;
    }
 
    .fb-posts .cta-button.consult-btn {
@@ -1728,7 +1726,6 @@
       height: 60px;
    }
 
-
    .header__content.container {
       padding-left: 16px;
       padding-right: 16px;
@@ -1828,8 +1825,8 @@
       background: linear-gradient(
          0deg,
          var(--surface-tint) 0%,
-         var(--surface-tint) 42.5%,
-         var(--surface-container-low) 42.5%,
+         var(--surface-tint) 45%,
+         var(--surface-container-low) 45%,
          var(--surface-container-low) 100%
       );
    }

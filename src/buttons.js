@@ -11,6 +11,7 @@ const servicesButtons = document.querySelectorAll('.services-btn');
 
 const styleHTMLLink = document.querySelector('.style-link');
 const themeButton = document.querySelector('.theme-btn');
+const htmlDocument = document.querySelector('html');
 const navBarLogoImage = document.querySelector('.header__navbar_company-logo img');
 const footerLogoImage = document.querySelector('.footer-section.logo img');
 const mobileMenuLogoImage = document.querySelector('.mobile.icon.company-logo img');
@@ -31,12 +32,14 @@ themeButton.addEventListener('click', () => {
       footerLogoImage.setAttribute('src', logoFullDark);
       mobileMenuLogoImage.setAttribute('src', logoFullWhite);
       aboutSectionLogoImage.classList.add('dark');
+      htmlDocument.classList.add('dark');
    } else {
       styleHTMLLink.setAttribute('href', themeLightPath);
       navBarLogoImage.setAttribute('src', logoDark);
       footerLogoImage.setAttribute('src', logoFullWhite);
       mobileMenuLogoImage.setAttribute('src', logoFullDark);
       aboutSectionLogoImage.classList.remove('dark');
+      htmlDocument.classList.remove('dark');
    }
 });
 
@@ -53,9 +56,6 @@ window.onscroll = function () {
    scrollFunction();
 };
 
-// -------/
-
-// cta-gallery full width image function
 const ctaGallery = document.querySelector('.cta__gallery');
 const sliderImage = document.querySelector('.ctaSwiper');
 const showGalleryButtonClose = document.querySelector('.cta__gallery .close-btn');
@@ -72,10 +72,7 @@ document.addEventListener('keyup', (e) => {
    }
 });
 
-// -------/
-
 const menuOpenClose = () => navMenuOpen.classList.toggle('closed');
-// const menuOpenClose = () => openClosedNodes.forEach((element) => element.classList.toggle('closed'));
 
 const menuClose = () => navMenuOpen.classList.add('closed');
 
@@ -100,7 +97,6 @@ navMenuList.addEventListener('click', (e) => {
             break;
       }
    }
-   return;
 });
 
 const cardSpinRotate = (e, card) => {
@@ -118,8 +114,6 @@ const cardSpinRotate = (e, card) => {
 
       card.addEventListener('mouseleave', removeSpin);
    }
-
-   return;
 };
 
 servicesCards.forEach((card) => card.addEventListener('click', (e) => cardSpinRotate(e, card)));
