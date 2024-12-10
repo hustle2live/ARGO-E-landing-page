@@ -17,8 +17,6 @@ const footerLogoImage = document.querySelector('.footer-section.logo img');
 const mobileMenuLogoImage = document.querySelector('.mobile.icon.company-logo img');
 const aboutSectionLogoImage = document.querySelector('.about-company .description');
 
-const themeLightPath = './css/theme/palette-3/light.css';
-const themeDarkPath = './css/theme/palette-3/dark.css';
 const logoDark = './images/logo/logo_title-transparent.png';
 const logoWhite = './images/logo/logo_title-white.png';
 const logoFullDark = './images/logo/logo-transparent.png';
@@ -27,14 +25,12 @@ const logoFullWhite = './images/logo/logo-white.png';
 themeButton.addEventListener('click', () => {
    themeButton.classList.toggle('dark');
    if (themeButton.classList.contains('dark')) {
-      styleHTMLLink.setAttribute('href', themeDarkPath);
       navBarLogoImage.setAttribute('src', logoWhite);
       footerLogoImage.setAttribute('src', logoFullDark);
       mobileMenuLogoImage.setAttribute('src', logoFullWhite);
       aboutSectionLogoImage.classList.add('dark');
       htmlDocument.classList.add('dark');
    } else {
-      styleHTMLLink.setAttribute('href', themeLightPath);
       navBarLogoImage.setAttribute('src', logoDark);
       footerLogoImage.setAttribute('src', logoFullWhite);
       mobileMenuLogoImage.setAttribute('src', logoFullDark);
