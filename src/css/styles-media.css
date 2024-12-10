@@ -1422,6 +1422,24 @@
       padding: 3px 4px;
    }
 
+   .cta__gallery.show .close-btn {
+      min-width: unset;
+      min-height: unset;
+      width: 18px;
+      height: 18px;
+      font-size: 24px;
+      line-height: normal;
+   }
+
+   .cta .swiper-button-prev::after,
+   .cta .swiper-button-next::after {
+      min-width: unset;
+      min-height: unset;
+      width: 24px;
+      height: 24px;
+      font-size: 24px;
+   }
+
    .services__content {
       padding-top: 165px;
    }

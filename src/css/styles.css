@@ -1046,7 +1046,7 @@ h1 {
    cursor: pointer;
 }
 .header__navbar_social a:hover {
-   scale: 1.05;
+   transform: scale(1.15);
 }
 
 .header__navbar_social a {
@@ -1333,7 +1333,7 @@ h1 {
 
 .services__card.animated {
    opacity: 1;
-   transform: rotate3d(0, 1, 0, 0);
+   transform: rotate3d(0, 1, 0, 0deg);
    transition: 1.2s;
    animation-name: unSpin;
 }
@@ -2296,6 +2296,11 @@ button.swiper-button-next {
 .cta__gallery.show .prev,
 .cta__gallery.show .next {
    background: var(--surface-container-lowest);
+}
+
+.dark .cta__gallery.show,
+.dark .cta__gallery.show .close-btn {
+   background: var(--on-surface);
 }
 
 .cta__gallery.show .prev:hover,
