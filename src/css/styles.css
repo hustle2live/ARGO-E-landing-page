@@ -4,12 +4,13 @@
 
 @import './variables.css';
 
-/* @import url('../css/theme/palette-3/light.css'); */
-/* @import url('../css/theme/palette-3/dark.css'); */
-
 :root {
+   --elevation-light-0: 0px 1px 0px 0px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
    --elevation-light-1: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
    --elevation-light-2: 0px 2px 6px 2px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+   --elevation-white-0: 0px 1px 0px 0px rgba(255, 255, 255, 0.15), 0px 2px 3px 0px rgba(255, 255, 255, 0.2);
+   --elevation-white-1: 0px 1px 3px 1px rgba(255, 255, 255, 0.15), 0px 1px 2px 0px rgba(255, 255, 255, 0.3);
+   --elevation-white-2: 0px 2px 4px -2px rgba(255, 255, 255, 0.65), 0px 1px 2px 0px rgba(255, 255, 255, 0.7);
    --dark-015: rgba(0, 0, 0, 0.015);
    --dark-08: rgba(0, 0, 0, 0.08);
    --prime-08: rgba(104, 84, 142, 0.08);
@@ -17,7 +18,6 @@
    --prime-015: rgba(104, 84, 142, 0.15);
    scroll-behavior: smooth;
 }
-
 
 .theme-btn {
    display: block;
@@ -220,12 +220,13 @@ body {
    border: none;
    outline: none;
 
-   background-color: var(--tertiary-fixed);
+   background-color: var(--secondary-fixed-dim);
    color: var(--on-tertiary-fixed);
 
-   padding: 14px 10px 16px;
-   min-width: 60px;
-   width: auto;
+   padding: 20px 14px 20px 12px;
+   box-sizing: border-box;
+   min-width: 68px;
+   min-height: 72px;
    text-align: center;
    font-size: 2rem;
    text-decoration: none;
@@ -240,10 +241,21 @@ body {
 
 .top-btn:hover {
    opacity: 1;
-   background-color: var(--tertiary);
-   color: var(--on-tertiary);
-   border-radius: 8px;
+   background-color: var(--secondary);
+   color: var(--on-secondary);
+   border-radius: 10px;
    transform: scale(0.7);
+}
+
+.top-btn svg {
+   display: block;
+   margin: auto;
+   width: 30px;
+   height: 30px;
+}
+
+.top-btn:hover svg path {
+   stroke: var(--on-secondary);
 }
 
 /* ------- feedback-wrapper ------ */
@@ -731,10 +743,9 @@ header,
    color: var(--on-primary); /* white */
 }
 
-.section-title,
 .services__footer .services__section-subtitle,
 .services__section-subtitle a,
-.services__section-subtitle,
+.section-title,
 .about-company .description,
 .about-company p,
 .features h3,
@@ -801,9 +812,11 @@ header {
    background-color: var(--surface-container-low);
 }
 
+.dark .header .cta-button.outlined:hover,
 .dark .header button {
    background-color: var(--on-surface);
    color: var(--surface);
+   border-color: var(--on-surface);
 }
 
 .dark .header a,
@@ -816,6 +829,7 @@ header {
 .dark .features {
    background: var(--surface);
 }
+
 .dark .header__navbar,
 .dark .header,
 .dark .header a,
@@ -848,6 +862,15 @@ header {
 
 .dark .service-description {
    background: var(--surface-tint);
+}
+
+.svg__btn-arrow {
+   width: 10px;
+   height: 10px;
+}
+
+.dark .svg__btn-arrow {
+   fill: #ffffff;
 }
 
 .features__card {
@@ -1171,15 +1194,6 @@ h1 {
    text-align: center;
 }
 
-.services__section-subtitle a:hover {
-   color: var(--secondary);
-}
-
-.services__section-subtitle {
-   margin: 0 auto;
-   font-weight: 400;
-}
-
 .services__card-section ul {
    margin: 57px 0 300px;
    justify-content: center;
@@ -1195,16 +1209,17 @@ h1 {
 
 .services__card .services-btn {
    margin: 14px 0;
-   border-radius: 0;
-   border-bottom: 1px solid transparent;
-   padding: 4px;
    z-index: 1;
+   border-radius: 25px;
+   padding: 6px 18px;
 }
 
-.services__card .services-btn:active,
 .services__card .services-btn:hover {
    background: transparent;
-   border-color: var(--on-surface);
+   box-shadow: var(--elevation-light-0);
+}
+.services__card .services-btn:active {
+   box-shadow: none;
 }
 
 .services__card {
@@ -1273,13 +1288,30 @@ h1 {
    margin: 39px auto 60px;
 }
 
-.services__footer .services__section-subtitle a {
+.services__section-subtitle {
+   margin: 0 auto;
+   font-weight: 400;
+}
+
+.our-clients .cta-button.outlined:hover,
+.services__footer .cta-button.outlined:hover {
+   color: var(--on-surface);
+   background-color: transparent;
+   box-shadow: var(--elevation-light-0);
+}
+
+.our-clients .cta-button.outlined,
+.services__footer .cta-button.outlined {
+   text-align: center;
    color: inherit;
    font-family: inherit;
    letter-spacing: 1px;
-   padding: 0 0 4px;
+   padding: 4px;
    text-decoration: none;
-   border-bottom: 1px solid var(--on-surface);
+   width: 100px;
+   margin: 16px auto;
+   background: transparent;
+   border: none;
 }
 
 .service-story {
@@ -2413,13 +2445,11 @@ button.swiper-button-next {
    font-size: 0.875rem;
    margin-top: 20px;
    margin-right: 20px;
-   padding: 2px;
    border-bottom: 1px solid transparent;
-   border-radius: 0;
+   border-radius: 25px;
+   padding: 4px 12px;
 }
-.cta .cta__description .text-button:hover {
-   border-bottom: 1px solid var(--inverse-on-surface);
-}
+
 .cta .cta__description .text-button:active {
    opacity: 0.85;
 }
@@ -2500,6 +2530,13 @@ button.swiper-button-next {
    opacity: 0.75;
 }
 
+.dark .cta__submit-section .consult-btn,
+.dark .cta__submit-section p,
+.dark .cta__submit-section p::before {
+   border-color: var(--primary);
+   color: var(--primary);
+}
+
 .cta__submit-section p {
    position: relative;
    padding: 0 30px;
@@ -2540,8 +2577,8 @@ button.swiper-button-next {
    border: 1px solid var(--on-tertiary-container);
 }
 .cta__submit-section .consult-btn:hover {
-   background: var(--outline);
-   color: var(--inverse-primary);
+   background: var(--outline-variant);
+   box-shadow: var(--elevation-light-2);
 }
 
 .cta-picture {
@@ -2572,6 +2609,7 @@ button.swiper-button-next {
    line-height: 1.25rem;
    padding: 10px 24px;
 }
+
 .cta-button {
    background-color: var(--primary);
    border: 1px solid var(--primary);
@@ -2594,6 +2632,11 @@ button.swiper-button-next {
    border-color: var(--outline);
    background-color: var(--surface);
    color: var(--primary);
+}
+
+.dark .outlined,
+.dark .cta-button.outlined {
+   border-color: transparent;
 }
 
 .outlined:hover,

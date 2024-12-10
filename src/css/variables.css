@@ -1,3 +1,6 @@
+/* @import url('../css/theme/palette-3/light.css'); */
+/* @import url('../css/theme/palette-3/dark.css'); */
+
 :root {
    --theme-sheet-width-xxl: 1920px;
    --theme-sheet-width-xl: 1140px;
